@@ -1,0 +1,13 @@
+{
+  "built": null,
+  "version": null,
+  "tier_built": null,
+  "forced": false,
+  "counts": {
+    "councils": 0,
+    "ranks": 0,
+    "merit_badges": 0,
+    "policies": 0
+  },
+  "note": "Run scraper/build_all.py to populate this file and the data/ directory."
+}
