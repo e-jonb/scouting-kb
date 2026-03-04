@@ -1,0 +1,64 @@
+---
+source: https://www.scouting.org/wp-content/uploads/2025/12/Scouts-BSA-Rank-Requirements.pdf
+fetched: 2026-03-03
+bsa_version: 2026.Q1
+rank_order: 4
+content_type: pdf
+---
+
+# Star Rank Requirements
+
+_Leadership and merit badge focus begins. Requires 6 merit badges (4 Eagle-required)._
+
+STAR RANK REQUIREMENTS
+LEADER
+(cid:22)
+INITIAL
+& DATE
+1. Be active in your troop for at least four months as a First Class Scout.
+(See page 24.)
+2. As a First Class Scout, demonstrate Scout spirit by living the Scout Oath
+and Scout Law. Tell how you have done your duty to God and how you
+have lived the Scout Oath and Scout Law in your everyday life.
+(See pages 11–16 and 23.)
+3. Earn six merit badges, including any four from the required list for Eagle.
+You may choose any of the 18 merit badges on the required list for Eagle
+to fulfill this requirement. See Eagle rank requirement 3 for this list.
+(See pages 28 and 416–420.)
+NAME OF MERIT BADGE DATE EARNED
+(Eagle-required)
+(Eagle-required)
+(Eagle-required)
+(Eagle-required)
+4. While a First Class Scout, participate in six hours of service through one or
+more service projects approved by your Scoutmaster.
+5. While a First Class Scout, serve actively in your troop for four months in
+one or more of the following positions of responsibility (or carry out a
+Scoutmaster-approved leadership project to help the troop):
+(See pages 422-425.)
+Scout troop. Patrol leader, assistant senior patrol leader, senior patrol
+leader, troop guide, Order of the Arrow troop representative, den
+chief, scribe, librarian, historian, quartermaster, bugler, junior assistant
+Scoutmaster, chaplain aide, instructor, webmaster, or outdoor ethics guide.6
+Venturing crew/Sea Scout ship. President, vice president, secretary,
+treasurer, den chief, quartermaster, historian, guide, boatswain,
+boatswain’s mate, yeoman, purser, storekeeper, chaplain aide, outdoor
+ethics guide, crew leader, media specialist, specialist or webmaster.
+Lone Scout. Leadership responsibility in your school, religious organization,
+club, or elsewhere in your community.
+6a. With your parent or guardian, complete the exercises in the pamphlet How
+to Protect Your Children from Child Abuse: A Parent’s Guide.
+6b. With your parent or guardian’s permission, view the Personal Safety
+Awareness videos.7 (See the pamphlet inserted inside the front cover.)
+7. While a First Class Scout, participate in a Scoutmaster conference.
+(See page 418.)
+8. Successfully complete your board of review for the Star rank.8 (See page 414.)
+Notes: For Venturers working on Scouts BSA requirements, replace “troop” with “crew” and “Scoutmaster” with “crew
+Advisor.” For Sea Scouts working on Scouts BSA requirements, replace “troop” with “ship” and “Scoutmaster” with “Skipper.”
+6Assistant patrol leader is not an approved position of responsibility for the Star rank.
+7If your family does not have internet access at home AND you do not have ready internet access at school or another public
+place or via a mobile device, the Personal Safety Awareness videos portion of this requirement may be waived by
+your Scoutmaster in consultation with your parent or guardian.
+8If the board of review does not approve the Scout’s advancement, the decision may be appealed in accordance with Guide
+to Advancement topic 8.0.4.0.
+450

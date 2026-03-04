@@ -1,13 +1,12 @@
 {
-  "built": null,
-  "version": null,
-  "tier_built": null,
+  "built": "2026-03-03",
+  "version": "2026.Q1",
+  "tier_built": "all",
   "forced": false,
   "counts": {
-    "councils": 0,
-    "ranks": 0,
-    "merit_badges": 0,
-    "policies": 0
-  },
-  "note": "Run scraper/build_all.py to populate this file and the data/ directory."
+    "councils": 137,
+    "ranks": 7,
+    "merit_badges": 133,
+    "policies": 7
+  }
 }
