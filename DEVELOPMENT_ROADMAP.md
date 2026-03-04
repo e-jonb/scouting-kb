@@ -14,8 +14,10 @@ Run the scraper for the first time and commit the populated `data/` directory.
 **Before you start:**
 ```bash
 cd scraper
-pip install -r requirements.txt
-playwright install chromium
+
+# macOS: use pip3 and python3 (not pip/python)
+pip3 install -r requirements.txt
+python3 -m playwright install chromium
 ```
 
 **Starting prompt:**
@@ -29,10 +31,10 @@ Goal: Run the scraper and populate data/ with Tier 1 + Tier 2 content.
 
 Run Tier 1 (councils, ranks, merit badges — ~40 min first run):
   cd scraper
-  python build_all.py --tier 1
+  python3 build_all.py --tier 1
 
 Then Tier 2 (policies — ~5 min):
-  python build_all.py --tier 2
+  python3 build_all.py --tier 2
 
 After each tier completes:
 - Check manifest.json for counts
@@ -65,7 +67,7 @@ Run every January, April, July, and October — or after BSA publishes updated r
 
 ```bash
 cd scraper
-python build_all.py --force
+python3 build_all.py --force
 ```
 
 Review the diff before committing — look for meaningful content changes vs. markup noise. If BSA only changed nav chrome or styling, you may not need to commit everything.

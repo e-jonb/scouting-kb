@@ -37,10 +37,10 @@ from fetch_merit_badges import fetch_merit_badges
 from fetch_policies import fetch_policies
 
 console = Console()
-DATA_DIR = Path("data")
+DATA_DIR = Path(__file__).parent.parent / "data"
 
 
-async def build(tier: int = 0, force: bool = False) -> None:
+async def build(tier: int = 0, force: bool = False, cdp_url: str = None) -> None:
     today = date.today()
     built_date = today.isoformat()
     bsa_version = bsa_version_from_date(today)
@@ -54,7 +54,7 @@ async def build(tier: int = 0, force: bool = False) -> None:
         style="blue",
     ))
 
-    kwargs = dict(built_date=built_date, bsa_version=bsa_version, force=force)
+    kwargs = dict(built_date=built_date, bsa_version=bsa_version, force=force, cdp_url=cdp_url)
     results = {}
 
     if tier in (0, 1):
@@ -135,5 +135,17 @@ if __name__ == "__main__":
         "--force", action="store_true",
         help="Overwrite all existing files regardless of whether they already exist",
     )
+    parser.add_argument(
+        "--cdp-url", default=None,
+        help=(
+            "Connect to a running Chrome via Chrome DevTools Protocol instead of "
+            "launching a new headless browser. Required for sites with Cloudflare "
+            "Enterprise bot protection (e.g. scouting.org). "
+            "Setup: pkill -x 'Google Chrome' && "
+            "open -a 'Google Chrome' --args --remote-debugging-port=9222 --no-first-run "
+            "then navigate to scouting.org once before running this script. "
+            "Default CDP URL: http://localhost:9222"
+        ),
+    )
     args = parser.parse_args()
-    asyncio.run(build(tier=args.tier, force=args.force))
+    asyncio.run(build(tier=args.tier, force=args.force, cdp_url=args.cdp_url))

@@ -12,13 +12,13 @@ Consumer repos add `scouting-kb` as a git submodule and reference `data/` direct
 
 ```bash
 cd scraper
-pip install -r requirements.txt
-playwright install chromium
+pip3 install -r requirements.txt
+python3 -m playwright install chromium
 
-python build_all.py              # All tiers (~45 min first run)
-python build_all.py --tier 1     # Core data only: councils, ranks, merit badges (~40 min)
-python build_all.py --tier 2     # Policies only (~5 min)
-python build_all.py --force      # Force-refresh everything
+python3 build_all.py              # All tiers (~45 min first run)
+python3 build_all.py --tier 1     # Core data only: councils, ranks, merit badges (~40 min)
+python3 build_all.py --tier 2     # Policies only (~5 min)
+python3 build_all.py --force      # Force-refresh everything
 ```
 
 After running, commit the updated `data/` directory:

@@ -73,33 +73,109 @@ def clean_markdown(md: str) -> str:
 
 
 # CSS selectors to try for main content extraction, in priority order.
-# scouting.org is WordPress-based; these cover the most common content wrappers.
+# scouting.org uses both WordPress classic themes and Elementor page builder.
 CONTENT_SELECTORS = [
+    # WordPress classic / WPBakery (merit badges, ranks)
     ".entry-content",
     ".wpb_wrapper",
     ".vc_column-inner",
     "article .content",
-    "main article",
     ".page-content",
     ".post-content",
+    # Elementor (policy / health-and-safety pages)
+    ".elementor-widget-wrap.elementor-element-populated",
+    ".elementor-section.elementor-top-section",
+    ".elementor-widget-wrap",
+    # Generic fallbacks
+    "main article",
     "article",
     "main",
 ]
 
 
+# Realistic Chrome/Mac user agent — avoids Cloudflare bot detection triggered
+# by the previous "scouting-kb/1.0" custom agent.
+BROWSER_UA = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/122.0.0.0 Safari/537.36"
+)
+
+
+async def make_browser_context(playwright, cdp_url: str = None):
+    """
+    Return (browser, context) for scraping.
+
+    Two modes:
+      CDP mode (cdp_url set): connects to a user-launched Chrome via Chrome DevTools
+        Protocol. The browser already has Cloudflare clearance from normal use.
+        browser.close() is patched to browser.disconnect() so the user's Chrome
+        stays open after the scraper finishes.
+
+      Headless mode (default): launches Playwright's own Chromium. Works for sites
+        without aggressive bot detection. scouting.org Cloudflare Enterprise will
+        block this — use CDP mode for that site.
+
+    CDP setup (one-time):
+      pkill -x "Google Chrome"
+      open -a "Google Chrome" --args --remote-debugging-port=9222 --no-first-run
+      # Navigate to scouting.org once in that Chrome window, then run the scraper.
+      python build_all.py --cdp-url http://localhost:9222
+    """
+    if cdp_url:
+        browser = await playwright.chromium.connect_over_cdp(cdp_url)
+        # Use the first existing browser context (has Cloudflare clearance cookies)
+        context = browser.contexts[0] if browser.contexts else await browser.new_context()
+        # Replace close() with a no-op so we don't shut down the user's Chrome.
+        # Playwright drops the CDP websocket when the async_playwright context exits.
+        async def _noop():
+            pass
+        browser.close = _noop
+        return browser, context
+
+    # Headless fallback — blocked by Cloudflare Enterprise on scouting.org
+    browser = await playwright.chromium.launch(
+        headless=True,
+        args=[
+            "--disable-blink-features=AutomationControlled",
+            "--no-sandbox",
+            "--disable-setuid-sandbox",
+        ],
+    )
+    context = await browser.new_context(
+        user_agent=BROWSER_UA,
+        viewport={"width": 1280, "height": 800},
+        locale="en-US",
+        timezone_id="America/New_York",
+    )
+    await context.add_init_script(
+        "Object.defineProperty(navigator, 'webdriver', {get: () => undefined})"
+    )
+    return browser, context
+
+
 async def extract_content(page, selectors: list[str] = None) -> str:
     """
-    Try each selector in order and return the first one that yields substantial content.
-    Falls back to <main> if none match.
+    For each selector, find the element with the most visible text and return
+    its innerHTML. Skips navigation/header chrome that has lots of markup but
+    little readable text (common on Elementor pages where the nav widget matches
+    the same selector as the content widget).
+
+    Falls back to the next selector if none yield 200+ chars of visible text.
     """
     selectors = selectors or CONTENT_SELECTORS
-    for selector in selectors:
-        try:
-            el = page.locator(selector).first
-            if await el.count() > 0:
-                html = await el.inner_html()
-                if len(html) > 300:  # Sanity check — not just nav chrome
-                    return html
-        except Exception:
-            continue
-    return ""
+    html = await page.evaluate(
+        """(selectors) => {
+            for (const sel of selectors) {
+                let bestEl = null, bestLen = 0;
+                for (const el of document.querySelectorAll(sel)) {
+                    const len = (el.innerText || '').trim().length;
+                    if (len > bestLen) { bestLen = len; bestEl = el; }
+                }
+                if (bestEl && bestLen > 200) return bestEl.innerHTML;
+            }
+            return '';
+        }""",
+        selectors,
+    )
+    return html or ""

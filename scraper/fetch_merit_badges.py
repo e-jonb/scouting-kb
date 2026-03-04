@@ -25,68 +25,87 @@ from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn, TaskPr
 
 from utils import (
     slug, bsa_version_from_date, make_frontmatter,
-    write_md, rate_limit, clean_markdown, extract_content
+    write_md, rate_limit, clean_markdown, extract_content, make_browser_context
 )
 
 console = Console()
 
 BADGES_INDEX_URL = "https://www.scouting.org/skills/merit-badges/all/"
+EAGLE_REQUIRED_URL = "https://www.scouting.org/skills/merit-badges/eagle-required/"
+
+
+def _extract_badge_links(js_result: list) -> list[dict]:
+    """Deduplicate badge links by URL, preserving order."""
+    seen = set()
+    unique = []
+    for b in js_result:
+        if b["url"] not in seen and b["name"]:
+            seen.add(b["url"])
+            unique.append(b)
+    return unique
+
+
+_BADGE_LINK_JS = """
+    () => {
+        // As of 2026, individual badge pages use the new /merit-badges/{slug}/ URL pattern.
+        // Nav/category links use the old /skills/merit-badges/ pattern and are excluded.
+        const links = document.querySelectorAll('a[href*="/merit-badges/"]');
+        const results = [];
+        for (const a of links) {
+            const href = a.href;
+            const name = a.textContent.trim();
+            if (
+                name && name.length > 5 && name.length < 80 &&
+                href.includes('/merit-badges/') &&
+                !href.includes('/skills/merit-badges/')
+            ) {
+                results.push({ name, url: href });
+            }
+        }
+        return results;
+    }
+"""
 
 
 async def get_all_badges(page: Page) -> list[dict]:
     """
-    Scrape the merit badges index page.
-    The page groups badges into sections — we detect eagle-required status
-    from section headings before each group of badge links.
-    Returns list of {name, url, eagle_required}.
+    Scrape the merit badges index + eagle-required pages.
+
+    As of 2026 BSA redesign:
+      - All badges listed alphabetically at /skills/merit-badges/all/
+        Each badge is an H2 heading containing an <a href="/merit-badges/{slug}/"> link.
+        There are no longer section headings separating Eagle-required from elective.
+      - Eagle-required badges listed separately at /skills/merit-badges/eagle-required/
+        with the same new /merit-badges/{slug}/ link pattern.
+
+    Strategy: scrape all badges from the index, then get eagle-required slugs from
+    the eagle-required page, and mark badges accordingly.
     """
-    await page.goto(BADGES_INDEX_URL, wait_until="networkidle", timeout=45000)
+    async def _safe_evaluate(pg, js):
+        """Evaluate JS, retrying once if the execution context is destroyed by a redirect."""
+        try:
+            return await pg.evaluate(js)
+        except Exception:
+            await pg.wait_for_load_state("networkidle", timeout=30000)
+            await pg.wait_for_timeout(1000)
+            return await pg.evaluate(js)
 
-    badges = await page.evaluate("""
-        () => {
-            const results = [];
-            let currentlyEagleRequired = false;
+    # Step 1: all badges from the main index
+    await page.goto(BADGES_INDEX_URL, wait_until="networkidle", timeout=60000)
+    await page.wait_for_timeout(2000)
+    all_badges = _extract_badge_links(await _safe_evaluate(page, _BADGE_LINK_JS))
 
-            // Walk all heading and anchor nodes in document order.
-            // Section headers tell us whether following badges are eagle-required.
-            const allNodes = document.querySelectorAll('h2, h3, h4, a[href*="/skills/merit-badges/"]');
+    # Step 2: eagle-required badge URLs from the dedicated page
+    await page.goto(EAGLE_REQUIRED_URL, wait_until="networkidle", timeout=60000)
+    await page.wait_for_timeout(2000)
+    eagle_badges = _extract_badge_links(await _safe_evaluate(page, _BADGE_LINK_JS))
+    eagle_urls = {b["url"] for b in eagle_badges}
 
-            for (const node of allNodes) {
-                if (/^H[2-4]$/.test(node.tagName)) {
-                    const text = node.textContent.toLowerCase();
-                    currentlyEagleRequired = (
-                        text.includes('eagle') &&
-                        (text.includes('required') || text.includes('req'))
-                    );
-                } else if (node.tagName === 'A') {
-                    const href = node.href;
-                    const name = node.textContent.trim();
-                    // Skip the index page itself, category headers, and nav links
-                    if (
-                        name &&
-                        href &&
-                        name.length < 80 &&
-                        !href.endsWith('/all/') &&
-                        !href.endsWith('/merit-badges/') &&
-                        href.includes('/skills/merit-badges/')
-                    ) {
-                        results.push({ name, url: href, eagle_required: currentlyEagleRequired });
-                    }
-                }
-            }
-            return results;
-        }
-    """)
+    # Step 3: mark eagle-required
+    for b in all_badges:
+        b["eagle_required"] = b["url"] in eagle_urls
 
-    # Deduplicate by URL, preserving order
-    seen = set()
-    unique = []
-    for b in badges:
-        if b["url"] not in seen and b["name"]:
-            seen.add(b["url"])
-            unique.append(b)
-
-    return unique
+    return all_badges
 
 
 async def fetch_merit_badges(
@@ -94,6 +113,7 @@ async def fetch_merit_badges(
     built_date: str = None,
     bsa_version: str = None,
     force: bool = False,
+    cdp_url: str = None,
 ) -> int:
     """Main entry point. Returns count of badges successfully fetched."""
     today = date.today()
@@ -105,10 +125,7 @@ async def fetch_merit_badges(
     console.print(f"\n[bold blue]Merit Badges[/bold blue] → {output_dir}")
 
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True)
-        context = await browser.new_context(
-            user_agent="Mozilla/5.0 (compatible; scouting-kb/1.0; educational use)"
-        )
+        browser, context = await make_browser_context(p, cdp_url=cdp_url)
         page = await context.new_page()
 
         # Step 1: Get badge list from index page
@@ -154,7 +171,12 @@ async def fetch_merit_badges(
                     continue
 
                 try:
-                    await page.goto(badge["url"], wait_until="networkidle", timeout=30000)
+                    try:
+                        await page.goto(badge["url"], wait_until="networkidle", timeout=60000)
+                    except Exception:
+                        # Fallback: some pages never reach networkidle (e.g. Skating)
+                        await page.goto(badge["url"], wait_until="load", timeout=30000)
+                        await page.wait_for_timeout(2000)
                     content_html = await extract_content(page)
 
                     if not content_html:

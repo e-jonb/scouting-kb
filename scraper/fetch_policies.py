@@ -31,7 +31,7 @@ from rich.console import Console
 
 from utils import (
     bsa_version_from_date, make_frontmatter,
-    write_md, rate_limit, clean_markdown, extract_content
+    write_md, rate_limit, clean_markdown, extract_content, make_browser_context
 )
 
 console = Console()
@@ -39,12 +39,13 @@ console = Console()
 # Policies to fetch. Add new entries here as Tier 2 expands.
 POLICIES = [
     {
-        "name": "Two-Deep Leadership",
+        "name": "Youth Protection and Adult Leadership",
         "slug": "two-deep-leadership",
-        "url": "https://www.scouting.org/health-and-safety/safety-moments/two-deep-leadership/",
+        "url": "https://www.scouting.org/health-and-safety/gss/gss01/",
         "description": (
-            "BSA's two-deep adult leadership requirement. All Scouting activities must have "
-            "at least two registered adult leaders present, or one adult and a parent."
+            "BSA's youth protection and adult leadership requirements from the Guide to Safe Scouting. "
+            "Covers two-deep leadership (two registered adults required), mandatory reporting, "
+            "and other adult supervision policies."
         ),
     },
     {
@@ -82,28 +83,28 @@ POLICIES = [
     {
         "name": "Chartered Organization Relationship",
         "slug": "chartered-organization",
-        "url": "https://www.scouting.org/programs/scouts-bsa/resources-for-volunteers/chartered-organizations/",
+        "url": "https://www.scouting.org/health-and-safety/gss/bsa-scouter-code-of-conduct/",
         "description": (
-            "The chartered organization's role, responsibilities, and relationship with BSA. "
+            "The Scouter Code of Conduct and chartered organization responsibilities. "
             "COs own their units — they select leaders and are responsible for the program."
         ),
     },
     {
         "name": "Camping and Activity Permissions",
         "slug": "camping-permissions",
-        "url": "https://www.scouting.org/health-and-safety/gss/gss01/",
+        "url": "https://www.scouting.org/health-and-safety/gss/gss03/",
         "description": (
-            "Permission slip requirements, activity consent forms, and parental notification "
-            "requirements for outings, overnight trips, and high-adventure activities."
+            "BSA camping policies and activity guidelines from the Guide to Safe Scouting. "
+            "Covers campout requirements, activity planning, and safety standards."
         ),
     },
     {
-        "name": "Reporting Youth Protection Concerns",
+        "name": "Aquatics Safety",
         "slug": "reporting-youth-protection",
         "url": "https://www.scouting.org/health-and-safety/gss/gss02/",
         "description": (
-            "Mandatory reporting requirements for suspected abuse. Leaders are mandated reporters. "
-            "Includes BSA's 24-hour hotline and the reporting chain."
+            "BSA aquatics safety requirements — Safe Swim Defense, Safety Afloat, "
+            "supervision ratios, and swimmer classification requirements."
         ),
     },
 ]
@@ -114,7 +115,8 @@ async def fetch_policy_page(page: Page, policy: dict, built_date: str, bsa_versi
     Fetch a single policy web page and return formatted markdown content.
     Returns None if no content is found.
     """
-    await page.goto(policy["url"], wait_until="networkidle", timeout=30000)
+    await page.goto(policy["url"], wait_until="networkidle", timeout=60000)
+    await page.wait_for_timeout(1000)
     content_html = await extract_content(page)
 
     if not content_html:
@@ -150,6 +152,7 @@ async def fetch_policies(
     built_date: str = None,
     bsa_version: str = None,
     force: bool = False,
+    cdp_url: str = None,
 ) -> int:
     """Main entry point. Returns count of policy files successfully written."""
     today = date.today()
@@ -164,10 +167,7 @@ async def fetch_policies(
     errors = []
 
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True)
-        context = await browser.new_context(
-            user_agent="Mozilla/5.0 (compatible; scouting-kb/1.0; educational use)"
-        )
+        browser, context = await make_browser_context(p, cdp_url=cdp_url)
         page = await context.new_page()
 
         for i, policy in enumerate(POLICIES):
