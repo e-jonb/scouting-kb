@@ -1,6 +1,10 @@
 # scouting-kb
 
-A structured knowledge base of publicly available Scouting America content. Versioned markdown and JSON files scraped from scouting.org, organized for use in BSA-related applications and AI development sessions.
+A structured knowledge base of publicly available Scouting America content. This repo is a data artifact —
+not a general-purpose library. Content is sourced from scouting.org and
+refreshed quarterly.
+
+Not intended for external contributions or general use.
 
 ## What's Included
 
