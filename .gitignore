@@ -7,3 +7,7 @@ scraper/playwright-browsers/
 scraper/node_modules/
 *.pdf
 .DS_Store
+
+# Counselor scraper output — contains PII; do not commit
+scraper/counselors*.csv
+scraper/counselor_report_*.txt

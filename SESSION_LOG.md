@@ -1,7 +1,12 @@
 # Session Log — scouting-kb KB.1 build
 _Updated as fixes are applied. Reference this if session crashes._
 
-## Current status (2026-03-03)
+## ✅ COMPLETE — committed 2026-03-03
+
+## Final counts
+- Councils: 137 | Ranks: 7/7 | Merit badges: 133 | Policies: 7/7
+
+## Status (2026-03-03)
 
 - **Councils**: ✅ 137 councils in `data/councils/` — complete, correct location
 - **Ranks**: ⚠️ 6/7 in `data/ranks/` — Eagle Scout missing (see fix below)

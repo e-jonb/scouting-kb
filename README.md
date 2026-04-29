@@ -45,6 +45,36 @@ Refresh quarterly. After running:
 git add data/ && git commit -m "chore(data): 2026.Q2 refresh"
 ```
 
+## Counselor Scraper (separate tool)
+
+`scraper/fetch_counselors.py` pulls Merit Badge Counselor lists from Scoutbook's
+legacy results pages. It's a separate tool from the main KB build — output is
+not part of `data/` (it contains PII and is gitignored).
+
+Requires a logged-in Chrome with CDP enabled:
+
+```bash
+pkill -x "Google Chrome"
+open -a "Google Chrome" --args --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-cdp
+# Log in to scoutbook.scouting.org in that browser
+```
+
+Then run with the first-page URL from Scoutbook's counselor search:
+
+```bash
+cd scraper
+python3 fetch_counselors.py --url "<first-page URL>" --output counselors.csv
+```
+
+**Tip — fetch all badges at once:** rather than running per-badge, leave
+`MeritBadgeID` empty in the search URL. Scoutbook returns every counselor in
+your proximity radius across all badges in a single paginated result. The CSV's
+`merit_badges` column then lists each counselor's full badge set, which is
+trivial to filter downstream.
+
+URL parameters of interest: `UnitID`, `Proximity`, `zip`, `formCouncilID`,
+`formDistrictID`, `Availability=Available`, `MeritBadgeID` (omit for all).
+
 ## Data Versioning
 
 Each build stamps files with a `bsa_version` in `YYYY.QN` format (e.g., `2026.Q1`). The `data/manifest.json` tracks the full build metadata. Consumer apps can surface this version to users ("requirements as of Q1 2026").
