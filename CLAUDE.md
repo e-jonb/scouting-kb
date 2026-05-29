@@ -8,6 +8,10 @@ Runs a Python scraper (`scraper/`) against scouting.org to produce clean, versio
 
 Consumer repos add `scouting-kb` as a git submodule and reference `data/` directly.
 
+## Multi-Machine Sync
+
+Run `git pull` before starting any work. This repo is used across multiple machines — starting without a pull risks working from a stale state. At the end of every session, ensure all work is committed and pushed (`git push origin main`) so the other machine can pick up cleanly.
+
 ## Running the Scraper
 
 ```bash
