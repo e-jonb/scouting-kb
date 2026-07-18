@@ -12,6 +12,29 @@ Consumer repos add `scouting-kb` as a git submodule and reference `data/` direct
 
 Run `git pull` before starting any work. This repo is used across multiple machines — starting without a pull risks working from a stale state. At the end of every session, ensure all work is committed and pushed (`git push origin main`) so the other machine can pick up cleanly.
 
+## Memory Graduation
+
+Claude Code's auto-memory (`~/.claude/projects/<repo>/memory/`) captures useful session-to-session knowledge — confirmed-working patterns, project decisions and their rationale, institutional facts — but it's local application state: invisible to git, doesn't sync across your own machines, and invisible to anyone who clones this repo fresh, including a maintainer of a downstream consumer (ScoutSync, the Troop 452 tool) trying to understand how this scraper actually works.
+
+At the end of a significant work session (or whenever you're asked to wrap up), review what got saved to auto-memory that session. For anything that clears both bars below, also write it into this repo's committed docs — in addition to the memory file, not instead of it.
+
+**Graduate it if:**
+- It's a confirmed-working pattern or playbook for recurring project work
+- It's a project decision and the reasoning behind it
+- It's an institutional fact about how this repo operates that a future maintainer needs
+
+**Leave it local-only if:**
+- It's a personal preference about how Claude should interact with this specific user (tone, communication style)
+- It's about the human-AI working relationship rather than the project itself
+
+**Where it goes:**
+- Short, stable operating rules → straight into this CLAUDE.md, near the related existing section
+- Longer-form patterns, multi-step playbooks, or detailed rationale — a scraper selector broke and how it was fixed, a scouting.org quirk to route around — → `docs/PLAYBOOK.md` (create it, this repo doesn't have one yet), with a one-line pointer added here
+
+**When you graduate something, mark the memory file too.** Append a line to the relevant memory entry noting where it landed — "Graduated to CLAUDE.md on [date]; that file is now authoritative" (or the PLAYBOOK.md equivalent). CLAUDE.md and PLAYBOOK.md will keep evolving after graduation; without this note, a stale copy of the original guidance sits in memory with no signal that it's been superseded.
+
+A fresh clone — by you on a new machine, or by anyone else who ends up maintaining this scraper — should be able to reconstruct the accumulated know-how from committed docs alone, without depending on any machine's local Claude Code state.
+
 ## Running the Scraper
 
 ```bash
