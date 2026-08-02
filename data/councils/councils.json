@@ -1,19 +1,45 @@
 [
   {
+    "id": "803",
+    "name": "Far East",
+    "state": "",
+    "city": "",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "003",
+    "name": "Alabama-Florida",
+    "state": "ALABAMA",
+    "city": "Dothan",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "006",
+    "name": "Black Warrior",
+    "state": "ALABAMA",
+    "city": "Tuscaloosa",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
     "id": "001",
     "name": "Greater Alabama",
     "state": "ALABAMA",
-    "city": "Vestavia",
-    "address": "516 Liberty Pkwy",
+    "city": "Birmingham",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "205",
-      "prefix": "970",
-      "lineNumber": "0251",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -22,16 +48,9 @@
     "name": "Mobile Area",
     "state": "ALABAMA",
     "city": "Mobile",
-    "address": "2587 Government Blvd",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "US",
-      "areaCode": "251",
-      "prefix": "476",
-      "lineNumber": "4600",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -40,16 +59,9 @@
     "name": "Tukabatchee Area",
     "state": "ALABAMA",
     "city": "Montgomery",
-    "address": "PO Box 11106",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "334",
-      "prefix": "262",
-      "lineNumber": "2697",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -58,16 +70,9 @@
     "name": "Great Alaska",
     "state": "ALASKA",
     "city": "Anchorage",
-    "address": "3117 Patterson St",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "907",
-      "prefix": "337",
-      "lineNumber": "9547",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -76,16 +81,9 @@
     "name": "Midnight Sun",
     "state": "ALASKA",
     "city": "Fairbanks",
-    "address": "1400 Gillam Way",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "907",
-      "prefix": "452",
-      "lineNumber": "1976",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -94,16 +92,9 @@
     "name": "Catalina",
     "state": "ARIZONA",
     "city": "Tucson",
-    "address": "2250 E Broadway Blvd",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "520",
-      "prefix": "750",
-      "lineNumber": "0385",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -112,16 +103,9 @@
     "name": "Grand Canyon",
     "state": "ARIZONA",
     "city": "Scottsdale",
-    "address": "Boy Scouts Of America",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "602",
-      "prefix": "955",
-      "lineNumber": "7747",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -130,34 +114,31 @@
     "name": "Natural State",
     "state": "ARKANSAS",
     "city": "Little Rock",
-    "address": "3220 Cantrell Rd",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "501",
-      "prefix": "664",
-      "lineNumber": "4780",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
   {
-    "id": "047",
-    "name": "Golden Empire",
-    "state": "CALIFORNIA",
-    "city": "Sacramento",
-    "address": "3851 N Freeway Blvd Ste 100",
+    "id": "802",
+    "name": "Transatlantic",
+    "state": "ARMED FORCES EUROPE",
+    "city": "APO",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "916",
-      "prefix": "929",
-      "lineNumber": "1417",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "045",
+    "name": "California Inland Empire",
+    "state": "CALIFORNIA",
+    "city": "Redlands",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -166,16 +147,20 @@
     "name": "Golden Gate Area",
     "state": "CALIFORNIA",
     "city": "Pleasanton",
-    "address": "6601 Owens Dr Ste 100",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "925",
-      "prefix": "674",
-      "lineNumber": "6100",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "047",
+    "name": "Greater California",
+    "state": "CALIFORNIA",
+    "city": "Sacramento",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -184,34 +169,108 @@
     "name": "Greater Los Angeles Area",
     "state": "CALIFORNIA",
     "city": "Los Angeles",
-    "address": "2333 Scout Way",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "213",
-      "prefix": "413",
-      "lineNumber": "4400",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "059",
+    "name": "Greater Yosemite",
+    "state": "CALIFORNIA",
+    "city": "Modesto",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "032",
+    "name": "Long Beach Area",
+    "state": "CALIFORNIA",
+    "city": "Long Beach",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "053",
+    "name": "Los Padres",
+    "state": "CALIFORNIA",
+    "city": "Santa Barbara",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "035",
+    "name": "Marin",
+    "state": "CALIFORNIA",
+    "city": "San Rafael",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "039",
+    "name": "Orange County",
+    "state": "CALIFORNIA",
+    "city": "Santa Ana",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "031",
+    "name": "Pacific Skyline",
+    "state": "CALIFORNIA",
+    "city": "Foster City",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "042",
+    "name": "Piedmont",
+    "state": "CALIFORNIA",
+    "city": "Piedmont",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
   {
     "id": "049",
-    "name": "San Diego-Imperial",
+    "name": "San Diego Imperial",
     "state": "CALIFORNIA",
     "city": "San Diego",
-    "address": "1207 Upas St",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "619",
-      "prefix": "298",
-      "lineNumber": "6121",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "027",
+    "name": "Sequoia",
+    "state": "CALIFORNIA",
+    "city": "Fresno",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -220,16 +279,20 @@
     "name": "Silicon Valley Monterey Bay",
     "state": "CALIFORNIA",
     "city": "San Jose",
-    "address": "1900 the Alameda Ste 100",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "408",
-      "prefix": "638",
-      "lineNumber": "8300",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "057",
+    "name": "Ventura County",
+    "state": "CALIFORNIA",
+    "city": "Camarillo",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -238,16 +301,20 @@
     "name": "Verdugo Hills",
     "state": "CALIFORNIA",
     "city": "Glendale",
-    "address": "421 N Glendale Ave",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "818",
-      "prefix": "243",
-      "lineNumber": "6282",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "051",
+    "name": "W.L.A.C.C.",
+    "state": "CALIFORNIA",
+    "city": "Van Nuys",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -256,16 +323,9 @@
     "name": "Adventure West",
     "state": "COLORADO",
     "city": "Greeley",
-    "address": "PO Box 1166",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "970",
-      "prefix": "330",
-      "lineNumber": "6305",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -274,16 +334,9 @@
     "name": "Greater Colorado",
     "state": "COLORADO",
     "city": "Denver",
-    "address": "10455 W 6th Ave Ste 100",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "303",
-      "prefix": "455",
-      "lineNumber": "5522",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -292,16 +345,9 @@
     "name": "Pathway to the Rockies",
     "state": "COLORADO",
     "city": "Colorado Springs",
-    "address": "3037 N Hancock Ave",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "719",
-      "prefix": "634",
-      "lineNumber": "1584",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -310,16 +356,9 @@
     "name": "Connecticut Rivers",
     "state": "CONNECTICUT",
     "city": "Hartford",
-    "address": "50 State House Sq Fl 5",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "860",
-      "prefix": "913",
-      "lineNumber": "2700",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -328,34 +367,42 @@
     "name": "Connecticut Yankee",
     "state": "CONNECTICUT",
     "city": "Milford",
-    "address": "PO Box 32",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "203",
-      "prefix": "876",
-      "lineNumber": "6868",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "067",
+    "name": "Greenwich",
+    "state": "CONNECTICUT",
+    "city": "Greenwich",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "069",
+    "name": "Housatonic",
+    "state": "CONNECTICUT",
+    "city": "Derby",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
   {
     "id": "081",
-    "name": "Del-Mar-Va",
+    "name": "Del Mar Va",
     "state": "DELAWARE",
     "city": "Dover",
-    "address": "1910 Baden Powell Way",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "302",
-      "prefix": "622",
-      "lineNumber": "3300",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -364,16 +411,9 @@
     "name": "Central Florida",
     "state": "FLORIDA",
     "city": "Apopka",
-    "address": "1951 S Orange Blossom Trl Ste 102",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "407",
-      "prefix": "889",
-      "lineNumber": "4403",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -382,16 +422,9 @@
     "name": "Greater Tampa Bay Area",
     "state": "FLORIDA",
     "city": "Tampa",
-    "address": "13228 N Central Ave",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "813",
-      "prefix": "872",
-      "lineNumber": "2691",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -400,16 +433,31 @@
     "name": "Gulf Coast",
     "state": "FLORIDA",
     "city": "Pensacola",
-    "address": "9440 University Pkwy",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "US",
-      "areaCode": "850",
-      "prefix": "476",
-      "lineNumber": "6336",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "085",
+    "name": "Gulf Stream",
+    "state": "FLORIDA",
+    "city": "Palm Beach Gardens",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "087",
+    "name": "North Florida",
+    "state": "FLORIDA",
+    "city": "Jacksonville",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -418,16 +466,9 @@
     "name": "South Florida",
     "state": "FLORIDA",
     "city": "Davie",
-    "address": "3301 SW 142nd Ave",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "305",
-      "prefix": "364",
-      "lineNumber": "0020",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -436,16 +477,9 @@
     "name": "Southwest Florida",
     "state": "FLORIDA",
     "city": "Fort Myers",
-    "address": "1801 Boy Scout Dr",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "239",
-      "prefix": "936",
-      "lineNumber": "8072",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -454,16 +488,9 @@
     "name": "Suwannee River Area",
     "state": "FLORIDA",
     "city": "Tallahassee",
-    "address": "2032 Thomasville Rd",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "850",
-      "prefix": "576",
-      "lineNumber": "4146",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -472,16 +499,31 @@
     "name": "Atlanta Area",
     "state": "GEORGIA",
     "city": "Atlanta",
-    "address": "1800 Circle 75 Pkwy SE",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "US",
-      "areaCode": "770",
-      "prefix": "989",
-      "lineNumber": "8820",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "096",
+    "name": "Central Georgia",
+    "state": "GEORGIA",
+    "city": "Macon",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "091",
+    "name": "Chattahoochee",
+    "state": "GEORGIA",
+    "city": "Columbus",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -490,16 +532,20 @@
     "name": "Coastal Georgia",
     "state": "GEORGIA",
     "city": "Savannah",
-    "address": "11900 Abercorn St",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "912",
-      "prefix": "927",
-      "lineNumber": "7272",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "095",
+    "name": "Flint River",
+    "state": "GEORGIA",
+    "city": "Griffin",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -508,16 +554,31 @@
     "name": "Georgia-Carolina",
     "state": "GEORGIA",
     "city": "Evans",
-    "address": "4316 Three J Rd",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "706",
-      "prefix": "733",
-      "lineNumber": "5277",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "101",
+    "name": "Northeast Georgia",
+    "state": "GEORGIA",
+    "city": "Jefferson",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "100",
+    "name": "Northwest Georgia",
+    "state": "GEORGIA",
+    "city": "Rome",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -526,16 +587,9 @@
     "name": "South Georgia",
     "state": "GEORGIA",
     "city": "Valdosta",
-    "address": "1841 Norman Dr",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "229",
-      "prefix": "242",
-      "lineNumber": "2331",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -544,16 +598,9 @@
     "name": "Aloha",
     "state": "HAWAII",
     "city": "Honolulu",
-    "address": "42 Puiwa Rd",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "808",
-      "prefix": "595",
-      "lineNumber": "6366",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -562,16 +609,9 @@
     "name": "Grand Teton",
     "state": "IDAHO",
     "city": "Idaho Falls",
-    "address": "3910 S Yellowstone Hwy",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "208",
-      "prefix": "522",
-      "lineNumber": "5155",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -580,16 +620,9 @@
     "name": "Mountain West",
     "state": "IDAHO",
     "city": "Boise",
-    "address": "8901 W Franklin Rd",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "208",
-      "prefix": "376",
-      "lineNumber": "4411",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -598,16 +631,42 @@
     "name": "Abraham Lincoln",
     "state": "ILLINOIS",
     "city": "Springfield",
-    "address": "5231 S 6th Street Rd",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "217",
-      "prefix": "529",
-      "lineNumber": "2727",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "660",
+    "name": "Blackhawk Area",
+    "state": "ILLINOIS",
+    "city": "Rockford",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "141",
+    "name": "Mississippi Valley",
+    "state": "ILLINOIS",
+    "city": "Quincy",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "129",
+    "name": "Northeast Illinois",
+    "state": "ILLINOIS",
+    "city": "Vernon Hills",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -616,16 +675,20 @@
     "name": "Pathway to Adventure",
     "state": "ILLINOIS",
     "city": "Chicago",
-    "address": "106 N Aberdeen St Ste 200",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "312",
-      "prefix": "421",
-      "lineNumber": "8800",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "117",
+    "name": "Prairielands",
+    "state": "ILLINOIS",
+    "city": "Champaign",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -634,34 +697,31 @@
     "name": "Rainbow",
     "state": "ILLINOIS",
     "city": "Lockport",
-    "address": "921 S State St",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "815",
-      "prefix": "942",
-      "lineNumber": "4450",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "127",
+    "name": "Three Fires",
+    "state": "ILLINOIS",
+    "city": "St Charles",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
   {
     "id": "138",
-    "name": "W.D. Boyce",
+    "name": "W D Boyce",
     "state": "ILLINOIS",
     "city": "Peoria",
-    "address": "614 NE Madison Ave",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "309",
-      "prefix": "673",
-      "lineNumber": "6136",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -670,34 +730,31 @@
     "name": "Anthony Wayne Area",
     "state": "INDIANA",
     "city": "Fort Wayne",
-    "address": "8315 W Jefferson Blvd",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "260",
-      "prefix": "432",
-      "lineNumber": "9593",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "156",
+    "name": "Buffalo Trace",
+    "state": "INDIANA",
+    "city": "Evansville",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
   {
     "id": "160",
-    "name": "Crossroads of America",
+    "name": "Crossroads Of America",
     "state": "INDIANA",
     "city": "Indianapolis",
-    "address": "PO Box 56021",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "317",
-      "prefix": "813",
-      "lineNumber": "7125",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -706,16 +763,31 @@
     "name": "Hoosier Trails",
     "state": "INDIANA",
     "city": "Bloomington",
-    "address": "5625 E State Road 46",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "812",
-      "prefix": "336",
-      "lineNumber": "6809",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "165",
+    "name": "LaSalle",
+    "state": "INDIANA",
+    "city": "South Bend",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "162",
+    "name": "Sagamore",
+    "state": "INDIANA",
+    "city": "Kokomo",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -724,34 +796,64 @@
     "name": "Hawkeye Area",
     "state": "IOWA",
     "city": "Cedar Rapids",
-    "address": "660 32nd Ave SW",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "319",
-      "prefix": "862",
-      "lineNumber": "0541",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "133",
+    "name": "Illowa",
+    "state": "IOWA",
+    "city": "Davenport",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
   {
     "id": "177",
-    "name": "Mid-Iowa",
+    "name": "Mid Iowa",
     "state": "IOWA",
     "city": "Des Moines",
-    "address": "6123 Scout Trl",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "515",
-      "prefix": "266",
-      "lineNumber": "2135",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "178",
+    "name": "Northeast Iowa",
+    "state": "IOWA",
+    "city": "Dubuque",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "173",
+    "name": "Winnebago",
+    "state": "IOWA",
+    "city": "Waterloo",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "192",
+    "name": "Coronado Area",
+    "state": "KANSAS",
+    "city": "Salina",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -760,16 +862,9 @@
     "name": "Jayhawk Area",
     "state": "KANSAS",
     "city": "Topeka",
-    "address": "1020 SE Monroe St",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "785",
-      "prefix": "354",
-      "lineNumber": "8541",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -778,16 +873,9 @@
     "name": "Quivira",
     "state": "KANSAS",
     "city": "Wichita",
-    "address": "3247 N Oliver St",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "316",
-      "prefix": "264",
-      "lineNumber": "3386",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -796,16 +884,9 @@
     "name": "Blue Grass",
     "state": "KENTUCKY",
     "city": "Lexington",
-    "address": "2134 Nicholasville Rd Ste 3",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "859",
-      "prefix": "231",
-      "lineNumber": "7811",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -814,16 +895,31 @@
     "name": "Lincoln Heritage",
     "state": "KENTUCKY",
     "city": "Louisville",
-    "address": "12001 Sycamore Station Pl",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "502",
-      "areaCode": "502",
-      "prefix": "361",
-      "lineNumber": "2624",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "209",
+    "name": "Calcasieu Area",
+    "state": "LOUISIANA",
+    "city": "Lake Charles",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "212",
+    "name": "Evangeline Area",
+    "state": "LOUISIANA",
+    "city": "Lafayette",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -832,16 +928,20 @@
     "name": "Istrouma Area",
     "state": "LOUISIANA",
     "city": "Baton Rouge",
-    "address": "4307 Bluebonnet Blvd Ste B",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "225",
-      "prefix": "926",
-      "lineNumber": "2697",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "213",
+    "name": "Louisiana Purchase",
+    "state": "LOUISIANA",
+    "city": "Monroe",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -850,16 +950,9 @@
     "name": "Norwela",
     "state": "LOUISIANA",
     "city": "Shreveport",
-    "address": "3508 Beverly Pl",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "318",
-      "prefix": "868",
-      "lineNumber": "2774",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -868,16 +961,20 @@
     "name": "Southeast Louisiana",
     "state": "LOUISIANA",
     "city": "Metairie",
-    "address": "4200 S I 10 Service Rd W",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "504",
-      "prefix": "889",
-      "lineNumber": "0388",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "216",
+    "name": "Katahdin Area",
+    "state": "MAINE",
+    "city": "Orono",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -886,16 +983,9 @@
     "name": "Pine Tree",
     "state": "MAINE",
     "city": "Raymond",
-    "address": "146 Plains Rd",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "207",
-      "prefix": "517",
-      "lineNumber": "6196",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -904,16 +994,9 @@
     "name": "Baltimore Area",
     "state": "MARYLAND",
     "city": "Baltimore",
-    "address": "701 Wyman Park Dr",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "443",
-      "prefix": "573",
-      "lineNumber": "2500",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -922,34 +1005,42 @@
     "name": "National Capital Area",
     "state": "MARYLAND",
     "city": "Bethesda",
-    "address": "9190 Rockville Pike",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "301",
-      "prefix": "530",
-      "lineNumber": "9360",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
   {
     "id": "224",
-    "name": "Cape Cod and Islands",
+    "name": "Cape Cod and Islands Cncl",
     "state": "MASSACHUSETTS",
     "city": "Yarmouth Port",
-    "address": "247 Willow St",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "508",
-      "prefix": "362",
-      "lineNumber": "4322",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "230",
+    "name": "Heart of New England",
+    "state": "MASSACHUSETTS",
+    "city": "Rutland",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "251",
+    "name": "Mayflower",
+    "state": "MASSACHUSETTS",
+    "city": "Millford",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -958,16 +1049,9 @@
     "name": "The Spirit of Adventure",
     "state": "MASSACHUSETTS",
     "city": "Woburn",
-    "address": "2 Tower Office Park",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "617",
-      "prefix": "615",
-      "lineNumber": "0004",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -976,16 +1060,9 @@
     "name": "Western Massachusetts",
     "state": "MASSACHUSETTS",
     "city": "Holyoke",
-    "address": "850 High Street Suite 1B",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "413",
-      "prefix": "594",
-      "lineNumber": "9196",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -994,16 +1071,31 @@
     "name": "Michigan Crossroads",
     "state": "MICHIGAN",
     "city": "Eagle",
-    "address": "14258 Michigan St",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "517",
-      "prefix": "940",
-      "lineNumber": "4210",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "296",
+    "name": "Central Minnesota",
+    "state": "MINNESOTA",
+    "city": "Sartell",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "299",
+    "name": "Gamehaven",
+    "state": "MINNESOTA",
+    "city": "Rochester",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1011,35 +1103,43 @@
     "id": "250",
     "name": "Northern Star",
     "state": "MINNESOTA",
-    "city": "Ft. Snelling",
-    "address": "6202 Bloomington Rd",
+    "city": "Fort Snelling",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "612",
-      "prefix": "261",
-      "lineNumber": "2300",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "283",
+    "name": "Twin Valley",
+    "state": "MINNESOTA",
+    "city": "Mankato",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
   {
     "id": "303",
-    "name": "Andrew Jackson",
+    "name": "Mississippi Riverlands",
     "state": "MISSISSIPPI",
     "city": "Flowood",
-    "address": "2506 Lakeland Dr Ste 320",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "601",
-      "prefix": "948",
-      "lineNumber": "6111",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "748",
+    "name": "Natchez Trace",
+    "state": "MISSISSIPPI",
+    "city": "Tupelo",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1048,16 +1148,9 @@
     "name": "Pine Burr Area",
     "state": "MISSISSIPPI",
     "city": "Hattiesburg",
-    "address": "1318 Hardy St",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "601",
-      "prefix": "582",
-      "lineNumber": "2326",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1066,16 +1159,9 @@
     "name": "Great Rivers",
     "state": "MISSOURI",
     "city": "Columbia",
-    "address": "6081 W Van Horn Tavern Rd",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "573",
-      "prefix": "449",
-      "lineNumber": "2561",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1083,17 +1169,10 @@
     "id": "312",
     "name": "Greater St. Louis Area",
     "state": "MISSOURI",
-    "city": "Chesterfield",
-    "address": "1122 Town and Country Commons Dr Ste 200",
+    "city": "Saint Louis",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "314",
-      "prefix": "361",
-      "lineNumber": "0600",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1102,16 +1181,9 @@
     "name": "Heart of America",
     "state": "MISSOURI",
     "city": "Kansas City",
-    "address": "10210 Holmes Rd",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "816",
-      "prefix": "942",
-      "lineNumber": "9333",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1120,16 +1192,20 @@
     "name": "Ozark Trails",
     "state": "MISSOURI",
     "city": "Springfield",
-    "address": "1616 S Eastgate Ave",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "417",
-      "prefix": "883",
-      "lineNumber": "1636",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "311",
+    "name": "Pony Express",
+    "state": "MISSOURI",
+    "city": "Saint Joseph",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1138,16 +1214,9 @@
     "name": "Montana",
     "state": "MONTANA",
     "city": "Great Falls",
-    "address": "820 17th Ave S",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "406",
-      "prefix": "761",
-      "lineNumber": "6000",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1156,16 +1225,9 @@
     "name": "Cornhusker",
     "state": "NEBRASKA",
     "city": "Walton",
-    "address": "600 S 120th St",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "402",
-      "prefix": "488",
-      "lineNumber": "6020",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1174,16 +1236,9 @@
     "name": "Mid-America",
     "state": "NEBRASKA",
     "city": "Omaha",
-    "address": "12401 W Maple Rd",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "402",
-      "prefix": "431",
-      "lineNumber": "9272",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1192,16 +1247,9 @@
     "name": "Las Vegas Area",
     "state": "NEVADA",
     "city": "Las Vegas",
-    "address": "7220 Paradise Rd",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "702",
-      "prefix": "736",
-      "lineNumber": "4366",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1210,16 +1258,9 @@
     "name": "Nevada Area",
     "state": "NEVADA",
     "city": "Reno",
-    "address": "500 Double Eagle Ct",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "775",
-      "prefix": "787",
-      "lineNumber": "1111",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1228,16 +1269,20 @@
     "name": "Daniel Webster",
     "state": "NEW HAMPSHIRE",
     "city": "Manchester",
-    "address": "1500 Bodwell Rd",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "603",
-      "prefix": "625",
-      "lineNumber": "6431",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "690",
+    "name": "Garden State",
+    "state": "NEW JERSEY",
+    "city": "Westampton",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1246,16 +1291,9 @@
     "name": "Jersey Shore",
     "state": "NEW JERSEY",
     "city": "Barnegat",
-    "address": "229 Brookville Rd",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "732",
-      "prefix": "349",
-      "lineNumber": "1037",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1264,16 +1302,9 @@
     "name": "Monmouth",
     "state": "NEW JERSEY",
     "city": "Morganville",
-    "address": "705 Ginesi Dr",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "732",
-      "prefix": "536",
-      "lineNumber": "2347",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1282,16 +1313,31 @@
     "name": "Northern New Jersey",
     "state": "NEW JERSEY",
     "city": "Oakland",
-    "address": "P O Box 670",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "201",
-      "prefix": "677",
-      "lineNumber": "1000",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "358",
+    "name": "Patriots' Path",
+    "state": "NEW JERSEY",
+    "city": "Cedar Knolls",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "413",
+    "name": "Conquistador",
+    "state": "NEW MEXICO",
+    "city": "Roswell",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1300,16 +1346,31 @@
     "name": "High Desert",
     "state": "NEW MEXICO",
     "city": "Albuquerque",
-    "address": "5841 Office Blvd NE",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "505",
-      "prefix": "345",
-      "lineNumber": "8603",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "382",
+    "name": "Allegheny Highlands",
+    "state": "NEW YORK",
+    "city": "Falconer",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "368",
+    "name": "Baden-Powell",
+    "state": "NEW YORK",
+    "city": "Binghamton",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1318,16 +1379,9 @@
     "name": "Great Falls",
     "state": "NEW YORK",
     "city": "Buffalo",
-    "address": "2860 Genesee St",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "716",
-      "prefix": "891",
-      "lineNumber": "4073",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1336,16 +1390,9 @@
     "name": "Greater Hudson Valley",
     "state": "NEW YORK",
     "city": "Fishkill",
-    "address": "18 Westage Dr. #19",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "845",
-      "prefix": "566",
-      "lineNumber": "7300",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1354,16 +1401,20 @@
     "name": "Greater New York",
     "state": "NEW YORK",
     "city": "New York",
-    "address": "155 E 56th St Fl 2",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "212",
-      "prefix": "242",
-      "lineNumber": "1100",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "400",
+    "name": "Leatherstocking",
+    "state": "NEW YORK",
+    "city": "Utica",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1372,16 +1423,20 @@
     "name": "Longhouse",
     "state": "NEW YORK",
     "city": "Syracuse",
-    "address": "6712 Brooklawn Pkwy Ste 108",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "315",
-      "prefix": "463",
-      "lineNumber": "0201",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "397",
+    "name": "Seneca Waterways",
+    "state": "NEW YORK",
+    "city": "Rochester",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1390,16 +1445,9 @@
     "name": "Theodore Roosevelt",
     "state": "NEW YORK",
     "city": "Massapequa",
-    "address": "544 Broadway",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "516",
-      "prefix": "797",
-      "lineNumber": "7600",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1408,16 +1456,31 @@
     "name": "Twin Rivers",
     "state": "NEW YORK",
     "city": "Albany",
-    "address": "253 Washington Avenue Ext",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "011",
-      "areaCode": "518",
-      "prefix": "869",
-      "lineNumber": "6436",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "425",
+    "name": "Cape Fear",
+    "state": "NORTH CAROLINA",
+    "city": "Wilmington",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "416",
+    "name": "Central North Carolina",
+    "state": "NORTH CAROLINA",
+    "city": "Concord",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1426,16 +1489,20 @@
     "name": "Daniel Boone",
     "state": "NORTH CAROLINA",
     "city": "Asheville",
-    "address": "333 W Haywood St",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "1",
-      "areaCode": "828",
-      "prefix": "254",
-      "lineNumber": "6189",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "426",
+    "name": "East Carolina",
+    "state": "NORTH CAROLINA",
+    "city": "Kinston",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1444,16 +1511,9 @@
     "name": "Mecklenburg County",
     "state": "NORTH CAROLINA",
     "city": "Charlotte",
-    "address": "1410 E 7th St",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "US",
-      "areaCode": "704",
-      "prefix": "333",
-      "lineNumber": "5471",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1462,16 +1522,20 @@
     "name": "Occoneechee",
     "state": "NORTH CAROLINA",
     "city": "Raleigh",
-    "address": "3231 Atlantic Ave",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "US",
-      "areaCode": "919",
-      "prefix": "872",
-      "lineNumber": "4884",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "427",
+    "name": "Old Hickory",
+    "state": "NORTH CAROLINA",
+    "city": "Winston Salem",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1480,16 +1544,31 @@
     "name": "Old North State",
     "state": "NORTH CAROLINA",
     "city": "Greensboro",
-    "address": "1405 Westover Ter",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "336",
-      "prefix": "378",
-      "lineNumber": "9166",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "420",
+    "name": "Piedmont",
+    "state": "NORTH CAROLINA",
+    "city": "Gastonia",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "424",
+    "name": "Tuscarora",
+    "state": "NORTH CAROLINA",
+    "city": "Goldsboro",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1498,16 +1577,9 @@
     "name": "Northern Lights",
     "state": "NORTH DAKOTA",
     "city": "Fargo",
-    "address": "4200 19th Ave S",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "701",
-      "prefix": "293",
-      "lineNumber": "5011",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1516,16 +1588,9 @@
     "name": "Black Swamp Area",
     "state": "OHIO",
     "city": "Findlay",
-    "address": "2100 Broad Ave",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "419",
-      "prefix": "422",
-      "lineNumber": "4356",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1534,16 +1599,9 @@
     "name": "Buckeye",
     "state": "OHIO",
     "city": "Canton",
-    "address": "2301 13th St NW",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "330",
-      "prefix": "580",
-      "lineNumber": "4272",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1552,16 +1610,31 @@
     "name": "Dan Beard",
     "state": "OHIO",
     "city": "Cincinnati",
-    "address": "10078 Reading Rd",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "513",
-      "prefix": "577",
-      "lineNumber": "7700",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "460",
+    "name": "Erie Shores",
+    "state": "OHIO",
+    "city": "Toledo",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "433",
+    "name": "Great Trail",
+    "state": "OHIO",
+    "city": "Stow",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1570,16 +1643,31 @@
     "name": "Lake Erie",
     "state": "OHIO",
     "city": "Cleveland",
-    "address": "2241 Woodland Ave",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "216",
-      "prefix": "861",
-      "lineNumber": "6060",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "444",
+    "name": "Miami Valley",
+    "state": "OHIO",
+    "city": "Dayton",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "467",
+    "name": "Muskingum Valley",
+    "state": "OHIO",
+    "city": "Zanesville",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1588,16 +1676,42 @@
     "name": "Simon Kenton",
     "state": "OHIO",
     "city": "Columbus",
-    "address": "807 Kinnear Rd",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "614",
-      "prefix": "436",
-      "lineNumber": "7200",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "439",
+    "name": "Tecumseh",
+    "state": "OHIO",
+    "city": "Yellow Springs",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "468",
+    "name": "Arbuckle Area",
+    "state": "OKLAHOMA",
+    "city": "Ardmore",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "469",
+    "name": "Cherokee Area",
+    "state": "OKLAHOMA",
+    "city": "Bartlesville",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1606,16 +1720,9 @@
     "name": "Indian Nations",
     "state": "OKLAHOMA",
     "city": "Tulsa",
-    "address": "4295 S Garnett Rd",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "US",
-      "areaCode": "918",
-      "prefix": "743",
-      "lineNumber": "6125",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1624,16 +1731,9 @@
     "name": "Last Frontier",
     "state": "OKLAHOMA",
     "city": "Oklahoma City",
-    "address": "3031 NW 64th St",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "405",
-      "prefix": "840",
-      "lineNumber": "1114",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1642,16 +1742,9 @@
     "name": "Cascade Pacific",
     "state": "OREGON",
     "city": "Beaverton",
-    "address": "9700 SW Nimbus Ave",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "503",
-      "prefix": "226",
-      "lineNumber": "3423",
-      "extension": "PDX"
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1660,34 +1753,64 @@
     "name": "Pacific Crest",
     "state": "OREGON",
     "city": "Eugene",
-    "address": "2525 Martin Luther King Jr Blvd",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "US",
-      "areaCode": "541",
-      "prefix": "485",
-      "lineNumber": "4433",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "509",
+    "name": "Bucktail",
+    "state": "PENNSYLVANIA",
+    "city": "Penfield",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "539",
+    "name": "Chester County",
+    "state": "PENNSYLVANIA",
+    "city": "Exton",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "538",
+    "name": "Chief Cornplanter",
+    "state": "PENNSYLVANIA",
+    "city": "Warren",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "504",
+    "name": "Columbia-Montour",
+    "state": "PENNSYLVANIA",
+    "city": "Bloomsburg",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
   {
     "id": "525",
-    "name": "Cradle of Liberty",
+    "name": "Cradle Of Liberty",
     "state": "PENNSYLVANIA",
-    "city": "King Of Prussia",
-    "address": "901 E 8th Ave Ste 103",
+    "city": "King of Prussia",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "610",
-      "prefix": "688",
-      "lineNumber": "6900",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1696,16 +1819,31 @@
     "name": "French Creek",
     "state": "PENNSYLVANIA",
     "city": "Erie",
-    "address": "1815 Robison Rd W",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "814",
-      "prefix": "868",
-      "lineNumber": "5571",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "528",
+    "name": "Hawk Mountain",
+    "state": "PENNSYLVANIA",
+    "city": "Reading",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "497",
+    "name": "Juniata Valley",
+    "state": "PENNSYLVANIA",
+    "city": "Reedsville",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1714,16 +1852,31 @@
     "name": "Laurel Highlands",
     "state": "PENNSYLVANIA",
     "city": "Pittsburgh",
-    "address": "1275 Bedford Ave",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "412",
-      "prefix": "471",
-      "lineNumber": "2927",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "502",
+    "name": "Minsi Trails",
+    "state": "PENNSYLVANIA",
+    "city": "Allentown",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "500",
+    "name": "Moraine Trails",
+    "state": "PENNSYLVANIA",
+    "city": "Butler",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1732,16 +1885,9 @@
     "name": "New Birth of Freedom",
     "state": "PENNSYLVANIA",
     "city": "Dillsburg",
-    "address": "400 Tuckahoe Rd",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "717",
-      "prefix": "766",
-      "lineNumber": "1591",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1750,16 +1896,20 @@
     "name": "Northeastern Pennsylvania",
     "state": "PENNSYLVANIA",
     "city": "Moosic",
-    "address": "72 Montage Mountain Road",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "570",
-      "prefix": "207",
-      "lineNumber": "1227",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "524",
+    "name": "Pennsylvania Dutch",
+    "state": "PENNSYLVANIA",
+    "city": "Lititz",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1768,16 +1918,9 @@
     "name": "Susquehanna",
     "state": "PENNSYLVANIA",
     "city": "Williamsport",
-    "address": "815 Northway Rd",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "570",
-      "prefix": "326",
-      "lineNumber": "5121",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1786,16 +1929,20 @@
     "name": "Washington Crossing",
     "state": "PENNSYLVANIA",
     "city": "Doylestown",
-    "address": "1 Scout Way",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "215",
-      "prefix": "348",
-      "lineNumber": "7205",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "512",
+    "name": "Westmoreland Fayette",
+    "state": "PENNSYLVANIA",
+    "city": "Greensburg",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1804,16 +1951,9 @@
     "name": "Puerto Rico",
     "state": "PUERTO RICO",
     "city": "Guaynabo",
-    "address": "405 Ave Esmeralda # 102 PMB 661",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "787",
-      "prefix": "790",
-      "lineNumber": "0323",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1822,16 +1962,9 @@
     "name": "Narragansett",
     "state": "RHODE ISLAND",
     "city": "Cranston",
-    "address": "223 Scituate Ave",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "401",
-      "prefix": "351",
-      "lineNumber": "8700",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1840,16 +1973,9 @@
     "name": "Blue Ridge",
     "state": "SOUTH CAROLINA",
     "city": "Greenville",
-    "address": "1 Park Plz",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "864",
-      "prefix": "233",
-      "lineNumber": "8363",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1858,16 +1984,9 @@
     "name": "Coastal Carolina",
     "state": "SOUTH CAROLINA",
     "city": "North Charleston",
-    "address": "5935 Rivers Ave Ste 200",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "843",
-      "prefix": "763",
-      "lineNumber": "0305",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1876,34 +1995,20 @@
     "name": "Indian Waters",
     "state": "SOUTH CAROLINA",
     "city": "Columbia",
-    "address": "715 Betsy Dr",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "803",
-      "prefix": "750",
-      "lineNumber": "9868",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
   {
-    "id": "695",
-    "name": "Black Hills Area",
-    "state": "SOUTH DAKOTA",
-    "city": "Rapid City",
-    "address": "144 North St",
+    "id": "549",
+    "name": "Palmetto",
+    "state": "SOUTH CAROLINA",
+    "city": "Spartanburg",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "605",
-      "prefix": "342",
-      "lineNumber": "2824",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1912,16 +2017,9 @@
     "name": "Sioux",
     "state": "SOUTH DAKOTA",
     "city": "Sioux Falls",
-    "address": "800 N West Ave",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "US",
-      "areaCode": "605",
-      "prefix": "361",
-      "lineNumber": "2697",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1930,16 +2028,9 @@
     "name": "Cherokee Area",
     "state": "TENNESSEE",
     "city": "Chattanooga",
-    "address": "6031 Lee Hwy",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "423",
-      "prefix": "892",
-      "lineNumber": "8323",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1948,16 +2039,9 @@
     "name": "Chickasaw",
     "state": "TENNESSEE",
     "city": "Memphis",
-    "address": "171 S Hollywood St",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "901",
-      "prefix": "327",
-      "lineNumber": "4193",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1966,16 +2050,9 @@
     "name": "Great Smoky Mountain",
     "state": "TENNESSEE",
     "city": "Knoxville",
-    "address": "1333 Old Weisgarber Rd",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "865",
-      "prefix": "588",
-      "lineNumber": "6514",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -1984,16 +2061,31 @@
     "name": "Middle Tennessee",
     "state": "TENNESSEE",
     "city": "Nashville",
-    "address": "3414 Hillsboro Pike",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "615",
-      "prefix": "383",
-      "lineNumber": "9724",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "713",
+    "name": "Sequoyah",
+    "state": "TENNESSEE",
+    "city": "Johnson City",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "559",
+    "name": "West Tennessee Area",
+    "state": "TENNESSEE",
+    "city": "Jackson",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -2002,16 +2094,20 @@
     "name": "Alamo Area",
     "state": "TEXAS",
     "city": "San Antonio",
-    "address": "2226 NW Military Hwy",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "US",
-      "areaCode": "210",
-      "prefix": "341",
-      "lineNumber": "8611",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "574",
+    "name": "Bay Area",
+    "state": "TEXAS",
+    "city": "Galveston",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -2020,16 +2116,20 @@
     "name": "Buffalo Trail",
     "state": "TEXAS",
     "city": "Midland",
-    "address": "10 Desta Dr Ste 170LL",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "432",
-      "prefix": "570",
-      "lineNumber": "7601",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "584",
+    "name": "Caddo Area",
+    "state": "TEXAS",
+    "city": "Texarkana",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -2038,16 +2138,9 @@
     "name": "Capitol Area",
     "state": "TEXAS",
     "city": "Austin",
-    "address": "12500 N I H 35",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "512",
-      "prefix": "926",
-      "lineNumber": "6363",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -2056,16 +2149,9 @@
     "name": "Circle Ten",
     "state": "TEXAS",
     "city": "Dallas",
-    "address": "8605 Harry Hines Blvd",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "214",
-      "prefix": "902",
-      "lineNumber": "6700",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -2074,16 +2160,9 @@
     "name": "East Texas Area",
     "state": "TEXAS",
     "city": "Tyler",
-    "address": "1331 E 5th St",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "903",
-      "prefix": "597",
-      "lineNumber": "7201",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -2092,16 +2171,31 @@
     "name": "Longhorn",
     "state": "TEXAS",
     "city": "Hurst",
-    "address": "PO Box 54190",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "817",
-      "prefix": "231",
-      "lineNumber": "8500",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "587",
+    "name": "Northwest Texas",
+    "state": "TEXAS",
+    "city": "Wichita Falls",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "562",
+    "name": "Prairie Sky",
+    "state": "TEXAS",
+    "city": "Amarillo",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -2110,16 +2204,9 @@
     "name": "Rio Grande",
     "state": "TEXAS",
     "city": "Harlingen",
-    "address": "PO Box 2424",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "956",
-      "prefix": "423",
-      "lineNumber": "0250",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -2128,34 +2215,9 @@
     "name": "Sam Houston Area",
     "state": "TEXAS",
     "city": "Houston",
-    "address": "2225 North Loop W",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "US",
-      "areaCode": "713",
-      "prefix": "659",
-      "lineNumber": "8111",
-      "extension": ""
-    },
-    "website": null,
-    "email": null
-  },
-  {
-    "id": "694",
-    "name": "South Plains",
-    "state": "TEXAS",
-    "city": "Lubbock",
-    "address": "30 Briercroft Office Park",
-    "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "806",
-      "prefix": "902",
-      "lineNumber": "8463",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -2164,16 +2226,20 @@
     "name": "South Texas",
     "state": "TEXAS",
     "city": "Corpus Christi",
-    "address": "700 Everhart Rd Bldg A",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "361",
-      "prefix": "814",
-      "lineNumber": "4300",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "741",
+    "name": "Texas Southwest",
+    "state": "TEXAS",
+    "city": "San Angelo",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -2182,16 +2248,20 @@
     "name": "Texas Trails",
     "state": "TEXAS",
     "city": "Abilene",
-    "address": "3811 N 1st St",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "325",
-      "prefix": "677",
-      "lineNumber": "2688",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "578",
+    "name": "Three Rivers",
+    "state": "TEXAS",
+    "city": "Beaumont",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -2200,16 +2270,9 @@
     "name": "Crossroads of the West",
     "state": "UTAH",
     "city": "Ogden",
-    "address": "1200 E 5400 S",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "801",
-      "prefix": "479",
-      "lineNumber": "5460",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -2218,34 +2281,31 @@
     "name": "Green Mountain",
     "state": "VERMONT",
     "city": "Waterbury",
-    "address": "PO Box 557",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "802",
-      "prefix": "244",
-      "lineNumber": "5189",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
   {
     "id": "599",
-    "name": "Blue Ridge Mountains",
+    "name": "Blue Ridge Mtns",
     "state": "VIRGINIA",
     "city": "Roanoke",
-    "address": "PO Box 7606",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "US",
-      "areaCode": "540",
-      "prefix": "265",
-      "lineNumber": "0656",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "595",
+    "name": "Colonial Virginia",
+    "state": "VIRGINIA",
+    "city": "Newport News",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -2254,16 +2314,20 @@
     "name": "Heart of Virginia",
     "state": "VIRGINIA",
     "city": "Henrico",
-    "address": "8090 Villa Park Dr",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "US",
-      "areaCode": "804",
-      "prefix": "355",
-      "lineNumber": "4306",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "598",
+    "name": "Shenandoah Area",
+    "state": "VIRGINIA",
+    "city": "Winchester",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -2272,16 +2336,9 @@
     "name": "Tidewater",
     "state": "VIRGINIA",
     "city": "Virginia Beach",
-    "address": "1032 Heatherwood Dr",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "757",
-      "prefix": "497",
-      "lineNumber": "2688",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -2290,16 +2347,20 @@
     "name": "Virginia Headwaters",
     "state": "VIRGINIA",
     "city": "Staunton",
-    "address": "617 Greenville Ave",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "540",
-      "prefix": "943",
-      "lineNumber": "6675",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "604",
+    "name": "Blue Mountain",
+    "state": "WASHINGTON",
+    "city": "Kennewick",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -2308,16 +2369,9 @@
     "name": "Chief Seattle",
     "state": "WASHINGTON",
     "city": "Seattle",
-    "address": "3120 Rainier Ave S",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "206",
-      "prefix": "725",
-      "lineNumber": "5200",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -2326,16 +2380,9 @@
     "name": "Inland Northwest",
     "state": "WASHINGTON",
     "city": "Spokane",
-    "address": "411 W Boy Scout Way",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "509",
-      "prefix": "325",
-      "lineNumber": "4562",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -2344,16 +2391,9 @@
     "name": "Mount Baker",
     "state": "WASHINGTON",
     "city": "Marysville",
-    "address": "PO Box 467",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "1",
-      "areaCode": "425",
-      "prefix": "338",
-      "lineNumber": "0380",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -2362,16 +2402,9 @@
     "name": "Pacific Harbors",
     "state": "WASHINGTON",
     "city": "Tacoma",
-    "address": "4802 S 19th St",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "253",
-      "prefix": "682",
-      "lineNumber": "2217",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -2380,16 +2413,42 @@
     "name": "Buckskin",
     "state": "WEST VIRGINIA",
     "city": "Charleston",
-    "address": "2829 Kanawha Blvd E",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "304",
-      "prefix": "340",
-      "lineNumber": "3663",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "615",
+    "name": "Mountaineer Area",
+    "state": "WEST VIRGINIA",
+    "city": "Wheeling",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "635",
+    "name": "BAY-LAKES",
+    "state": "WISCONSIN",
+    "city": "Appleton",
+    "address": null,
+    "zip": null,
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "637",
+    "name": "Chippewa Valley",
+    "state": "WISCONSIN",
+    "city": "Eau Claire",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -2398,34 +2457,31 @@
     "name": "Gateway Area",
     "state": "WISCONSIN",
     "city": "La Crosse",
-    "address": "2600 Quarry Rd",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "608",
-      "prefix": "784",
-      "lineNumber": "4040",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
   {
     "id": "620",
-    "name": "Glacier's Edge",
+    "name": "Glaciers Edge",
     "state": "WISCONSIN",
     "city": "Madison",
-    "address": "PO Box 14135",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "608",
-      "prefix": "273",
-      "lineNumber": "1005",
-      "extension": ""
-    },
+    "phone": null,
+    "website": null,
+    "email": null
+  },
+  {
+    "id": "651",
+    "name": "Potawatomi Area",
+    "state": "WISCONSIN",
+    "city": "Waukesha",
+    "address": null,
+    "zip": null,
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -2434,16 +2490,9 @@
     "name": "Samoset",
     "state": "WISCONSIN",
     "city": "Weston",
-    "address": "3511 Camp Phillips Rd",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "715",
-      "prefix": "355",
-      "lineNumber": "1450",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   },
@@ -2452,16 +2501,9 @@
     "name": "Three Harbors",
     "state": "WISCONSIN",
     "city": "Milwaukee",
-    "address": "330 S 84th St",
+    "address": null,
     "zip": null,
-    "phone": {
-      "country": "USA",
-      "countryCode": "",
-      "areaCode": "414",
-      "prefix": "774",
-      "lineNumber": "1776",
-      "extension": ""
-    },
+    "phone": null,
     "website": null,
     "email": null
   }

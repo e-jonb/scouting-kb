@@ -10,7 +10,17 @@ Strategy:
   by council number, and collect the full council dataset.
 
   The "list all councils" endpoint requires a JWT token, so the zip-code approach
-  is the practical alternative. ~200 queries at 0.5s ≈ 2 minutes.
+  is the practical alternative for *unattended* runs (this is the script
+  build_all.py calls automatically). ~200 queries at 0.5s ≈ 2 minutes.
+
+  IMPORTANT (confirmed 2026-08-02): this zip-sampling approach is a sample,
+  not a canvas, and it showed — 137 councils found here vs. 228 real ones.
+  If you can log into my.scouting.org yourself, prefer
+  fetch_councils_authenticated.py instead: it hits the real "list all
+  councils" endpoint with your session's JWT and returns the complete,
+  authoritative list (at the cost of not being unattended-automatable, and
+  not including address/zip/phone/website/email — this script's output has
+  those, that one doesn't). See docs/PLAYBOOK.md for the full comparison.
 
 Output:
   data/councils/councils.json   — [{id, name, state, city, address, zip, phone, ...}]

@@ -2,6 +2,36 @@
 
 Longer-form scraper patterns and incident writeups. See CLAUDE.md for short, stable operating rules; this file is for the detailed "here's what broke and why" record.
 
+## Council list was a 200-zip sample, not a canvas — 91 councils missing (found 2026-08-02)
+
+**How this started:** the user asked for a "quick pass" to verify council data was still correct, and mentioned finding a "council/district search" tool at `my.scouting.org/tools/manage-member-id` while logged into their own BSA account. That tool requires personal login — not something to access autonomously — but the user offered to log in themselves in a CDP-connected Chrome window and let the investigation proceed from there.
+
+**What the public API actually offers:** confirmed via direct requests that every "list" or "by state" variant of `api.scouting.org/organizations/v2/...` returns `401 Missing JWT Token` — only the single-zip lookup (`/organizations/v2/zip/{zip}/council`) is public. `fetch_councils.py`'s ~200-zip sampling approach was already the practical ceiling for an unattended, unauthenticated script.
+
+**What the authenticated session revealed:** once the user logged in, their session's JWT unlocked `api.scouting.org/organizations/councils` — the actual "list all councils" endpoint. **228 real local councils, vs. 137 in the committed data — a 91-council gap (40%).** Matching by the council number embedded in each name (e.g. "Abraham Lincoln Council 144" -> `144`) against the existing `id` field, 135 of 137 matched cleanly (confirming this is a reliable join key), but 2 existing entries had no match at all:
+- **South Plains** (`694`, Lubbock, TX) — no successor council found nearby in the new list.
+- **Black Hills Area** (`695`, Rapid City, SD) — South Dakota now shows only one council, "Sioux Council 733" (Sioux Falls). Real BSA council consolidation, not a data bug.
+
+Also found via name comparison on the 135 matched IDs: at least 2 **renames** the old zip-sampling approach could never have caught (a zip code that used to resolve to the old name still resolves to *a* council after a rename — nothing about a resample would flag that the name changed):
+- `047`: "Golden Empire" -> **"Greater California"**
+- `303`: "Andrew Jackson" -> **"Mississippi Riverlands"**
+
+**How to get this data:** the browser autocomplete on the "Council Name or Location" field (used when adding a Member ID) doesn't call a search-as-you-type API — it filters a list already loaded into the page's own JS state on load. Reloading the trigger page (`my.scouting.org/tools/manage-member-id`) with response-capture attached from the start caught the real call: `GET https://api.scouting.org/organizations/councils`, authorized via `Authorization: bearer <JWT>` — a header the app's own fetch wrapper attaches from JS-held state, not from cookies. A plain `fetch(url, {credentials: 'include'})` from the same authenticated page still got `401` — cookie-based `credentials: 'include'` doesn't replicate a bearer-token auth scheme; you have to either capture the real request's headers (what the fix does) or read the JWT out of wherever the app stores it.
+
+**Two smaller wrinkles found while building the clean-name extraction** (`clean_council_name()` in `fetch_councils_authenticated.py`):
+- Naming suffix isn't consistent: "Council 144", "Council-BSA 004", "Council, BSA 104", "Councils, BSA", or nothing at all (just a bare name + number). Handled with one regex for the trailing number and a separate, optional one for a trailing "Council(s)" + BSA variant.
+- One record, `"Hoosier Trails Council #145 145"`, has a **doubled trailing number** — apparently a data-entry quirk in BSA's own system, not an extraction bug. A single strip-number-then-strip-Council pass leaves `"...Council #145"` dangling, because the redundant `#145` isn't at the string's end anymore once the outer `" 145"` is removed, so the "Council" suffix regex can't reach past it. Fixed by looping both strips to a fixed point (stop when a pass produces no change) instead of assuming one pass suffices.
+- One entry, `id="000"`, name `"National"` — a BSA administrative placeholder in this API's response, not a real chartering council (never appeared in the old zip-sampled data, since a zip lookup can't map to something non-geographic). Explicitly excluded.
+- Two real overseas councils have no US state: **Far East** (`803`) and **Transatlantic** (`802`, using the real USPS military-address code `AE`). Kept — these represent real Scouting for military families abroad, not data errors — `AE` was added to the state-code map.
+
+**Decision point, resolved by the user:** the authenticated endpoint only returns `id`/`name`/`city`/`state` — no address/zip/phone/website/email, which the old zip-sampled data has. Asked the user whether to do a clean rebuild (drop those fields entirely, for a consistent dataset) or a merge (keep detail for the 135 matched councils, leave the 93 new/renamed ones bare). **User chose the clean rebuild** — all 228 records now have `address`/`zip`/`phone`/`website`/`email` uniformly `null`, rather than a confusing mix of detailed and bare records that could look like an implementation bug.
+
+**Fix:** new `fetch_councils_authenticated.py`, deliberately **not** wired into `build_all.py`'s automated tier flow — it cannot run unattended, since the JWT only exists after a human logs in. Documented setup steps in its own module docstring (launch CDP Chrome, log in yourself, point the script at that session). `fetch_councils.py` (the original zip-sampling script, still used by `build_all.py`) now has an updated docstring pointing here for a more complete refresh whenever a human is available to log in.
+
+**Verification method:** wrote the name-cleaning + comparison logic first as an ad-hoc scratch script against a one-off captured response, manually checked every edge case found (duplicate-number record, "National" placeholder, no-state overseas councils, unmapped state codes) — then built the *real* reusable script and re-ran it end-to-end against the live session, diffing its output against the scratch-verified data. Byte-identical, confirming the productized script actually does what the ad-hoc investigation validated, not just "probably the same logic."
+
+**Lesson for future scraper work:** "the public API doesn't support X" doesn't always mean X is impossible — it can mean X requires auth the human already has via their own account, which is a legitimate (if not automatable) data source when the human is willing to drive it. Don't assume the unattended-scraping ceiling is the data ceiling.
+
 ## Root-relative links preserved verbatim, dead outside a browser (found 2026-08-02)
 
 **Symptom:** user flagged `guide-to-safe-scouting.md`'s "VIEW THE ONLINE VERSION" link as broken — it pointed at `/health-and-safety/gss/toc`, a root-relative path with no domain. A repo-wide grep for `](/...)` (single leading slash, excluding `//` and `http(s)://`) found 13 such links across 3 files total: `guide-to-safe-scouting.md`, `youth-protection-training.md`, `annual-health-medical-record.md`. Merit badges and ranks had zero — this pattern only showed up on some policy pages' source HTML.

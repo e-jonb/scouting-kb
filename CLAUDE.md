@@ -119,6 +119,8 @@ Reference files at `packages/scouting-kb/data/`. Read `manifest.json` for build 
 
 **No council data returned:** scouting.org's council widget API endpoint may have changed. See `fetch_councils.py` for manual fallback instructions — browser DevTools to find the API call.
 
+**Council count looks low, or you want a more complete/authoritative refresh:** `fetch_councils.py`'s ~200-zip sampling approach is a sample, not a canvas — confirmed 2026-08-02 it was missing 91 of 228 real councils (137 found), plus couldn't catch 2 dissolved councils or 2 renames. If you can log into `my.scouting.org` yourself, run `fetch_councils_authenticated.py` instead for the complete, authoritative list (trade-off: no address/zip/phone/website/email, which the zip-sampled data has — see that script's docstring for login/setup steps). Not wired into `build_all.py` since it can't run unattended. See `docs/PLAYBOOK.md`.
+
 **Merit badge page returns no content:** BSA may have updated their CSS class names. Check `CONTENT_SELECTORS` in `utils.py` and update selectors as needed.
 
 **Merit badge file has a Scout Shop ad, a magazine article, or CSS junk instead of Purpose/Requirements text:** `fetch_merit_badges.py` uses a dedicated `extract_merit_badge_content()` (in `utils.py`) that targets the `.profile-card` (Requirements) and "Merit Badge Overview" heading directly — this was added after all 133 merit badge files were found corrupted this way, including the files this doc used to cite as working examples. If BSA changes the page template again, re-verify `.profile-card` still exists via a live CDP session before assuming the generic `extract_content()` fallback is enough. See `docs/PLAYBOOK.md` for the full incident writeup, plus two related bugs found in the same investigation: badge-name collisions from the index page listing some badges twice, and one badge (Genealogy) whose own index-page link text is mislabeled "Geology" on BSA's site.
@@ -143,7 +145,9 @@ Reference files at `packages/scouting-kb/data/`. Read `manifest.json` for build 
 
 ## Refresh Cadence
 
-Run `python build_all.py --force` quarterly (January, April, July, October), or after BSA publishes updated requirements (typically at year-start and after national meetings). Merit badge requirements rarely change mid-year. Council data is very stable.
+Run `python build_all.py --force` quarterly (January, April, July, October), or after BSA publishes updated requirements (typically at year-start and after national meetings). Merit badge requirements rarely change mid-year.
+
+Council *identities* (which councils exist, their names) are not as stable as previously assumed here — confirmed 2026-08-02 that mergers/dissolutions and renames happen (see `docs/PLAYBOOK.md`). `build_all.py`'s automated zip-sampling refresh won't catch a rename (a resampled zip still resolves to *a* council, just not flagging the name changed) and can miss councils outside its ~200-zip sample entirely. Run `fetch_councils_authenticated.py` (requires logging into `my.scouting.org` yourself — not automatable) periodically for a real audit, not just the automated quarterly pass.
 
 ## Scope Boundaries
 
