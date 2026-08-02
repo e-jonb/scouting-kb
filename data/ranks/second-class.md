@@ -1,7 +1,7 @@
 ---
 source: https://www.scouting.org/wp-content/uploads/2025/12/Scouts-BSA-Rank-Requirements.pdf
-fetched: 2026-03-03
-bsa_version: 2026.Q1
+fetched: 2026-08-02
+bsa_version: 2026.Q3
 rank_order: 2
 content_type: pdf
 ---
@@ -10,11 +10,7 @@ content_type: pdf
 
 _Builds outdoor and survival skills, including navigation and cooking._
 
-SECOND CLASS RANK REQUIREMENTSS
-LEADERR
-(cid:22)
-INITIALL
-& DATEE
+SECOND CLASS RANK REQUIREMENTS
 CAMPING AND OUTDOOR ETHICS
 1a. Since joining Scouts BSA, participate in five separate troop/patrol activities,
 at least three of which must be held outdoors. Of the outdoor activities, at
@@ -56,18 +52,13 @@ NAVIGATION
 3a. Demonstrate how a compass works and how to orient a map. Use a map
 to point out and tell the meaning of five map symbols. (See pages 332–343.)
 3b. Using a compass and map together, take a 5-mile hike (or 10 miles by
-bike) approved by your adult leader and your parent or guardian.2
+bike) approved by your adult leader and your parent or guardian. [2]
 (See pages 340–345.)
 3c. Describe some hazards or injuries that you might encounter on your hike
-and what you can do to help prevent them.2 (See page 252.)
-2If you use a wheelchair or crutches, or if it is difficult for you to get around, you may substitute “trip” for
+and what you can do to help prevent them. [2] (See page 252.)
+**2.** If you use a wheelchair or crutches, or if it is difficult for you to get around, you may substitute “trip” for
 “hike” in requirement 3b and 3c.
-444
 
-LEADER
-(cid:22)
-INITIAL
-& DATE
 3d. Demonstrate how to find directions during the day and at night without
 using a compass or an electronic device. (See pages 354–357.)
 NATURE
@@ -80,7 +71,7 @@ AQUATICS
 5b. Demonstrate your ability to pass the Scouting America beginner test: Jump
 feetfirst into water over your head in depth, level off and swim 25 feet
 on the surface, stop, turn sharply, resume swimming, then return to your
-starting place.3 (See pages 168–170.)
+starting place. [3] (See pages 168–170.)
 5c. Demonstrate water rescue methods by reaching with your arm or leg, by
 reaching with a suitable object, and by throwing lines and objects.
 (See pages 177–181.)
@@ -107,20 +98,13 @@ in the home and backcountry. Explain what constitutes an emergency and
 what information you will need to provide to a responder. (See pages 151–155.)
 6e. Tell how you should respond if you come upon the scene of a
 vehicular accident. (See page 152.)
-3U nder certain exceptional conditions, where the climate keeps the outdoor water temperature below safe levels year-
+**3.** U nder certain exceptional conditions, where the climate keeps the outdoor water temperature below safe levels year-
 round, or where there are no suitably safe and accessible places (outdoors or indoors) within a reasonable traveling
 distance to swim at any time during the year, the council Scout executive and advancement committee may, on an
 individual Scout basis, authorize an alternative for requirements 5b and 5c. The local council may establish appropriate
 procedures for submitting and processing these types of requests. All the other requirements, none of which necessitate
 entry in the water or entry in a watercraft on the water, must be completed as written.
-445
-RANK
-REQUIREMENTS
 
-LEADER
-(cid:22)
-INITIAL
-& DATE
 FITNESS
 7a. After completing Tenderfoot requirement 6c, be physically active at least
 30 minutes each day for five days a week for four weeks. Keep track of
@@ -166,8 +150,11 @@ Tenderfoot requirement 10, participate in a Scoutmaster conference.
 (See page 418.)
 12. Successfully complete your board of review for the Second Class rank.
 (See page 414.)
-Notes: The requirements for Scout, Tenderfoot, Second Class, and First Class ranks may be worked
+
+## Notes
+
+The requirements for Scout, Tenderfoot, Second Class, and First Class ranks may be worked
 on simultaneously; however, these ranks must be earned in sequence.
 Alternative requirements for the Second Class rank are available for Scouts with physical or mental disabilities if
 they meet the criteria listed in the Scouts BSA Requirements book.
-446
+

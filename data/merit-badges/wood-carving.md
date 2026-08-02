@@ -1,16 +1,78 @@
 ---
 source: https://www.scouting.org/merit-badges/wood-carving/
-fetched: 2026-03-03
-bsa_version: 2026.Q1
+fetched: 2026-08-02
+bsa_version: 2026.Q3
 eagle_required: false
 ---
 
 # Wood Carving Merit Badge
 
-$12.99
+## Merit Badge Overview
 
-### [Complete Starter Guide to Whittling](https://www.scoutshop.org/complete-starter-guide-to-whittling-24-easy-projects-you-can-make-in-a-weekend-620385.html?utm_source=scouting.org&utm_medium=meritbadgepages&utm_campaign=scoutshopproducts&utm_content=product)
+As with any art, wood carving involves learning the basics of design, along with material selection and tools and techniques, as well as wood-carving safety. The requirements of the Wood Carving merit badge introduce Scouts to an enjoyable hobby and that can become a lifetime activity.
 
-[![](https://www.scouting.org/wp-content/uploads/2023/01/620385-Complete-Starter-Guide-to-Whittling.jpg)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20430%20400%22%3E%3C/svg%3E)](https://www.scoutshop.org/complete-starter-guide-to-whittling-24-easy-projects-you-can-make-in-a-weekend-620385.html?utm_source=scouting.org&utm_medium=meritbadgepages&utm_campaign=scoutshopproducts&utm_content=product)
+## Merit Badge Requirements
 
-![](https://www.scouting.org/wp-content/uploads/2022/10/bitmap-copy-20@3x.png)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20168%2036%22%3E%3C/svg%3E)
+## The previous version of the Merit Badge requirements can be found in Scoutbook
+
+**NOTE:**  The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Wood%20Carving.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
+
+1. Do the following:
+
+* (a)
+  Explain to your counselor the hazards you are most likely to encounter while wood carving, and what you should do to anticipate, help prevent, mitigate, or lessen these hazards.
+  *Resource:* [Top 7 Safety Secrets I Wish I'd Known Before My First Cut! (video)](https://youtu.be/6_4Bpltbnkg)
+* (b)
+  Show that you know first aid for injuries that could occur while wood carving, including minor cuts and scratches and splinters.
+  *Resource:* [The Emergency First Aid Kit for Woodworkers Need! (video)](https://youtu.be/A0EmfREhgRw)
+
+2. Do the following:
+
+* (a)
+  Earn the Totin' Chip recognition.
+  *Resource:* [Totin' Chip (website)](https://www.scouting.org/awards/awards-central/totin-chip/)
+* (b)
+  Discuss with your counselor your understanding of the Safety Checklist for Carving.
+  *Resource:* [Safety Checklist for Carving (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Wood%20Carving/WoodcarvingChecklist.pdf)
+
+3. Do the following:
+
+* (a)
+  Explain to your counselor, orally or in writing, the care and use of five types of tools that you may use in a carving project.
+  *Resource:* [Basic Hand Carving Tools Explained (video)](https://youtu.be/vMrwACL0Yrc)
+* (b)
+  Tell your counselor how to care for and use several types of sharpening devices, then demonstrate that you know how to use these devices.
+  *Resources:* [Essential Sharpening Tools Every Wood Carver Needs (video)](https://youtu.be/D6cy4av-18c)
+   [How To Use a Sharpening Stone | Knives (video)](https://youtu.be/lBXRkMZfIXk)
+   [Fast and Easy Knife Stropping Guide (video)](https://youtu.be/5Tt3K-kXhJc)
+
+4. Using a piece of scrap wood or a project on which you are working, show your counselor that you know how to do the following:
+
+* (a)
+  Paring cut
+  *Resource:* [Pairing Cut Safety Whittling With a Knife (video)](https://youtu.be/V89HIK33dgQ)
+* (b)
+  Basic cut and push cut
+  *Resource:* [Push Cut Tutorial | Beginner's Wood Carving Guide (video)](https://youtu.be/ELvvu4wwMgM)
+* (c)
+  V cut
+  *Resource:* [V-Shaped Cut Technique |Essential Carving Technique | Whittling Basics (video)](https://youtu.be/8NdNyjHm-fA)
+* (d)
+  Stop cut or score line
+  *Resources:* [How To Carve a Stop Cut | Woodcarving Fundamentals (video)](https://youtu.be/45xBl3kiShM)
+   [Incise Woodcarving || The Basics of How to Incise Wood Carve "Line Carving" (video)](https://youtu.be/ckiBo5TLjk4)
+
+5. Tell why different woods are used for different projects. Explain why you chose the type of wood you did for your projects in requirements 6 and 7.
+*Resources:* [Beginners Guide to Wood Carving - Lets Talk Wood (video)](https://youtu.be/qnrBh3M1KQw)
+ [My Top 5 Favorite Carving Woods (video)](https://youtu.be/iIyU1Zx7tmI)
+
+6. Plan your own or select a project from the *Wood Carving* merit badge pamphlet and complete a simple carving in the round.
+*Resources:* [Making Your Own Carving Patterns—Whittling Tips for Beginners (video)](https://youtu.be/A1C40ObwTX0)
+ [5-Minute Wizard (website)](https://caseknives.com/blogs/whittle-more/5-minute-wizard)
+ [How To Whittle a Simple Bear—Step-by-Step Beginner Wood Carving Project (video)](https://youtu.be/7bQAa_CZsF4)
+ [How To Carve a Arrowhead Neckerchief Slide Part 1 Carving Basics (video)](https://youtu.be/HimTJN3A3lw)
+ [What Should You Whittle? Whittling Tips for Beginners (video)](https://youtu.be/CaP4V7CyYD8)
+
+7. Complete a simple low-relief OR a chip carving project. *Resources:* [Beginning Woodcarving—How To Carve a Basic Flower With Mary May (video)](https://youtu.be/43dLqrKV9OI)
+ [Chip Carving w/ Wayne Barton —Introduction (video)](https://youtu.be/spg4f_ge6Is)
+ [Chip Carving: Tips for Beginners (video)](https://youtu.be/bOE99r5N0Ds)

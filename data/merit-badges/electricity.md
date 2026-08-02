@@ -1,21 +1,130 @@
 ---
 source: https://www.scouting.org/merit-badges/electricity/
-fetched: 2026-03-03
-bsa_version: 2026.Q1
+fetched: 2026-08-02
+bsa_version: 2026.Q3
 eagle_required: false
 ---
 
 # Electricity Merit Badge
 
-![](https://www.scouting.org/wp-content/uploads/2022/11/logo-onscouting-2.png)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20600%20140%22%3E%3C/svg%3E)
+## Merit Badge Overview
 
-### [Iowa teen used Scouting skills to build $1,500 tiny house in his parents’ backyard](https://blog.scoutingmagazine.org/2018/08/27/iowa-teen-used-scouting-skills-to-build-1500-tiny-house-in-his-parents-backyard/)
+Learn why electricity plays a significant role in the economy and how energy consumption impacts our daily lives with the Electricity Merit badge. Scouts will demonstrate how to respond to electrical emergencies, explain how a fuse blows or a circuit breaker trips, and complete an electrical home safety inspection. The Electricity Merit Badge is an excellent opportunity for Scouts to learn how to read an electric meter and determine their household’s energy cost from meter readings.
 
-Many teenagers have their own room. Luke Thill has his own house.
-The 14-year-old Life Scout from Dubuque, Iowa, raised $1,500 performing odd jobs for neighbors and used a mix of reclaimed and purchased materials to build his own 89-square-foot tiny house in his parents’ backyard. The process took nearly two years.
-Luke says Scouting gave him both the leadership skills and craftsmanship needed to complete the process.
-“All the merit badges helped — Personal Management, Woodwork, Welding, Public Speaking, Communication,” Luke told me by phone. “All that kind of stuff plays a role.”
-The project has made Luke something of a celebrity both in the burgeoning tiny house community and beyond.
-He has nearly 45,000 subscribers on his YouTube channel, and his story has been featured by ABC News, Country Living magazine and many local media outlets.
+## Merit Badge Requirements
 
-[![](https://www.scouting.org/wp-content/uploads/2022/11/Iowa-teen-used-Scouting-skills-to-build-1500-tiny-house-in-his-parents-backyard.jpg)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20640%20360%22%3E%3C/svg%3E)](https://blog.scoutingmagazine.org/2018/08/27/iowa-teen-used-scouting-skills-to-build-1500-tiny-house-in-his-parents-backyard/)
+## The previous version of the Merit Badge requirements can be found in Scoutbook
+
+**NOTE:**  The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Electricity.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
+
+1. Demonstrate that you know how to respond to electrical emergencies by doing the following:
+
+* (a)
+  Explain how to turn off power for a particular circuit and the whole house in the event of an emergency.
+  *Resources:* [How To Turn Off Your Home's Electrical Power Supply (video)](https://youtu.be/YJ3ky3VSGgQ)
+   [Turning Off Electricity at the Circuit Box (video)](https://youtu.be/bvw6D76xfyE)
+* (b)
+  Demonstrate how to rescue a person touching a live wire in the home.
+* (c)
+  Describe how to safely get out of a car in an accident if you suspect a utility wire is on the car.
+  *Resource:* [Electric Safety: What To Do if a Downed Wire Falls on Your Car (video)](https://youtu.be/jpZUaM6kbVg)
+* (d)
+  Show how to render first aid to a person who is unconscious from an apparent electrical shock.
+  *Resource:* [Electrical Hazards and Emergency Situations (video)](https://youtu.be/OEtsLDZTDcA)
+* (e)
+  Show how to treat an electrical burn.
+* (f)
+  Explain what to do in the event of an electrical fire.
+  *Resource:* [5 Steps To Put Out an Electrical Fire (video)](https://youtu.be/b-kYm1Yiazw)
+* (g)
+  Explain what to do if caught out in the open during an electrical storm.
+  *Resources:* [Lightning Safety: How To Protect Yourself, What To Avoid (video)](https://youtu.be/11jsqsGeQiY)
+   [Frankenweenie Clip (video)](https://youtu.be/E-A478dbTh8)
+
+2. Complete an electrical home safety inspection of your home, using the checklist found in the *Electricity* merit badge pamphlet or one approved by your counselor. Discuss what you find with your counselor.
+*Resource:* [Electrical Fire Safety Checklist (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Electricity/Electrical%20Safety%20Checklist.docx.pdf)
+
+3. Make a simple electromagnet and use it to show magnetic attraction and repulsion.
+*Resource:* [How To Make an Electromagnet! (video)](https://youtu.be/v8mPY1Ee32s)
+
+4. Do the following:
+
+* (a)
+  Explain the difference between direct current and alternating current, the advantages and disadvantages of each, and give a practical example of the use of each type.
+  *Resource:* [AC and DC Current Explained (video)](https://youtu.be/J8qVLb3a35s)
+* (b)
+  Explain three ways that electricity is produced.
+  *Resource:* [Generating Electricity (video)](https://youtu.be/ZtTFe4rxw48)
+
+5. Make a simple drawing to show how a battery and an electric bell work. Describe the purpose of each of the components.
+*Resources:* [How an Electric Bell Works / 3D Animation (video)](https://youtu.be/QSWvekUUV3w)
+ [How Do Electric Bells Work? (3D Animation | Electromagnets) (video)](https://youtu.be/8S-PHo156U4)
+
+6. Do the following:
+
+* (a)
+  Define what overloading an electric circuit means. Tell what you have done to make sure your home circuits are not overloaded.
+  *Resource:* [Overloaded Circuit (video)](https://youtu.be/T3Ngrw6MYTg)
+* (b)
+  Determine if there is an overload on a branch circuit by either getting the current draw from all the equipment plugged into the circuit or use the power equation to calculate the current draws.
+* (c)
+  Explain why a fuse blows and a circuit breaker trips.
+  *Resource:* [Circuit Breaker Keeps Tripping - 3 Common Reasons (video)](https://youtu.be/9q31SzeVjP0)
+* (d)
+  Tell how to find a blown fuse and a tripped circuit breaker in your home. Show how to safely reset the circuit breaker.
+  *Resource:* [How To Identify and Reset a Tripped Circuit Breaker (video)](https://youtu.be/Lb2UhcnK7n8)
+
+7. Make a floor plan wiring diagram of the lights, switches, and outlets for a room in your home. Show which fuse or circuit breaker protects each one.
+*Resource:* [How To Wire a Bedroom Diagram (video)](https://youtu.be/WJPMY201R-c)
+
+8. Do the following:
+
+* (a)
+  Read a meter associated with an electric bill. Determine the total power used since the bill, and the cost of that power.
+  *Resource:* [Reading a Digital Electric Meter & Calculate Usage and Cost (video)](https://youtu.be/3G9I1unyOqY)
+* (b)
+  Explain other charges on the bill that were taxes or fees.
+  *Resource:* [Here Are the Costs That Affect Your Electricity Bill (video)](https://youtu.be/2StD-2ERCM0)
+* (c)
+  Discuss with your counselor five ways your family can conserve energy.
+  *Resource:* [Saving Energy at Home - Energy Efficiency Tips (video)](https://youtu.be/pY6fAYkscTY)
+
+9. Explain the following:
+
+* (a)
+  Electrical terms - Current, energy, power, resistance, and voltage
+  *Resource:* [Electrical Terms Explained (website)](https://electricityforum.com/electrical-terms)
+* (b)
+  Units of measure - Ampere (amps), ohms, volts, watts, and watt-hours
+  *Resource:* [The Difference Between Volts, Watts, and Amps - Explained Like You're Five (video)](https://youtu.be/lsef_Vlx83M)
+* (c)
+  Electrical conditions - Generating source with example, ground, open circuit, overvoltage, potential difference, and short circuit
+  *Resources:* [Open Circuits, Closed Circuits & Short Circuits - Basic Introduction (video)](https://youtu.be/v5RJf_V0LYA)
+   [What Is Electric Potential Difference? (video)](https://youtu.be/0Ckmt2QyeqQ)
+* (d)
+  Equipment and their use - circuit, conductor, Ground Fault Circuit Interrupter (GFCI), insulator, inverter, rectifier, rheostat, substation, surge protection, solar panel, transformer, transmission and distribution systems, and wind turbine.
+
+10. Do TWO of the following:
+
+* (a)
+  Connect a buzzer, bell, or light with a battery. Have a key or switch in the line.
+  *Resource:* [Adding Batteries in Series - Buzzer (video)](https://youtu.be/UWPrhafIUC8)
+* (b)
+  Make and run a simple electric motor (from a kit is acceptable, if approved by your counselor ahead of time).
+  *Resource:* [Make the Simplest Electric Motor (video)](https://youtu.be/iE01AbIhQhE)
+* (c)
+  Build a simple rheostat. Show that it works.
+  *Resource:* [The Rheostat (video)](https://youtu.be/iR3HQR3zu3k)
+* (d)
+  Build a single-pole, double-throw switch. Show that it works.
+  *Resource:* [How a Single Pole Double Throw SPDT Switch Works Make and Break (video)](https://youtu.be/EAvbAiZX2CI)
+* (e)
+  Explain how 3-way switch wiring works in a lighting circuit.
+  *Resource:* [Best Explanation of 3WAY Switching - in Under 3 Minutes! (video)](https://youtu.be/RKZrg6XKjak)
+* (f)
+  Connect two lights together in a series circuit along with a battery and a switch. Then connect the same circuit in parallel. Discuss the differences in the two circuits.
+  *Resource:* [What Is the Difference Between Series and Parallel Circuits (video)](https://www.youtube.com/shorts/QKcoDSJSkn0)
+
+11. Identify three career opportunities that would use skills and knowledge in electricity. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career.
+*Resources:* [Career Opportunities with an Electrical Engineering Degree (video)](https://www.tiktok.com/@mal_hoovs/video/7433223621667163438)
+ [Power Plant Operators, Distributors, and Dispatchers Careers (video)](https://youtu.be/Ug9QtgaRplo)

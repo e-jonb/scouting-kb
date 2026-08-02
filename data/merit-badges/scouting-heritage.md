@@ -1,25 +1,111 @@
 ---
 source: https://www.scouting.org/merit-badges/scouting-heritage/
-fetched: 2026-03-03
-bsa_version: 2026.Q1
+fetched: 2026-08-02
+bsa_version: 2026.Q3
 eagle_required: false
 ---
 
 # Scouting Heritage Merit Badge
 
-![](https://www.scouting.org/wp-content/uploads/2022/11/logo-scouting.png)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20300%20100%22%3E%3C/svg%3E)
+## Merit Badge Overview
 
-### [How to bring the Scouting Heritage merit badge to life](https://scoutingmagazine.org/2016/04/help-bring-scouting-heritage-merit-badge-life/)
+Explore the origins of the Scouting movement by earning the Scouting Heritage Merit Badge. Scouts will learn about the life and times of Lord Baden-Powell, discover how Scouting grew in the United States, and understand how Scouting’s programs have developed and adapted over time.
 
-“If I have seen further, it is by standing on the shoulders of giants.” Isaac Newton wrote that in 1676; in 2016, the Scouting Heritage merit badge lets Scouts look further as well.
-It introduces them to giants of Scouting like Robert Baden-Powell, Daniel Carter Beard, Waite Phillips and more. It helps Scouts claim their own place in Scouting history. And it can, if done incorrectly, be a little dry.
-The challenge for Scouting Heritage merit badge counselors is bringing history to life. For Richard Clem, a counselor from St. Paul, Minn., that means offering Scouts an array of 21st-century resources about mostly 20th-
-century topics. At bit.ly/ScoutingHeritage, Clem has created a directory of online resources that supplement the merit badge pamphlet. To learn about requirement 2b, for example, Scouts can access primary sources like Baden-Powell’s Scouting for Boys and the 1911 edition of the Handbook for Boys. They can visit the website of Brownsea Island, where Baden-Powell held his first Scout camp.
-Ellen Mercante, a counselor in St. Charles, Mo., has found that Scouting artifacts serve as great discussion starters for requirement 3 (discuss how Scouting’s programs have evolved). She has combed eBay and estate sales to find items like vintage merit badge sashes, old issues of Boys’ Life and even a Steve Scout doll (a Kenner toy from 1974) to show Scouts. “The kids are always surprised to see that,” she says. “They think it’s fun.”
-Mercante doesn’t just show and tell, though; she encourages Scouts to interact with her artifacts, whether that means trying on a vintage Scout shirt or guessing the names of old merit badges. “It’s interesting to see merit badges that aren’t around anymore,” she says.
-While history can be messy, the Scouting Heritage requirements are quite orderly, moving naturally from Scouting’s roots to the present. That doesn’t mean you have to cover them in order. Especially if you’re teaching the badge in a half-day or full-day session. Mercante recommends jumping around, interspersing discussions of history with the old-time Scouting games played for requirement 7. “If it becomes too much like school, we lose them,” she says.
-Games like Old Spotty-Face seem pretty dated to most Scouts, but the activity called “Kim’s Game” is something many units still play today. “It’s really surprising to me how little many things have changed,” Clem says. “There are some interesting games and skills and things in early Scout books that are probably just as relevant today.”
-Mercante sometimes uses connections between then and now to enrich her Scouts’ interviews with veteran Scouters (requirement 8). She’ll ask Scouts what they like about camping and then encourage them to ask the same questions of their interviewees. “Once they get talking, their eyes will light up, and then all of a sudden they’re thinking about a million questions,” she says.
-Those same questions can be a good start for requirement 5, in which Scouts learn about the history of their unit or Scouting in their area. At one recent session, some Scouts were having trouble with that requirement since their troop was less than a year old. Her response perfectly encapsulated the purpose of the badge: “You guys are making the history.”
+## Merit Badge Requirements
 
-[![](https://www.scouting.org/wp-content/uploads/2023/01/How-to-bring-the-Scouting-Heritage-merit-badge-to-life.jpg)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20640%20960%22%3E%3C/svg%3E)](https://scoutingmagazine.org/2016/04/help-bring-scouting-heritage-merit-badge-life/)
+## The previous version of the Merit Badge requirements can be found in Scoutbook
+
+**NOTE:**  The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Scouting%20Heritage.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
+
+1. Discuss with your counselor the life and times of Lord Baden-Powell of Gilwell. Explain why he felt a program like Scouting would be good for the young men of his day. Include in your discussion how Scouting was introduced in the United States, and the origins of Boy Scouting and Cub Scouting under Baden-Powell.
+*Resource:* [Baden Powell - Father of Scouting, Origins of Scouting (video)](https://youtu.be/9iD9kYVc_WQ)
+
+2. Do the following:
+
+* (a)
+  Give a short biographical summary of any TWO of the following, and tell of their roles in how Scouting developed and grew in the United States.
+* (1)
+  Daniel Carter Beard
+  *Resource:* [Daniel Carter Beard - BSA Founder (video)](https://www.youtube.com/watch?v=GIaIyxfuLCQ&list=PLeqxtqwBBzS-Z290oRp20bqnDqXZkSb3j&index=2)
+* (2)
+  William D. Boyce
+  *Resource:* [William D. Boyce - BSA Founder (video)](https://www.youtube.com/watch?v=Ulhu9fefMo4&list=PLeqxtqwBBzS-Z290oRp20bqnDqXZkSb3j&index=3)
+* (3)
+  Waite Phillips
+  *Resource:* [Waite Phillips - BSA Benefactor and Donor of Philmont (video)](https://youtu.be/QiKK97PQ7Us)
+* (4)
+  Ernest Thompson Seton
+  *Resource:* [Ernest Thompson Seton - BSA Founder (video)](https://youtu.be/-azpLxf8wpA?si=tiMSbrOyFEHx0L9u)
+* (5)
+  James E. West
+  *Resource:* [James E. West - BSA Founder (video)](https://youtu.be/cpIpdHl4cug)
+* (6)
+  "Green Bar Bill" Hillcourt
+  *Resource:* [Green Bar Bill Hillcourt Biography (video)](https://www.youtube.com/watch?v=ZJofraVDGuA)
+* (7)
+  Frederick Russell Burnham
+* (8)
+  Dr. Charles Eastman
+  *Resource:* [Dr. Charles Eastman (video)](https://www.youtube.com/watch?v=xzW4DLLuLoc)
+* (9)
+  Edgar Robinson
+  *Resource:* [Edgar Robinson (video)](https://www.youtube.com/watch?v=PuIILshyM2k)
+* (b)
+  Discuss the significance to Scouting of any TWO of the following:
+* (1)
+  Brownsea Island
+  *Resource:* [Artifact of the Week - Brownsea Island (video)](https://www.youtube.com/watch?v=HWPZkK5YL2k)
+* (2)
+  The First World Scout Jamboree
+  *Resources:* [Artifact of the Week - World Scout Jamborees Part 01 (video)](https://www.youtube.com/watch?v=8p-SalnhA4Q)
+   [Artifact of the Week - World Scout Jamborees Part 02 (video)](https://www.youtube.com/watch?v=JjdgmAKqUS4)
+* (3)
+  *Scouts BSA Handbook* Resources: [NSM History of the *Scout Handbook* (video)](https://youtu.be/X2njF0Sv5q8)
+   [Artifact of the Week - First *Scout Handbook* (video)](https://youtu.be/JaGjYXkcyLU)
+* (4)
+  *Scout Life* magazine (formerly *Boys' Life*) Resources: [Artifact of the Week—*Boys' Life* to *Scout Life* (video)](https://youtu.be/R55NMMY21TM)
+   [The Story of *Boys' Life*/*Scout Life* (video)](https://youtu.be/OIyZwBnlF5c)
+
+3. Discuss with your counselor how Scouting's programs have developed over time and been adapted to fit different age groups and interests (Cub Scouting, Scouts BSA, Exploring, Venturing).
+*Resources:* [Scouting History Timeline (video)](https://youtu.be/33Qn5-chofk)
+ [Artifact of the Week—Development of Cub Scouting (video)](https://youtu.be/p8DUnLSK3Zo)
+ [Artifact of the Week—Sea Scouts (video)](https://youtu.be/FxKOogN-oiU)
+ [History of Exploring (website)](https://www.scouting.org/commissioners/exploring-a-bit-of-a-background/)
+ [20 Facts About Venturing (website)](https://blog.scoutingmagazine.org/2018/02/09/20-facts-about-venturing-on-the-programs-20th-birthday/)
+
+4. Do ONE of the following:
+
+* (a)
+  Attend either a Scouting America National Jamboree, OR World Scout Jamboree, OR a national Scouting America high-adventure base. While there, keep a journal documenting your day-to-day experiences. Upon your return, report to your counselor what you did, saw, and learned. You may include photos, brochures, and other documents in your report.
+  *Resources:* [100 Years of the World Scout Jamboree (video)](https://youtu.be/cpbtEAtIlWc?si=T4QAeuUnWo_uy9PT)
+   [Scouting America High Adventure Overview (video)](https://youtu.be/EbC5b5dyBo0?si=0iu96JjlTcPaVrjq)
+* (b)
+  Write or visit the National Scouting Museum. Obtain information about this facility. Give a short report on what you think the role of this museum is in the Scouting program.
+  *Resources:* [National Scouting Museum at Summit Bechtel Reserve Virtual Tour (video)](https://www.youtube.com/watch?v=QU8IcMvygmc&list=PLeqxtqwBBzS_SXfxztRYSvmUzirJSZ1SU&index=8)
+   [National Scouting Museum at Philmont Virtual Tour (website)](https://www.philmontscoutranch.org/museums/national-scouting-museum-virtual-tour/)
+* (c)
+  Visit an exhibit of Scouting memorabilia or a local museum with a Scouting history gallery, or (with your parent or guardian's permission and counselor's approval) visit with someone in your council who is recognized as a dedicated Scouting historian or memorabilia collector. Learn what you can about the history of Scouting America. Give a short report to your counselor on what you saw and learned.
+  *Resource:* [Interactive Scouting Museum Map (website)](https://www.google.com/maps/d/u/0/viewer?mid=1shEPLaVDO3GPNW8-4HCVVdfUWFK1KKU&femb=1&ll=40.002876433582884%2C-96.50590200000002&z=4)
+
+5. Research the history of your unit, council, summer camp, or Order of the Arrow lodge. With the permission of a parent or guardian, your research methods may include an internet or library search, interviews with Scout leaders, or visits to locations where you learn about your topic. Prepare an oral or written report, a presentation, or a video of your research and review it with your counselor.
+
+6. Make a collection of some of your personal patches and other Scouting memorabilia. With their permission, you may include items borrowed from family members or friends who have been in Scouting in the past, or you may include photographs of these items. Show this collection to your counselor, and share what you have learned about items in the collection.
+**Note:** There is no requirement regarding how large or small this collection must be.
+*Resources:* [Scouting Memorabilia Collection - Philmont License Plates (video)](https://www.youtube.com/watch?v=njI2Wb4sAEw&t=1s)
+ [Philmont Recognition Patches (video)](https://www.youtube.com/watch?v=2u8drmz3T-s&t=7s)
+
+7. Reproduce the equipment for an old-time Scouting game such as those played at Brownsea Island. You may find one on your own (with your counselor's approval) or pick one from the *Scouting Heritage* merit badge pamphlet. Teach and play the game with other Scouts.
+*Resources:* [Troop Games - Large Area (website)](https://troopleader.scouting.org/activities/troop-games/troop-games-large-area/)
+ [Troop Games - Small Space (website)](https://troopleader.scouting.org/activities/troop-games/troop-games-small-space/)
+ [Troop Games - Pre-Meeting (website)](https://troopleader.scouting.org/activities/troop-games/pre-opening-gathering-period-activities/)
+
+8. Interview at least three people (different from those you interviewed for requirement 5) over the age of 40 who were Scouts. Find out about their Scouting experiences. Ask about the impact that Scouting has had on their lives. Share what you learned with your counselor.
+
+9. **Careers.** Do ONE of the following:
+
+* (a)
+  Explore careers related to Scouting. Research one career to learn about the training and education needed, costs, job prospects, salary, job duties, and career advancement. With permission of your parent or guardian, your research methods may include an internet or library search, an interview with a professional in the field, or a visit to a location where people in this career work. Discuss with your counselor both your findings and what about this profession might make it an interesting career.
+  *Resource:* [Become a Professional Scouter (website)](https://www.scouting.org/careers/become-a-professional-scouter/)
+* (b)
+  Explore how you could use knowledge and skills from this merit badge to serve as a Scouting volunteer. Research any training needed, expenses, and how you could serve as a unit, district, council, regional, or national volunteer. Discuss with your counselor what short-term and long-term goals you might have if you pursued this.
+  *Resource:* [Why Do You Volunteer? (video)](https://youtu.be/uJUwdk9xDKM?si=NkoLxlpy4bB1S-Y4)

@@ -1,7 +1,7 @@
 ---
 source: https://www.scouting.org/wp-content/uploads/2025/12/Scouts-BSA-Rank-Requirements.pdf
-fetched: 2026-03-03
-bsa_version: 2026.Q1
+fetched: 2026-08-02
+bsa_version: 2026.Q3
 rank_order: 3
 content_type: pdf
 ---
@@ -11,10 +11,6 @@ content_type: pdf
 _Full Scouting skills — considered a fully capable Scout._
 
 FIRST CLASS RANK REQUIREMENTS
-LLEEAADDEERR
-(cid:22)
-INITIAL
-& DATE
 CAMPING AND OUTDOOR ETHICS
 1a. Since joining Scouts BSA, participate in 10 separate troop/patrol activi-
 ties, at least six of which must be held outdoors. Of the outdoor activities,
@@ -66,14 +62,7 @@ you have made, or by photographs you have taken. (See pages 188–199.)
 5b. Identify two ways to obtain a weather forecast for an upcoming activity.
 Explain why weather forecasts are important when planning for an event.
 (See pages 212–218.)
-RANK
-REQUIREMENTS
-447
 
-LEADER
-(cid:22)
-INITIAL
-& DATE
 5c. Describe at least three natural indicators of impending hazardous weather,
 the potential dangerous events that might result from such weather condi-
 tions, and the appropriate actions to take. (See pages 212–218.)
@@ -83,7 +72,7 @@ of time the potential risk of these types of weather dangers, alternative
 planning considerations to avoid such risks, and how you would prepare
 for and respond to those weather conditions. (See pages 212–218.)
 AQUATICS
-6a. Successfully complete the Scouting America swimmer test.4,5 (See pages 168–170.)
+6a. Successfully complete the Scouting America swimmer test. [4],5 (See pages 168–170.)
 6b. Tell what precautions must be taken for a safe trip afloat. (See pages 172–174.)
 6c. Identify the basic parts of a canoe, kayak, or other boat. Identify the parts
 of a paddle or an oar. (See pages 174–175.)
@@ -120,19 +109,14 @@ CITIZENSHIP
 example, an elected official, judge, attorney, civil servant, principal, or
 teacher) the constitutional rights and obligations of a U.S. citizen.
 (See pages 54–55 and 66–67.)
-4See the Swimming merit badge requirements for details about the Scouting America swimmer test.
-5Under certain exceptional conditions, where the climate keeps the outdoor water temperature below safe levels year-
+**4.** See the Swimming merit badge requirements for details about the Scouting America swimmer test.
+**5.** Under certain exceptional conditions, where the climate keeps the outdoor water temperature below safe levels year-
 round, or where there are no suitably safe and accessible places (outdoors or indoors) within a reasonable traveling
 distance to swim at any time during the year, the council Scout executive and advancement committee may, on an
 individual Scout basis, authorize an alternative for requirements 6a and 6e. The local council may establish appropriate
 procedures for submitting and processing these types of requests. All the other requirements, none of which necessitate
 entry in the water or entry in a watercraft on the water, must be completed as written.
-448
 
-LEADER
-(cid:22)
-INITIAL
-& DATE
 9b. Investigate an environmental issue affecting your community. Share what
 you learned about that issue with your patrol or troop. Tell what, if anything,
 could be done by you or your community to address the concern.
@@ -162,10 +146,11 @@ Class requirement 11, participate in a Scoutmaster conference.
 (See page 418.)
 13. Successfully complete your board of review for the First Class rank.
 (See page 414.)
-Notes: The requirements for Scout, Tenderfoot, Second Class, and First Class ranks may be worked on
+
+## Notes
+
+The requirements for Scout, Tenderfoot, Second Class, and First Class ranks may be worked on
 simultaneously; however, these ranks must be earned in sequence.
 Alternative requirements for the First Class rank are available for Scouts with physical or mental disabilities if
 they meet the criteria listed in the Scouts BSA Requirements book.
-RANK
-REQUIREMENTS
-449
+

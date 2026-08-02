@@ -1,52 +1,145 @@
 ---
 source: https://www.scouting.org/merit-badges/canoeing/
-fetched: 2026-03-03
-bsa_version: 2026.Q1
+fetched: 2026-08-02
+bsa_version: 2026.Q3
 eagle_required: false
 ---
 
 # Canoeing Merit Badge
 
-![](https://www.scouting.org/wp-content/uploads/2022/11/logo-scoutlife-2.png)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20471%20140%22%3E%3C/svg%3E)
+## Merit Badge Overview
 
-### [Scouts Keep Tradition of Canoe Adventures in the Adirondacks](https://scoutlife.org/about-scouts/scouting-around/175313/scouts-keep-tradition-of-canoe-adventures-in-the-adirondacks/)
+For several centuries, the canoe was a primary method of travel for explorers and settlers. Today, it remains an important part of the wilderness experience and an enjoyable leisure activity that teaches communication, teamwork, and physical fitness.
 
-Everyone tends to make new friends at summer camp, but they don’t usually have feathers.
-A group of ducks visited girls Troop 284’s campsite as the Scouts worked on the American Heritage merit badge together, and Fiona Levick loved it.
-“I said hi to them,” the 12-year-old Tenderfoot Scout says. “I was so happy because there were so many of them.”
-However, the waterfowl soon wore out their welcome for the rest of the troop. The ducks refused to waddle off, and the girls’ imaginations ran wild.
-“We slept in the lean-to that night, and everyone was terrified the ducks would come and attack us because Fiona had summoned them all to our campsite to eat all of our food,” says Tenderfoot Scout Grace O’Donovan, 12.
-Of course, that didn’t happen, but the entertaining evening added some humor to an exhausting, rain-drenched canoe trek across the lakes nestled among New York’s Adirondack Mountains.
-CONTINUING THE TRADITION
-For more than 50 years, boys Troop 284 of Radnor, Pennsylvania, has canoed in northeastern New York. The trek typically totals 100 miles over two weeks and serves as the troop’s summer camp as adult leaders lead merit badge classes in Canoeing, Lifesaving, Fishing and Nature, among others.
-“We’ve been going for as long as a lot of our adults can remember,” says Life Scout Parker Bruhns, 16. “In the 1960s, we were not a very adventurous troop. Our Scoutmaster then wanted to transform that.”
-The first trek launched in 1970, and every few years, the Scouts canoe through the Adirondacks. During other years, they go to council camps and high-adventure bases like Philmont Scout Ranch in New Mexico. But the canoe trek remains a favorite — not only for its tradition, but also for the adventure. Last July, the girls troop planned its own weeklong 50-mile version.
-“The girls decided we could do it, too, so we gave it a shot,” says Second Class Scout Anna Latchford, 12. “I think half of us didn’t know how to canoe, so I think it was pretty helpful to get used to the strokes and being in a canoe.”
-To prepare for the journey, the Scouts practiced canoe strokes by using brooms at troop meetings. They also went on an overnight practice trip down the Delaware River. To ensure their gear stayed dry, some Scouts bought quality rain jackets and waterproof compression bags, while others opted for cheap ponchos and trash bags.
-Whichever waterproof gear the Scouts chose to bring, they would need it starting on Day One.
-RAIN, RAIN GO AWAY
-With rented Kevlar canoes, the troops met in Old Forge, N.Y., to launch their separate treks.
-“The second we show up, it starts raining,” says Life Scout Kyle Johnson, 14. “On pretty much every summer camp, no matter where we go, it tends to rain every day. But we’re always prepared.”
-“That’s a Troop 284 thing,” says Sam Murphy, a 15-year-old Star Scout.
-The boys took off, logging nearly 7 miles on the opening day. Meanwhile, the girls needed some time to get on the water, which had turned choppy as the weather worsened.
-“It had taken a long time for us to get going,” says Star Scout Sophie Tachna, 14. “It was pouring rain, and everybody was tired by the end of it when we made it to the island. People were yelling and screaming, ‘Yeah! We made it to our first destination!’”
-A tough first day can be demoralizing, and when you don’t know whether the rest of the trip will bring more of the same, you might not want to continue. But a Scout is Cheerful and will find a way to stay positive.
-“We sang a lot of songs,” says Tenderfoot Scout Quinn O’Donovan, 14.
-HAVE SOME FUN
-While you’re paddling for hours, you have time to take in your surroundings. The boys spotted bald eagles flying overhead and a muskrat scurrying on the shore, while the girls noticed a loon diving in the lake. Long times on the water also mean you can talk with your friends and have a good time.
-“Just being with everyone, it was a really fun experience,” Sam says. “You don’t have your phones. Normally, when I’d see kids hanging out, they’re all on their phones. It’s really nice to get away from technology and distractions like that for two weeks, and just be with each other.”
-Times on land, though, weren’t always so much fun.
-“The canoeing wasn’t the hard part — it was the portages,” says Noah Amjed, 12, a Second Class Scout.
-Portages are trails between lakes. You must carry your canoes and gear from one lake to the next. That’s why it’s important to pack light. Some of the boys’ backpacks weighed only 10 pounds since they packed just a few sets of clothes to last for the two-week trek.
-“At some point, we could put up clotheslines if our clothes got dirty, so we could wash them and use them again,” says Second Class Scout Chirag Kandi, 12.
-When it’s been raining for days, your clothes can get dirty pretty fast, especially when you’re playing games in camp. One of the boys’ favorites was “Infiltration,” where one team must sneak to the other team’s base without getting caught.
-MAKING THEIR MARK
-At the end of each trek, the Scouts had earned several merit badges and completed their intended journeys — the boys ending in Saranac after 100 miles, the girls at Long Lake after 50.
-The Scouts felt accomplished, but some couldn’t wait to go home. When you’re gone for a week or two, it feels nice returning to modern conveniences and comforts. However, it feels even nicer after spending time with your friends, mastering a new skill and conquering a challenge.
-“I had a lot of fun,” says Judy Horn, 14, a Scout. “And that was only my second time camping.”
-Dealing With Homesickness
-During these treks, some Scouts wanted to go home. It’s a natural feeling that you might have during an outing. There’s no shame in feeling that way.
-Don’t be embarrassed to talk to a friend or Scout leader — they want you to have a good time and can let you know what to expect for the rest of the trip, which can be comforting. If you need an additional outlet, send a message back home or jot down your thoughts in a journal.
-If your friend is feeling homesick, encourage him or her. Ask if they want to talk about how they’re feeling. Let them know there’s a lot of fun to be had, and then invite them to play a game or work on a project together.
+## Merit Badge Requirements
 
-[![](https://www.scouting.org/wp-content/uploads/2023/02/Scouts-Keep-Tradition-of-Canoe-Adventures-in-the-Adirondacks.jpg)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20640%20481%22%3E%3C/svg%3E)](https://scoutlife.org/about-scouts/scouting-around/175313/scouts-keep-tradition-of-canoe-adventures-in-the-adirondacks/)
+## The previous version of the Merit Badge requirements can be found in Scoutbook
+
+**NOTE:**  The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Canoeing.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
+
+1. Do the following:
+
+* (a)
+  Review with your counselor the most likely hazards you may encounter while participating in canoeing activities and what you should do to anticipate, help prevent, mitigate, and respond to these hazards.
+  *Resources:* [Canoe Trip Risks (website)](https://boundarywaters.com/ely-minnesota-outfitter/canoe-trip-risks/)
+   [Canoe Safety (video)](https://youtu.be/bNlnEOblxLw)
+   [Golden Rules of Canoeing | How To Stay Safe on the Water (video)](https://youtu.be/a6Qy5sVRCtk)
+   [Safety on Wilderness Canoe Trips (website)](https://www.bendingbranches.com/blogs/resources/round-up-of-our-best-canoeing-safety-topics)
+* (b)
+  Review prevention, symptoms, and first-aid treatment for the following injuries or illnesses that could occur while canoeing: blisters, cold-water shock and hypothermia, dehydration, heat-related illnesses, sunburn, sprains, and strains.
+  *Resources:* [How To Prevent and Treat Blisters (website)](https://paddlingmag.com/skills/how-to-prevent-and-treat-blisters/)
+   [Cold Water Shock—How To Deal With Cold Water Shock (video)](https://youtu.be/rH3gZuSr6Y8)
+   [Cold Water Paddling Safely (video)](https://youtu.be/pS0EeinLd3Y)
+   [What Happens If You Don't Drink Enough Water (video)](https://youtu.be/EmNieKLjmH4)
+   [Great Ways To Beat the Heat and Avoid Heat-Related Illness on the Water (website)](https://paddling.com/learn/great-ways-to-beat-the-heat-and-avoid-heat-related-illness-on-the-water)
+   [What To Do if You Are Overheated After a Paddling This Summer? (website)](https://paddling.com/learn/what-to-do-if-you-are-overheated-after-a-paddling-this-summer)
+   [What Causes Sunburns (video)](https://youtu.be/9aFm087_XWg)
+   [Sprain Care With RICE Method (video)](https://youtu.be/z1gbB_peVDQ)
+* (c)
+  Discuss the Scouting America Safety Afloat policy. Tell how it applies to canoeing activities.
+  *Resource:* [Safety Afloat (website)](https://www.scouting.org/health-and-safety/safety-moments/safety-afloat/)
+
+2. Before doing the following requirements, successfully complete the Scouting America swimmer test, found in the *Swimming* merit badge pamphlet.
+
+3. Do the following:
+
+* (a)
+  Name and point out the major parts of a canoe.
+  *Resources:* [Basic Canoe Parts Identified (video)](https://youtu.be/qSGd6m-BOLM)
+   [The Parts of a Canoe (video)](https://youtu.be/MqnFm-O7A5c)
+   [Parts of a Canoe (video)](https://youtu.be/yKg7UPmhv1w)
+* (b)
+  Describe how the length and shape of a canoe affect its performance.
+  *Resources:* [How To Choose the Right Canoe | Comparing Length, Width and Hull Shape (video)](https://youtu.be/PbBOp8PZiCg)
+   [Canoe Design Features and How They Affect Performance (video)](https://youtu.be/nrZjyCH9zpA)
+
+4. Do the following:
+
+* (a)
+  Name and point out the parts of a paddle.
+  *Resource:* [Parts of a Canoe Paddle Explained (video)](https://youtu.be/4KSwa6J3Jfw)
+* (b)
+  Demonstrate how to correctly size a paddle for a paddler in a sitting position and a kneeling position.
+
+5. Do the following:
+
+* (a)
+  Review with your counselor the characteristics of life jackets most appropriate for canoeing and tell why a life jacket must always be worn while paddling.
+  *Resources:* [How To Pick & Fit a PFD (video)](https://youtu.be/aFn7vB-ZHv8)
+   [How To Choose the Right Life Jacket (website)](https://www.nrs.com/learn/choose-the-right-life-jacket)
+* (b)
+  Demonstrate how to select and properly fit the correct size life jacket.
+* (c)
+  Review the importance of safety and rescue equipment such as a sound signal device, extra paddle, sponge, bailer, bilge pump, rescue sling, ropes, and throw bag.
+  *Resources:* [Essential Safety Gear for Canoeing (video)](https://youtu.be/fq6BvQTP9f0)
+   [13 Pieces of Essential Safety Equipment for WW Canoeing (website)](https://paddling.com/learn/13-pieces-of-essential-safety-equipment-for-ww-canoeing)
+
+6. Review with your counselor the general care and maintenance of canoes, paddles, and other canoeing equipment.
+*Resources:* [How To Check, Clean, and Dry Your Canoe (video)](https://youtu.be/A_-5fP3pYGo)
+ [Canoe Care and Maintenance (video)](https://youtu.be/FPVAU5cpj88&t=25)
+ [How To Care for an Ultralight Canoe (video)](https://youtu.be/GIyZORTIbxw)
+
+7. With a companion, use a properly equipped canoe to demonstrate the following:
+
+* (a)
+  Safely carry and launch the canoe from a dock or shore (both, if possible).
+  *Resource:* [How To Get Into and Out of a Canoe Smoothly and Safely (video)](https://youtu.be/6xRWA9S0LEM)
+* (b)
+  Safely land the canoe on a dock or shore (both, if possible) and return it to its proper storage location.
+* (c)
+  Demonstrate kneeling and sitting positions in a canoe and explain the proper use for each position.
+  *Resource:* [Should You Kneel or Sit in a Canoe? (video)](https://youtu.be/5lyRGXJsaGA&t=20)
+* (d)
+  Change places while afloat in the canoe.
+  *Resource:* [How To Switch Places in a Canoe (video)](https://youtu.be/GpBezA6dh5w)
+
+8. With a companion, use a properly equipped canoe to demonstrate the following:
+
+* (a)
+  Safely exit the canoe in deep water without losing contact with the canoe. Reenter the canoe with the assistance of the other paddler without capsizing the boat.
+  *Resource:* [Getting Into a Canoe From Deep Water (video)](https://youtu.be/KAbv8CTZ8T0)
+* (b)
+  Safely perform a controlled capsize of the canoe and demonstrate how staying with a capsized canoe will support both paddlers.
+  *Resources:* [How To Deal With a Flipped Canoe | Canoe Rescue Techniques (video)](https://youtu.be/g3SR1WoDAt0)
+   [Capistrano Flip, Canoe Solo Self Rescue (video)](https://youtu.be/GVXZFwHvfCE)
+   [Capsizing a Canoe: What To Do if It Happens to You (website)](https://www.boat-ed.com/blog/capsizing-a-canoe-what-to-do/)
+* (c)
+  Swim, tow, or push a swamped canoe 50 feet to shallow water. In the shallow water, empty the swamped canoe and reenter it.
+  *Resources:* [Rescue a Swamped Canoe With the Capistrano Flip (website)](https://paddlingmag.com/skills/strokes-techniques/capistrano-flip-rescue-swamped-canoe/)
+   [Unswamp a Canoe (video)](https://youtu.be/I8nMtYnshrg)
+* (d)
+  In deep water, rescue a swamped canoe and its paddlers. After checking that those in the water do not need immediate assistance, empty the swamped canoe and help the paddlers safely reenter their boat without capsizing.
+  *Resources:* [Canoe Deep Water Rescue (video)](https://youtu.be/Z_CEeqea41k)
+   [Open Canoe to Open Canoe Rescue (video)](https://youtu.be/0vcuykiqmYc)
+* (e)
+  Perform a canoe rescue of a conscious swimmer.
+* (f)
+  Using a rescue (throw) bag from shore, lay the line within 3 feet of a conscious swimmer 30 feet away. Show how to repack the bag when done.
+  *Resources:* [Swiftwater Rescue—Throw Bag Toss (video)](https://youtu.be/c-0MRc8_QJQ)
+   [Water Rescue: Throw Bags (video)](https://youtu.be/eX_39_6PTOE)
+
+9. With a companion, using a properly equipped canoe to demonstrate the following tandem maneuvers while paddling in unison on opposite sides and without changing sides. Each paddler must demonstrate these maneuvers in both the bow and stern and on both sides of the canoe while maintaining trim and balance of the canoe:
+*Resource:* [3 Golden Rules of Canoeing Technique (video)](https://youtu.be/ecStrF15o-4&t=12)
+
+* (a)
+  Pivot (spin) the canoe 180° (half circle) to the right from a stationary position, stop, and return to the starting position by pivoting to the left using draw and pushaway strokes or using forward and reverse sweeps staying within 2 boat lengths of the starting position.
+  *Resource:* [Pivot Turns—Maneuvering a Canoe (video)](https://youtu.be/Ytf5LMCkKwk)
+* (b)
+  Move a canoe sideways (abeam) in one direction for 10 feet and then return to the starting position using the draw and pushaway strokes.
+* (c)
+  While in forward motion, stop the canoe within two boat lengths using the backstroke.
+* (d)
+  While in the stern position and without assistance from the bow paddler, paddle in a straight line 15-20 boat lengths using an appropriate steering stroke, e.g., the J-stroke or thumb-down rudder stroke with or without a stern pry.
+  *Resources:* [How To Do a J-Stroke—Canoe Technique (video)](https://youtu.be/kSOu0jyuqN8&t=23)
+   [Canoe tips with Chris Brain—The J stroke (video)](https://youtu.be/YpAB5p0ot5g)
+* (e)
+  Move the canoe in a straight line 15-20 boat lengths with the bow paddler using as necessary the forward stroke, draw stroke or forward sweep and the stern paddler using an appropriate steering stroke, e.g., the J-stroke or thumbdown rudder stroke with or without a stern pry.
+  *Resources:* [Tandem Canoe Basics (video)](https://youtu.be/rjdlF7Cnr3E)
+   [How To Paddle a Tandem Canoe (video)](https://youtu.be/aDaqvoIJD-A)
+* (f)
+  While maintaining forward motion, turn the canoe 90° in an arc to the right in 5-10 boat lengths with the bow paddler using as necessary either the draw stroke or forward sweep and the stern paddler using only the forward stroke. Repeat the maneuver turning the canoe 90° to the left.
+* (g)
+  Move the canoe backwards in a straight line 3-4 boat lengths using as necessary the back stroke, reverse sweep or draw stroke in the bow or the stern.
+  *Resource:* [Canoeing—How To Paddle Straight Back (video)](https://youtu.be/48ihzYwWn1w)
+* (h)
+  Complete a figure of 8 course around markers 3-4 boat lengths apart using appropriate strokes including the draw stroke, and the forward and reverse sweeps.

@@ -1,33 +1,102 @@
 ---
 source: https://www.scouting.org/merit-badges/game-design/
-fetched: 2026-03-03
-bsa_version: 2026.Q1
+fetched: 2026-08-02
+bsa_version: 2026.Q3
 eagle_required: false
 ---
 
 # Game Design Merit Badge
 
-![](https://www.scouting.org/wp-content/uploads/2022/11/logo-scouting.png)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20300%20100%22%3E%3C/svg%3E)
+## Merit Badge Overview
 
-### [A leader’s guide to the Game Design merit badge](https://scoutingmagazine.org/2013/02/introducing-the-new-game-design-merit-badge/)
+Games come in almost every shape, size, format, and flavor imaginable. Games can be fast-paced, slow, or anything in between. Some are competitive. Some are cooperative. They may be for individuals, small groups, or thousands of players at a time. They might take seconds to complete or last for years. However you slice it, everyone has played games, and games help make us who we are.
 
-WHETHER IT’S CAPTURE the flag on campouts, tic-tac-toe in the lunchroom or World of Warcraft back home, virtually every Scout plays games. Scouts can earn a merit badge for playing games — and for creating their own.
-The Game Design merit badge teaches planning and critical-thinking skills, while introducing Scouts to an industry that’s bigger than Hollywood.
-Boy Scout leader and lifelong gamer Tom Miller of Irvine, Calif., began planning the badge as part of his Wood Badge ticket. Two years later, he was joined by Salem, Mass., resident David Radue, who runs the Salem Board Games Meetup Group.
-Scouting talked with the two Eagle Scouts to learn more about the badge and how to teach it.
-What are the badge requirements? Scouts begin by learning gaming terminology and analyzing various types of games they’ve played. They then pick one game, tweak its rules or objectives, and track how the changes affect players’ actions and emotional experiences. After that, they design a new game, a process that includes writing rules, creating a prototype, and play-testing. Finally, as with other career-oriented badges, they learn about jobs in the game-development industry.
-The order of requirements is important. “Unlike some of the merit badges, this one really needs to be done in sequence,” Miller says. “It builds up from the first requirement.”
-Can the badge be earned in a group setting? Much of the badge involves group interaction, so Scouts are encouraged to work together. “The first half works very well in group settings,” Radue says. “The project portion also works very well in group settings, but we have specifically required each Scout to make his own game. We strongly encourage Scouts to work together to test one another’s games.”
-What if only one Scout in a troop wants to earn the badge? A Scout could play games with friends at school or have his family play-test his game. “You don’t necessarily have to work with other Scouts,” Radue says. “You can also [play-test a game] with just a counselor and a Scout, depending on the type of game you want to play.” Of course, normal Youth Protection standards apply. Sessions with a merit badge counselor must take place where others can view the interaction, or the Scout must have a buddy along with him.
-Does someone have to be a game designer to counsel the badge? No. “While the merit badge will have a career focus, the counselors don’t need to be doing it as a career,” Miller says. “Anybody who has played games seriously would be able to be a counselor for the merit badge.”
-That’s true even though Scouts must work with several types of games. “Most people who do gaming as a hobby don’t limit themselves to one genre or medium,” he says. “People who play video games will also tend to play card games and board games.”
-How can an amateur gamer evaluate a Scout’s game concept? The requirements include easily measurable benchmarks Scouts have to meet. For example, they must go through at least three rounds of testing, changing one rule, mechanic, or objective each time. “We wanted to properly arm the counselors so that even counselors who are amateur board-game players would have the right kind of tools to effectively teach the merit badge,” Radue says.
-How elaborate should a Scout make the game he creates? How much time should he devote to it? Radue field-tested the board game, card game, and party game options with a group of Scouts who met during a three-week period. He found that they spent a little over eight hours each. “Somewhere between six and 10 hours for the project is very doable,” he says. “Everyone could complete a project in that timeframe.”
-Miller worked with Scouts to create role-playing games and electronic games. They spent roughly the same amount of time but could have spent much more. “You almost need to have the kids pull back to what would be closer to a playable, minimal game,” he says. “It needs to have the functionality, but doesn’t necessarily need to look good. They can always continue to improve their game after the merit badge is completed.”
-What technical skills do Scouts need to create electronic games? Almost none. Free programs such as GameMaker: Studio and GameSalad Creator let anyone develop games. “You don’t have to know programming,” Miller says. “That’s the key thing.”
-Does this badge work better with older Scouts? Not necessarily. “We had some 12-year-olds in the class, and the software was accessible to them,” Miller says. “One of the parents brought in a commercially published board game she had seen that was designed by a 9-year-old. Age really isn’t a barrier.”
-Where can Scout leaders find resources to teach the badge? The first resource is the merit badge pamphlet. “It’s robust enough that a counselor could teach himself the terminology and then teach Scouts, even without a background in game design,” Radue says.
-Your Scouts may know of other resources. “There are lots of classes and clubs at the high-school and college level for video game design,” Miller says.
-Does the badge teach skills that are useful beyond the world of game design? “There’s a lot of scientific process in coming up with the rules, predicting what’s going to happen, playing the game, and looking at the outcome to see if it matches the prediction,” Radue says. “The critical-thinking skills are useful. The social-interaction skills are useful. We feel like the skill set is broadly applicable.”
+## Merit Badge Requirements
 
-[![](https://www.scouting.org/wp-content/uploads/2022/11/A-leaders-guide-to-the-Game-Design-merit-badge.jpg)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20400%20377%22%3E%3C/svg%3E)](https://scoutingmagazine.org/2013/02/introducing-the-new-game-design-merit-badge/)
+## The previous version of the Merit Badge requirements can be found in Scoutbook
+
+**NOTE:**  The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Game%20Design.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
+
+1. Do the following:
+
+* (a)
+  Analyze four games you have played, each from a different medium. Identify the medium, player format, objectives, rules, resources, and theme (if relevant). Discuss with your counselor the play experience, what you enjoy in each game, and what you dislike. Make a chart to compare and contrast the games.
+  *Resource:* [What Is a Game? (video)](https://youtu.be/YOg64sj72Ek)
+* (b)
+  Describe four types of play value and provide an example of a game built around each concept. Discuss with your counselor other reasons people play games.
+  *Resources:* [What Is 8 Kinds of Fun? (video)](https://www.youtube.com/shorts/wyKSZzldzbc)
+   [What Is Play Value? (website)](https://creospace.co.nz/what-is-play-value/?srsltid=AfmBOoofaC0pj5-A0gv3I2TXwTg2wmyet3gIuRf4FLAPf4WIiHh9gvrt)
+
+2. Discuss with your counselor FIVE of the following 17 game design terms. For each term that you pick, describe how it relates to a specific game: story, setting, characters, play sequence, level design, interface design, difficulty, balance, depth, pace, replay value, age appropriateness, single-player vs. multiplayer, cooperative vs. competitive, turn-based vs. real-time, strategy vs. reflex vs. chance, or abstract vs. thematic.
+*Resources:* [Game Balance (video)](https://youtu.be/8mymtFkzuWQ)
+ [User Interface (video)](https://youtu.be/UAuEx0LcWX8)
+
+3. Define the term intellectual property. Describe the types of intellectual property associated with the game design industry. Describe how intellectual property is protected and why protection is necessary. Define and give an example of a licensed property.
+*Resources:* [Intellectual Property Rights in the Gaming Industry (video)](https://youtu.be/mkoh72RkiTk)
+ [What Game Designers Should Know About Copyrights and Trademarks (video)](https://youtu.be/KutAXO4un0s)
+ [Intellectual Property Protection (website)](https://www.ttgda.org/intellectual-property-protection)
+ [The Role of IP in the Gaming Industry (website)](https://www.lexology.com/library/detail.aspx?g=996bfdec-3735-42d8-8cc9-d7734fb55f37#:~:text=In%20the%20gaming%20industry%20context,copyrights%2C%20trademarks%2C%20and%20patents.)
+
+4. Do the following:
+
+* (a)
+  Pick a game where the players can change the rules or objectives (examples: basketball, hearts, chess, kickball). Briefly summarize the standard rules and objectives and play through the game normally.
+  *Resource:* [P.E. Games—Kickball (video)](https://youtu.be/08PVLRHvCM4)
+* (b)
+  Propose changes to several rules or objectives. Predict how each change will affect gameplay.
+  *Resource:* [Survival Kickball (video)](https://youtu.be/oIbRD9GXueY)
+* (c)
+  Play the game with one rule or objective change, observing how the players' actions and emotional experiences are affected by the rule change. Repeat this process with two other changes.
+  *Resources:* [11 Kickball Games and Variations (website)](https://kickballzone.com/kickball-games-variations/)
+   [Over-Under Kickball (video)](https://youtu.be/nCABHpUfx3w)
+* (d)
+  Explain to your counselor how the changes affected the actions and experience of the players. Discuss the accuracy of your predictions.
+
+5. Design a new game. Any game medium or combination of mediums is acceptable. Record your work in a game design notebook.
+*Resources:* [The Art of Game Design—Generating & Refining Ideas (video)](https://www.youtube.com/shorts/-28vefrftJA)
+ [The Art of Game Design: A Deck of Lenses (website)](https://apps.apple.com/us/app/the-art-of-game-design-a-deck-of-lenses/id385531319)
+
+* (a)
+  Write a vision statement for your game. Identify the medium, player format, objectives, and theme of the game. If suitable, describe the setting, story, and characters.
+  *Resource:* [How to Make Your Own Board Game (video)](https://www.tiktok.com/@joshbrodis/video/7139230440828718382)
+* (b)
+  Describe the reason that someone would want to play your game.
+* (c)
+  Make a preliminary list of the rules of the game. Define the resources.
+  *Resource:* [Game Design Tips—Rules (video)](https://www.youtube.com/shorts/RFpa4JIQjuc)
+* (d)
+  Draw the game elements.
+  *Resource:* [Paper Prototypes—A Secret Weapon for Strong and Fun Game Design! (video)](https://www.youtube.com/shorts/WYM5_o449VU)
+
+6. Do the following:
+
+**Note:** You must have your counselor's approval of your concept before you begin creating the prototype.
+
+* (a)
+  Prototype your game from requirement 5. If applicable, demonstrate to your counselor that you have addressed player safety through the rules and equipment. Record your work in your game design notebook.
+  *Resources:* [Why Your Game NEEDS a Protoype! (video)](https://youtu.be/Qcg3CCw_Fho)
+   [Mastering Game Prototyping (video)](https://youtu.be/ugsaV6OX7GQ)
+* (b)
+  Test your prototype with as many other people as you need to meet the player format. Compare the play experience to your descriptions from requirement 5(b). Correct unclear rules, holes in the rules, dead ends, and obvious rule exploits. Change at least one rule, mechanic, or objective from your first version of the game, and describe why you are making the change. Play the game again. Record in your game design notebook whether or not your change had the expected effect.
+  *Resource:* [How Playtesting Can Make Your Game Awesome! (video)](https://www.youtube.com/shorts/gsv5Y-vM6hI)
+* (c)
+  Repeat 6(b) at least two more times and record the results in your game design notebook.
+
+7. Blind test your game. Do the following:
+
+* (a)
+  Write an instruction sheet that includes all of the information needed to play the game. Clearly describe how to set up the game, play the game, and end the game. List the game objectives.
+  *Resource:* [Playtests Are So Important in Game Dev! (video)](https://www.youtube.com/shorts/L5r3Qr5JIOk)
+* (b)
+  Share your prototype from requirement 6 with a group of players that has not played it or witnessed a previous playtest. Provide them with your instruction sheet(s) and any physical components. Watch them play the game, but do not provide them with instruction. Record their feedback in your game design notebook.
+* (c)
+  Share your game design notebook with your counselor. Discuss the player reactions to your project and what you learned about the game design process. Based on your testing, determine what you like most about your game and suggest one or more changes.
+
+8. Do ONE of the following:
+
+* (a)
+  With your parent or guardian's permission and your counselor's approval, visit with a professional in the game development industry and ask them about their job and how it fits into the overall development process.
+  *Resource:* [International Game Developers Association (IGDA) (website)](https://igda.org/about-us/)
+* (b)
+  Meet with a professional in game development education and discuss the skills they emphasize in the classroom.
+  *Resource:* [Student Game Developer Alliance (SGDA) (website)](https://sgda.io/about.html)

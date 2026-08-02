@@ -1,7 +1,7 @@
 ---
 source: https://www.scouting.org/training/youth-protection/
-fetched: 2026-03-03
-bsa_version: 2026.Q1
+fetched: 2026-08-02
+bsa_version: 2026.Q3
 note: "BSA renamed Youth Protection Training to Safety Youth Training (SYT). All UI should display 'SYT'. DB columns retain legacy names."
 ---
 
@@ -47,7 +47,7 @@ From the [My.Scouting.org](https://my.scouting.org/) portal, you can launch the 
 
 When your volunteer application is approved, you will receive a Scouting America membership card that includes your member ID number.
 
-Scouting America places the greatest importance on creating the most secure environment possible for our youth members. To maintain such an environment, Scouting America developed numerous procedural and leadership selection policies and provides parents and leaders with resources for the [Cub Scout](/training/youth-protection/cub-scout), [Scouts BSA](/training/youth-protection/boy-scout), and [Venturing](/training/youth-protection/venturing) programs.
+Scouting America places the greatest importance on creating the most secure environment possible for our youth members. To maintain such an environment, Scouting America developed numerous procedural and leadership selection policies and provides parents and leaders with resources for the [Cub Scout](https://www.scouting.org/training/youth-protection/cub-scout), [Scouts BSA](https://www.scouting.org/training/youth-protection/boy-scout), and [Venturing](https://www.scouting.org/training/youth-protection/venturing) programs.
 
 ## Youth Protection Reporting Procedures for Volunteers
 
@@ -75,47 +75,6 @@ If you think any of Scouting America’s Youth Protection policies have been vio
 
 ---
 
-Find your local council Scout executive:
-
-window.onload = function() {
-var $ = jQuery;
-$(document).ready(function () {
-$("#councilForm").submit(function (e) {
-e.preventDefault();
-findCouncil();
-});
-$("#findCouncil").click(findCouncil);
-});
-}
-
-Get Info
-
-OR
-
-Council Number:
-
-[×](#)
-
-Council Information
-
-Council Number :
-
-Council Name :
-
-Address :
-
-City :
-
-State :
-
-ZIP Code :
-
-Phone No. :
-
-Search Result
-
-####
-
 Scouts First Helpline
 
 * As part of its “Scouts First” approach to the protection and safety of youth, Scouting America has established a dedicated 24-hour helpline to receive reports of known or suspected abuse or behavior that might put a youth at risk.
@@ -135,11 +94,11 @@ Reporting requirements for child abuse differ from state to state. The Child Wel
 
 ## Scouting’s Barriers to Abuse
 
-Scouting’s [Barriers to Abuse](/health-and-safety/gss/gss01/#a) are published in the [Guide to Safe Scouting](https://www.scouting.org/health-and-safety/gss/gss01/#a) and the online version is maintained as the most current.  Frequently-asked questions are also addressed [in this FAQ](/health-and-safety/yp-faqs/).
+Scouting’s [Barriers to Abuse](https://www.scouting.org/health-and-safety/gss/gss01/#a) are published in the [Guide to Safe Scouting](https://www.scouting.org/health-and-safety/gss/gss01/#a) and the online version is maintained as the most current.  Frequently-asked questions are also addressed [in this FAQ](https://www.scouting.org/health-and-safety/yp-faqs/).
 
 ## Digital Privacy
 
-A key ingredient for a safe and healthy Scouting experience is the respect for privacy. Advances in technology are enabling new forms of social interaction that extend beyond the appropriate use of cameras or recording devices (see “[Scouting’s Barriers to Abuse](/health-and-safety/gss/gss01#a)”). Sending sexually explicit photographs or videos electronically or “sexting” by cell phones is a form of texting being practiced primarily by young adults and children as young as middle-school age. Sexting is neither safe, nor private, nor an approved form of communication and can lead to severe legal consequences for the sender and the receiver. Although most campers and leaders use digital devices responsibly, educating them about the appropriate use of cell phones and cameras would be a good safety and privacy measure.
+A key ingredient for a safe and healthy Scouting experience is the respect for privacy. Advances in technology are enabling new forms of social interaction that extend beyond the appropriate use of cameras or recording devices (see “[Scouting’s Barriers to Abuse](https://www.scouting.org/health-and-safety/gss/gss01#a)”). Sending sexually explicit photographs or videos electronically or “sexting” by cell phones is a form of texting being practiced primarily by young adults and children as young as middle-school age. Sexting is neither safe, nor private, nor an approved form of communication and can lead to severe legal consequences for the sender and the receiver. Although most campers and leaders use digital devices responsibly, educating them about the appropriate use of cell phones and cameras would be a good safety and privacy measure.
 
 ## Scouting America Social Media Guidelines
 
@@ -150,8 +109,8 @@ Youth Protection During COVID:  Digital safety and On-Line Scouting Activities:
 
 ## Key Resources
 
-[Guide to Safe Scouting](/health-and-safety/gss)
-Single source of information for safe scouting. The guide is designed for adult leaders; topics include Youth Protection, Health and Safety and Reporting information. Frequently-asked questions are also addressed  [in the Youth Protection and Barriers to Abuse FAQs](/health-and-safety/yp-faqs/).
+[Guide to Safe Scouting](https://www.scouting.org/health-and-safety/gss)
+Single source of information for safe scouting. The guide is designed for adult leaders; topics include Youth Protection, Health and Safety and Reporting information. Frequently-asked questions are also addressed  [in the Youth Protection and Barriers to Abuse FAQs](https://www.scouting.org/health-and-safety/yp-faqs/).
 
 [How to Protect Your Children From Child Abuse: A Parent’s Guide](https://filestore.scouting.org/filestore/ypt/pdf/100-015.pdf)
 These booklets are a basic resource to help parents understand how child abuse happens and keep their children safe. Exercises for parents and children are included. Several versions of the booklets are available:
@@ -160,7 +119,7 @@ These booklets are a basic resource to help parents understand how child abuse h
 * [For Cub Scouts and their parents (in Spanish)](https://filestore.scouting.org/filestore/pdf/100-073.pdf)
 * [For Scouts BSA members and their parents](https://filestore.scouting.org/filestore/ypt/pdf/100-015.pdf)
 
-[Bullying Awareness](/training/youth-protection/bullying)
+[Bullying Awareness](https://www.scouting.org/training/youth-protection/bullying)
 These fact sheets will help with bullying awareness and direct you to resources provided by Scouting America and other entities we work with to protect children.
 
 [Download the Bullying Prevention Guide](https://filestore.scouting.org/filestore/training/pdf/BullyingPreventionGuide.pdf)

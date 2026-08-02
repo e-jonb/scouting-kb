@@ -15,6 +15,7 @@ Usage:
 
 import asyncio
 import argparse
+import re
 from pathlib import Path
 from datetime import date
 
@@ -24,8 +25,9 @@ from rich.console import Console
 from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn, TaskProgressColumn
 
 from utils import (
-    slug, bsa_version_from_date, make_frontmatter,
-    write_md, rate_limit, clean_markdown, extract_content, make_browser_context
+    bsa_version_from_date, make_frontmatter,
+    write_md, rate_limit, clean_markdown, clean_merit_badge_markdown,
+    absolutize_relative_links, extract_content, extract_merit_badge_content, make_browser_context
 )
 
 console = Console()
@@ -34,14 +36,41 @@ BADGES_INDEX_URL = "https://www.scouting.org/skills/merit-badges/all/"
 EAGLE_REQUIRED_URL = "https://www.scouting.org/skills/merit-badges/eagle-required/"
 
 
+def _clean_badge_name(name: str) -> str:
+    """
+    Strip trailing "(9)" / "(1) (2) (3)..." annotations. The index page lists
+    some badges twice: once with the plain name, once flagged with which
+    requirement numbers were recently revised (e.g. "Chess (1) (2) (3) (4)
+    (5) (6) (7)") — both link to the same badge URL. Without this, dedup could
+    keep whichever copy happened to appear first in DOM order, occasionally
+    the annotated one, producing slugs like chess-1-2-3-4-5-6-7.md instead of
+    chess.md. Confirmed 2026-08-01, see docs/PLAYBOOK.md.
+    """
+    return re.sub(r"(\s*\(\d+\))+\s*$", "", name).strip()
+
+
+def _slug_from_url(url: str) -> str:
+    """
+    Derive the output filename slug from the badge's own URL path
+    (/merit-badges/{slug}/) rather than its scraped display name. scouting.org's
+    link text is occasionally wrong — the Genealogy badge's anchor text reads
+    "Geology" even though its href correctly points to /merit-badges/genealogy/
+    — which would otherwise collide two different badges onto the same
+    name-derived filename and silently clobber one. Confirmed 2026-08-01,
+    see docs/PLAYBOOK.md.
+    """
+    return url.rstrip("/").rsplit("/", 1)[-1]
+
+
 def _extract_badge_links(js_result: list) -> list[dict]:
-    """Deduplicate badge links by URL, preserving order."""
+    """Deduplicate badge links by URL, preserving order, preferring the clean name."""
     seen = set()
     unique = []
     for b in js_result:
-        if b["url"] not in seen and b["name"]:
+        name = _clean_badge_name(b["name"])
+        if b["url"] not in seen and name:
             seen.add(b["url"])
-            unique.append(b)
+            unique.append({**b, "name": name, "slug": _slug_from_url(b["url"])})
     return unique
 
 
@@ -162,7 +191,7 @@ async def fetch_merit_badges(
             task = progress.add_task("  Fetching...", total=len(badges))
 
             for badge in badges:
-                out_file = output_path / f"{slug(badge['name'])}.md"
+                out_file = output_path / f"{badge['slug']}.md"
                 progress.update(task, description=f"  {badge['name'][:45]}")
 
                 if out_file.exists() and not force:
@@ -177,7 +206,22 @@ async def fetch_merit_badges(
                         # Fallback: some pages never reach networkidle (e.g. Skating)
                         await page.goto(badge["url"], wait_until="load", timeout=30000)
                         await page.wait_for_timeout(2000)
-                    content_html = await extract_content(page)
+
+                    # The index page's link text is occasionally wrong (the Genealogy
+                    # badge's anchor reads "Geology" even though its href correctly
+                    # points to /merit-badges/genealogy/ — confirmed 2026-08-01, see
+                    # docs/PLAYBOOK.md). The badge's own <title> tag is authoritative;
+                    # prefer it over the scraped index name whenever it parses cleanly.
+                    page_title = await page.title()
+                    real_name = page_title.split(" Merit Badge")[0].strip()
+                    if real_name:
+                        badge["name"] = real_name
+
+                    content_html = await extract_merit_badge_content(page)
+                    if not content_html:
+                        # Fall back to generic best-match extraction for any page
+                        # that doesn't match the Overview/.profile-card template.
+                        content_html = await extract_content(page)
 
                     if not content_html:
                         errors.append(f"No content: {badge['name']}")
@@ -189,7 +233,8 @@ async def fetch_merit_badges(
                         heading_style="ATX",
                         strip=["script", "style", "nav", "footer", "header", "form", "button"],
                     )
-                    md_content = clean_markdown(md_content)
+                    md_content = clean_merit_badge_markdown(md_content, badge["name"])
+                    md_content = absolutize_relative_links(md_content)
 
                     fm = make_frontmatter(
                         badge["url"], built_date, bsa_version,
@@ -226,7 +271,7 @@ async def fetch_merit_badges(
             "|---|---|",
         ]
         for b in eagle_badges:
-            index_lines.append(f"| {b['name']} | [{slug(b['name'])}.md]({slug(b['name'])}.md) |")
+            index_lines.append(f"| {b['name']} | [{b['slug']}.md]({b['slug']}.md) |")
 
         index_lines += [
             "",
@@ -236,7 +281,7 @@ async def fetch_merit_badges(
             "|---|---|",
         ]
         for b in elective_badges:
-            index_lines.append(f"| {b['name']} | [{slug(b['name'])}.md]({slug(b['name'])}.md) |")
+            index_lines.append(f"| {b['name']} | [{b['slug']}.md]({b['slug']}.md) |")
 
         write_md(output_path / "index.md", "\n".join(index_lines) + "\n")
 

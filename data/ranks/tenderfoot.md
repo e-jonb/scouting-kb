@@ -1,7 +1,7 @@
 ---
 source: https://www.scouting.org/wp-content/uploads/2025/12/Scouts-BSA-Rank-Requirements.pdf
-fetched: 2026-03-03
-bsa_version: 2026.Q1
+fetched: 2026-08-02
+bsa_version: 2026.Q3
 rank_order: 1
 content_type: pdf
 ---
@@ -11,10 +11,6 @@ content_type: pdf
 _First advancement rank. Introduces camping, first aid, and Scout skills._
 
 TENDERFOOT RANK REQUIREMENTS
-LEAADDEERR
-(cid:22)
-INITIAL
-& DATE
 CAMPING AND OUTDOOR ETHICS
 1a. Present yourself to your leader, prepared for an overnight camping trip.
 Show the personal and camping gear you will use. Show the right way to
@@ -61,12 +57,7 @@ safety on outings and where you live. Use the buddy system while on a
 troop or patrol outing. (See pages 29 and 252.)
 5b. Describe what to do if you become lost on a hike or campout.
 (See pages 254–255.)
-442
 
-LEADER
-(cid:22)
-INITIAL
-& DATE
 5c. Explain the rules of safe and responsible hiking, both on the highway and
 cross-country, during the day and at night. (See pages 252–253.)
 5d. Explain why it is important to hike on trails or other durable surfaces, and
@@ -110,10 +101,11 @@ points of the Scout Law in your everyday life. (See pages 11–16 and 23.)
 rank requirement 7, participate in a Scoutmaster conference. (See page 418.)
 11. Successfully complete your board of review for the Tenderfoot rank.
 (See page 414.)
-Notes: The requirements for Scout, Tenderfoot, Second Class, and First Class ranks may be worked
+
+## Notes
+
+The requirements for Scout, Tenderfoot, Second Class, and First Class ranks may be worked
 on simultaneously; however, these ranks must be earned in sequence.
 Alternative requirements for the Tenderfoot rank are available for Scouts with physical or mental disabilities if they
 meet the criteria listed in the Scouts BSA Requirements book.
-443
-RANK
-REQUIREMENTS
+

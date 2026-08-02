@@ -1,29 +1,118 @@
 ---
 source: https://www.scouting.org/merit-badges/photography/
-fetched: 2026-03-03
-bsa_version: 2026.Q1
+fetched: 2026-08-02
+bsa_version: 2026.Q3
 eagle_required: false
 ---
 
 # Photography Merit Badge
 
-![](https://www.scouting.org/wp-content/uploads/2022/11/logo-scouting.png)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20300%20100%22%3E%3C/svg%3E)
+## Merit Badge Overview
 
-### [How to make earning the Photography merit badge picture-perfect](https://scoutingmagazine.org/2016/10/make-earning-photography-merit-badge-picture-perfect/)
+Beyond capturing family memories, photography offers a chance to be creative. Many photographers use photography to express their creativity, using lighting, composition, depth, color, and content to make their photographs into more than snapshots. Good photographs tell us about a person, a news event, a product, a place, a scientific breakthrough, an endangered animal, or a time in history.
 
-Jim Brown earned the Photography merit badge in 1959, not long after he had completed his first commercial assignment. So when the longtime Indiana photographer (and Boys’ Life and Scouting magazine contributor) helped rewrite the Photography merit badge pamphlet this year, one change might have caused him a twinge of pain.
-“The old one talked a lot about film and made a passing reference to digital,” he says. “In this one, we created a new section called ‘The History of Photography.’ And that’s where film resides.”
-But the new pamphlet, which supports revised requirements that took effect Jan. 1, is about more than technology. It’s about using cameras, whether film or digital, to tell stories.
-“How do you make a storytelling picture or a series of pictures to convey what Scouting’s all about?” he says. “That’s a major focus of the book.”
-To accomplish that goal, the badge has three new requirements that move Scouts from the craft of using a camera to the art of telling stories through photography. For requirement 4, Scouts explore the use of different perspectives, light sources, depths of field and compositional techniques. For requirement 5, they take different types of photos, such as close-ups, action shots and landscapes. And for requirement 6, they consider software methods or simple cropping to improve the photos they’ve taken.
-These requirements lead naturally to requirement 7, for which Scouts use eight to 12 images to tell a story (much like the old requirement 4).
-“The presentation of the story can be done in a variety of forms, including digital presentation,” Brown says. “But we recognize that not every Scout has a computer, so there are lots of options in terms of the presentation. It could just be prints on a board.”
-As in previous versions of the badge, Scouts must explain how to adjust settings like aperture, shutter speed and ISO (a measure of light sensitivity); this is part of requirement 2. They don’t, however, have to use a camera on which those settings can be adjustable. A Scout could complete the badge using a fully automatic camera — even the one on his cellphone — but he’ll be ready to go beyond the basics should he choose to in the future.
-“When people move beyond fully automatic settings, they need to understand how optics work and how the shutter works and how the ISO works,” Brown says.
-Given the focus on visual storytelling, there’s nothing in the badge about selfies, which Brown considers to be simple recordkeeping.
-“If they want to take selfies, that’s great, but once that’s done, do something else,” he says. “I’m not against selfies per se; it’s just that I want them to go beyond that.”
-Selfies or not, Brown is proud of the new pamphlet.
-“It’s been really satisfying for me at the end of my career to work on something that I earned in 1959,” he says.
-Even if he had to relegate much of his career to the history chapter.
+## Merit Badge Requirements
 
-[![](https://www.scouting.org/wp-content/uploads/2023/01/How-to-make-earning-the-Photography-merit-badge-picture-perfect-688x1024.jpg)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20640%20953%22%3E%3C/svg%3E)](https://scoutingmagazine.org/2016/10/make-earning-photography-merit-badge-picture-perfect/)
+## The previous version of the Merit Badge requirements can be found in Scoutbook
+
+**NOTE:**  The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Photography.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
+
+1. Safety. Do the following:
+
+* (a)
+  Explain to your counselor the most likely hazards you may encounter while working with photography and what you should do to anticipate, mitigate, prevent, and respond to these hazards. Explain how you would prepare for exposure to environmental situations such as weather, sun, and water.
+  *Resources:* [Is Photography a Dangerous Career? (website)](https://www.coverhound.com/insurance-learning-center/is-photography-a-dangerous-career)
+   [Health and Safety in a Photography Studio (website)](https://thephotocove.com/health-and-safety-in-a-photography-studio/)
+   [9 Safety Tips for Landscape and Nature Photographers (website)](https://loadedlandscapes.com/safety-tips-nature-photography/)
+* (b)
+  View the Personal Safety Awareness "Digital Safety" video (with your parent or guardian's permission).
+  *Resource:* [Digital Safety (video)](https://filestore.scouting.org/filestore/YPSAT/YT%20Mod1%20Final%20Master%20Small.mp4)
+
+2. Explain how the following elements and terms can affect the quality of a picture:
+*Resources:* [Easy to Understand Guide to Camera Settings for Beginners (website)](https://shotkit.com/camera-settings/)
+ [Common Camera Settings for Beginners (website)](https://photographylife.com/common-camera-settings#camera-setup)
+
+* (a)
+  Light—natural light (ambient/existing), low light (such as at night), and artificial light (such as from a flash)
+  *Resources:* [Golden Hour Magic: Perfect Light for Stunning Photos (video)](https://youtu.be/FWcOshGthBI?si=Ft8P8g7G36BnSSle)
+   [Artificial Lighting for Photography (So Much Easier Than You Think!) (video)](https://youtu.be/Z9znfhFQPbE?si=iynxep4eY2ZuuzNY)
+   [Why Most Natural Light Photography is Flat (and How to Fix It) (video)](https://youtu.be/VgT4O6CclfA?si=Gw4HDf3VeGxeE6z7)
+* (b)
+  Exposure—aperture (f-stops), shutter speed, ISO
+  *Resources:* [ISO, Shutter Speed, and Aperture Explained | Exposure Basics for Beginners (video)](https://youtu.be/Edvpu_939l4)
+   [Photography Basics in 10 Minutes (video)](https://youtu.be/V7z7BAZdt2M)
+* (c)
+  Depth of field
+  *Resource:* [Depth of Field in 30 Seconds (video)](https://youtube.com/shorts/98B3dvdAX6c?si=a6zX8YPAisVYAszi)
+* (d)
+  Composition—rule of thirds, leading lines, framing, depth
+  *Resources:* [Basic Photography | Composition: The Only Rules You Need to Know (video)](https://youtu.be/eImryR3yKz8?si=ITbUmVHQYD9gR72Y)
+   [Photography Composition: Master Leading Lines for Stunning Shots! (video)](https://youtu.be/2uAYj6WScJQ?si=SrzE5OUdOVWWH65y)
+   [Master the Rule of Thirds for Better Photos (video)](https://youtube.com/shorts/Z1Wb8ZH0uvc?si=e6TjeQIgyqaYBcUr)
+* (e)
+  Angle of view
+  *Resource:* [Angle of View and Framing (video)](https://youtu.be/9SZy4ptc5ws?si=SfIb8MuYpZziiVaW)
+* (f)
+  Stop action and blur motion
+  *Resources:* [How to Shoot Motion Blur Photography Like a Pro (video)](https://youtu.be/5h4J8nZn1Sw?si=n6r01F0XG_ncDOxH)
+   [Photography Tips: How to Do Stop Action Photography (video)](https://youtu.be/YtkIsA4VdRw?si=T0IV9u60N-evsqrl)
+* (g)
+  Decisive moment (action or expression captured by the photographer)
+  *Resource:* [Decisive Moment (video)](https://youtu.be/meeqJ58eSzk?si=lxhdmU83SSLCDxvw)
+
+3. Explain the basic parts and operation of a camera. Explain how an exposure is made when you take a picture.
+*Resources:* [Photography Basics in 10 Minutes (video)](https://youtu.be/V7z7BAZdt2M?si=0XATnG-lMciqFgr0)
+ [Parts of a Camera (video)](https://youtu.be/BsSjEhktkzU)
+ [How Digital Cameras Work (video)](https://youtu.be/Ey6S3rKH_o4)
+
+4. Do TWO of the following, then share your work with your counselor.
+
+* (a)
+  Photograph one subject from two different angles or perspectives.
+  *Resource:* [Pro Photo Secrets: Avoid Shadows & Master Poses (video)](https://youtube.com/shorts/o5yjHn56VtE?si=XC3OvPIABX276ZtY)
+* (b)
+  Photograph one subject from two different light sources - artificial and natural.
+* (c)
+  Photograph one subject with two different depth of fields.
+* (d)
+  Photograph one subject with two different compositional techniques.
+
+5. Photograph THREE of the following, then share your work with your counselor.
+
+* (a)
+  Close-up of a person
+* (b)
+  Two to three people interacting
+* (c)
+  Action shot
+* (d)
+  Animal shot
+* (e)
+  Nature shot
+* (f)
+  Picture of a person - candid, posed, or camera aware
+
+6. Describe how software allows you to enhance your photograph after it is taken. Select a photo you have taken, then do ONE of the following, and share what you have done with your counselor:
+*Resource:* [PHOTO EDITING FOR BEGINNERS - 9 Simple Steps to Improve Your Photos (video)](https://youtu.be/KR7L2oSRlwY)
+
+* (a)
+  Crop your photograph.
+* (b)
+  Adjust the exposure or make a color correction.
+* (c)
+  Show another way you could improve your picture for impact.
+
+7. Using images other than those created for requirements 4, 5, and 6, produce a visual story to document an event to photograph OR choose a topic that interests you to photograph. Do the following:
+
+* (a)
+  Plan the images you need to photograph for your photo story.
+  *Resource:* [Storytelling in Photography (video)](https://youtu.be/UtMXpomDWlk?si=Zo4DOxTQMgshkjFA)
+* (b)
+  Share your plan with your counselor, and get your counselor's input and approval before you proceed.
+* (c)
+  Select eight to 12 images that best tell your story. Arrange your images in order and mount the prints on a poster board, OR create an electronic presentation. Share your visual story with your counselor.
+  *Resource:* [How to Make a PowerPoint Photo Slideshow (video)](https://youtu.be/G-qyX_Ri17M?si=mFi7rrxZa1KDlNrT)
+
+8. Identify three career opportunities in photography. Pick one and explain to your counselor how to prepare for such a career. Discuss what education and training are required, and why this profession might interest you.
+*Resources:* [Top 10 Careers For Photographers (video)](https://youtu.be/fEp_EDQE0IM?si=4IIC3sAbXyD1_6tK)
+ [Indeed Career Guide (website)](https://www.indeed.com/career-advice/finding-a-job/list-of-careers-in-photography)

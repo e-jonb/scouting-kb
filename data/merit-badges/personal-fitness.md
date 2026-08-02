@@ -1,35 +1,154 @@
 ---
 source: https://www.scouting.org/merit-badges/personal-fitness/
-fetched: 2026-03-03
-bsa_version: 2026.Q1
+fetched: 2026-08-02
+bsa_version: 2026.Q3
 eagle_required: true
 ---
 
 # Personal Fitness Merit Badge
 
-![](https://www.scouting.org/wp-content/uploads/2022/11/logo-scouting.png)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20300%20100%22%3E%3C/svg%3E)
+## Merit Badge Overview
 
-### [A leader’s guide to the Personal Fitness merit badge](https://scoutingmagazine.org/2015/04/a-leaders-guide-to-the-personal-fitness-merit-badge/)
+Personal fitness is an individual effort and desire to be the best one can be. Regardless of their current levels of personal fitness, in the twelve weeks it will take Scouts to complete the athletic requirements for this merit badge, they will be in better shape, feel better about themselves, have more energy, and gain self-confidence in their overall abilities.
 
-For many Scouts, the Personal Fitness merit badge is one of the last speed bumps — or roadblocks — on the journey to the Eagle Scout Award. In the hands of an effective merit badge counselor, however, it can be more of an on-ramp to a lifetime of better health.
-Marianne King is one of those counselors. The owner of Marianne King’s Fitness for Life in Pittsburgh has taught the badge for more than a decade. While many of her Scouts have been athletes, she’s perhaps most proud of the Scout with attention-deficit disorder who discovered he could focus better after completing the badge’s 12-week fitness program. “For me, that was an outstanding change for him,” she says. “It wasn’t just, ‘OK, I got a little muscle.’ It was, ‘I was able to feel better mentally.’ ”
-Connecting Mind and Body
-The mind-body connection is important, but it’s often overlooked, says Dan Smith, another veteran Personal Fitness counselor. “Oftentimes — and this is true not only with the kids but with some of the leaders — they think that Personal Fitness merit badge is Physical Fitness merit badge,” says Smith, an Eagle Scout and assistant professor of nutrition and exercise physiology at the University of Missouri.
-“It’s important for me from the get-go to educate them about the fact that this isn’t just about physical fitness. This is about physical health; it’s about spiritual fitness; it’s about social engagement; it’s about the total person.”
-One way to emphasize the holistic nature of fitness is to introduce the six dimensions of wellness defined by Dr. Bill Hettler in the 1970s. (They are occupational, spiritual, emotional, physical, social and intellectual.) That’s what Rick Armstrong does. A lecturer in kinesiology at the University of Rhode Island, Armstrong shows how the dimensions of wellness fit together. “One of them is just an individual piece. You really need all of them to come together to be whole and healthy,” he says.
-Honesty: The Best Policy
-Whether he’s teaching Scouts or college students, Armstrong likes to show two pictures of actor Hugh Jackman. In one, a still from The Wolverine, Jackman looks “ripped beyond belief.” In the other, a shot from US Weekly, Jackman looks far more ordinary — even a little flabby. Armstrong’s point: “These actors and actresses specifically train for the instance when they’re taking the picture or they’re in the movie. They exercise and they maintain their fitness, but they’re not going to look like that throughout an entire year.”
-Moreover, the people who show up on the covers of fitness magazines work a lot harder than the average Scout is likely to. “If you want to look like that, it’s probably more work than you’ve ever done in your life,” Armstrong says.
-Working out is not a waste of time, however. “That doesn’t mean you’re going to look like these people. But by being physically active and exercising, you’re going to have these health benefits for the long term,” he says.
-Your Mileage Might Vary
-Smith agrees that major fitness gains might be elusive, but Scouts should see some results if they work hard. He thinks Scouts should register improvements in most, if not all, of the badge’s fitness tests over 12 weeks. “What we’ll typically see the biggest change in is their overall mile time. We see some strength changes, too,” he says.
-Since six-pack abs are unlikely, Smith emphasizes to Scouts that the badge is more about future quality of life than current results — which he admits is a challenge with 13-year-olds who can’t always see past their next meal. “They’re not really focused on long-term stuff, but I think the process of the merit badge itself helps many of them to come to the realization that these things make a significant difference,” he says.
-Variety Is the Spice of Life
-King believes a Scout’s biggest challenge lies in setting up an exercise program and documenting his results. She works with each Scout to develop an appropriate program, helping him select options from various categories, including cardiovascular and strength training. “This is my passion, my business,” she says. “I can bring a little more to the table for them.”
-She also emphasizes that Scouts don’t have to stick with the same set of exercises for 12 weeks. (Requirement 8 mandates the same fitness tests throughout the 12-week period — not the same exercises.) “You can’t do the same thing over and over again expecting different results,” she says. “We talk about that; we talk about how the body needs different challenges.”
-King also offers her Scouts an Excel spreadsheet they can use for recordkeeping, but they’re welcome to use a notebook or anything else. King’s spreadsheet includes space for weight and reps for strength training and type, time, distance and intensity for cardiovascular activities.
-A Scout Is …
-Despite her interest in physical fitness, King also spends a good bit of time on requirement 4d, in which the Scout must explain how personal fitness relates to the Scout Law and Scout Oath. Many are surprised by the deep connections. “They’re kind of shocked,” she says. “When they can apply it to what they say every week in Scouts, it hits home a little bit more.”
-And when it hits home, perhaps they realize that the Personal Fitness merit badge is less about Eagle and more about life.
+## Merit Badge Requirements
 
-[![](https://www.scouting.org/wp-content/uploads/2023/01/A-leaders-guide-to-the-Personal-Fitness-merit-badge.jpg)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20550%20818%22%3E%3C/svg%3E)](https://scoutingmagazine.org/2015/04/a-leaders-guide-to-the-personal-fitness-merit-badge/)
+## The previous version of the Merit Badge requirements can be found in Scoutbook
+
+**NOTE:**  The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Personal%20Fitness.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
+
+1. **Defining Personal Fitness.** Explain to your counselor what personal fitness means to you, including:
+
+* (a)
+  Describe a person who is physically fit.
+  *Resource:* [Being Physically Fit (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Personal%20Fitness/physically_fit_people.pdf)
+* (b)
+  Describe a person who is mentally, emotionally and socially fit.
+  *Resource:* [Being Mentally, Emotionally, and Socially Fit (video)](https://youtu.be/pfCWNkQEsLA)
+* (c)
+  Describe a person who is spiritually fit.
+  *Resource:* [Being Spiritually Fit (video)](https://youtu.be/8gZ_JbDgERs)
+* (d)
+  Explain why it is important to be fit in all of these ways.
+  *Resource:* [Being Fit Overall (video)](https://kcts9.pbslearningmedia.org/resource/wellness-video/mind-frame/?student=true&focus=true)
+* (e)
+  Discuss how each aspect of personal fitness relates to the Scout Oath and Scout Law.
+  *Resource:* [The Scout Oath (video)](https://youtu.be/1_aUAbUs2Ts?si=gG4-nTpX5qeSmQE1)
+
+2. **Monitoring Your Health.** Do the following:
+
+* (a)
+  Discuss with your counselor the importance of having a physical examination each year. Discuss why overall health, immunizations, medications, allergies, and medical history are covered during an examination. Tell your counselor when you last underwent a physical examination.
+  *Resource:* [Annual Physical Exam (website)](https://www.scouting.org/health-and-safety/ahmr/)
+* (b)
+  Explain why it is important to have a routine dental examination. Explain what preventive or corrective treatments your dentist can provide, and why daily oral care is an important part of staying well. Tell your counselor when you last underwent a dental examination.
+  *Resources:* [Dental Health (video)](https://youtu.be/7_MioRw-5QU)
+   [Here's What Happens if You Stopped Brushing Your Teeth (video)](https://youtu.be/4kXrUXDZKuM?si=eXa9NCBLsJKFM_Bu)
+
+3. **Your Fitness Knowledge and Habits.** Do the following with your counselor:
+
+* (a)
+  Explain the physical exercise you regularly do, whether your routine includes all four components of physical fitness (cardiorespiratory fitness, muscular strength and endurance, flexibility, and body composition), and how your current practices increase or decrease your likelihood of developing cardiovascular disease or other conditions in adulthood.
+  *Resource:* [Benefits of Exercise (video)](https://youtu.be/dwMMn2FdBFQ?si=vaYCckwx-xqsUky-)
+* (b)
+  Discuss what harmful substances you consciously avoid, and how these actions affect your risk factors now and in the future.
+  *Resource:* [Substance Use and Abuse (video)](https://youtu.be/6fmhLcYSn-Y?si=rRPr6HRcv5dSrVgG)
+* (c)
+  Explain what common diseases can be prevented or mitigated by vaccinations, and whether you are immunized according to the advice of your healthcare provider and the direction of your parent or guardian.
+  *Resource:* [How Do Vaccines Work? (video)](https://youtu.be/rb7TVW77ZCs)
+* (d)
+  Discuss how good nutrition is related to the other components of personal fitness, and if you follow a nutritious, balanced diet.
+  *Resource:* [How the Food You Eat Affects Your Brain (video)](https://youtu.be/xyQY8a-ng6g)
+* (e)
+  Discuss what a healthy weight is for you, and what you do to maintain a healthy weight.
+  *Resources:* [Body Mass Index (BMI) Calculator (website)](https://www.cdc.gov/bmi/child-teen-calculator/index.html)
+   [Your Body Composition (video)](https://youtu.be/Yk3UkkJk474)
+* (f)
+  Explain why getting adequate sleep is important, and whether you get enough hours of sleep each night.
+  *Resource:* [Tips for Getting Enough Sleep (video)](https://youtu.be/qWb5ggc_-rs?si=hdgaGxZwyiEnzftt)
+* (g)
+  Discuss whether you spend quality time with your family and friends in social and recreational activities, and how you contribute to creating and maintaining a good home life.
+  *Resource:* [Spending Time With Family (video)](https://youtu.be/d4_rFMo7lCo?si=OkbtRuJzRNoVysV1)
+
+4. **Measures of Physical Fitness.** Determine with your counselor the assessments of physical fitness and nutrition you will do before, during, and after completing the 12-week program in requirement 7.
+*Resource:* [Measures of Physical Fitness (fillable) (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Personal%20Fitness/measures_of_physical_fitness%20%28fillable%29.pdf)
+
+* (a)
+  Include a measure of cardiorespiratory (aerobic) fitness: Record the time required to complete a mile walk or run as fast as you can. If you are unable to walk or run as a result of a disability that is permanent or is expected to last for longer than two years, work with your counselor to define a test with a similar degree of aerobic challenge.
+  *Resource:* [1-Mile Walk/Run - Compare Results (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Personal%20Fitness/1-Mile%20Walk-Run%20-%20Compare%20Results.pdf)
+* (b)
+  Include two measures of muscular strength and endurance: Record either the number of sit-ups done in 60 seconds OR how long a plank was held; AND, record the number of either push-ups OR pull-ups done in 60 seconds. If you are unable to complete one of these exercises safely and correctly, work with your counselor to replace it with a different exercise that measures strength and endurance.
+  *Resources:* [Sit-Up (video)](https://youtu.be/pCX65Mtc_Kk)
+   [Plank (video)](https://youtu.be/yeKv5oX_6GY)
+   [Pull-Up (video)](https://youtu.be/mohJShUxbdI)
+   [Push-Up (video)](https://youtu.be/YopP5mCAMSI)
+   [Muscular Strength - Compare Results (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Personal%20Fitness/Muscular%20Strength%20-%20Compare%20Results.pdf)
+* (c)
+  Include at least one measure of flexibility, such as a back-saver sit-and-reach test or a back scratch test.
+  *Resources:* [Flexibility - Compare Results (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Personal%20Fitness/Flexiblity%20-%20Compare%20Results.pdf)
+   [Back Scratch Test (video)](https://youtu.be/EKiTmkgEFH4)
+   [Back-Saver Sit-and-Reach Test (video)](https://youtu.be/T2LzgbHXbUI?si=UZl1SrQ5DFTGpCGE)
+
+5. **Pre-Assessment of Physical Fitness.** Before beginning the 12-week program in requirement 7, do the following:
+
+* (a)
+  Complete each of the assessments you defined in requirement 4, and record your results.
+* (b)
+  Identify your weakest and strongest area of physical fitness, and choose an area to target for improvement.
+* (c)
+  Keep a log of what you eat and drink for a period of three days.
+  *Resource:* [3-Day Food and Drink Log (fillable) (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Personal%20Fitness/3-Day%20Food%20and%20Drink%20Log%20%28fillable%29.pdf)
+* (d)
+  Based on your diet log, identify at least two improvement goals related to diet and nutrition.
+  *Resource:* [Food Groups and MyPlate (video)](https://youtu.be/L7QOUiQCb5E?si=aSUG980t0c5bQt0p)
+
+6
+**Plan the Program.** Outline with your counselor a comprehensive 12-week physical fitness and nutrition program that you will complete based on your improvement goals and ability. The program must incorporate the following:
+*Resources:* [12-Week Physical Fitness Program (fillable) (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Personal%20Fitness/physical_fitness_12week_program%20%28fillable%29.pdf)
+ [Sample Full Workout—Warm-Up, Cardiorespiratory, Strength, Flexibility, and Cool-Down (video)](https://youtu.be/WpIFlh5whcs?si=khfLv9X7TNHJ3kqF)
+ [Sample Short Workout—Core Strength (video)](https://youtu.be/jYfda_ccTjc?si=iATnjRp8ZHz6uy6a)
+ [Sample Short Workout—Variety (video)](https://youtu.be/bhsu24pEgVY?si=_4LBRA_N3sWjx777)
+
+* (a)
+  Warm-up: low-intensity movement or gentle muscle stretching before each more rigorous workout
+* (b)
+  Cardiorespiratory (aerobic) element: an activity that raises your heart and respiratory rate for 15 to 30 minutes at least three times per week
+* (c)
+  Muscular strength and endurance element: repetitive exercises that target different muscles - upper body, core, and/or legs - based on your improvement goals and potential
+  *Resources:* [Deadlift (video)](https://youtu.be/K6Gc6GKCmNo)
+   [Lunge (video)](https://youtu.be/C20B47rZRIY)
+   [Row (video)](https://youtu.be/9CGOO9ueQ8g)
+   [Squat (video)](https://youtu.be/Pfov7H8vyi0)
+   [Muscular Strength ( video)](https://youtu.be/ounpwfpOTSM?si=9Bav1jhDR00-VQ9W)
+   [Farmer's Carry (video)](https://youtu.be/BeNv9nkhTg4)
+* (d)
+  Flexibility element: movements that arch/lower/stretch/relax your back, rotate your trunk, or stretch your hamstrings
+  *Resource:* [Flexibility Exercises (video)](https://youtu.be/0L3W0pcHU50?si=QKYN3iLraH8Dg7xS)
+* (e)
+  Cool-down: low-intensity movement or gentle stretching to prevent muscle cramps and enhance the benefits of exercise
+* (f)
+  A plan for achieving your two improvement goals related to diet and nutrition
+  *Resource:* [Pick Your Plate Game (website)](https://ssec.si.edu/pick-your-plate)
+
+7. **Complete the Program.** Do the following:
+
+* (a)
+  Complete and keep a log, over 12 consecutive weeks, of the physical fitness and nutrition program you have outlined. (If your program is interrupted by illness or unavoidable conflicts for less than two weeks, you may resume where you left off, adding the missed days or weeks at the end).
+  *Resources:* [Home Exercise Hacks (playlist)](https://youtube.com/playlist?list=PLhh_lxc4bmz8TPeX-dOu-I2K3O2x3_weX&si=4issEYVe10iMDjtZ)
+   [How to Make Your Own Exercise Equipment (video)](https://youtu.be/IAmnLlwNloU)
+* (b)
+  During week 4 and week 8 of your program, repeat the assessments you did in requirement 5(a) before you began. Repeat the same tests for a final assessment within two weeks after completing the 12-week program. Show improvement over your pre-assessment results.
+* (c)
+  For three days during week 8, and again during week 12, keep a log of what you eat and drink. Show improvement toward the diet and nutrition goals you set in requirement 5(d).
+* (d)
+  Discuss your results, improvements, insights, and experiences with your counselor after completing the program and assessments.
+
+8. **Future Career or Lifestyle.** Do ONE of the following:
+
+* (a)
+  Explore three careers related to personal fitness. Research one career area by interviewing an expert in the field, visiting a site, or using other resources. Learn about training, education, expenses, job outlook, salary, and advancement. Discuss your findings and career interest with your counselor.
+  *Resource:* [Careers Related to Personal Fitness (video)](https://youtu.be/9a9XU7D0DIo?si=BTdpODHe1FhUa-Sq)
+* (b)
+  Explore how an area of personal fitness could contribute to a hobby or healthy lifestyle. Research education, costs, and organizations related to this activity. Discuss your findings and goals with your counselor.
+  *Resources:* [Seated Wheelchair Workout (video)](https://youtu.be/d6x-A0CmI-I?si=BlRXUSzEPxx22VYv)
+   [Seated Cardio Workout (video)](https://youtu.be/hHiSWTU9xNk?si=6MgZZKv2n3RN-fVl)

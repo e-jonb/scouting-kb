@@ -1,14 +1,108 @@
 ---
 source: https://www.scouting.org/merit-badges/horsemanship/
-fetched: 2026-03-03
-bsa_version: 2026.Q1
+fetched: 2026-08-02
+bsa_version: 2026.Q3
 eagle_required: false
 ---
 
 # Horsemanship Merit Badge
 
-.elementor-180578 .elementor-element.elementor-element-c1c13ad:not(.elementor-motion-effects-element-type-background) > .elementor-widget-wrap, .elementor-180578 .elementor-element.elementor-element-c1c13ad > .elementor-widget-wrap > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("https://www.scouting.org/wp-content/uploads/2022/09/Archery.png");}
+## Merit Badge Overview
 
-#post-175550 .elementor-180578 .elementor-element.elementor-element-c1c13ad:not(.elementor-motion-effects-element-type-background) > .elementor-widget-wrap, #post-175550 .elementor-180578 .elementor-element.elementor-element-c1c13ad > .elementor-widget-wrap > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image: url("https://www.scouting.org/wp-content/uploads/2022/09/Archery.png");}
+In addition to learning how to safely ride and care for horses, Scouts who earn this merit badge will gain an understanding of the instincts and behaviors of horses and humane and effective methods for training horses.
 
-## [Archery](https://www.scouting.org/merit-badges/archery/)
+## Merit Badge Requirements
+
+## The previous version of the Merit Badge requirements can be found in Scoutbook
+
+**NOTE:**  The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Horsemanship.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
+
+1. Do the following:
+
+* (a)
+  Describe the safety precautions you should take when handling and caring for a horse.
+  *Resource:* [Safety Precautions When Handling Horses (video)](https://youtu.be/B5KeqtLZoUA?si=FD2BQR4jCnU4E6OS)
+* (b)
+  Describe the fire safety precautions you should take in a barn and around horses.
+  *Resource:* [Barn Fire Safety (video)](https://youtu.be/w-05f23oJVA)
+
+2. Name 15 parts of a horse and discuss the function of each with your counselor.
+*Resources:* [Parts of a Horse (video)](https://youtu.be/y369q1jh8HQ)
+ [Parts of a Horse (blank) (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Horsemanship/Parts%20of%20a%20Horse%20-%20blank%20worksheet.pdf)
+ [Parts of a Horse (filled) (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Horsemanship/Parts%20of%20a%20Horse.jpg)
+
+3. Name four breeds of horses. Explain the special features for which each breed is known.
+*Resources:* [Ten Popular Horse Breeds (video)](https://youtu.be/FiBBNX8WszQ)
+ [Six Popular Horse Breeds (video)](https://youtu.be/jwZj65SHdcw?si=hK8GTTDsRlUT5kAZ)
+
+4. Describe the symptoms of colic. Name and describe four other horse health problems.
+*Resource:* [Health Problems in Horses (video)](https://youtu.be/_ZeUDXMmSXE?si=mw4HfkBBedTRvh5a)
+
+5. Explain what conformation is and why it is important. Explain the difference between lameness and unsoundness.
+*Resources:* [Lameness vs. Unsoundness (video)](https://www.youtube.com/shorts/Ica4d4jK2eo)
+ [Signs of Lameness (video)](https://youtu.be/c9Mn9RP39lE?si=T2D88HPDsxFjWU8v)
+
+6. Explain the importance of hoof care and why a horse might need to wear shoes.
+*Resource:* [How To Clean Horse Hooves (video)](https://youtu.be/whbZsicSv-k)
+
+7. Demonstrate how to groom a horse, including picking hooves and caring for a horse after a ride.
+*Resources:* [Caring for a Horse (video)](https://youtu.be/fdGhd2phEHs)
+ [How To Groom a Horse (video)](https://youtu.be/9Leym8QeBM8)
+
+8. Explain how to determine what and how much to feed a horse and why the amount and kind of feed are changed according to the activity level and the breed of horse.
+*Resource:* [What Do Horses Eat? (video)](https://youtu.be/AcgfzGhaoes)
+
+9. Do the following:
+
+* (a)
+  Name 10 parts of the saddle and bridle that you will use, and explain how to care for this equipment.
+  *Resource:* [Parts of a Saddle (video)](https://www.youtube.com/watch?v=CXkV6LxGJF8)
+* (b)
+  Show how to properly saddle and bridle a horse.
+  *Resources:* [How To Saddle a Horse (video)](https://youtu.be/MZHl9zBHD10)
+   [How To Bridle a Horse (video)](https://youtu.be/sI7A5aTFUnE)
+* (c)
+  Demonstrate how to safely mount and dismount a horse.
+  *Resources:* [Using a Mounting Block and Adjusting Tack (video)](https://youtu.be/a40XR220wd8)
+   [Mounting and Dismounting a Horse (video)](https://youtu.be/p3T7tUwyNBg)
+   [How To Mount a Horse (video)](https://youtu.be/CafSxVC-1I8)
+   [How To Ride a Horse (video)](https://youtu.be/NC9Tr2hXfFk)
+
+10. Explain and demonstrate how to approach and lead a horse safely from a stall, corral, or field and how to tie the horse securely.
+*Resource:* [How To Lead a Horse (video)](https://youtu.be/AsP38UPNHvI)
+
+11. On level ground, continuously do the following movements after safely mounting the horse. Do them correctly, at ease, and in harmony with the horse.
+*Resources:* [How To Steer Your Horse (video)](https://youtu.be/uZ_5lxUyCdw)
+ [How To Ride a Horse (video)](https://youtu.be/fV7kuUrjutY)
+ [Riding Despite Physical Challenges (video)](https://youtu.be/oFy6FqQ_PXM)
+
+* (a)
+  Walk the horse in a straight line for 60 feet.
+* (b)
+  Walk the horse in a half-circle of not more than 16 feet in radius.
+* (c)
+  Trot or jog the horse in a straight line for 60 feet.
+  *Resource:* [How To Trot a Horse (video)](https://youtu.be/-3CMZSbQRgg)
+* (d)
+  Trot or jog the horse in a half-circle of not more than 30 feet in radius.
+  *Resource:* [Tips for Trotting (video)](https://youtu.be/KCSkmYEQxEg?si=ET5yK-3VM_Pjzae3)
+* (e)
+  Halt straight.
+  *Resource:* [How To Stop Your Horse (video)](https://youtu.be/GJ0Y_ZaCSmo)
+* (f)
+  Back up straight four paces.
+  *Resource:* [How To Back Up a Horse (video)](https://youtu.be/aolJGYfOZI0)
+* (g)
+  Halt and dismount.
+  *Resource:* [Mount and Dismount a Horse (video)](https://youtu.be/vBdXfiNXu7I?si=Cb12AYTlH2J_lbtg)
+
+12. Do ONE of the following:
+
+* (a)
+  Explore careers related to this merit badge. Research one career to learn about the training and education needed, costs, job prospects, salary, job duties, and career advancement. Your research methods may include—with your parent or guardian's permission—an internet or library search, an interview with a professional in the field, or a visit to a location where people in this career work. Discuss with your counselor both your findings and what about this profession might make it an interesting career.
+  *Resources:* [Careers Working With Horses (video)](https://youtu.be/00UQQttaXUs?si=wkiU7zrCaLhmzHis)
+   [Explore a Career as a Horse Doctor (video)](https://youtu.be/BCnueH9iemg?si=e9ZwFO8jJ6T7ue5C)
+* (b)
+  Explore how you could use knowledge and skills from this merit badge to pursue a hobby or healthy lifestyle. Research any training needed, expenses, and organizations that promote or support it. Discuss with your counselor what short-term and long-term goals you might have if you pursued this.
+  *Resources:* [United States Pony Club (video)](https://youtu.be/L6TQRrzyK8c)
+   [Competitive Hobbyhorse Riding (video)](https://youtu.be/3Y0t0spC5Hg)

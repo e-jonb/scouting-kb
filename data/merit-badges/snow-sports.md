@@ -1,42 +1,218 @@
 ---
 source: https://www.scouting.org/merit-badges/snow-sports/
-fetched: 2026-03-03
-bsa_version: 2026.Q1
+fetched: 2026-08-02
+bsa_version: 2026.Q3
 eagle_required: false
 ---
 
 # Snow Sports Merit Badge
 
-![](https://www.scouting.org/wp-content/uploads/2022/11/logo-scoutlife-2.png)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20471%20140%22%3E%3C/svg%3E)
+## Merit Badge Overview
 
-### [Illinois Scouts Brave the Slopes for a Cool Merit Badge](https://scoutlife.org/about-scouts/scouting-around/170548/illinois-scouts-brave-the-slopes-for-a-cool-merit-badge/)
+Skiing and snowboarding are the fastest and most thrilling ways to travel on foot in snow country. These sports also provide the physical benefits of fresh air, rhythmic action, and strenuous exercise. Many games and contests give snow sports variety and added rewards.
 
-Life Scout Paul Lehmann and his sister Ann, a Second Class Scout, stood at the top of the slope. It was Paul’s fourth time visiting Devil’s Head Ski Resort near Merrimac, Wisconsin, and he had all the confidence in the world.
-“I had gone down most of the hills before,” says Paul, 14. “All the beginner green and blue ones, and also the orange-marked terrain park. Even three of the advanced black-diamond hills.”
-“But I hadn’t,” laughed Ann, 11. “It was my first time. All I could think was, ‘Wow, we don’t have hills like this where we live in Illinois!’”
-With people waiting in line behind her, Ann jammed her right foot down to lock her ski boot in place and squinted against the glaring sun pouring down the slope. Leafless oak and aspen trees marked the left and right boundaries of the run, while a wide ribbon of pure white snow ran between them.
-After some encouragement from other Scouts, Ann nodded and pushed herself out of the gate. The wind stung her face and watered her eyes, but she kept on her feet as she raced down. She was skiing!
-FROM PRACTICE TO PERFORMANCE
-Boys Troop 9 and girls Troop 2019, both of Champaign, Illinois, were spending the weekend at Devil’s Head to earn the Snow Sports merit badge. Many of the requirements were checked off in troop meetings before the ski trip. But before they could earn the badges, the Scouts first needed to step out into the cold.
-“We did a lot of activities to prepare for the trip,” says Makenna West, a 13-year-old Second Class Scout. “We layered up the Scouts with all they would need to survive time in the snow. This gave them the chance to see how it felt to move around with unfamiliar gear.”
-“But it’s one thing to read about it, and another to do it!” says Daniela Stewart, a 12-year-old Tenderfoot Scout.
-One of the toughest requirements was to “make a controlled run down an intermediate slope and demonstrate short-, medium- and long-radius parallel turns, a side slip and safety stop to each side and traverse across a slope.”
-“Keeping things under control when you’d never skied before wasn’t easy,” 11-year-old Tenderfoot Scout Curtis Hanson says. “We managed the turns and stops, and after I got to the bottom of the hill, all I could think was: ‘I want to do it again!’”
-THE VALUE OF EXPERIENCE
-Skiing is a centuries-old way to travel. In the late 1800s, innovations to skiing equipment popularized downhill skiing for fun and competition, though the sport didn’t catch on in the U.S. until the 1920s and 1930s. Ski resorts opened up all over the country, and now millions of people enjoy them each year. Devil’s Head has been a skiing destination for Troop 9 for the past few years.
-“Most of the older guys had been there before, and they gave a lot of advice to help keep us safe,” 11-year-old Scout Addison Dyer says. “Some guys took some good tumbles. You kind of chuckled when someone fell and cheered when they got up. We rated the falls like in the Olympics. Nobody got a perfect 10, but they came close.”
-Tumbles will happen — skiing requires balance and proper technique. Supporting each other during a shared experience is important, especially for those who are trying something new. Snow sports can be strenuous; you need to be physically fit.
-END OF THE RUN
-By day’s end, everyone was tired but happy. Their time on the slopes wrapped up with only a few sore muscles, and they gathered at the bottom of the hill to trade jokes and stories before heading inside to roaring fires, pizza and a heated swimming pool.
-Through careful preparation, solid teamwork and a dash of bravery, the Scouts finished their time at Devil’s Head.
-“And everybody earned their Snow Sports merit badges,” Ann says. “I didn’t try any of the double-black runs, but there’s a whole lot more skiing I want to do.”
-“And next year you can teach me a few new tricks!” Paul says.
-SNOW SPORTS MERIT BADGE
-Downhill skiing isn’t the only winter sport you can do to earn the Snow Sports merit badge. You can also try cross-country skiing or snowboarding. For any activity, make sure you wear a helmet and stay in designated areas.
-FOR YOUR SKI TRIP
-Here’s how to be ready for your own trip to the slopes.
-1. Exercise. Stretch every day for 5-10 minutes. Go jogging three times a week for at least a mile. To help build those hill-climbing leg muscles, skip the elevator and take the stairs.
-2. Prepare. Brush up on your first aid. Make sure at least one person in your party has a good first-aid kit and knows how to use it. Dress in layers. If you wear only one thick coat, you will become very uncomfortable. Don’t forget the little things! Hand sanitizer, extra batteries and a pack of playing cards can come in handy.
-3. Where to Go? There are more than 200 ski resorts in the U.S. This means wherever you live, it shouldn’t be too far to get to one. Each resort has its own specialties. Some feature challenging runs, while others cater to first-timers. Pick the one that best matches your abilities and interests. Most resorts offer discounts on lift tickets, rooms and equipment rentals if you have enough people in your party. So try to take your friends!
+## Merit Badge Requirements
 
-[![](https://www.scouting.org/wp-content/uploads/2023/02/Illinois-Scouts-Brave-the-Slopes-for-a-Cool-Merit-Badge.jpg)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20640%20481%22%3E%3C/svg%3E)](https://scoutlife.org/about-scouts/scouting-around/170548/illinois-scouts-brave-the-slopes-for-a-cool-merit-badge/)
+## The previous version of the Merit Badge requirements can be found in Scoutbook
+
+**NOTE:**  The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Snow%20Sports.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
+
+1. Do the following:
+
+* (a)
+  Explain to your counselor the hazards you are most likely to encounter while participating in snow sport activities, and what you should do to anticipate, help prevent, mitigate, and respond to these hazards.
+  *Resources:* [How To Ski Safely (video)](https://youtu.be/AKxY8Xm-Gg0)
+   [How To Prevent Injuries (website)](https://centerforspineandortho.com/common-skiing-and-snowboarding-injuries-and-how-to-prevent-them/)
+* (b)
+  Discuss first aid and prevention for the types of injuries or illnesses that could occur while participating in snow sports, including hypothermia, frostbite, shock, dehydration, sunburn, concussion, fractures, bruises, sprains, and strains. Tell how to apply splints.
+  *Resources:* [Treating Frostbite and Hypothermia (video)](https://youtu.be/tHiav9zYJT0?si=VC-plNy5tA2XSZ1I)
+   [How to Splint a Broken Bone (video)](https://youtu.be/jo2zi_JB9_4?si=nVI-3TY16Ma1BL1p)
+
+2. Do the following:
+
+* (a)
+  Explain why every snow sport participant should be prepared to render first aid in the event of an accident.
+* (b)
+  Explain the procedure used to report an accident to the local ski patrol or local emergency personnel.
+  *Resource:* [How to Report an Accident to the Ski Patrol (video)](https://youtu.be/Zl0ZyNoox8M?si=xgYuHNUn5izc4HA7)
+
+3. Explain the international trail-marking system.
+*Resource:* [International Trail Marking System (video)](https://youtu.be/N_f6xMFVVHc)
+
+4. Discuss the importance of strength, endurance, and flexibility in snow sports. Demonstrate exercises and activities you can do to get fit for the option you choose in requirement 7.
+*Resource:* [Training to Prevent Snow Sports Injuries (video)](https://youtu.be/a8sf5k3fH9I)
+
+5. Present yourself properly clothed and equipped for the option you choose in requirement 7. Discuss how the clothing you have chosen will help keep you warm and protected.
+*Resource:* [How to Dress for Snow Sports (video)](https://youtu.be/mjJNpR3nepM)
+
+6. Do ALL of the following:
+
+* (a)
+  Explain the elements of the *Your Responsibility Code* that is in effect at the location whehre you will ski, snowboard, or snowshoe. Explain why each person must follow this code.
+  *Resource:* [Your Responsibility Code (video)](https://youtu.be/euGO92z4MnM)
+* (b)
+  Explain the *SMART Style* safety program. Tell why it is important and how it applies to participants at snow sport venues like terrain parks and pipes.
+  *Resource:* [*SMART* Style Safety Program (video)](https://youtu.be/4Y7lCN7SKiY)
+* (c)
+  Explain the precautions pertaining to avalanche safety, including the responsibility of individuals regarding avalanche safety.
+  *Resource:* [How to Reduce Avalanche Risk (video)](https://youtu.be/_f-vEc5LTFM)
+
+7. Do ONE of the following options:
+
+* **Option A—Downhill (Alpine) Skiing.** Do ALL of the following:
+
+  **Note:** Generally, a gentle slope will be a trail designated by a green circle, a slightly steeper slope will be a green circle or blue square trail, and an intermediate slope will be a blue square trail. However, your counselor should determine what type of hill is most suited to your skill level and allows you to demonstrate each of the required skills.
+* (1)
+  Show how to wax and maintain your skis and use/maintain your release bindings. Explain the international DIN standard and what it means to skiers.
+  *Resources:* [How to Wax Skis (video)](https://youtu.be/1Xt1gZfZ2Rw)
+   [How to Test Ski Bindings (video)](https://youtu.be/Ix27SNEsRYM)
+   [Ski Binding DIN Settings (video)](https://youtu.be/DkNAXgc2-rk?si=p-0U6YH1kIngZ47t)
+* (2)
+  Explain the American Teaching System and a basic snowskiing progression.
+  *Resource:* [American Teaching System Skill Levels (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Snow%20Sports/american_teaching_system_levels.pdf)
+* (3)
+  Discuss the different types of Alpine skis. Demonstrate two ways to carry skis and poles safely and easily.
+  *Resources:* [Types of Alpine Skis (video)](https://youtu.be/PXR5vRgIlJE)
+   [How to Carry Skis (video)](https://youtu.be/GLu49jDy51k)
+* (4)
+  Demonstrate how to ride one kind of lift and explain how to ride two others.
+  *Resource:* [Ski Lifts and How to Ride Them (video)](https://youtu.be/4xkGmEC-vPk)
+* (5)
+  On a gentle slope, demonstrate some of the beginning maneuvers learned in skiing. Include the straight run, gliding wedge, wedge stop, sidestep, and herringbone maneuvers.
+  *Resources:* [Beginner's Guide - The Gear (video)](https://youtu.be/LaF1tT1l7c0?si=A4krxuBaIP1wPGgx)
+   [Beginner's Guide - Basic Moves (video)](https://youtu.be/l6AG5WLUaNo?si=Cy7fDWXKwAFsQp9B)
+   [Beginner's Guide - Getting Around (video)](https://youtu.be/zAQVuC1Q4mw?si=ofT18Us8eaEUr9_w)
+* (6)
+  On slightly steeper terrain, show linked wedge turns.
+  *Resources:* [How to Do Linked Wedge Turns (video)](https://youtu.be/1BdMf9rmubQ)
+   [The Wedge Turn (video)](https://youtu.be/9bEH6JCq83U?si=5ru69RVAgDgQfAif)
+* (7)
+  On a moderate slope, demonstrate five to 10 christies.
+  *Resource:* [How to Do Christies (video)](https://youtu.be/x5q0yV14sas)
+* (8)
+  Make a controlled run down an intermediate slope.
+  *Resource:* [Making a Controlled Run (video)](https://youtu.be/CMgId4iSlcE)
+* (9)
+  Demonstrate the ability to ski in varied conditions, including changes in pitch and snow conditions. Maintain your balance and ability to turn.
+  *Resource:* [Skiing in Variable Snow Conditions (video)](https://youtu.be/DQv53VSxykY?si=wBlVELSoFcvQ973i)
+* (10)
+  Name the major ski organizations in the United States and explain their functions.
+  *Resources:* [Professional Ski Instructors of America (PSIA) (video)](https://youtu.be/Z_Jh5pfseU8)
+   [U.S. Ski & Snowboard (video)](https://youtu.be/MHJlZBwiUx4)
+   [National Ski Patrol (video)](https://youtu.be/bmqLYSj4u0Q?si=6X5-kAiIuDy3Tgdg)
+* **Option B—Cross-Country (Nordic) Skiing.** DO ALL of the following:
+* (1)
+  Show your ability to select, use, and maintain equipment for cross-country skiing in safety and comfort.
+  *Resource:* [How to Choose Cross-Country Skis (video)](https://youtu.be/vqKaNOw6Feg?si=wVLxSaHGNEfQXGAq)
+* (2)
+  Explain the reasons for common rules, including no walking on ski trails, one-way ski direction, no pets, and no skiing on snowmobile trails.
+* (3)
+  Discuss classic, skating, touring, and telemark skis.
+  *Resource:* [Types of Cross Country Skis (video)](https://youtu.be/oXIp-lJJH4E?si=yNMZNIMyDHQjO_uC)
+* (4)
+  Discuss the basic principles of waxing for cross-country ski touring.
+  *Resource:* [How to Wax Cross-Country Skis (video)](https://www.youtube.com/shorts/hFl9r0JapvI)
+* (5)
+  Discuss the differences between cross-country, backcountry/ski touring, ski mountaineering, and downhill/telemark skiing.
+  *Resources:* [Styles of Cross-Country Skiing (video)](https://youtu.be/a2C77sfBMHo)
+   [What is Telemark Skiing? (video)](https://youtu.be/-B1UnHDByoY)
+* (6)
+  List the items you would take on a one-day ski tour.
+  *Resource:* [Gear Checklist for a Day Tour (video)](https://youtu.be/3rHuEqZgUMc)
+* (7)
+  Demonstrate the proper use of a topographic map and compass.
+  *Resources:* [How to Read a Topographic Map (video)](https://youtu.be/CoVcRxza8nI)
+   [How to Use a Compass (video)](https://youtu.be/0cF0ovA3FtY?si=HJAgHgcZCmPOcuC3)
+   [How to Use a Topographic Map and Compass (video)](https://youtu.be/P1LL2FXK6o0?si=rb4_VuRCb-uql1gU)
+* (8)
+  On a gentle, packed slope, show some basic ways to control speed and direction. Include the straight run, traverse, side slip, step turn, wedge stop, and wedge turn maneuvers.
+  *Resource:* [How to Control Speed and Direction (video)](https://youtu.be/kmw9LxutG_8)
+* (9)
+  On a cross-country trail, demonstrate effective propulsion by showing proper weight transfer form ski to ski, pole timing, rhythm, flow, and glide.
+  *Resource:* [Basic Moves on Cross-Country Skis (video)](https://youtu.be/ctrIUq9kCJI?si=QoPaYBG0365ZvZF1)
+* (10)
+  Demonstrate your ability, on a 4-mile tour, to cope with an average variety of snow conditions.
+  **Note:** Adaptive skiers may complete a 1-mile tour with prior approval from their counselor.
+  *Resource:* [Skiing on Varied Conditions (video)](https://youtu.be/nCqNLC8PzNM?si=_vD2U1nIhE-khHVQ)
+* (11)
+  Demonstrate several methods of dealing with steep hills or difficult conditions. Include traverses and kick turns going uphill and downhill, sidesteps, and pole drag.
+  *Resource:* [Dealing With Hills (video)](https://youtu.be/MWskz4ZnPl4?si=pyET65PzEaPCW94o)
+* **Option C—Snowboarding.** Do ALL of the following:
+
+  **Note:** Generally, a gentle slope will be a trail designated by a green circle, a slightly steeper slope will be a green circle or blue square trail, and an intermediate slope will be a blue square trail. However, your counselor should determine what type of hill is most suited to your skill level and allows you to demonstrate the required skills.
+* (1)
+  Discuss forward-fall injuries.
+  *Resource:* [How to Fall on a Snowboard (video)](https://youtu.be/pAuRz-QP5tM)
+* (2)
+  Show your ability to select the correct equipment for snowboarding and to use it for safety and comfort.
+  *Resource:* [Selecting Snowboard Equipment (video)](https://youtu.be/lF2lf5RGCOw?si=IonNRzzALWYLVIlx)
+* (3)
+  Show how to use and maintain your own bindings, and explain the use of the different binding methods. Explain the need for leashes.
+  *Resource:* [How to Adjust Bindings (video)](https://youtu.be/1NQ-G0qn4UA)
+* (4)
+  Discuss the four types of snowboards. Demonstrate how to carry a snowboard easily and safely.
+  *Resource:* [Types of Snowboards (video)](https://youtu.be/I9t_ez_utno)
+* (5)
+  Demonstrate how to ride one kind of lift and explain how to ride two others.
+  *Resource:* [Ski Lifts and How to Ride Them (video)](https://youtu.be/4xkGmEC-vPk)
+* (6)
+  Demonstrate the basic principles of waxing a snowboard.
+  *Resource:* [How to Wax a Snowboard (video)](https://youtu.be/YGG5_xjeB2Y)
+* (7)
+  Do the following:
+* (a)
+  On a gentle slope, demonstrate beginning snowboarding maneuvers. Show basic ways to control speed and direction. Include the sideslipping maneuver.
+  *Resources:* [Beginning Snowboard Maneuvers (video)](https://youtu.be/9YGruvaETK4)
+   [How to Make Your Board Go Straight (video)](https://youtu.be/UoPxRNsLrZ8)
+* (b)
+  On slightly steeper terrain, show traversing.
+  *Resource:* [Maneuvering Hills & Traversing the Slope (video)](https://youtu.be/eIcLMojBopA)
+* (8)
+  On a moderate slope, demonstrate an ollie, a nose-end grab, and a wheelie.
+  *Resources:* [How to Do an Ollie (video)](https://youtu.be/N4hCpTt30GE)
+   [How to Do a Nose-End Grab (video)](https://youtu.be/gZFWW4Vus-Q)
+   [How to Do a Wheelie (video)](https://youtu.be/ZDUHDwxqNuE)
+* (9)
+  Make a controlled run down an intermediate slope.
+  *Resource:* [Making a Controlled Run (video)](https://youtu.be/77rXSf7-CWY)
+* (10)
+  Demonstrate your ability to ride in varied conditions, including changes in pitch, snow conditions, and moguls. Maintain your balance and ability to turn.
+  *Resource:* [Types of Snow Conditions (video)](https://youtu.be/96SaQtglKHE)
+* (11)
+  Name the major snowboarding organizations in the United States and explain their functions.
+  *Resource:* [American Association of Snowboarding Instructors (video)](https://youtu.be/UrtwvLd2sbU)
+* **Option D—Snowshoeing.** Do ALL of the following:
+  *Resource:* [How to Choose Snowshoes (video)](https://youtu.be/vsco4SkXSTc?si=hyEIP4kbTHuAYHjt)
+* (1)
+  Name the parts of a snowshoe.
+* (2)
+  Explain how to choose the correct size of snowshoe.
+* (3)
+  Describe the different types of snowshoes and their specialized uses. Discuss factors to consider when choosing a snowshoe.
+* (4)
+  Explain how to properly care for and maintain snowshoes.
+  *Resources:* [How to Repair Snowshoes (video)](https://youtu.be/7BwDagdaXew)
+   [How to Store Snowshoes (video)](https://youtu.be/scwZ1geZpWA)
+* (5)
+  List the items you would take on a one-day snowshoe hike.
+  *Resources:* [What to Bring Snowshoeing (video)](https://youtu.be/_gA5VlgKnOI?si=80SyezhTHEGfun_S)
+   [What to Wear Snowshoeing (video)](https://youtu.be/p-7UMYNP6s0)
+* (6)
+  Describe areas that are best for snowshoeing. Discuss some advantages and dangers of backcountry snowshoeing.
+  *Resource:* [Where and How to Snowshoe Safely (video)](https://youtu.be/tYo3RNM2ock?si=e8ozQUSDO9Lp5T7L)
+* (7)
+  Discuss the benefits of snowshoeing.
+  *Resource:* [Benefits of Snowshoeing (video)](https://youtu.be/Iej5x5vk304?si=-olKS2XTAsH5n3p8)
+* (8)
+  Demonstrate the most efficient ways to break trail, climb uphill, travel downhill and traverse a slope.
+  *Resources:* [How to Break Trail (video)](https://youtu.be/9gLm2viPkT4?si=GIe05Kq-w67IMEe_)
+   [How to Snowshoe on Hills (video)](https://youtu.be/Mr1uR6ENxBY?si=3Y1zY3mtDaQJfdlb)
+   [How to Sidestep (video)](https://youtu.be/zWabuDZBcVQ)
+* (9)
+  Demonstrate your ability, on a 2-mile snowshoe hike, to cope with an average variety of snow conditions.
+  *Resource:* [How to Travel Cross-Country on Snowshoes (video)](https://youtu.be/3U37kHrGlvo?si=FozGoulaHs_9Ssqi)
+* (10)
+  Demonstrate the proper use of a topographic map and compass.
+  *Resources:* [How to Read a Topographic Map (video)](https://youtu.be/CoVcRxza8nI)
+   [How to Use a Compass (video)](https://youtu.be/0cF0ovA3FtY)
+   [How to Use a Topographic Map and Compass (video)](https://youtu.be/P1LL2FXK6o0)

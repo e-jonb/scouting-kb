@@ -1,34 +1,120 @@
 ---
 source: https://www.scouting.org/merit-badges/oceanography/
-fetched: 2026-03-03
-bsa_version: 2026.Q1
+fetched: 2026-08-02
+bsa_version: 2026.Q3
 eagle_required: false
 ---
 
 # Oceanography Merit Badge
 
-![](https://www.scouting.org/wp-content/uploads/2022/11/logo-scouting.png)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20300%20100%22%3E%3C/svg%3E)
+## Merit Badge Overview
 
-### [Make a splash with the Oceanography merit badge](https://scoutingmagazine.org/2019/02/make-a-splash-with-the-oceanography-merit-badge/)
+The oceans cover more than 70 percent of our planet and are the dominant feature of Earth. Wherever you live, the oceans influence the weather, the soil, the air, and the geography of your community. To study the oceans is to study Earth itself.
 
-Chris Lamie started teaching the Oceanography merit badge at the Merit Badge University at Harvard University when he was a Harvard sophomore. More than 15 years later, he’s still at it, teaching the popular badge to dozens of Scouts each year. Scouting caught up with him to find out what he has learned along the way.
-Oceans and Deserts
-Despite the merit badge’s name, Lamie says Scouts don’t have to visit an ocean to complete it. Only a few subrequirements involve trips to the water, and those are all found in requirements 7 and 8, which are “do one of the following” requirements. In other words, land-based choices are available.
-Lamie does take his Scouts to the Charles River (more on that later), but field trips aren’t essential.
-“I’m pretty sure you could be in the middle of the desert,” he says.
-That said, he does think living near the ocean is helpful.
-“Even if you don’t visit the ocean for the badge, people have life experiences they can relate to, like watching a house erode off a cliff into the ocean on the news, visiting the ocean during a storm or feeling the way the weather is at the beach,” he says.
-Making it Real
-The badge’s nine requirements are packed with terms like “tidal bore” and “abyssal plain.”
-To make sure Scouts do more than regurgitate definitions, Lamie has come up with fun ways to bring the words to life. For example, to demonstrate the relationship between salinity and density, he has Scouts make their own salt water and try to get a hard-boiled egg to float.
-Even more fun is the game he uses to demonstrate plate tectonics, the phenomenon that creates mountains, underwater features and earthquakes. The only equipment required: one Double Stuf Oreo cookie per Scout.
-“They snap the top layer in half, then push the two pieces together, pull them apart or drive them alongside each other,” he says. “The filling is the magma.”
-On the Road
-One of Lamie’s trademark moments is a field trip to the Charles River, which runs by Harvard. Once there, Scouts use simple homemade plankton nets made of nylon hose and plastic cups — the instructions are in the merit badge pamphlet — to collect plankton.
-“Microscopic plankton and bigger things like bits of leaves and so on tend to get stuck inside,” he says. “The longer you tow it through the water, the more those things get concentrated in the cup down at the toe.”
-Because the merit badge university occurs in the spring, Lamie’s Scouts often come up empty, at least where plankton are concerned, so he has pre-prepared slides in the lab that Scouts can study under a microscope.
-“It’s a chance for them to get familiar with some tools and techniques they might end up using in school,” he says.
-Although he gets positive feedback on his classes, Lamie is never satisfied.
-“I’m always trying to find new ways to teach this,” he says. “That’s something I’d recommend to anybody: Keep tweaking it to find the most effective ways to help the Scouts learn.”
+## Merit Badge Requirements
 
-[![](https://www.scouting.org/wp-content/uploads/2023/02/Make-a-splash-with-the-Oceanography-merit-badge.jpg)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20538%20808%22%3E%3C/svg%3E)](https://scoutingmagazine.org/2019/02/make-a-splash-with-the-oceanography-merit-badge/)
+## The previous version of the Merit Badge requirements can be found in Scoutbook
+
+**NOTE:**  The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Oceanography.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
+
+1. Name four branches of oceanography. Describe at least five reasons why it is important for people to learn about the oceans.
+*Resource:* [What is Oceanography (video)](https://youtu.be/NMM_GboBZyc?si=xq_9tR0kLLbCYoQo)
+
+2. Explain the following terms: salinity, temperature, and density. Describe how these important properties of seawater are measured by an oceanographer. Discuss the circulation and currents of the ocean. Describe the effects of the oceans on weather and climate.
+*Resources:* [Temperature and Salinity (video)](https://youtu.be/jKWc5oy0NCQ?si=2B4crDCxvuYbGQce)
+ [An Ocean in Motion (video)](https://youtu.be/R5-s6O8qyvE)
+ [Oceans and Climate (video)](https://youtu.be/zO2153cJORI)
+ [How Do Ocean Currents Affect the Weather Pattern? (video)](https://youtu.be/T9LTtqcKDw0?si=qNZusyjB_bPjS0UQ)
+
+3. Describe the characteristics of ocean waves and do the following:
+*Resource:* [How Do Ocean Waves Work? (video)](https://youtu.be/_LRc6k-clzE?si=_bP0nKjcposT5QV5)
+
+* (a)
+  Point out the differences among the storm surge, tsunami, tidal wave, and tidal bore.
+  *Resources:* [Tsunami vs Tidal Wave: What's the Difference? (video)](https://youtu.be/wk7RyUReaIA)
+   [What is Storm Surge? (video)](https://youtu.be/ZxYCB4VPVow)
+* (b)
+  Explain the difference between sea, swell, and surf.
+  *Resources:* [Weather Explained: What's the Difference Between Seas and Swell? (video)](https://www.skynews.com.au/australia-news/weather-explained-whats-the-difference-between-seas-and-swell/video/836f58b40244e1a18c28b015033f9792)
+   [Difference Between Swell and Surf (website)](https://support.surfline.com/hc/en-us/articles/4410126820891-Difference-between-swell-and-surf)
+   [The Difference Between SWELL and SURF (video)](https://www.youtube.com/shorts/qcwAsh9TDvo)
+* (c)
+  Explain how breakers are formed.
+  *Resource:* [How Do Waves Break? (video)](https://www.youtube.com/watch?v=aXuQC1qRuEM)
+* (d)
+  Explain what a rip current is, how to avoid them, and what to do if you are caught in one.
+  *Resources:* [New Guide to Spot and Escape a Rip Current (video)](https://youtu.be/lofVgAzut6w)
+   [Rip Current Survival Guide (website w/ video)](https://www.noaa.gov/multimedia/video/video-heading-to-beach-see-our-rip-current-survival-guide-first)
+
+4. Draw a cross-section of underwater topography. Name and put on your drawing the following: seamount, guyot, rift valley, canyon, trench, and oceanic ridge. Compare the depths in the oceans with the heights of mountains on land. Show what is meant by:
+*Resources:* [Diagram of Sea Floor (website)](https://www.visualdictionaryonline.com/earth/geology/ocean-floor.php)
+ [How Deep Does the Ocean Go? (video)](https://youtu.be/mAwfTahzbtw)
+ [How Deep the Ocean REALLY Is (video)](https://youtube.com/shorts/DZ9v54D4mZ8?si=l4pnMMCRDzgxQOpF)
+
+* (a)
+  Continental shelf
+* (b)
+  Continental slope
+* (c)
+  Abyssal plain
+
+5. List the main salts, gases, and nutrients in seawater. Describe some important properties of water. Tell how the animals and plants of the ocean affect the chemical composition of seawater. Explain how differences in evaporation and precipitation affect the salt content of the oceans.
+*Resources:* [Seawater Composition (website)](https://www.marinebio.net/marinescience/02ocean/swcomposition.htm)
+ [Why is the Sea Salty? (video)](https://youtu.be/SPF6cSan6tc)
+
+6. Describe some of the biologically important properties of seawater. Define benthos, nekton, and plankton. Name some of the plants and animals that make up each of these groups. Describe the place and importance of phytoplankton in the oceanic food chain.
+*Resources:* [Nekton, Benthos, and Plankton (video)](https://youtu.be/4cguoY4qTXA)
+ [Feeding the Sea: Phytoplankton Fuel Ocean Life (video)](https://youtu.be/AWfebk0_auY)
+ [NASA | Earth Science Week: The Ocean's Green Machines (video)](https://youtu.be/H7sACT0Dx0Q)
+ [Open Ocean Food Chain (website)](https://teara.govt.nz/en/video/5354/open-ocean-food-chain)
+
+7. Do ONE of the following:
+
+* (a)
+  Make a plankton net. Tow the net by a dock, wade with it, hold it in a current, or tow it from a rowboat. Do this for about 20 minutes. Save the sample. Examine it under a microscope or high-power glass. Identify the three most common types of plankton in the sample.
+
+  **Note:** May be done in lakes or streams.
+  *Resources:* [How to Make a Soda Bottle Plankton Net (video)](https://youtu.be/e-MYhWcWWXw)
+   [Make Your Own Plankton Net! (video)](https://youtu.be/HBcuGbMc8cU?si=c6sGRZYkRXv9QDtE)
+* (b)
+  Make a series of models (clay or plaster and wood) of a volcanic island. Show the growth of an atoll from a fringing reef through a barrier reef. Describe the Darwinian theory of coral reef formation.
+  *Resources:* [Coral Reefs: Types and Formation (video)](https://youtu.be/mPA9Ze16lGw?si=pVw56hFgRlnPJtro)
+   [How Coral Reefs are Formed (video)](https://youtu.be/anDSRfSY7LQ)
+* (c)
+  Measure the water temperature at the surface, midwater, and bottom of a body of water four times daily for five consecutive days. You may measure depth with a rock tied to a line. Make a Secchi disk to measure turbidity (how much suspended sedimentation is in the water). Measure the air temperature. Note the cloud cover and roughness of the water. Show your findings (air and water temperature, turbidity) on a graph. Tell how the water temperature changes with air temperature.
+  *Resource:* [How to Make and Use a Secchi Disk (video)](https://youtu.be/lr66G09PuKg)
+* (d)
+  Make a model showing the inshore sediment movement by littoral currents, tidal movement, and wave action. Include such formations as high and low waterlines, low-tide terrace, berm, and coastal cliffs. Show how offshore bars are built up and torn down.
+  *Resource:* [Longshore Drift Model Demo (video)](https://youtu.be/bfzAeQXhSGk)
+* (e)
+  Make a wave generator. Show reflection and refraction of waves. Show how groins, jetties, and breakwaters affect these patterns.
+  *Resources:* [DIY Ripple Tank (video)](https://youtu.be/9l-tIvvtCPA)
+   [Reflecting Waves in a Ripple Tank (video)](https://youtu.be/iGuUKRmytLw)
+   [Refraction of Waves in a Ripple Tank (video)](https://youtu.be/7wfEczDapHA)
+   [Coastal Erosion and the Methods Used to Reduce It (video)](https://youtu.be/_eeKpz8oD7E)
+   [Wave Tank Demonstration (video)](https://youtu.be/3yNoy4H2Z-o?si=spekLgWh6z3YHC8W)
+* (f)
+  With your counselor's and parent or guardian's approval and permission, track and monitor satellite images available on the internet for a specific location for three weeks. Describe what you have learned to your counselor.
+  *Resource:* [Weather Satellite Images (website)](https://www.nhc.noaa.gov/satellite.php)
+
+8. Do ONE of the following:
+
+* (a)
+  Write a 500-word report on a book about oceanography approved by your counselor.
+* (b)
+  Visit one of the following and write a 500-word report about your visit.
+* (1)
+  Oceanographic research ship
+  *Resource:* [Tour of a Research Vessel (video)](https://youtu.be/LVDQi5iG99M)
+* (2)
+  Oceanographic institute, marine laboratory, or marine aquarium
+  *Resources:* [A Virtual Tour of Bodega Marine Laboratory (video)](https://youtu.be/DYI_gw72bk8?si=2GDdWk4RX68hyIK5)
+   [A Visit to Mote Marine Laboratory & Aquarium (video)](https://youtu.be/aaY1fwyjU1U)
+* (c)
+  Explain to your troop, in a five-minute prepared speech "Why Oceanography Is Important," or describe "Career Opportunities in Oceanography." (Before making your speech, show your speech outline to your counselor for approval.)
+  *Resources:* [Oceanography Careers (video)](https://youtu.be/uFHREUrMLSY)
+   [How to Work with the Ocean (video)](https://youtu.be/N4d6YRKEaxg)
+
+9. Describe four methods that marine scientists use to investigate the ocean, underlying geology, and organisms living in the water.
+*Resources:* [Studying the Ocean EXPLAINED (video)](https://youtu.be/ibPuzpHuAgY)
+ [How do Scientists Explore the Deep Sea? (video)](https://youtu.be/vKzgIyCTY8k?si=gAsNKqiPyHLcwXys)

@@ -1,12 +1,12 @@
 ---
 source: https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/
-fetched: 2026-03-03
-bsa_version: 2026.Q1
+fetched: 2026-08-02
+bsa_version: 2026.Q3
 ---
 
 # Scouts BSA Ranks
 
-_As of 2026.Q1. Listed in advancement order. Requirements sourced from official BSA PDFs._
+_As of 2026.Q3. Listed in advancement order. Requirements sourced from official BSA PDFs._
 
 | # | Rank | Description | File |
 |---|---|---|---|

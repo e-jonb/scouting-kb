@@ -1,14 +1,83 @@
 ---
 source: https://www.scouting.org/merit-badges/programming/
-fetched: 2026-03-03
-bsa_version: 2026.Q1
+fetched: 2026-08-02
+bsa_version: 2026.Q3
 eagle_required: false
 ---
 
 # Programming Merit Badge
 
-.elementor-180578 .elementor-element.elementor-element-c1c13ad:not(.elementor-motion-effects-element-type-background) > .elementor-widget-wrap, .elementor-180578 .elementor-element.elementor-element-c1c13ad > .elementor-widget-wrap > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("https://www.scouting.org/wp-content/uploads/2025/09/Artificial-Intelligence.png");}
+## Merit Badge Overview
 
-#post-248960 .elementor-180578 .elementor-element.elementor-element-c1c13ad:not(.elementor-motion-effects-element-type-background) > .elementor-widget-wrap, #post-248960 .elementor-180578 .elementor-element.elementor-element-c1c13ad > .elementor-widget-wrap > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image: url("https://www.scouting.org/wp-content/uploads/2025/09/Artificial-Intelligence.png");}
+Programming merit badge will take you “behind the screen” for a look at the complex codes that make digital devices useful and fun.
 
-## [Artificial Intelligence](https://www.scouting.org/merit-badges/artificial-intelligence/)
+## Merit Badge Requirements
+
+## The previous version of the Merit Badge requirements can be found in Scoutbook
+
+**NOTE:**  The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Programming.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
+
+1. **Safety.** Do the following:
+
+* (a)
+  View the Personal Safety Awareness "Digital Safety" video (with your parent or guardian's permission.)
+  *Resource:* [Scouting Digital Safety Video (video)](https://filestore.scouting.org/filestore/YPSAT/YT%20Mod1%20Final%20Master%20Small.mp4)
+* (b)
+  Discuss first aid and prevention for the types of injuries that could occur during programming activities, including repetitive stress injuries and eyestrain.
+  *Resources:* [Treating Repetitive Stress (video)](https://www.youtube.com/shorts/1yp0jOyARCk)
+   [Treating Eye Strain (video)](https://www.youtube.com/watch?v=j3ff4aeItl0)
+   [5 Tips to Reduce Eye Strain (website)](https://www.uab.edu/news/health-medicine/new-uab-eye-care-clinic-helps-improve-vision-in-the-workplace)
+
+2. **History.** Discuss with your counselor the history of programming and the evolution of programming languages, including at least three milestones related to the advancement or development of programming over time.
+*Resources:* [5 Minutes of Programming Language History (video)](https://youtu.be/K5yv7dY17EA)
+ [Example With Code Examples and Pictures (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Programming/Req2-History.docx)
+ [Text Descriptions of Historical Progression of Programming Languages (website)](https://www.computer.org/publications/tech-news/insider-membership-news/timeline-of-programming-languages)
+ [Computer History Museum Timeline With Pictures (website)](https://www.computerhistory.org/timeline/software-languages/)
+ [History Handout (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Programming/Req2-History.pdf)
+
+3. **General Knowledge.** Do the following:
+*Resource:* [General Knowledge Handout (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Programming/Req3-General.pdf)
+
+* (a)
+  Create a list of five popular programming languages in use today and describe which industry or industries they are primarily used in and why.
+  *Resource:* [Eight Popular Programming Languages, Their Industries and Coding Examples (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Programming/Req3-General.docx)
+* (b)
+  Describe three different programmed devices you rely on every day.
+
+4. **Intellectual Property.** Do the following:
+*Resource:* [Intellectual Property Handout (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Programming/Req4-IP.pdf)
+
+* (a)
+  Explain the four types of intellectual property used to protect computer programs.
+  *Resource:* [Four Different Types of Intellectual Property (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Programming/Req4-IP.docx)
+* (b)
+  Describe the difference between licensing and owning software.
+  *Resource:* [The Difference Between Licensing and Owning Software (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Programming/Req4-IP.docx)
+* (c)
+  Describe the differences between freeware, open source, and commercial software, and why it is important to respect the terms of use of each.
+  *Resources:* [Open Source VS Commercial Software (video)](https://www.youtube.com/watch?v=SdW5pnha9kg)
+   [Free VS Open Source Software (website)](https://www.geeksforgeeks.org/software-engineering/difference-between-free-software-and-open-source-software/)
+
+5. **Project.** With your counselor's guidance, select three different programming languages and development environments. For each sub-requirement below, do the following: Write or modify a program using the indicated programming language and development environment. The program must take input and produce output based on computations and decisions made on the input. Debug and demonstrate the program to your counselor. Explain how each program processes inputs, makes decisions based on those inputs, and provides outputs based on computations and decision making.
+*Resource:* [Project Handout (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Programming/Req5-Project.pdf)
+
+* (a)
+  In the first language and environment, write or modify a program, debug and demonstrate, and explain as above.
+  *Resource:* [*Scout Life* Programming Merit Badge (website)](https://scoutlife.org/merit-badges/programming-merit-badge/)
+* (b)
+  In the second language and environment, write or modify a program, debug and demonstrate, and explain as above.
+  *Resource:* [Programming Merit Badge Welcome! From AutomationDirect (video)](https://www.youtube.com/watch?v=s07aEbPwThM)
+* (c)
+  In the third language and environment, write or modify a program, debug and demonstrate, and explain as above.
+  *Resource:* [Codedex / Start Your Coding Adventure (website)](https://www.codedex.io/)
+
+6. **Careers.** Do ONE of the following:
+*Resource:* [Careers Handout (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Programming/Req6-Careers.pdf)
+
+* (a)
+  Explore careers related to this merit badge. Research one career to learn about the training and education needed, costs, job prospects, salary, job duties, and career advancement. Your research methods may include—with your parent or guardian's permission—an internet or library search, an interview with a professional in the field, or a visit to a location where people in this career work. Discuss with your counselor both your findings and what about this profession might make it an interesting career.
+  *Resources:* [Variety of Jobs for Computer Scientists (video)](https://youtu.be/2VpDcjFshJI)
+   [9 Computer Coding Careers (website)](https://www.rasmussen.edu/degrees/technology/blog/programming-careers-for-coding-connoisseurs/)
+   [Education Required to Become a Computer Programmer (website)](https://www.wgu.edu/career-guide/information-technology/computer-programmer-career.html)
+* (b)
+  Explore how you could use knowledge and skills from this merit badge to pursue a hobby or healthy lifestyle. Research any training needed, expenses, and organizations that promote or support it. Discuss with your counselor what short-term and long-term goals you might have if you pursued this.

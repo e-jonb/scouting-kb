@@ -1,14 +1,85 @@
 ---
 source: https://www.scouting.org/merit-badges/composite-materials/
-fetched: 2026-03-03
-bsa_version: 2026.Q1
+fetched: 2026-08-02
+bsa_version: 2026.Q3
 eagle_required: false
 ---
 
 # Composite Materials Merit Badge
 
-.elementor-180578 .elementor-element.elementor-element-c1c13ad:not(.elementor-motion-effects-element-type-background) > .elementor-widget-wrap, .elementor-180578 .elementor-element.elementor-element-c1c13ad > .elementor-widget-wrap > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("https://www.scouting.org/wp-content/uploads/2025/09/Artificial-Intelligence.png");}
+## Merit Badge Overview
 
-#post-248960 .elementor-180578 .elementor-element.elementor-element-c1c13ad:not(.elementor-motion-effects-element-type-background) > .elementor-widget-wrap, #post-248960 .elementor-180578 .elementor-element.elementor-element-c1c13ad > .elementor-widget-wrap > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image: url("https://www.scouting.org/wp-content/uploads/2025/09/Artificial-Intelligence.png");}
+Composites can be found just about everywhere: in airplanes and sports cars, golf clubs and guitars, boats and baseball bats, bathtubs and circuit boards, and even bridges. Composites make bicycles and skis lighter, kayaks and canoes stronger, houses warmer, and helmets tougher.
 
-## [Artificial Intelligence](https://www.scouting.org/merit-badges/artificial-intelligence/)
+## Merit Badge Requirements
+
+## The previous version of the Merit Badge requirements can be found in Scoutbook
+
+**NOTE:**  The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Composite%20Materials.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
+
+1. Do the following:
+
+* (a)
+  Explain to your counselor the most likely hazards you may encounter while working with composite materials and what you should do to anticipate, mitigate, and prevent, and respond to these hazards. Describe the appropriate safety gear and clothing that should be used when working with composite materials.
+  *Resources:* [Fibreglass Safety 101 (video)](https://youtu.be/tXmTLRSMZSM)
+   [How to Stay Clean and Safe Working With Fiberglass (video)](https://youtu.be/oVBSWJCSK4E)
+* (b)
+  Explain the precautions that must be taken when handling, storing, and disposing of resins, reinforcements, and other materials used in composites. Include in your discussion the importance of health, safety, and environmental responsibility and awareness.
+  *Resources:* [How to Dispose of Epoxy Resin Leftovers and Used Materials (video)](https://youtu.be/tVwFisroxrg)
+   [Ultimate Guide to Resin Handling Safety (website)](https://allanchem.com/ultimate-guide-to-resin-handling-safety/)
+* (c)
+  Describe what a safety data sheet (SDS) is and tell why it is used.
+  *Resource:* [Safety Data Sheets Training (video)](https://youtu.be/_yWF-w3CwmU)
+
+2. Do the following:
+
+* (a)
+  Explain what composite materials are. Include a brief history of composites and how they have developed.
+  *Resources:* [Intro to Composites (video)](https://youtu.be/WYqCnEvTRUQ?si=4MqVQJIT2aQ-1nsr)
+   [What is a Composite? (video)](https://youtu.be/8tEf_X9Rzts?si=El0NGrvMMuSvJ3w7)
+* (b)
+  Compare the similarities and differences between composites and wood, aluminum, copper, and steel. Describe the physical, electrical, mechanical, corrosive, flammability, cost, and other such properties. For each of these raw materials, give one example of how it can be shaped and used for a specific application.
+  *Resource:* [Properties of Materials (video)](https://youtu.be/XbX4xY1sqQo)
+
+3. Describe how composite materials are made. Then do the following:
+*Resource:* [How Do Composites Work? (video)](https://youtu.be/gYTjC8GIwcU)
+
+* (a)
+  Discuss three different composite reinforcement materials, their positive and negative characteristics, and their uses. Obtain the SDS for each one and discuss the toxicity, disposal, and safe-handling sections for these materials.
+  *Resource:* [Introduction to Fibres (video)](https://youtu.be/jsAJIMKEoZQ)
+* (b)
+  Discuss three different resins used in composites, their positive and negative characteristics, and their uses. Obtain the SDS for each one and discuss the toxicity, disposal, and safe-handling sections for these materials. Include thermoset resins and thermoplastic resins in your discussion.
+  *Resource:* [Introduction to Matrix Materials (video)](https://youtu.be/yQo4ucV3jfA)
+* (c)
+  For each of the three resins you chose for requirement 3(b), think of a new application that might be worth developing.
+
+4. With your parent or guardian's permission and your counselor's approval, do ONE of the following:
+
+* (a)
+  Visit a company that manufactures or repairs products made with composites. Discuss what you learned with your counselor.
+* (b)
+  Find three composites-related websites. Share and discuss what you learned with your counselor.
+
+5. Do the following:
+*Resources:* [STEM Flix™ - Fun with Composite Materials with Science Bob (video)](https://youtu.be/Ry7_Yuo-FYM?si=VwPF2eUQYD3FSvbz)
+ [How to Dispose of Epoxy Resin Leftovers and Used Materials (video)](https://youtu.be/vxKlbik4QjM?si=5lLZ-vLZFHDSm_As)
+ [How to Hand Lay Up a Carbon Fibre Skateboard (video)](https://youtu.be/scvXKij1hQ0)
+
+* (a)
+  Use composite materials to complete two projects, at least one of which must come from the *Composite Materials* merit badge pamphlet. The second project may come from the pamphlet OR may be one you select on your own that has been approved by your counselor in advance.
+* (b)
+  With your counselor's assistance, find an appropriate site where the projects can be safely completed under your counselor's supervision and/or the supervision of an adult approved by your counselor who is knowledgeable about composites.
+* (c)
+  With your counselor, determine how the finished projects will be evaluated. Using those guidelines, evaluate the completed projects with your counselor.
+
+6. Do ONE of the following:
+
+* (a)
+  Explore careers related to the Composite Materials merit badge. Research one career to learn about the training and education needed, costs, job prospects, salary, job duties, and career advancement. Your research methods may include—with your parent or guardian's permission—an internet or library search, an interview with a professional in the field, or a visit to a location where people in this career work. Discuss with your counselor both your findings and what about this profession might make it an interesting career.
+  *Resources:* [Materials Engineer - Careers in Science and Engineering (video)](https://youtu.be/DtosXFgP7C4)
+   [Materials Science - a Building Block for the Future of Aerospace Technologies (video)](https://youtu.be/c0EXAuWkMqA)
+   [My Job in F1: Rachel, Materials Science Engineer (video)](https://youtu.be/j_xotv7npsQ)
+* (b)
+  Explore how you could use knowledge and skills from the *Composite Materials* merit badge to pursue a hobby or interest. Research any training needed, expenses, and organizations that promote or support it. Discuss with your counselor what short-term and long-term goals you might have if you pursued this.
+  *Resources:* [Surfboard Shaping and Glassing (video)](https://youtu.be/rYYuDt8Z2cY)
+   [Making a Skateboard (video)](https://youtu.be/s2aS1G6yp-4)

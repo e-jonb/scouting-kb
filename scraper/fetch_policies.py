@@ -22,6 +22,7 @@ Usage:
 
 import asyncio
 import argparse
+import re
 from pathlib import Path
 from datetime import date
 
@@ -31,10 +32,30 @@ from rich.console import Console
 
 from utils import (
     bsa_version_from_date, make_frontmatter,
-    write_md, rate_limit, clean_markdown, extract_content, make_browser_context
+    write_md, rate_limit, clean_markdown, absolutize_relative_links,
+    extract_content, make_browser_context
 )
 
 console = Console()
+
+_COUNCIL_LOCATOR_RE = re.compile(
+    r"Find your local council Scout executive:.*?Search Result\n\n####\n*",
+    re.DOTALL,
+)
+
+
+def _strip_council_locator_widget(text: str) -> str:
+    """
+    The youth-protection-training page embeds a "find your council" search
+    widget (empty result-form labels: "Council Number :", "Address :", etc.)
+    directly inside the article's own content column — not inside a
+    <nav>/<header>/<form> element extract_content() already strips, so it
+    survives as junk labels with nothing behind them. Confirmed 2026-08-02,
+    see docs/PLAYBOOK.md. This repo already has real council data in
+    data/councils/councils.json — this widget was never going to be
+    interactive in a static markdown file anyway.
+    """
+    return _COUNCIL_LOCATOR_RE.sub("", text)
 
 # Policies to fetch. Add new entries here as Tier 2 expands.
 POLICIES = [
@@ -115,7 +136,14 @@ async def fetch_policy_page(page: Page, policy: dict, built_date: str, bsa_versi
     Fetch a single policy web page and return formatted markdown content.
     Returns None if no content is found.
     """
-    await page.goto(policy["url"], wait_until="networkidle", timeout=60000)
+    try:
+        await page.goto(policy["url"], wait_until="networkidle", timeout=60000)
+    except Exception:
+        # Some pages never settle to networkidle — e.g. the youth-protection
+        # page's "find your council" widget keeps polling. Confirmed
+        # 2026-08-02, see docs/PLAYBOOK.md.
+        await page.goto(policy["url"], wait_until="load", timeout=30000)
+        await page.wait_for_timeout(2000)
     await page.wait_for_timeout(1000)
     content_html = await extract_content(page)
 
@@ -128,6 +156,8 @@ async def fetch_policy_page(page: Page, policy: dict, built_date: str, bsa_versi
         strip=["script", "style", "nav", "footer", "header", "form", "button"],
     )
     md_content = clean_markdown(md_content)
+    md_content = _strip_council_locator_widget(md_content)
+    md_content = absolutize_relative_links(md_content)
 
     # Build frontmatter extras
     extras = {}

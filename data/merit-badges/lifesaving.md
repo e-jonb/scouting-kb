@@ -1,20 +1,122 @@
 ---
 source: https://www.scouting.org/merit-badges/lifesaving/
-fetched: 2026-03-03
-bsa_version: 2026.Q1
+fetched: 2026-08-02
+bsa_version: 2026.Q3
 eagle_required: true
 ---
 
 # Lifesaving Merit Badge
 
-![](https://www.scouting.org/wp-content/uploads/2022/11/logo-onscouting-2.png)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20600%20140%22%3E%3C/svg%3E)
+## Merit Badge Overview
 
-### [Let’s look at lifesaving — not the merit badge, the competitive sport](https://blog.scoutingmagazine.org/2022/07/18/lets-look-at-lifesaving-not-the-merit-badge-the-competitive-sport/)
+No Boy Scout will ignore a plea for help. However, the desire to help is of little use unless one knows how to give the proper aid. The main purpose of the Lifesaving merit badge is to prepare Scouts to assist those involved in water accidents, teaching them the basic knowledge of rescue techniques, the skills to perform them, and the judgment to know when and how to act so that they can be prepared for emergencies.
 
-In case you missed it, The World Games — an international, multisport event consisting of sports that aren’t in the Olympics – concluded yesterday in Birmingham, Ala.
-Among the competitions you’ve probably at least heard of: drone racing, parachuting, bowling, racquetball and roller sports.
-There are some that are variations on Olympic sports you already know: archery, canoeing, karate and powerlifting.
-There are some you’ve probably never heard of: boules (it’s French for ball and includes games called lyonnaise and pétanque), dance sport (there are categories for rock and roll, Latin and “breaking”) and floorball (basically, floor hockey).
-And then there’s the one that makes you go, “Wait, that’s a sport?” That’s right: The sport of lifesaving, not to be confused with the Lifesaving merit badge that’s earned by nearly 20,000 Scouts per year, is a competitive event at The World Games.
+## Merit Badge Requirements
 
-[![](https://www.scouting.org/wp-content/uploads/2022/11/Aquatics-Lifesaving-Lets-look-at-lifesaving-—-not-the-merit-badge-the-competitive-sport.jpg)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20640%20360%22%3E%3C/svg%3E)](https://blog.scoutingmagazine.org/2022/07/18/lets-look-at-lifesaving-not-the-merit-badge-the-competitive-sport/)
+## The previous version of the Merit Badge requirements can be found in Scoutbook
+
+**NOTE:**  The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Lifesaving.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
+
+1. Before doing requirements 3 through 15, review with your counselor the principles of Safe Swim Defense.
+*Resource:* [3. Safe Area (video)](https://player.vimeo.com/video/187987620)
+
+2. Before doing requirements 3 through 15:
+
+* (a)
+  Earn the Swimming merit badge.
+  *Resource:* [Swimming Merit Badge (website)](https://www.scouting.org/merit-badges/swimming/)
+* (b)
+  Swim continuously for 400 yards using each of the following strokes in a strong manner, in good form with rhythmic breathing, for at least 50 continuous yards: front crawl, sidestroke, breaststroke, and elementary backstroke.
+
+3. Explain the following:
+
+* (a)
+  Common drowning situations and how to avoid them, such as unfenced residential pools, drop offs, river currents, rip currents, and medical emergencies.
+  *Resource:* [Rip Current Survival Guide (website w/ video)](https://www.noaa.gov/multimedia/video/video-heading-to-beach-see-our-rip-current-survival-guide-first)
+* (b)
+  How to identify persons in the water who need assistance.
+  *Resource:* [Can You Spot a Person Drowning? (video)](https://youtu.be/beNheoRRdKk)
+* (c)
+  The order of methods in water rescue.
+* (d)
+  How rescue techniques vary depending on the setting and the condition of the person needing assistance.
+* (e)
+  Situations for which in-water rescues should not be undertaken.
+
+4. Demonstrate "reaching" rescues using various items such as arm, leg, towels, shirts, paddles, poles.
+*Resources:* [Lifesaving Reaching Rescues—Arm (video)](https://player.vimeo.com/video/187987272)
+ [She Saved Someone From Drowning! More True Stories of Scouts in Action (video)](https://youtu.be/SsHswwtUaIk)
+
+5. Demonstrate "throwing" rescues using various items such as a line, ring buoy, rescue bag, and free-floating support. Successfully place at least one such aid within reach of a practice victim 25 feet from shore.
+*Resource:* [Throwing Rescues—Lifejacket (video)](https://player.vimeo.com/video/187987276)
+
+6. With your counselor's approval, view in-person or on video a rowing rescue performed using a rowboat, canoe, kayak, or stand up paddleboard. Discuss with your counselor how effectively and efficiently the rescue was performed.
+*Resource:* [Their Kayak Capsized! A True Story of Scouts in Action (video)](https://youtu.be/CCNtlv9kRYA)
+
+7. List various items that can be used as aids in a "go" rescue. Explain why buoyant aids are preferred.
+
+8. Correctly demonstrate rescues of a conscious practice subject 30 feet from shore in deep water using two types of buoyant aids provided by your counselor. Use a proper entry and a strong approach stroke. Speak to the subject to determine his or her condition and to provide instructions and encouragement.
+*Resources:* [He Saved His Grandma From Drowning! A True Story of Scouts in Action (video)](https://youtu.be/PbRsD-ep2TM)
+ [Entry—Stride Jump (video)](https://player.vimeo.com/video/187987279)
+
+* (a)
+  Present one aid to a subject, release it, and swim at a safe distance as the subject moves to safety.
+* (b)
+  In a separate rescue, present the other aid to a subject and use it to tow the subject to safety.
+
+9. Discuss with your counselor when it is appropriate to remove heavy clothing before attempting a swimming rescue. Remove street clothes in 20 seconds or less, enter the water, and approach a conscious practice subject 30 feet from shore in deep water. Speak to the subject and use a nonbuoyant aid, such as a shirt or towel, to tow the subject to safety.
+
+10. Discuss with your counselor the importance of avoiding contact with an active subject and demonstrate lead-and-wait techniques.
+*Resources:* [Lead and Wait (video)](https://player.vimeo.com/video/187987281)
+ [Shout and Signal Rescue (video)](https://youtu.be/HNZd-jBYN5g?si=W0aXzyW1dXBsXCxm)
+
+11. Perform the following nonequipment rescues for a conscious practice subject 30 feet from shore. Begin in the water from a position near the subject. Speak to the subject to determine his or her condition and to provide instructions and encouragement.
+*Resource:* [Active Swim Support (video)](https://player.vimeo.com/video/187982620)
+
+* (a)
+  Perform an armpit tow for a calm, responsive, tired swimmer resting with a back float.
+* (b)
+  Perform a cross-chest carry for an exhausted, responsive subject treading water.
+
+12. In deep water, show how to escape from a victim's grasp on your wrist. Repeat for front and rear holds about the head and shoulders.
+*Resource:* [Escape: Rear, Head, and Shoulder (video)](https://player.vimeo.com/video/187987288)
+
+13. Perform the following rescues for an unconscious practice subject at or near the surface 30 feet from shore. Use a proper entry and strong approach stroke. Speak to the subject and splash water on the subject to determine his or her condition before making contact. Quickly remove the victim from the water, with assistance if needed, and position for CPR.
+
+* (a)
+  Perform an equipment assist using a buoyant aid.
+* (b)
+  Perform a front approach and wrist tow.
+* (c)
+  Perform a rear approach and armpit tow.
+
+14. Discuss with your counselor how to respond if a victim submerges before being reached by a rescuer, and do the following:
+
+* (a)
+  Recover a 10-pound weight in 8 to 10 feet of water using a feetfirst surface dive.
+  *Resource:* [Feet First Surface Dive (video)](https://youtu.be/Lp81Aki77_0)
+* (b)
+  Repeat using a headfirst surface dive.
+  *Resource:* [Head First Surface Dive (video)](https://youtu.be/tajzE__-B-U)
+
+15. Demonstrate management of a spinal injury to your counselor:
+
+* (a)
+  Discuss the causes, signs, and symptoms of a spinal injury.
+  *Resources:* [Head, Neck, and Spine Injuries (video)](https://youtu.be/x-YYjkokQ6U)
+   [Assessing a Head Injury (video)](https://youtu.be/9hEjyLabTRE)
+* (b)
+  Support a faceup subject in calm water of standing depth.
+* (c)
+  Turn a subject from a facedown to a faceup position in water of standing depth while maintaining support.
+
+16. Demonstrate knowledge of resuscitation procedure:
+*Resource:* [How To Perform CPR for a Drowning Victim (video)](https://youtu.be/mnfhnyY-Udk)
+
+* (a)
+  Describe how to recognize the need for rescue breathing and CPR.
+* (b)
+  Demonstrate CPR knowledge and skills, including rescue breathing, on a mannequin under the guidance of a current CPR/AED instructor trained by a nationally certified provider.
+
+17. With your counselor, discuss causes, prevention, and treatment of other injuries or illnesses that could occur while swimming or boating, including hypothermia, dehydration, heat-related illnesses, muscle cramps, sunburn, stings, and hyperventilation.
+*Resource:* [10 Common Summer Safety Emergencies (website)](https://surefirecpr.com/emergency-tips/10-common-summer-safety-emergencies/)

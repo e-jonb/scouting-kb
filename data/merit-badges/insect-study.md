@@ -1,32 +1,132 @@
 ---
 source: https://www.scouting.org/merit-badges/insect-study/
-fetched: 2026-03-03
-bsa_version: 2026.Q1
+fetched: 2026-08-02
+bsa_version: 2026.Q3
 eagle_required: false
 ---
 
 # Insect Study Merit Badge
 
-![](https://www.scouting.org/wp-content/uploads/2022/11/logo-scoutlife-2.png)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20471%20140%22%3E%3C/svg%3E)
+## Merit Badge Overview
 
-### [How to Make a Monarch Butterfly Habitat](https://scoutlife.org/hobbies-projects/funstuff/168358/monarch-butterfly-habitat/)
+In earning the Insect Study merit badge, Scouts will glance into the strange and fascinating world of the insect. There, they will meet tiny creatures with tremendous strength and speed, see insects that undergo startling changes in habits and form as they grow, and learn how insects see, hear, taste, smell, and feel the world around them.
 
-The monarch butterfly population is in decline. To help out these beautiful creatures that pollinate wildflowers, you can build this protective habitat. It provides access to sunlight and keeps out predators, giving monarchs a safe place to grow before being released into the world.
-WHAT YOU NEED TO MAKE A MONARCH BUTTERFLY HABITAT
-Common milkweed plants
-Tomato cage or a small section of wire fencing
-A few yards of tulle fabric — this fine netting lets in light and water but keeps out hungry critters
-Scissors
-Twist ties or clamps to secure the tulle
-WHAT YOU’LL DO TO MAKE A MONARCH BUTTERFLY HABITAT
-STEP 1. BUY AND PLANT MILKWEED SEEDS OR A PLANT. You can buy the seeds and plant in stores, or you can find outlets online. If you choose to go with seeds, it will take about six weeks for the plants to grow mature enough to host monarchs.
-Make sure to position the milkweed’s garden plot in an area where it will get plenty of sunlight.
-STEP 2. AFTER SIX WEEKS OR SO, INSPECT YOUR MILKWEED PLANTS FOR SIGNS OF MONARCH ACTIVITY (time may vary depending on where you live). They often lay eggs under the first few sets of leaves toward the top of the plant.
-The plants you choose to cover and protect should be large, healthy and already home to monarch eggs or tiny monarch caterpillars. You’ll want to leave some milkweed plants uncovered so passing monarchs can use them to fuel up on nectar.
-STEP 3. PREPARE THE PROTECTED PLANT. Pick off competing insects and their eggs so only monarch eggs and caterpillars remain. Look under every leaf along the main stem and on the ground around the plant for non-monarch insects.
-STEP 4. SURROUND YOUR PLANT WITH THE TOMATO CAGE OR FENCING. Push the cage legs deep into the ground. If you’re using fencing, bury the bottom section so it stays put.
-STEP 5. WRAP A LAYER OF TULLE AROUND THE OUTSIDE OF YOUR CAGE, securing it with twist ties or clamps as you go. Cover both the bottom and top perimeters completely with tulle so nothing can get in or out.
-STEP 6. CREATE A SMALL DOOR THAT YOU CAN OPEN when it’s time to access your protected plant and release adult monarchs. To do this, clamp some extra tulle at the end that you can pull open like a tent flap.
-STEP 7. GOING FROM EGG TO ADULT TAKES ABOUT A MONTH. Check daily for progress and adult monarchs ready for release. You’ll know they’re ready when you see them flapping their bright orange wings trying to get out.
+## Merit Badge Requirements
 
-[![](https://www.scouting.org/wp-content/uploads/2023/02/How-to-Make-a-Monarch-Butterfly-Habitat.jpg)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20640%20481%22%3E%3C/svg%3E)](https://scoutlife.org/hobbies-projects/funstuff/168358/monarch-butterfly-habitat/)
+## The previous version of the Merit Badge requirements can be found in Scoutbook
+
+**NOTE: If collecting is permitted, do so ethically and sustainably. Collect sparingly, only taking what you need, and ensure that your collection practices do not harm the surrounding environment. Be aware of and adhere to local laws regarding collection.
+
+NOTE:**  The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Insect%20Study.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
+
+1. **Safety.** Do the following:
+
+* (a)
+  Explain to your counselor the most likely hazards associated with exposure to ants and bees and what you should do to anticipate, help prevent, mitigate, and respond to these hazards.
+  *Resources:*  [Insects, Bites, and Stings (video)](https://www.youtube.com/watch?v=-_c7225EkbA)
+   [Fire Ant Bites (website)](https://my.clevelandclinic.org/health/diseases/23362-fire-ant-bites)
+   [Are There Risks Associated With Keeping Honey Bees? (website)](https://peskylittlecritters.com/are-there-risks-associated-with-keeping-honey-bees/)
+* (b)
+  Discuss the prevention of and treatment for health concerns that could occur while working with ants and bees, including insect bites and anaphylactic shock.
+  *Resources:* [Anaphylactic Shock: Symptoms, Triggers, and Life-Saving First Aid Tips ( video)](https://youtu.be/tIQGcVpAFvM?si=FQuPgmqx0GSGi_L9)
+   [First Aid for a Bee Sting ( video)](https://www.youtube.com/watch?v=Adx9mKSoBNU)
+
+2. **Anatomy.** Do the following:
+
+* (a)
+  Tell how insects are different from other animals.
+  *Resources:* [Insect Anatomy ( video)](https://www.youtube.com/watch?v=B4oL9P0J8eA)
+   [Insect Pictures and Facts (website)](https://www.nationalgeographic.com/animals/topic/insects)
+* (b)
+  Show how insects are different from millipedes and spiders.
+  *Resource:* [Insects vs Arachnids ( video)](https://www.youtube.com/watch?v=91x0CV9CkFw)
+* (c)
+  Point out and name the main parts of an insect.
+  *Resource:* [Basic Insect Anatomy: Head, Thorax, and Abdomen (video)](https://youtu.be/bC9a35k1uFo?si=RD2MLMXIBaX72XC_)
+* (d)
+  Describe the characteristics that distinguish the major orders of insects.
+  *Resource:* [Top 5 Insect Orders and How to Identify Them (video)](https://www.youtube.com/watch?v=h9sKpQNd8DI)
+
+3. **Life Cycles.** Do the following:
+
+* (a)
+  Compare the life histories of a butterfly and a grasshopper. Tell how they are different.
+  *Resources:* [The Life Cycle of Butterflies and Moths (video)](https://www.youtube.com/watch?v=b-ZzAuda8dU)
+   [The Life Cycle of a Grasshopper! (video)](https://www.youtube.com/watch?v=a9awFvTafnE)
+* (b)
+  Raise an insect through complete metamorphosis from its larval stage to its adult stage (e.g., raise a butterfly or moth from a caterpillar). (Some insects are endangered species and are protected by federal or state law. Every species is found only in its own special type of habitat. Be sure to check natural resources authorities in advance to be sure that you will not be collecting any species that is known to be protected or endangered, or in any habitat where collecting is prohibited. In most cases, all specimens should be returned at the location of capture after the requirement has been met. Check with your counselor for those instances where the return of these specimens would not be appropriate.)
+
+4. **Observation and Analysis.** Do the following:
+
+* (a)
+  Discuss the importance of the Leave No Trace Seven Principles and the Outdoor Code as they relate to insect study. Explain how you have followed the Leave No Trace Seven Principles and the Outdoor Code during field observation, specimen collection, and identification.
+  *Resources:* [Leave No Trace Basics ( video)](https://vimeo.com/1115216743/63b20c0b33?share=copy)
+   [Leave No Trace Outdoor Ethics ( video)](https://www.youtube.com/watch?v=jXO1uY0MvmQ)
+* (b)
+  Observe 20 different live species of insects in their habitat. In your observations, include at least four orders of insects.
+  *Resources:* [Insect Orders ( video)](https://www.youtube.com/watch?v=RFMA3u-lZ3U)
+   [Crash Course in Entomology: The "Big Four" Insect Orders ( video)](https://www.youtube.com/watch?v=HOhbf5JtCGo)
+   [An Introduction to Insect Orders ( video)](https://www.youtube.com/watch?v=Ogh7_ITZ3Xg)
+* (c)
+  Make a scrapbook of the 20 insects you observe in 4(b). Include photographs, sketches, illustrations, and articles. Label each insect with its common and scientific names, where possible. Share your scrapbook with your counselor.Resources: [How To Start a Bug Collection (video)](https://youtu.be/_Ep2ronR_io)
+   [How To Make an Insect Collection: Spreading (video)](https://youtu.be/KFacqZ9CM4w)
+   [Collecting Insects: Tools and Supplies (video)](https://youtu.be/CcBOm6DQ20g)
+   [Insect Collecting—Tools & Tips (video)](https://youtu.be/hB9lyBkWaEE)
+* (d)
+  From your scrapbook collection, select eight species of insects and identify what role they play in the ecosystem.
+  *Resources:* [Why Insects Are So Crucial to Life on Earth ( video)](https://www.youtube.com/watch?v=6QwiYfqX1sg)
+   [Why Are Insects Important? (website)](https://www.youtube.com/watch?v=19iEWe-qH5o)
+
+5. **Social Insects.** Do the following:
+
+* (a)
+  Tell things that make social insects different from solitary insects.
+  *Resources:* [Social Insects (website)](https://genent.cals.ncsu.edu/bug-bytes/social-insects/)
+   [What Are Social Insects? (website)](https://www.thoughtco.com/what-are-social-insects-1968157)
+* (b)
+  Do ONE of the following:
+* 1.
+  Observe an ant colony in a formicarium (ant farm). Find the queen and worker ants. Explain to your counselor the different chambers found within an ant colony.
+  *Resource:* [Inside the Ant Colony ( video)](https://www.youtube.com/watch?v=vG-QZOTc5_Q)
+* 2.
+  Study a hive of bees. Remove the combs and find the queen. Estimate the amount of brood and count the number of queen cells. Explain how to determine the amount of honey in the hive. (If you are allergic to bee stings, pick option (1) above.)
+  *Resource:* [Beekeeping 101 ( video)](https://youtu.be/C2h4fYL73_M?si=GSvoxnXeVd8E9MA4)
+
+6. **Ecology.** Do the following:
+
+* (a)
+  Tell how insects fit in the food web of other insects, fish, birds, and mammals.
+  *Resource:* [Ants and Their Role in Food Webs ( video)](https://www.youtube.com/watch?v=hRDx5HbvqvM)
+* (b)
+  Explain the role insects serve as pollinators for plants.
+  *Resource:* [The Power of Pollinators ( video)](https://www.youtube.com/watch?v=eDxZojp9yNg)
+
+7. **Insects and People.** Do the following:
+
+* (a)
+  Explain the symbiotic relationship between bees and humankind. Explain what colony collapse disorder (CCD) is and some of the possible causes. Discuss how CCD affects our food supply.
+  *Resources:* [Hundreds of Millions of Bees Mysteriously Dying ( video)](https://youtu.be/qWsBZbnt_4A?si=cYkszuDmpwAm3ELw)
+   [Why Are the Bees Dying? (video)](https://youtu.be/Eelf07i3ESA?si=yzK6c2on91pQjr_o)
+   [Colony Collapse Disorder (website)](https://www.epa.gov/pollinator-protection/colony-collapse-disorder)
+* (b)
+  Describe three alternatives to insecticides as a way of preventing crop injury and subsequent yield loss. Explain the advantages and disadvantages of these alternatives. Resources: [Ultimate Pest Control Guide for Farmers (video)](https://youtu.be/AVSs-EkYTCo)
+   [4 Ways Nuclear Techniques Help Feed the World (video)](https://youtu.be/2ef83qy2R6I)
+
+8. **Conservation.** Do the following:
+
+* (a)
+  Tell the migration route of an insect (e.g., monarch butterfly). Discuss the challenges they face and how Scouts can contribute to their success.
+  *Resource:* [Monarch Migration (website)](https://www.monarchwatch.org/migration/)
+* (b)
+  Find out about an insect that is a threatened or endangered species. Discuss the challenges they face and how Scouts can contribute to their success.
+  *Resource:* [Endangered Species Conservation (website)](https://www.xerces.org/endangered-species)
+
+9. **Careers and Hobbies.** Do ONE of the following:
+
+* (a)
+  Identify three career opportunities that would use skills and knowledge in Insect Study. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career.
+  *Resources:* [Meet an Entomologist ( video)](https://www.youtube.com/watch?v=bz1QM5Y9aqk)
+   [Occupational Video - Entomologist ( video)](https://www.youtube.com/watch?v=bQ0yAZQF0mE)
+* (b)
+  Identify three career opportunities that would use skills and knowledge in Insect Study. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career. Resources: [Meet an Entomologist (video)](https://youtu.be/bz1QM5Y9aqk)
+   [Entomologist (video)](https://youtu.be/bQ0yAZQF0mE)

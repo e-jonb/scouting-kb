@@ -1,12 +1,12 @@
 ---
 source: https://www.scouting.org/skills/merit-badges/all/
-fetched: 2026-03-03
-bsa_version: 2026.Q1
+fetched: 2026-08-02
+bsa_version: 2026.Q3
 ---
 
 # Merit Badges Index
 
-_As of 2026.Q1. Total: 135 badges (17 Eagle-required)._
+_As of 2026.Q3. Total: 142 badges (17 Eagle-required)._
 
 ## Eagle-Required Badges
 
@@ -38,7 +38,7 @@ _As of 2026.Q1. Total: 135 badges (17 Eagle-required)._
 | American Cultures | [american-cultures.md](american-cultures.md) |
 | American Heritage | [american-heritage.md](american-heritage.md) |
 | American Indian Culture | [american-indian-culture.md](american-indian-culture.md) |
-| American Indian Culture | [american-indian-culture.md](american-indian-culture.md) |
+| American Indian Culture | [indian-lore.md](indian-lore.md) |
 | American Labor | [american-labor.md](american-labor.md) |
 | Animal Science | [animal-science.md](animal-science.md) |
 | Animation | [animation.md](animation.md) |
@@ -56,10 +56,12 @@ _As of 2026.Q1. Total: 135 badges (17 Eagle-required)._
 | Bugling | [bugling.md](bugling.md) |
 | Canoeing | [canoeing.md](canoeing.md) |
 | Chemistry | [chemistry.md](chemistry.md) |
+| Chess | [chess.md](chess.md) |
 | Citizenship in Society | [citizenship-in-society.md](citizenship-in-society.md) |
 | Climbing | [climbing.md](climbing.md) |
 | Coin Collecting | [coin-collecting.md](coin-collecting.md) |
 | Collections | [collections.md](collections.md) |
+| Competitive Gaming | [competitive-gaming.md](competitive-gaming.md) |
 | Composite Materials | [composite-materials.md](composite-materials.md) |
 | Crime Prevention | [crime-prevention.md](crime-prevention.md) |
 | Cybersecurity | [cybersecurity.md](cybersecurity.md) |
@@ -83,8 +85,8 @@ _As of 2026.Q1. Total: 135 badges (17 Eagle-required)._
 | Forestry | [forestry.md](forestry.md) |
 | Game Design | [game-design.md](game-design.md) |
 | Gardening | [gardening.md](gardening.md) |
+| Genealogy | [genealogy.md](genealogy.md) |
 | Geocaching | [geocaching.md](geocaching.md) |
-| Geology | [geology.md](geology.md) |
 | Geology | [geology.md](geology.md) |
 | Graphic Arts | [graphic-arts.md](graphic-arts.md) |
 | Health Care Professions | [health-care-professions.md](health-care-professions.md) |
@@ -95,6 +97,7 @@ _As of 2026.Q1. Total: 135 badges (17 Eagle-required)._
 | Journalism | [journalism.md](journalism.md) |
 | Kayaking | [kayaking.md](kayaking.md) |
 | Landscape Architecture | [landscape-architecture.md](landscape-architecture.md) |
+| Law | [law.md](law.md) |
 | Leatherwork | [leatherwork.md](leatherwork.md) |
 | Mammal Study | [mammal-study.md](mammal-study.md) |
 | Metalwork | [metalwork.md](metalwork.md) |
@@ -103,11 +106,13 @@ _As of 2026.Q1. Total: 135 badges (17 Eagle-required)._
 | Motorboating | [motorboating.md](motorboating.md) |
 | Moviemaking | [moviemaking.md](moviemaking.md) |
 | Multisport | [multisport.md](multisport.md) |
+| Music | [music.md](music.md) |
 | Nature | [nature.md](nature.md) |
 | Nuclear Science | [nuclear-science.md](nuclear-science.md) |
 | Oceanography | [oceanography.md](oceanography.md) |
 | Orienteering | [orienteering.md](orienteering.md) |
 | Painting | [painting.md](painting.md) |
+| Pets | [pets.md](pets.md) |
 | Photography | [photography.md](photography.md) |
 | Pioneering | [pioneering.md](pioneering.md) |
 | Plant Science | [plant-science.md](plant-science.md) |
@@ -117,6 +122,7 @@ _As of 2026.Q1. Total: 135 badges (17 Eagle-required)._
 | Public Health | [public-health.md](public-health.md) |
 | Public Speaking | [public-speaking.md](public-speaking.md) |
 | Pulp and Paper | [pulp-and-paper.md](pulp-and-paper.md) |
+| Radio | [radio.md](radio.md) |
 | Railroading | [railroading.md](railroading.md) |
 | Reading | [reading.md](reading.md) |
 | Reptile and Amphibian Study | [reptile-and-amphibian-study.md](reptile-and-amphibian-study.md) |
@@ -150,5 +156,6 @@ _As of 2026.Q1. Total: 135 badges (17 Eagle-required)._
 | Welding | [welding.md](welding.md) |
 | Whitewater | [whitewater.md](whitewater.md) |
 | Wilderness Survival | [wilderness-survival.md](wilderness-survival.md) |
+| Wildland Fire Management | [wildland-fire-management.md](wildland-fire-management.md) |
 | Wood Carving | [wood-carving.md](wood-carving.md) |
 | Woodwork | [woodwork.md](woodwork.md) |

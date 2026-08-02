@@ -1,36 +1,84 @@
 ---
 source: https://www.scouting.org/merit-badges/engineering/
-fetched: 2026-03-03
-bsa_version: 2026.Q1
+fetched: 2026-08-02
+bsa_version: 2026.Q3
 eagle_required: false
 ---
 
 # Engineering Merit Badge
 
-![](https://www.scouting.org/wp-content/uploads/2022/11/logo-scouting.png)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20300%20100%22%3E%3C/svg%3E)
+## Merit Badge Overview
 
-### [How to rev up the Engineering merit badge](https://scoutingmagazine.org/2013/10/rev-engineering-merit-badge/)
+Engineers use both science and technology to turn ideas into reality, devising all sorts of things, ranging from a tiny, low-cost battery for your cell phone to a gigantic dam across the mighty Yangtze River in China.
 
-IN RECENT YEARS, Scouting has increasingly focused on STEM — science, technology, engineering and math — a skill set that is vitally important in the digital age. It’s one more way Scouters are preparing kids for life. NovDec13\_MBClinicEngineering
-But how can you prepare yourself? And how can you bring excitement to merit badges like Engineering that might seem more scholastic than Scout-like?
-The best way, as with all merit badges, is to rely on the experts. That’s just what Troop 677 from Gurnee, Ill., did last winter. Rather than faking their way through the Engineering merit badge or bringing a guest speaker to a troop meeting, troop leaders organized a trip to the Harley-Davidson Museum in Milwaukee, which offers a free Engineering merit badge program.
-“One would think that engineering is potentially boring — pencils and erasers and management,” says Kirk Morris, the troop committee member who coordinated the trip. “But the way they’ve got the museum laid out, it’s engaging, it’s entertaining and there’s a wide variety of history.”
-The Harley-Davidson Museum is not the only place to work on the Engineering merit badge, of course. Eight hundred miles away in Marietta, Ga., Lockheed Martin has been offering Engineering merit badge classes for more than a decade. (Aviation and Robotics are also available.) Christopher Howard, an engineer and Troop 750 assistant Scoutmaster who coordinates the program, says thousands of Scouts from across the southeastern United States have attended the clinic.
-Scouting talked with Howard and Courtney Stachewicz, lead visitor experience associate at the Harley-Davidson Museum, to learn more about how they bring the Engineering merit badge to life — and how you can do the same.
-Two Sites, Two Approaches
-Although the Harley-Davidson Museum has run occasional weekend clinics, its merit badge program is mostly self-directed, with troops typically going through the museum as a group. “We’re available if they have any questions while they’re going through the exhibits,” says Stachewicz, who also serves as a merit badge counselor.
-The museum created a workbook for Scouts to fill out as they move through the exhibits. For most requirements, they are directed to a specific gallery where displays and videos align with what they are supposed to learn. For example, to complete Requirement 2, Scouts must learn about an engineering achievement that has had a major impact on society. The booklet sends them to the museum’s historical galleries, which cover Harley-Davidson’s founders and early engineers, the obstacles they overcame and the influence motorcycles have had on the automotive industry.
-Lockheed Martin takes a different approach by offering a structured Saturday program each February. Scouts are grouped into patrols named after Lockheed Martin aircraft like the F-16. After an opening ceremony, the patrols attend three interactive lecture sessions: engineering (Requirements 3, 4, 7 and 9), motions and properties (Requirement 6) and design (Requirements 1, 2 and 5). The day ends with a tour of Lockheed’s aircraft production line, which never fails to impress. “The first thing that gets most of them is just the sheer size of the manufacturing floor,” Howard says. “I think it’s 80-something football fields.”
-Lessons Learned
-Factory floors that cover half a square mile don’t appear on every street corner, and there’s only one Harley-Davidson Museum, but your troop can draw on the lessons learned in Milwaukee and Marietta to set up its own Engineering merit badge program. Here are some suggestions:
-Seek out engineers who are doing interesting work. Engineering is a vast field that includes such specialties as civil, mechanical, electrical, chemical, manufacturing and aeronautical engineering. Check around your community for engineers whose projects would interest your Scouts.
-Encourage interactivity. No one — especially a 12-year-old boy — wants to hear a boring lecture. Encourage guest speakers to bring along models, videos and other props that will illustrate the principles they’re going to discuss.
-Draw connections with Scouts’ experiences. Kids today are technologically savvy. Build on their experience with cellphones, video games and other high-tech devices.
-Consider your Scouts’ maturity. While Scouts of any age can earn the Engineering merit badge, older Scouts might be more successful at it. “In most cases, Scouts with the rank of Second Class and above pick up the information quicker because they are a bit more mature,” Howard says.
-More Than a Badge
-Like many merit badges, Engineering is designed to introduce Scouts to a potential career field, and Howard has Scouts tell him every February that they want to be engineers. In fact, he says, “some of the engineers here were Scouts and have attended our program. Whether they chose it specifically because of that, I don’t know.”
-But even those who don’t become engineers can learn valuable lessons. Stachewicz says Scouts who visit the Harley-Davidson Museum are often surprised at how much planning, testing and trial and error are involved in engineering. “It’s hard to find perfection,” she says. “You have to do something and redo it and redo it until you get to a final product. I like when the boys learn that in the design lab.”
-On the Web
-For more on the Harley-Davidson Museum, visit h-dmuseum.com. You can find information on Lockheed Martin’s merit badge classes at meritbadge.info.
+## Merit Badge Requirements
 
-[![](https://www.scouting.org/wp-content/uploads/2023/01/How-to-rev-up-the-Engineering-merit-badge.jpg)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20403%20600%22%3E%3C/svg%3E)](https://scoutingmagazine.org/2013/10/rev-engineering-merit-badge/)
+## The previous version of the Merit Badge requirements can be found in Scoutbook
+
+**NOTE:**  The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Engineering.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
+
+1. Select a manufactured item in your home (such as a toy or an appliance) and, under adult supervision and with the approval of your counselor, investigate how and why it works as it does. Find out what sort of engineering activities were needed to create it. Discuss with your counselor what you learned and how you got the information.
+*Resource:* [How to Fix Small Appliances (video)](https://youtu.be/pa9EO7GKt5Q?si=62hF_Zwm6WU8MDLA)
+
+2. Select an engineering achievement that has had a major impact on society. Using resources such as the internet (with your parent or guardian's permission), books, and magazines, find out about the engineers who made this engineering feat possible, the special obstacles they had to overcome, and how this achievement has influenced the world today. Tell your counselor what you learned.
+*Resources:* [Engineering the Brooklyn Bridge in 1883 (video)](https://youtu.be/dyckL6HuLRU?si=9yxhxhYxVAw_kgyN)
+ [Engineering America (website)](https://www.popularmechanics.com/technology/infrastructure/g35589790/most-impressive-feats-of-engineering-in-america/)
+
+3. Explain the work of six types of engineers. Pick two of the six types and explain how their work is related to engineering.
+*Resources:* [Solve Problems: Be an Engineer (video)](https://youtu.be/D9I35Rqo04E?si=LWsUw9GGXaJiqgT4)
+ [What is Engineering? (video)](https://youtu.be/WcD8ii2ftAw?si=LoM2V67R25_hZgGG)
+
+4. Visit with an engineer (who may be your counselor, parent or guardian) and do the following:
+
+* (a)
+  Discuss the work this engineer does and the tools the engineer uses.
+* (b)
+  Discuss with the engineer a current project and the engineer's particular role in it.
+* (c)
+  Find out how the engineer's work is done and how results are achieved.
+* (d)
+  Ask to see the reports that the engineer writes concerning the project.
+* (e)
+  Discuss with your counselor what you learned about engineering from this visit.
+
+5. Use the systems engineering approach to design an original piece of patrol equipment, a toy or a useful device for the home, office or garage.
+*Resource:* [The Engineering Process (video)](https://youtu.be/fxJWin195kU?si=oNshjNfLvbcZl-mg)
+
+6. Do TWO of the following:
+
+* (a)
+  **Transforming Motion.** Using common materials or a construction set, make a simple model that will demonstrate motion. Explain how the model uses basic mechanical elements like levers and inclined planes to demonstrate motion. Describe an example where this mechanism is used in a real product.
+  *Resource:* [Transforming Motion - Rube Goldberg Machines (video)](https://youtu.be/9_6TUgWmP6I?si=p3-RxRPDUsmow5VY)
+* (b)
+  **Using Electricity.** Make a list of 10 electrical appliances in your home. Find out approximately how much electricity each uses in one month. Learn how to find out the amount and cost of electricity used in your home during periods of light and heavy use. List five ways to conserve electricity.
+  *Resources:* [AMAZING Ways to Save Electricity at Home (video)](https://youtu.be/37kLS0uW16I?si=EI9d_Hv_X07lnzGz)
+   [Understanding Home Energy Electric Use (video)](https://youtu.be/zRYESRObKqA?si=dnJOPUp_Cb4LhVpp)
+* (c)
+  **Understanding Electronics.** Using an electronic device such as a smartphone or tablet computer, find out how sound, video, text or images travel from one location to another. Explain how the device was designed for ease of use, function, and durability.
+  *Resource:* [How Does Your Mobile Phone Work? (video)](https://youtu.be/1JZG9x_VOwA?si=lk5rLp6spECckVag)
+* (d)
+  **Using Materials.** Do experiments to show the differences in strength and heat conductivity in wood, metal, and plastic. Discuss with your counselor what you have learned.
+  *Resource:* [Engineering Material Properties (video)](https://youtu.be/tGfLhPslEjQ?si=o7MiNTtvYjIKf9m4)
+* (e)
+  **Converting Energy.** Do an experiment to show how mechanical, heat, chemical, solar, and/or electrical energy may be converted from one or more types of energy to another. Explain your results. Describe to your counselor what energy is and how energy is converted and used in your surroundings.
+  *Resources:* [STEM Experiment: Energy Conversion (video)](https://youtu.be/Z_DXxUbOkSk?si=r7ZuOV99AW1jzPdB)
+   [1st Place Mousetrap Car Ideas (video)](https://youtu.be/b7zWwo9dbiU)
+   [Chemical Powered Cars (video)](https://youtu.be/brIzBE6bzFc)
+   [2018 Official Chem-E-Car Competition® (video)](https://youtu.be/uQCmr1DlUqk)
+* (f)
+  **Moving People.** Find out the different ways people in your community get to work. Make a study of traffic flow (number of vehicles and relative speed) in both heavy and light traffic periods. Discuss with your counselor what might be improved to make it easier for people in your community to get where they need to go.
+  *Resources:* [Moving People Can Be Complicated (video)](https://youtu.be/erYf6NNw8Ec?si=WJWYMhjisgEdtpWp)
+   [Engineering Traffic (video)](https://youtu.be/iHzzSao6ypE?si=XdiQikXkWIX8rj-5)
+* (g)
+  **Building an Engineering Project.** Enter a project in a science or engineering fair or similar competition. (This requirement may be met by participation on an engineering competition project team.) Discuss with your counselor what your project demonstrates, the kinds of questions visitors to the fair asked you, and how well you were able to answer their questions.
+
+7. Explain what it means to be a registered Professional Engineer (P.E.). Name the types of engineering work for which registration is most important.
+*Resource:* [How To Become an Engineer & Types of Engineering Careers (video)](https://youtu.be/PUBAxUkMcr8)
+
+8. Study the Engineer's Code of Ethics. Explain how it is like the Scout Oath and Law.
+*Resources:* [Ethics and Conduct for Professional Engineers (video)](https://youtu.be/qVV684jvJV4?si=3_ZOiqnCPOeJZm1d)
+ [Engineering Code of Ethics (website)](https://www.nspe.org/career-growth/nspe-code-ethics-engineers)
+ [Engineering Ethics (video)](https://youtu.be/5KZx81crb48?si=F4ufLBrtg09FTAFM)
+
+9. Explore careers related to this merit badge. Research one career to learn about the training and education needed, costs, job prospects, salary, job duties, and career advancement. Your research methods may include—with your parent or guardian's permission—an internet or library search, an interview with a professional in the field, or a visit to a location where people in this career work. Discuss with your counselor both your findings and what about this profession might make it an interesting career.
+*Resource:* [How To Become an Engineer (video)](https://youtu.be/77xMVKOEZ5g)

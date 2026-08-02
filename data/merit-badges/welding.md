@@ -1,16 +1,84 @@
 ---
 source: https://www.scouting.org/merit-badges/welding/
-fetched: 2026-03-03
-bsa_version: 2026.Q1
+fetched: 2026-08-02
+bsa_version: 2026.Q3
 eagle_required: false
 ---
 
 # Welding Merit Badge
 
-![](https://www.scouting.org/wp-content/uploads/2022/11/logo-scoutlife-2.png)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20471%20140%22%3E%3C/svg%3E)
+## Merit Badge Overview
 
-### [How to ignite Scouts’ interest in Welding merit badge](https://scoutingmagazine.org/2014/08/get-trained-access-equipment-ignite-interest-welding-merit-badge/)
+Welding is the process of joining with a weld – joining or combining similar pieces of metal by heating them with a flame torch or an electric current, then hammering or pressing them together while they are soft. Welding plays a major role in our modern world, and mastery of the skill can lead to exciting career opportunities. Someday, you may have an opportunity to experience exciting new career paths in welding.
 
-AS TWO DOZEN Scoutmasters and other adult volunteers from the North Texas area’s Circle Ten Council and Longhorn Council are learning, welding is the hands-on
+## Merit Badge Requirements
 
-[![](https://www.scouting.org/wp-content/uploads/2023/01/How-to-ignite-Scouts-interest-in-Welding-merit-badge.jpg)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20640%20534%22%3E%3C/svg%3E)](https://scoutingmagazine.org/2014/08/get-trained-access-equipment-ignite-interest-welding-merit-badge/)
+## The previous version of the Merit Badge requirements can be found in Scoutbook
+
+**NOTE:**  The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Welding.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
+
+1. Do the following:
+
+* (a)
+  Explain to your counselor the hazards you are most likely to encounter while welding, and what you should do to anticipate, help prevent, mitigate, or lessen these hazards.
+  *Resource:* [Keep Yourself Safe: 6 Welding Safety Hazards & How To Avoid Them (video)](https://youtu.be/-oq3mS7EBX8?si=ePEbVQwTrMP92s8X)
+* (b)
+  Show that you know first aid for, and the prevention of, injuries or illnesses that could occur while welding, including electrical shock, eye injuries, burns, fume inhalation, dizziness, skin irritation, and exposure to hazardous chemicals, including filler metals and welding gases.
+  *Resource:* [How To Treat Welding Burns (website)](https://weldingheadquarters.com/how-to-treat-welding-burns/)
+
+2. Do the following:
+
+* (a)
+  With your counselor, discuss general safety precautions and safety data sheets (SDS) related to welding. Explain the importance of the SDS.
+  *Resource:* [Safety Data Sheets (video)](https://youtu.be/_yWF-w3CwmU)
+* (b)
+  Describe the appropriate safety gear and clothing that must be worn when welding. Then, present yourself properly dressed for welding—in protective equipment, clothing, and footwear.
+  *Resource:* [Welding Safety PPE Guide | Must-Have Essentials for Safe Welding Practices (video)](https://youtu.be/YsAmLFF03jI?si=llTGf61a3qyktawl)
+* (c)
+  Explain and demonstrate the proper care and storage of welding equipment, tools, and protective clothing and footwear.
+  *Resources:* [A DIY Guide to Maintaining and Storing your Welding Equipment (video)](https://youtu.be/roCt2U2ccaI?si=wpUZM8xiPDdeXA1H)
+   [Safely Use and Care of PPE | ACSA Training | CSTS Clip (video)](https://youtu.be/HrjpCHfbYJE?si=NeeiVkfW-8XJlOKe)
+
+3. Explain the terms welding, electrode, slag, and oxidation. Describe the welding process, how heat is generated, what kind of filler metal is added (if any), and what protects the molten metal from the atmosphere.
+*Resource:* [Understanding Common Welding Terms—A Guide for Beginners (website)](https://www.millerwelds.com/resources/article-library/understanding-common-welding-terms-a-guide-for-beginners)
+
+4. Name the different mechanical and thermal cutting methods. Choose one method and describe how to use the process. Discuss one advantage and one limitation of this process.
+*Resource:* [Types of Cutting Methods: Mechanical, Thermal & More (website)](https://engineerfix.com/types-of-cutting-methods-mechanical-thermal-more/)
+
+5. Do the following:
+
+* (a)
+  Select two welding processes, and make a list of the different components of the equipment required for each process. Discuss one advantage and one limitation for each process.
+  *Resource:* [4 Types of Welding Explained: MIG vs TIG vs Stick vs Flux Core (video)](https://youtu.be/y-OKi8oSNQ4?si=sTy6oV_X2gC7tqr3)
+* (b)
+  Choose one welding process. Set up the process you have chosen, including gas regulators, work clamps, cables, filler materials, and equipment settings. Have your counselor inspect and approve the area for the welding process you have chosen.
+
+6. After successfully completing requirements 1 through 5, use the equipment you prepared for the welding process in 5(b) to do the following:
+
+* (a)
+  Using a metal scribe or soapstone, sketch your initial onto a metal plate, and weld a bead on the plate following the pattern of your initial.
+  *Resource:* [Welding Letters and Numbers for a Casting Form (video)](https://youtu.be/UBbdcviujmM)
+* (b)
+  Cover a small plate (approximately 3" x 3" x 1/4") with weld beads side by side.
+  *Resource:* [The First Lesson of Welding | Learning To Run Beads (video)](https://youtu.be/g7qgPldYDuY)
+* (c)
+  Tack two plates together in a square groove butt joint.
+  *Resource:* [How To Weld a Butt Joint (video)](https://youtu.be/3-ebx3hWu0Q)
+* (d)
+  Weld the two plates together from 6(c) on both sides.
+  *Resource:* [How To Weld a Butt Joint (video)](https://youtu.be/3-ebx3hWu0Q)
+* (e)
+  Tack two plates together in a T joint, have your counselor inspect it, then weld a T joint with fillet weld on both sides.
+  *Resource:* [Helpful Tips for Tacking and MIG Welding Fillet Joints (video)](https://youtu.be/zFIdiTJxii4?si=5gysckooa-vsCXmT)
+* (f)
+  Tack two plates together in a lap joint, have your counselor inspect it, then weld a lap joint with fillet weld on both sides.
+  *Resource:* [TIG Welding Basics: Lap Joints (video)](https://youtu.be/0AxiCSe-dCQ?si=uoHqPtfJj9LIGrue)
+
+7. Do the following:
+
+* (a)
+  Find out about three career opportunities in the welding industry. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why the profession might interest you.
+  *Resource:* [Should You Become a Welder?—Everything You Need to Know About The Welding Profession (video)](https://youtu.be/tVOvC_e9spA?si=twqMhlBcM9FL64iJ)
+* (b)
+  Discuss the role of the American Welding Society in the welding profession.
+  *Resource:* [What Does the American Welding Society Do For Welders? (video)](https://youtu.be/tZaEMO4bPHg?si=deNNIvCoSNCICh4S)

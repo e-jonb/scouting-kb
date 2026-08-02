@@ -1,200 +1,234 @@
 ---
 source: https://www.scouting.org/merit-badges/skating/
-fetched: 2026-03-03
-bsa_version: 2026.Q1
+fetched: 2026-08-02
+bsa_version: 2026.Q3
 eagle_required: false
 ---
 
 # Skating Merit Badge
 
-[![](https://www.scouting.org/wp-content/uploads/2022/03/scouting-america-logo-desktop@2x-1.png)](/)
+## Merit Badge Overview
 
-[![](https://www.scouting.org/wp-content/uploads/2026/01/a-250-scouting-america-250-color-logo@2x.webp)![](https://www.scouting.org/wp-content/uploads/2026/01/a-250-scouting-america-250-color-logo@2x.webp)](/service/)
+This merit badge introduces Scouts to the exciting world of ice skating, roller skating, in-line skating, and skateboarding. In addition to being an enjoyable leisure activity that promotes fitness, there are a variety of athletic careers in skating.
 
-✕
+## Merit Badge Requirements
 
-jQuery(function ($) {
-const $header = $('.header-sa-nav');
-const $searchBtn = $('#search-nav');
-const $input = $('.nav-search-input');
-const $searchContainer = $('#search-html-container');
-// Add close button once
-if (!$('.nav-search-close').length) {
-$searchBtn.after(
-'<button type="button" class="nav-search-close" aria-label="Close search">✕</button>'
-);
-}
-const $closeBtn = $('.nav-search-close');
-// OPEN
-$searchBtn.on('click', function (e) {
-$("#search-nav").addClass("btn-secondary");
-$("#search-nav").addClass("btn-secondary-radio-border");
-if (window.innerWidth <= 1190 && window.innerWidth >= 801) {
-e.preventDefault();
-$header.addClass('header-search-active');
-$searchContainer.css('width','90%'); $input.focus();
-$closeBtn
-.css({
-opacity: 1,
-pointerEvents: 'unset'
-});
-}
-});
-// CLOSE
-$closeBtn.on('click', function () {
-$("#search-nav").removeClass("btn-secondary");
-$("#search-nav").removeClass("btn-secondary-radio-border");
-$header.removeClass('header-search-active');
-$searchContainer.css('width','auto');
-$input.val('').hide();
-});
-$("#search-nav").on("mouseenter", function(event ){
-$("#search-nav").addClass("btn-search-hover");
-});
-$("#search-nav").on("mouseleave", function(event ){
-$("#search-nav").removeClass("btn-search-hover");
-});
-let lastWidth = window.innerWidth;
-$(window).on('resize', function () {
-const currentWidth = window.innerWidth;
-// Only react if breakpoint range changes
-const isInRange = currentWidth <= 1190 && currentWidth >= 801;
-if (isInRange) {
-resetHeaderSearch();
-}
-lastWidth = currentWidth;
-});
-function resetHeaderSearch() {
-const $header = $('.header-sa-nav');
-$header.removeClass('header-search-active');
-$('.nav-search-input')
-.val('')
-.hide();
-$('.nav-search-close')
-.css({
-opacity: 0,
-pointerEvents: 'none'
-});
-$('#top-menu-desktop')
-.css({
-opacity: 1,
-pointerEvents: 'auto'
-});
-$("#search-nav").removeClass("btn-search-hover");
-$("#search-nav").removeClass("btn-secondary");
-$("#search-nav").removeClass("btn-secondary-radio-border");
-$searchContainer.css('width','auto');
-}
-});
-/\*
-$("#search-nav").on("click", function(event ){
-$("#search-nav").addClass("btn-secondary");
-$("#search-nav").addClass("btn-secondary-radio-border");
-$(".nav-search-input").css("visibility", "visible");
-});
-$("#search-nav").on("mouseenter", function(event ){
-$("#search-nav").addClass("btn-search-hover");
-});
-$("#search-nav").on("mouseleave", function(event ){
-$("#search-nav").removeClass("btn-search-hover");
-});
-\*/
+## The previous version of the Merit Badge requirements can be found in Scoutbook
 
-* [Be a scout](https://beascout.scouting.org/?utm_source=scouting&utm_medium=join_header&utm_campaign=ongoing)
-* [Scout shop](https://www.scoutshop.org/)
-* [Give](https://give.scouting.org/a/support-military-families)
-* [My.scouting](https://my.scouting.org/)
+**NOTE:**  The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Skating.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
 
-* [Be a scout](https://beascout.scouting.org/?utm_source=scouting&utm_medium=join_header&utm_campaign=ongoing)
-* [Scout shop](https://www.scoutshop.org/)
-* [Give](https://give.scouting.org/a/support-military-families)
-* [My.scouting](https://my.scouting.org/)
+1. Do the following:
 
-* [Programs](https://www.scouting.org/programs/)
-  + [Cub Scouts](https://www.scouting.org/programs/cub-scouts/)
-  + [Scouts BSA](https://www.scouting.org/programs/scouts-bsa/)
-  + [Venturing](https://www.scouting.org/programs/venturing/)
-  + [Sea Scouts](https://seascout.org/)
-  + [Exploring](https://www.exploring.org/)
-* [Scouting Safely](https://www.scouting.org/health-and-safety/)
-  + [Scouts First Helpline (1-844-SCOUTS1)](https://www.scouting.org/training/youth-protection/#hotlink)
-  + [Guide to Safe Scouting](https://www.scouting.org/health-and-safety/gss/)
-  + [Youth Protection](https://www.scouting.org/health-and-safety/youth-protection/)
-  + [Incident Reporting](https://www.scouting.org/health-and-safety/gss/gss14/)
-  + [Safety Moments](https://www.scouting.org/health-and-safety/safety-moments/)
-  + [Annual Health & Medical Record](https://www.scouting.org/health-and-safety/ahmr/)
-* [Awards](https://www.scouting.org/awards/)
-  + [Awards Central](https://www.scouting.org/awards/awards-central/)
-  + [Scholarships](https://www.scouting.org/awards/scholarships/)
-  + [Outdoor Ethics Awards](https://www.scouting.org/awards/awards-central/outdoor-ethics-awards/)
-  + [Guide to Awards & Insignia](https://www.scouting.org/resources/insignia-guide/)
-* [About](https://www.scouting.org/about/)
-  + [Careers](https://www.scouting.org/careers/)
-  + [Find a Local Council](https://www.scouting.org/about/local-council-locator/)
-  + [Scouting Newsroom](https://scoutingnewsroom.org/)
-  + [Contact Us](https://www.scouting.org/about/contact-us/)
-* [Training](https://www.scouting.org/training/)
-  + [Youth Training](https://www.scouting.org/training/youth/)
-* [Resources](https://www.scouting.org/resources/)
-  + [Commissioners](https://www.scouting.org/commissioners/)
-  + [Eagle Workbook](https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/eagle-scout-workbook/)
-  + [Special Needs & Disabilities](https://www.scouting.org/resources/disabilities-awareness/)
-  + [International Scouting](https://www.scouting.org/international/)
-  + [Council Support](https://www.scouting.org/council-support/)
-  + [Scouting Wire](https://scoutingwire.org/)
-  + [Recruitment](https://www.scouting.org/recruitment/)
-  + [Guide to Advancement](https://www.scouting.org/resources/guide-to-advancement/)
-* [Outdoor Programs](https://www.scouting.org/outdoor-programs/)
-* [Merit Badges](https://www.scouting.org/skills/merit-badges/)
-* [High Adventure](https://www.scouting.org/national-high-adventure-bases/)
-  + [High Adventure Treks](https://www.scouting.org/national-high-adventure-bases/adventure-treks/)
-  + [High Adventure Base Jobs](https://www.scouting.org/national-high-adventure-bases/jobs/)
-  + [Family Adventure Camp](https://www.scouting.org/national-high-adventure-bases/family-adventure-camp/)
-* [Partners](https://www.scouting.org/partnerwithus/)
+* (a)
+  Explain to your counselor the most likely hazards associated with skating and what you should do to anticipate, help prevent, mitigate, and respond to these hazards.
+  *Resource:* [Skateboard Safety (website)](https://www.scouting.org/health-and-safety/safety-moments/skateboard-safety/)
+* (b)
+  Show that you know first aid for injuries or illnesses that could occur while skating, including hypothermia, frostbite, lacerations, abrasions, fractures, sprains and strains, concussions, blisters, heat-related reactions, and shock.
+  *Resource:* [Skating Injuries - Types and Prevention (website)](https://www.icliniq.com/articles/first-aid-and-emergencies/skating-injuries)
 
-* [Programs](https://www.scouting.org/programs/)
-  + [Cub Scouts](https://www.scouting.org/programs/cub-scouts/)
-  + [Scouts BSA](https://www.scouting.org/programs/scouts-bsa/)
-  + [Venturing](https://www.scouting.org/programs/venturing/)
-  + [Sea Scouts](https://seascout.org/)
-  + [Exploring](https://www.exploring.org/)
-* [Scouting Safely](https://www.scouting.org/health-and-safety/)
-  + [Scouts First Helpline (1-844-SCOUTS1)](https://www.scouting.org/training/youth-protection/#hotlink)
-  + [Guide to Safe Scouting](https://www.scouting.org/health-and-safety/gss/)
-  + [Youth Protection](https://www.scouting.org/health-and-safety/youth-protection/)
-  + [Incident Reporting](https://www.scouting.org/health-and-safety/gss/gss14/)
-  + [Safety Moments](https://www.scouting.org/health-and-safety/safety-moments/)
-  + [Annual Health & Medical Record](https://www.scouting.org/health-and-safety/ahmr/)
-* [Awards](https://www.scouting.org/awards/)
-  + [Awards Central](https://www.scouting.org/awards/awards-central/)
-  + [Scholarships](https://www.scouting.org/awards/scholarships/)
-  + [Outdoor Ethics Awards](https://www.scouting.org/awards/awards-central/outdoor-ethics-awards/)
-  + [Guide to Awards & Insignia](https://www.scouting.org/resources/insignia-guide/)
-* [About](https://www.scouting.org/about/)
-  + [Careers](https://www.scouting.org/careers/)
-  + [Find a Local Council](https://www.scouting.org/about/local-council-locator/)
-  + [Scouting Newsroom](https://scoutingnewsroom.org/)
-  + [Contact Us](https://www.scouting.org/about/contact-us/)
-* [Training](https://www.scouting.org/training/)
-  + [Youth Training](https://www.scouting.org/training/youth/)
-* [Resources](https://www.scouting.org/resources/)
-  + [Commissioners](https://www.scouting.org/commissioners/)
-  + [Eagle Workbook](https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/eagle-scout-workbook/)
-  + [Special Needs & Disabilities](https://www.scouting.org/resources/disabilities-awareness/)
-  + [International Scouting](https://www.scouting.org/international/)
-  + [Council Support](https://www.scouting.org/council-support/)
-  + [Scouting Wire](https://scoutingwire.org/)
-  + [Recruitment](https://www.scouting.org/recruitment/)
-  + [Guide to Advancement](https://www.scouting.org/resources/guide-to-advancement/)
-* [Outdoor Programs](https://www.scouting.org/outdoor-programs/)
-* [Merit Badges](https://www.scouting.org/skills/merit-badges/)
-* [High Adventure](https://www.scouting.org/national-high-adventure-bases/)
-  + [High Adventure Treks](https://www.scouting.org/national-high-adventure-bases/adventure-treks/)
-  + [High Adventure Base Jobs](https://www.scouting.org/national-high-adventure-bases/jobs/)
-  + [Family Adventure Camp](https://www.scouting.org/national-high-adventure-bases/family-adventure-camp/)
-* [Partners](https://www.scouting.org/partnerwithus/)
+2. Working under the supervision of an experienced adult, do ONE of the following options.
 
-$("#main-menu-desktop nav ul > li").on("click", function(event ){
-$(this).addClass("bg-radius-effect");
-$("#main-menu-desktop nav ul > li > a").addClass("bg-radius-effect-after");
-});
+* **Option A—Ice Skating.** Do ALL of the following:
+  *Resources:* [How To Figure Skate (video)](https://youtu.be/-53axkfHUHk)
+   [How To Ice Skate (video)](https://youtu.be/8uDfC7sZ7ag)
+* (1)
+  Explain the general safety and courtesy guidelines for ice skating.
+  *Resource:* [Safe Skating Rules (website)](https://cdn3.sportngin.com/attachments/document/39da-1736379/Getting_Started.pdf)
+* (2)
+  Discuss preparations that must be taken when skating outdoors on natural ice. Explain how to make an ice rescue.
+  *Resources:* [How To Know if Ice Is Safe To Walk On (video)](https://youtu.be/KmYeulVH8IE)
+   [Ice Safety (website)](https://dnr.wisconsin.gov/Education/OutdoorSkills/IceSafety)
+   [Test Ice Thickness (video)](https://youtu.be/BWLvW-d5jBY)
+   [How To Save Someone Who Falls Through Ice (video)](https://youtu.be/yVXJQq41tTA)
+* (3)
+  Discuss the parts and functions of the different types of ice skates.
+  *Resource:* [Figure Skates vs. Hockey Skates (video)](https://youtu.be/H6hUVU57Wpk)
+* (4)
+  Describe the proper way to carry ice skates at the rink and for travel.
+  *Resource:* [How To Carry Ice Skates (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Skating/how_to_carry_ice_skates.pdf)
+* (5)
+  Describe how to store ice skates for long periods of time, such as seasonal storage.
+  *Resource:* [Care for Your Ice Skates (website)](https://www.skatepro.ca/en/a65.htm)
+* (6)
+  Skate forward at least 40 feet and come to a complete stop. Use either a two-foot snowplow stop or a one-foot snowplow stop.
+  *Resource:* [Snowplow Stop (video)](https://youtu.be/rhQY1_bTjVs&t=10)
+* (7)
+  After skating forward, glide forward on two feet, then on one foot, first right and then left.
+  *Resource:* [Forward Stroking (video)](https://youtu.be/-7QqRz2EZAM&t=10)
+* (8)
+  Starting from a T position, stroke forward around the test area, avoiding the use of toe picks if wearing figure skates.
+  *Resource:* [Forward From a T Position (video)](https://youtu.be/-7QqRz2EZAM&t=516)
+* (9)
+  Glide backward on two feet for at least two times the skater's height.
+  *Resource:* [Skate Backward (video)](https://youtu.be/dZsfWfYxqzw&t=10)
+* (10)
+  Skate backward for at least 20 feet on two skates.
+* (11)
+  After gaining forward speed, glide forward on two feet, making a turn of 180 degrees around a cone, first to the right and then to the left.
+  *Resource:* [Turns Around a Cone (video)](https://youtu.be/Lm1PXq9iFog)
+* (12)
+  Perform forward crossovers in a figure-eight pattern.
+  *Resources:* [How To Do Front Crossovers in a Figure 8 (video)](https://youtu.be/kiixg2aczH4&t=16)
+   [How To Do Back Crossovers in a Figure 8 (video)](https://youtu.be/krBVgF52z8M&t=10)
+* (13)
+  Explain to your counselor the safety considerations for participating in an ice-skating race.
+  *Resources:* [How Speed Skaters Stay Safe on the Ice (website)](https://healthcare.utah.edu/healthfeed/2022/02/how-speed-skaters-stay-safe-ice)
+   [Safety Tips: Ice Skating (website)](https://kidshealth.org/en/parents/safety-ice-skating.html)
+* (14)
+  Perform a hockey stop.
+  *Resource:* [Perform a Hockey Stop (video)](https://youtu.be/nIfU38nAYYk)
+* **Option B—Roller Skating.** Do ALL of the following:
+* (1)
+  Explain the general safety rules and etiquette guidelines for roller skating.
+  *Resource:* [Getting Started with Roller Skating (video)](https://youtu.be/eXzKkXQCY_Q)
+* (2)
+  Discuss the parts and functions of a roller skate and their functions.
+* (3)
+  Describe five essential steps to good roller skate care.
+* (4)
+  Skate forward with smooth, linked strokes on two feet for at least 100 feet in both directions around the rink and demonstrate proper techniques for stopping.
+  *Resource:* [Skating Forward (video)](https://youtu.be/znYKw5GQZVA)
+* (5)
+  Skate forward and glide at least 15 feet on one skate, then on the other skate.
+* (6)
+  Perform a forward crossover.
+  *Resource:* [Skating Crossovers (video)](https://youtu.be/VrgT9TPLANY)
+* (7)
+  Skate backward for at least 40 feet on two skates, then for at least 15 feet on one skate.
+  *Resource:* [Roller Skating Backwards (video)](https://youtu.be/c7MLviMbw6A)
+* (8)
+  Skate forward in a slalom pattern for at least 40 feet on two skates, then for at least 20 feet on one skate.
+* (9)
+  Skate backward in a slalom pattern for at least 15 feet on two skates.
+* (10)
+  Shuttle skate once around the rink, bending twice along the way, without stopping.
+* (11)
+  Perform a series of two consecutive spins on skates, OR hop, skip, and jump on skates for at least 10 feet.
+  *Resource:* [Roller Skating Two-Foot Spins (video)](https://youtu.be/d6Z91xZXNxE)
+* (12)
+  Perform a stepover.
+* (13)
+  While skating, dribble a basketball at least 40 feet, then back to your starting position, OR push a hockey ball with a stick at least 40 feet, then back to your starting position.
+* **Option C—In-Line Skating.** Do ALL of the following:
+* (1)
+  Explain the general safety rules and courtesy guidelines for in-line skating.
+  *Resource:* [In-Line Skating Safety Rules and Etiquette (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Skating/safety_rules_and_etiquette%20-%20inline_skating.pdf)
+* (2)
+  Describe the parts of an in-line skate and their functions.
+  *Resource:* [Types and Parts of Inline Skates (video)](https://youtu.be/dKYpuWcZ_Ak)
+* (3)
+  Describe the required and recommended safety equipment for in-line skating.
+  *Resources:* [Safety Gear for In-Line Skating (video)](https://youtu.be/z10SQgx_kRA)
+   [Putting on Your Protective Gear (video)](https://youtu.be/GF4fs9-zMq8)
+* (4)
+  Explain four essential steps to good in-line skate care.
+  *Resources:* [Maintaining and Caring for Your In-Line Skates (video)](https://youtu.be/67xp-AyQb3g)
+   [Cleaning Your In-Line Skates (video)](https://youtu.be/Jcery4HP7_s)
+* (5)
+  Skate forward with smooth, linked strokes on two feet for at least 100 feet.
+  *Resource:* [Skating Forward (video)](https://youtu.be/fg1eMFnl61U)
+* (6)
+  Skate forward and glide at least 15 feet on one skate, then on the other skate.
+  *Resource:* [Gliding on One Skate (video)](https://youtu.be/iwtS9vr4r-Y)
+* (7)
+  Stop on command on flat pavement using the heel brake.
+  *Resource:* [Braking with In-Line Skates (video)](https://youtu.be/phN9uBIXkAw)
+* (8)
+  Perform a forward crossover.
+  *Resources:* [How To Turn on In-Line Skates (video)](https://youtu.be/RMIRnNr-PeQ)
+   [5 Steps to the Perfect Crossover (video)](https://youtu.be/2-ULGoMvk24)
+* (9)
+  Perform a series of forward, linked swizzles for at least 40 feet.
+  *Resource:* [Forward Swizzles (video)](https://youtu.be/TbNlbqClkGQ)
+* (10)
+  Skate backward for at least 40 feet in a series of linked, backward swizzles.
+  *Resource:* [Backward Swizzles (video)](https://youtu.be/t3dO_3vh0Ig)
+* (11)
+  From a strong pace, perform a lunge turn around an object predetermined by your counselor.
+  *Resource:* [Maneuvering Around Objects (video)](https://youtu.be/__N7lV59GMI)
+* (12)
+  Perform a mohawk.
+  *Resource:* [Perform a Mohawk (video)](https://youtu.be/ytPUoplawVU)
+* (13)
+  Perform a series of at least four one-footed downhill slaloms on pavement with a gentle slope.
+  *Resource:* [One-Footed Slalom (video)](https://youtu.be/mzA573nx7W8)
+* (14)
+  Describe how to pass a pedestrian or another skater from behind.
+  *Resource:* [Passing Another Skater (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Skating/passing_another_skater.pdf)
+* (15)
+  Describe at least three ways to avoid an unforeseen obstacle while skating.
+  *Resource:* [In-Line Skating Safety (video)](https://youtu.be/NP5w-A5aRSc)
+* (16)
+  Describe two ways to get on and off a curb, and demonstrate at least one of these methods.
+  *Resource:* [Maneuvering Curbs (video)](https://youtu.be/3hq3sID5emE)
+* **Option D—Skateboarding.** Do ALL of the following:
+  *Resource:* [Jamboree - The Park (video)](https://youtu.be/2MEZdB-qooU)
+* (1)
+  Explain the history and evolution of skateboarding.
+  *Resources:* [How Has Skateboarding Changed Over the Years (video)](https://youtu.be/m4AQtoDBC00)
+   [The Wild History of Skateboarding (video)](https://youtu.be/f9JWlMZa0GE)
+   [The Evolution of Skateboard Tricks! (video)](https://youtu.be/w1mm3zDNyNI)
+* (2)
+  Describe the benefits of skateboarding (physical fitness, balance, coordination, perseverance, and creativity)
+  *Resources:* [Benefits of Skateboarding (video)](https://youtu.be/VAh62ff8rys)
+   [Physics of Skateboarding (video)](https://youtu.be/6bu_9sI7QTI)
+* (3)
+  Explain the safety rules and courtesy guidelines for skateboarding, including right-of-way and communication signals and warnings.
+  *Resources:* [Skate Park Safety Rules (video)](https://youtu.be/Yw9bBDZ2kUo)
+   [How To Ride Skateparks for Beginners (video)](https://youtu.be/zTVb4bmoiw0)
+   [Skatepark Terrain (video)](https://youtu.be/qrq6KlaIe8Y?si=4ljJ-qZ2IAeG-tPe)
+   [How To Ride Safely on a Skateboard (video)](https://player.vimeo.com/video/903371803)
+   [Passing Another Skateboarder (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Skating/passing_another_skateboarder.pdf)
+* (4)
+  Explain the protective gear needed to skate safely, including helmet, knee pads, elbow pads, and wrist guards, and show how to wear them correctly.
+  *Resource:* [Skateboarding Safety (website)](https://www.scouting.org/health-and-safety/safety-moments/skateboard-safety/)
+* (5)
+  Describe the two main styles of skateboarding (street and vert), and describe common skatepark features (ramps, manual pad, rails, spine, etc.).
+* (6)
+  Explain skateboard anatomy (deck, trucks, wheels, hardware, etc.).
+  *Resource:* [How To Select a Skateboard (video)](https://player.vimeo.com/video/901305105)
+* (7)
+  Build a board by assembling all pieces (deck, wheels, trucks, hardware, and grip tape) in the proper order.
+  *Resources:* [How To Assemble a Skateboard (video)](https://youtu.be/A6E403WMOXk)
+   [Parts of a Skateboard (video)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Skating/parts_of_a_skateboard.jpg)
+* (8)
+  Explain skateboard maintenance (cleaning, adjusting bolts, and replacing parts).
+  *Resource:* [How To Maintain Your Skateboard (website)](https://www.skatexs.com/blogs/news/9432593-skateboard-maintenance-for-beginners)
+* (9)
+  Explain the difference between regular and goofy stance, and demonstrate your preferred stance.
+  *Resource:* [Goofy vs. Regular Stance (video)](https://youtu.be/fdSzhc7HXJ0)
+* (10)
+  Demonstrate how to push, cruise, and carve on flat ground.
+  *Resources:* [How To Push on a Skateboard (video)](https://player.vimeo.com/video/901305608)
+   [How To Turn on a Skateboard (video)](https://player.vimeo.com/video/901305658)
+* (11)
+  Show at least two braking and stopping techniques.
+  *Resource:* [How To Stop a Skateboard (video)](https://youtu.be/gLikGjxWCUQ?si=-VfkhrC8oTh1LEvf)
+* (12)
+  Do a basic ollie and at least one variation.
+  *Resource:* [How To Ollie on Skateboard (video)](https://player.vimeo.com/video/901305845)
+* (13)
+  Show how to drop-in from coping.
+* (14)
+  Demonstrate THREE skateboarding tricks from the following types:
+* (a)
+  Flat ground tricks
+  *Resources:* [Flatland Tricks (video)](https://youtu.be/-LwtQJFqNOA)
+   [How To Manual on Skateboard (video)](https://player.vimeo.com/video/901305720)
+   [How To Throwdown on Skateboard (video)](https://player.vimeo.com/video/901305789)
+   [How To 180 on a Skateboard (video)](https://player.vimeo.com/video/901305968)
+* (b)
+  Flip and shove-it tricks
+  *Resources:* [Flip a Skateboard (video)](https://youtu.be/MDkVYN6Rk_I)
+   [Shove-It (video)](https://youtu.be/fBAW51ilpLw)
+* (c)
+  Grind and slide tricks
+  *Resources:* [Grind Tricks (video)](https://youtu.be/SKrntystOnE)
+   [Doing a Slide (video)](https://youtu.be/IPDoNdZvGxk)
+* (d)
+  Air and grab tricks
+  *Resources:* [Frontside Air (video)](https://youtu.be/4tz-HFSoEZY)
+   [Grab Tricks (video)](https://youtu.be/UEYsZH49H_o)
+* (e)
+  Footplant tricks.
+  *Resource:* [How To Boneless (video)](https://youtu.be/wUZpFX0CS1g)

@@ -1,16 +1,63 @@
 ---
 source: https://www.scouting.org/merit-badges/fingerprinting/
-fetched: 2026-03-03
-bsa_version: 2026.Q1
+fetched: 2026-08-02
+bsa_version: 2026.Q3
 eagle_required: false
 ---
 
 # Fingerprinting Merit Badge
 
-![](https://www.scouting.org/wp-content/uploads/2022/11/logo-onscouting-2.png)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20600%20140%22%3E%3C/svg%3E)
+## Merit Badge Overview
 
-### [Merit Badge History: In Fingerprinting, the FBI and the Scouting America found the perfect match](https://blog.scoutingmagazine.org/2021/08/09/merit-badge-history-in-fingerprinting-the-fbi-and-the-bsa-found-the-perfect-match/)
+In earning the Fingerprinting merit badge, Scouts will learn about and use an important technique that is used by law enforcement officers, along with other materials like matching dental records and DNA sampling, to help identify amnesia victims, missing persons, abducted children, and others.
 
-Before DNA databases, before ink-stained fingerprint cards, before stacks of photographs, the best tool police departments had for identifying criminals
+## Merit Badge Requirements
 
-[![](https://www.scouting.org/wp-content/uploads/2022/11/Merit-Badge-History-In-Fingerprinting-the-FBI-and-the-BSA-found-the-perfect-match.jpg)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20640%20360%22%3E%3C/svg%3E)](https://blog.scoutingmagazine.org/2021/08/09/merit-badge-history-in-fingerprinting-the-fbi-and-the-bsa-found-the-perfect-match/)
+## The previous version of the Merit Badge requirements can be found in Scoutbook
+
+**NOTE:**  Check out the Digital Resource Guide for the Communication merit badge [HERE](https://www.scouting.org/skills/merit-badges/digital-resource-guides/fingerprinting/) for detailed information and helpful resources to engage your learning and assist you along on your merit badge journey!
+The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Fingerprinting.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
+
+1. Give a short history of fingerprinting. Tell the difference between civil and criminal identification.
+*Resources:* [How Did Detectives Solve the Case of the Bloody Fingerprints? (video)](https://youtu.be/__nlupHISg0)
+ [History of Fingerprinting (video)](https://youtu.be/wg-lgiPV4rw)
+
+2. Do the following:
+
+* (a)
+  Explain the difference between the automated fingerprint identification systems (AFIS) now used by law enforcement agencies and the biometric fingerprint systems used to control access to computers and places like buildings and airports.
+  *Resource:* [AFIS - Automated Fingerprint Identification System (video)](https://www.youtube.com/watch?v=VRdGtGYQ7WE)
+* (b)
+  Discuss how our society uses identification systems based on tokens, passwords, and biometrics.
+  *Resources:* [What Is Multifactor Authentication (video)](https://youtu.be/L3alw3iXaio?si=JYHojryXMcsBnHmz)
+   [Token Authentication (video)](https://www.youtube.com/watch?v=UBUNrFtufWo)
+   [Biometric Authentication Technology (video)](https://youtu.be/uRwh0t7RabA?si=mm9nKjMZX-eSkGtc)
+   [Science of Innovation—Biometrics (video)](https://www.youtube.com/watch?v=IlThIvXn2Hk)
+
+3. Do the following:
+
+* (a)
+  Name the surfaces of the body where friction or papillary ridges are found.
+  *Resource:* [Fingerprint Ridge Patterns (video)](https://www.youtube.com/watch?v=FPHOJ-0ljV8)
+* (b)
+  Name the two basic principles supporting the science of fingerprints and give a brief explanation of each principle.
+  *Resources:* [Principles of Fingerprint Science (video)](https://www.youtube.com/watch?v=qX6hFXHDmk4)
+   [Why Are Your Fingerprints Unique? (video)](https://www.youtube.com/watch?v=iCRy8voU5dE)
+* (c)
+  Explain what it takes to positively identify a person using fingerprints.
+  *Resource:* [Fingerprint Evidence (video)](https://youtu.be/t3ppAEvI2kI?si=vSffPDpu6oJrYJZa)
+
+4. Take a clear set of prints using ONE of the following methods:
+
+* (a)
+  Make both rolled and plain impressions. Make these on an 8-by-8-inch fingerprint identification card, available from your local police department or your counselor.
+  *Resource:* [How to Roll Fingerprints (video)](https://www.youtube.com/watch?v=d7N-4UNAzsw)
+* (b)
+  Using clear adhesive tape, a pencil, and plain paper, record your own fingerprints or those of another person.
+  *Resource:* [Developing Latent Fingerprints With Black Powder (video)](https://www.youtube.com/watch?v=tqFzVfPRd5s)
+
+5. Show your counselor you can identify the three basic types of fingerprint patterns and their subcategories. Using your own hand, identify the types of patterns you see.
+*Resource:* [Fingerprint Patterns: Arch, Loop, and Whorl (video)](https://www.youtube.com/watch?v=FM8NE4VVYGk)
+
+6. Identify three career opportunities that would use skills and knowledge in the areas of biometrics and/or fingerprinting. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities, and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career.
+*Resource:* [Latent Fingerprinting Examiner (video)](https://youtu.be/aJaNnqnje-4?si=gpxvbC4fTZDtEFhg)

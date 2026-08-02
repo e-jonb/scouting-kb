@@ -14,9 +14,9 @@ _When to use Part A/B (day hikes and short outings) vs. Part C (extended trips, 
 
 The Scouting adventure, camping trips, high-adventure excursions, and having fun are important to everyone in Scouting—and so is your safety and well-being. Completing the Annual Health and Medical Record is the first step in making sure you have a great Scouting experience. **So what do you need?**
 
-[Get Answers to Frequently-Asked Questions about the Annual Health and Medical Record](/health-and-safety/ahmr/medical-formfaqs).
+[Get Answers to Frequently-Asked Questions about the Annual Health and Medical Record](https://www.scouting.org/health-and-safety/ahmr/medical-formfaqs).
 
-[Read about important medical risk factors](/health-and-safety/risk-factors/).
+[Read about important medical risk factors](https://www.scouting.org/health-and-safety/risk-factors/).
 
 [Download the instruction handout](https://filestore.scouting.org/filestore/HealthSafety/pdf/680-001_instruction.pdf).
 
@@ -46,8 +46,6 @@ A pre-participation physical is needed:
 All Jamboree participants and staff must review and complete the Jamboree health & medical forms and Health and Wellness Risk Advisory.
 
 [Download Form & Risk Advisory](https://filestore.scouting.org/filestore/HealthSafety/pdf/680-001_jamboree.pdf)
-
-![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20225%20225%22%3E%3C/svg%3E)
 
 All Exploring participants (adult and youth)– for any event or activity less than 72 hours in duration.
 
