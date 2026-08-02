@@ -1,97 +1,38 @@
 ---
 source: https://www.scouting.org/health-and-safety/gss/bsa-scouter-code-of-conduct/
-fetched: 2026-03-03
-bsa_version: 2026.Q1
+fetched: 2026-08-01
+bsa_version: 2026.Q3
 ---
 
 # Chartered Organization Relationship
 
 _The Scouter Code of Conduct and chartered organization responsibilities. COs own their units — they select leaders and are responsible for the program._
 
-[![](https://www.scouting.org/wp-content/uploads/2022/03/scouting-stacked-logo-white@2x.webp)](/)
+[Home](https://www.scouting.org/) > [Scouting Safely](https://www.scouting.org/health-and-safety/) > [Guide to Safe Scouting](https://www.scouting.org/health-and-safety/gss/) > Scouting America Scouter Code of Conduct
 
-[![](https://www.scouting.org/wp-content/uploads/2026/01/a-250-scouting-america-250-color-logo@2x.webp)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20118%2096%22%3E%3C/svg%3E)](/service/)
+# Scouting America Scouter Code of Conduct
 
-[My.scouting](https://my.scouting.org/)
+On my honor I promise to do my best to comply with this Scouting America Scouter Code of Conduct while serving in my capacity as an adult leader:
 
-* [Give](https://give.scouting.org/a/support-military-families)
-* [Scout shop](https://www.scoutshop.org/)
-* [Be a scout](https://beascout.scouting.org/?utm_source=scouting&utm_medium=join_header&utm_campaign=ongoing)
-* [Programs](https://www.scouting.org/programs/)
-  + [Cub Scouts](https://www.scouting.org/programs/cub-scouts/)
-  + [Scouts BSA](https://www.scouting.org/programs/scouts-bsa/)
-  + [Venturing](https://www.scouting.org/programs/venturing/)
-  + [Sea Scouts](https://seascout.org/)
-  + [Exploring](https://www.exploring.org/)
-* [Scouting Safely](https://www.scouting.org/health-and-safety/)
-  + [Scouts First Helpline (1-844-SCOUTS1)](https://www.scouting.org/training/youth-protection/#hotlink)
-  + [Guide to Safe Scouting](https://www.scouting.org/health-and-safety/gss/)
-  + [Youth Protection](https://www.scouting.org/health-and-safety/youth-protection/)
-  + [Incident Reporting](https://www.scouting.org/health-and-safety/gss/gss14/)
-  + [Safety Moments](https://www.scouting.org/health-and-safety/safety-moments/)
-  + [Annual Health & Medical Record](https://www.scouting.org/health-and-safety/ahmr/)
-* [Awards](https://www.scouting.org/awards/)
-  + [Awards Central](https://www.scouting.org/awards/awards-central/)
-  + [Scholarships](https://www.scouting.org/awards/scholarships/)
-  + [Outdoor Ethics Awards](https://www.scouting.org/awards/awards-central/outdoor-ethics-awards/)
-  + [Guide to Awards & Insignia](https://www.scouting.org/resources/insignia-guide/)
-* [About](https://www.scouting.org/about/)
-  + [Careers](https://www.scouting.org/careers/)
-  + [Find a Local Council](https://www.scouting.org/about/local-council-locator/)
-  + [Scouting Newsroom](https://scoutingnewsroom.org/)
-  + [Contact Us](https://www.scouting.org/about/contact-us/)
-* [Training](https://www.scouting.org/training/)
-  + [Youth Training](https://www.scouting.org/training/youth/)
-* [Resources](https://www.scouting.org/resources/)
-  + [Commissioners](https://www.scouting.org/commissioners/)
-  + [Eagle Workbook](https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/eagle-scout-workbook/)
-  + [Special Needs & Disabilities](https://www.scouting.org/resources/disabilities-awareness/)
-  + [International Scouting](https://www.scouting.org/international/)
-  + [Council Support](https://www.scouting.org/council-support/)
-  + [Scouting Wire](https://scoutingwire.org/)
-  + [Recruitment](https://www.scouting.org/recruitment/)
-* [Outdoor Programs](https://www.scouting.org/outdoor-programs/)
-* [Merit Badges](https://www.scouting.org/skills/merit-badges/)
-* [High Adventure](https://www.scouting.org/national-high-adventure-bases/)
-  + [High Adventure Treks](https://www.scouting.org/national-high-adventure-bases/adventure-treks/)
-  + [High Adventure Base Jobs](https://www.scouting.org/national-high-adventure-bases/jobs/)
-  + [Family Adventure Camp](https://www.scouting.org/national-high-adventure-bases/family-adventure-camp/)
-* [Partners](https://www.scouting.org/partnerwithus/)
-
-const $searchBtnMobile = $('#search-nav-mobile');
-$searchBtnMobile.on("click", function(e){
-e.preventDefault();
-$searchBtnMobile.addClass("btn-secondary");
-const $input = $(".nav-search-input-mobile");
-const value = $.trim($input.val());
-if (value !== '') {
-$input.closest("form")[0].requestSubmit();
-}
-});
-
-//Change chevron orientation mobile menu
-$("#menu-mobile-primary-nav-2023 > li > a.pp-menu-item").on("click", function(e) {
-//Do not trigger if the actual link to parent is clicked - A tag
-//Just the I or SPAN
-if("I" == e.target.nodeName || "SPAN" == e.target.nodeName) {
-let itag = $( this ).find("i");
-if($( itag ).hasClass('fa-chevron-down')) {
-$( itag ).removeClass('fa-chevron-down');
-$( itag ).addClass('fa-chevron-up');
-}
-else {
-$( itag ).removeClass('fa-chevron-up')
-$( itag ).addClass('fa-chevron-down');
-}
-}
-});
-$("#menu-mobile-toggle").on("click",function(){
-if($("#menu-mobile-toggle .pp-menu-toggle").hasClass("pp-active") ){
-$("#menu-mobile-container").addClass("dropdown-menu-scrolling");
-$("#formtoseachmobile").show();
-}
-else{
-$("#menu-mobile-container").removeClass("dropdown-menu-scrolling");
-$("#formtoseachmobile").hide();
-}
-});
+1. I have or will complete my registration with Scouting America, answering all questions truthfully and honestly.
+2. I will do my best to live up to the Scout Oath and Scout Law, obey all laws, and hold others in Scouting accountable to those standards. I will exercise sound judgment and demonstrate good leadership and use the Scouting program for its intended purpose consistent with the mission of Scouting America.
+3. I will make the protection of youth a personal priority. I will complete and remain current with Youth Protection training requirements. I will be familiar with and follow:
+   * [Scouting America Youth Protection policies and guidelines, including mandatory reporting](https://www.scouting.org/training/youth-protection/)
+   * [*The Guide to Safe Scouting*](https://www.scouting.org/health-and-safety/gss/)
+   * [SAFE Checklist](https://www.scouting.org/health-and-safety/safe/)
+4. When transporting Scouts, I will obey all laws, comply with Youth Protection guidelines, and follow safe driving practices.
+5. I will respect and abide by the Rules and Regulations of Scouting America, Scouting America policies, and Scouting America provided training, including but not limited to those relating to:
+   * Unauthorized fundraising activities
+   * Advocacy on social and political issues, including prohibited use of Scouting America’s uniform and brand
+   * Bullying, hazing, harassment, and unlawful discrimination of any kind
+6. I will not discuss or engage in any form of sexual conduct while engaged in Scouting activities. I will refer Scouts with questions regarding these topics to talk to their parents or spiritual advisor.
+7. I confirm that I have fully disclosed and will disclose in the future any of the following:
+   * Any criminal suspicion, charges, or convictions of a crime or offense involving abuse, violence, sexual misconduct, or any misconduct involving minors or juveniles
+   * Any investigation or court order involving domestic violence, child abuse, or similar matter
+   * Any criminal charges or convictions for offenses involving controlled substances, driving while intoxicated, firearms, or dangerous weapons
+8. I will not possess, distribute, transport, consume, or use any of the following items prohibited by law or in violation of any Scouting rules, regulations, and policies:
+   * Alcoholic beverages or controlled substances, including marijuana
+   * Concealed or unconcealed firearms, fireworks, or explosives
+   * Pornography or materials containing words or images inconsistent with Scouting values
+9. If I am taking prescription medications with the potential of impairing my functioning or judgment, I will not engage in activities that would put Scouts at risk, including driving or operating equipment.
+10. I will take steps to prevent or report any violation of this code of conduct by others in connection with Scouting activities.

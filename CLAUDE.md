@@ -121,6 +121,8 @@ Reference files at `packages/scouting-kb/data/`. Read `manifest.json` for build 
 
 **Merit badge page returns no content:** BSA may have updated their CSS class names. Check `CONTENT_SELECTORS` in `utils.py` and update selectors as needed.
 
+**Scraped file contains site nav links or raw JS instead of real content:** `extract_content()` in `utils.py` strips nav/header/footer/script/form/button elements from the whole document before selecting a content container — this was added after 3 policy files silently captured page chrome instead of body content. See `docs/PLAYBOOK.md` for the full incident writeup and why `markdownify`'s `strip=` argument alone doesn't prevent this.
+
 **Playwright browser errors:** Run `playwright install chromium` to reinstall the browser binary.
 
 ## Refresh Cadence

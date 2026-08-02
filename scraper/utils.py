@@ -166,6 +166,16 @@ async def extract_content(page, selectors: list[str] = None) -> str:
     selectors = selectors or CONTENT_SELECTORS
     html = await page.evaluate(
         """(selectors) => {
+            // Remove nav/header/footer/script chrome from the whole document first.
+            // markdownify's strip=[...] only unwraps these tags (keeps their text/JS
+            // as plain text) rather than removing them, so any nav or inline <script>
+            // left inside whichever container gets selected below leaks into the
+            // final markdown. Deleting them here — before scoring candidates — means
+            // a stray nav/header can neither win the best-match comparison nor
+            // contribute leftover text/code if it does.
+            document.querySelectorAll('script, style, noscript, nav, header, footer, form, button, iframe')
+                .forEach((el) => el.remove());
+
             for (const sel of selectors) {
                 let bestEl = null, bestLen = 0;
                 for (const el of document.querySelectorAll(sel)) {

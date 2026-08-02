@@ -1,97 +1,98 @@
 ---
 source: https://www.scouting.org/health-and-safety/ahmr/
-fetched: 2026-03-03
-bsa_version: 2026.Q1
+fetched: 2026-08-01
+bsa_version: 2026.Q3
 ---
 
 # Annual Health and Medical Record
 
 _When to use Part A/B (day hikes and short outings) vs. Part C (extended trips, high adventure, council events). Requirements vary by event duration and activity type._
 
-[![](https://www.scouting.org/wp-content/uploads/2022/03/scouting-stacked-logo-white@2x.webp)](/)
+[Home](https://www.scouting.org/) > [Scouting Safely](https://www.scouting.org/health-and-safety/) > Annual Health and Medical Record
 
-[![](https://www.scouting.org/wp-content/uploads/2026/01/a-250-scouting-america-250-color-logo@2x.webp)![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20118%2096%22%3E%3C/svg%3E)](/service/)
+# Annual Health and Medical Record
 
-[My.scouting](https://my.scouting.org/)
+The Scouting adventure, camping trips, high-adventure excursions, and having fun are important to everyone in Scouting—and so is your safety and well-being. Completing the Annual Health and Medical Record is the first step in making sure you have a great Scouting experience. **So what do you need?**
 
-* [Give](https://give.scouting.org/a/support-military-families)
-* [Scout shop](https://www.scoutshop.org/)
-* [Be a scout](https://beascout.scouting.org/?utm_source=scouting&utm_medium=join_header&utm_campaign=ongoing)
-* [Programs](https://www.scouting.org/programs/)
-  + [Cub Scouts](https://www.scouting.org/programs/cub-scouts/)
-  + [Scouts BSA](https://www.scouting.org/programs/scouts-bsa/)
-  + [Venturing](https://www.scouting.org/programs/venturing/)
-  + [Sea Scouts](https://seascout.org/)
-  + [Exploring](https://www.exploring.org/)
-* [Scouting Safely](https://www.scouting.org/health-and-safety/)
-  + [Scouts First Helpline (1-844-SCOUTS1)](https://www.scouting.org/training/youth-protection/#hotlink)
-  + [Guide to Safe Scouting](https://www.scouting.org/health-and-safety/gss/)
-  + [Youth Protection](https://www.scouting.org/health-and-safety/youth-protection/)
-  + [Incident Reporting](https://www.scouting.org/health-and-safety/gss/gss14/)
-  + [Safety Moments](https://www.scouting.org/health-and-safety/safety-moments/)
-  + [Annual Health & Medical Record](https://www.scouting.org/health-and-safety/ahmr/)
-* [Awards](https://www.scouting.org/awards/)
-  + [Awards Central](https://www.scouting.org/awards/awards-central/)
-  + [Scholarships](https://www.scouting.org/awards/scholarships/)
-  + [Outdoor Ethics Awards](https://www.scouting.org/awards/awards-central/outdoor-ethics-awards/)
-  + [Guide to Awards & Insignia](https://www.scouting.org/resources/insignia-guide/)
-* [About](https://www.scouting.org/about/)
-  + [Careers](https://www.scouting.org/careers/)
-  + [Find a Local Council](https://www.scouting.org/about/local-council-locator/)
-  + [Scouting Newsroom](https://scoutingnewsroom.org/)
-  + [Contact Us](https://www.scouting.org/about/contact-us/)
-* [Training](https://www.scouting.org/training/)
-  + [Youth Training](https://www.scouting.org/training/youth/)
-* [Resources](https://www.scouting.org/resources/)
-  + [Commissioners](https://www.scouting.org/commissioners/)
-  + [Eagle Workbook](https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/eagle-scout-workbook/)
-  + [Special Needs & Disabilities](https://www.scouting.org/resources/disabilities-awareness/)
-  + [International Scouting](https://www.scouting.org/international/)
-  + [Council Support](https://www.scouting.org/council-support/)
-  + [Scouting Wire](https://scoutingwire.org/)
-  + [Recruitment](https://www.scouting.org/recruitment/)
-* [Outdoor Programs](https://www.scouting.org/outdoor-programs/)
-* [Merit Badges](https://www.scouting.org/skills/merit-badges/)
-* [High Adventure](https://www.scouting.org/national-high-adventure-bases/)
-  + [High Adventure Treks](https://www.scouting.org/national-high-adventure-bases/adventure-treks/)
-  + [High Adventure Base Jobs](https://www.scouting.org/national-high-adventure-bases/jobs/)
-  + [Family Adventure Camp](https://www.scouting.org/national-high-adventure-bases/family-adventure-camp/)
-* [Partners](https://www.scouting.org/partnerwithus/)
+[Get Answers to Frequently-Asked Questions about the Annual Health and Medical Record](/health-and-safety/ahmr/medical-formfaqs).
 
-const $searchBtnMobile = $('#search-nav-mobile');
-$searchBtnMobile.on("click", function(e){
-e.preventDefault();
-$searchBtnMobile.addClass("btn-secondary");
-const $input = $(".nav-search-input-mobile");
-const value = $.trim($input.val());
-if (value !== '') {
-$input.closest("form")[0].requestSubmit();
-}
-});
+[Read about important medical risk factors](/health-and-safety/risk-factors/).
 
-//Change chevron orientation mobile menu
-$("#menu-mobile-primary-nav-2023 > li > a.pp-menu-item").on("click", function(e) {
-//Do not trigger if the actual link to parent is clicked - A tag
-//Just the I or SPAN
-if("I" == e.target.nodeName || "SPAN" == e.target.nodeName) {
-let itag = $( this ).find("i");
-if($( itag ).hasClass('fa-chevron-down')) {
-$( itag ).removeClass('fa-chevron-down');
-$( itag ).addClass('fa-chevron-up');
-}
-else {
-$( itag ).removeClass('fa-chevron-up')
-$( itag ).addClass('fa-chevron-down');
-}
-}
-});
-$("#menu-mobile-toggle").on("click",function(){
-if($("#menu-mobile-toggle .pp-menu-toggle").hasClass("pp-active") ){
-$("#menu-mobile-container").addClass("dropdown-menu-scrolling");
-$("#formtoseachmobile").show();
-}
-else{
-$("#menu-mobile-container").removeClass("dropdown-menu-scrolling");
-$("#formtoseachmobile").hide();
-}
-});
+[Download the instruction handout](https://filestore.scouting.org/filestore/HealthSafety/pdf/680-001_instruction.pdf).
+
+## All Scouting Events
+
+![](https://www.scouting.org/wp-content/uploads/2023/06/Prepared_For_Life_Stacked_Color-1024x958.jpg)
+
+Applies to ALL participants—in basic Scouting activities such as local tours and weekend camping trips less than 72 hours in duration.
+
+[Download Form](https://filestore.scouting.org/filestore/HealthSafety/pdf/680-001_AB.pdf)
+
+## Are You Going to Camp?
+
+![](https://www.scouting.org/wp-content/uploads/2023/06/AU0I0443_photo_SBBC-1024x1024.jpg)
+
+A pre-participation physical is needed:
+
+* Long Term Camps, Wood Badge, Jamborees
+* Events 72 hours or more.
+
+[Download Form](https://filestore.scouting.org/filestore/HealthSafety/pdf/680-001_ABC.pdf)
+
+## Going to the 2026 National Jamboree?
+
+![](https://www.scouting.org/wp-content/uploads/2025/12/JAMBO_2026_logo_final-1.png)
+
+All Jamboree participants and staff must review and complete the Jamboree health & medical forms and Health and Wellness Risk Advisory.
+
+[Download Form & Risk Advisory](https://filestore.scouting.org/filestore/HealthSafety/pdf/680-001_jamboree.pdf)
+
+![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20225%20225%22%3E%3C/svg%3E)
+
+All Exploring participants (adult and youth)– for any event or activity less than 72 hours in duration.
+
+* A pre-participation physical is needed for everyone (adult and youth) for any Exploring event or activity 72 hours or more in length.
+
+[Download Form](https://filestore.scouting.org/filestore/HealthSafety/pdf/680-024-Exploring-AHMR_AB.pdf)
+
+[Download Form for 72+ Hour Events](https://filestore.scouting.org/filestore/HealthSafety/pdf/680-024-Exploring-AHMR_ABC.pdf)
+
+## Are You Planning a High-Adventure Trip?
+
+[![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20640%20640%22%3E%3C/svg%3E)](http://www.bsaseabase.org/)
+
+**Florida Sea Base.** All participants and staff.
+
+* SCUBA participants **ALSO** need to download the PADI Medical Statement.
+
+[Download Form & Risk Advisory](https://filestore.scouting.org/filestore/HealthSafety/pdf/680-001_seabase.pdf)
+
+[Download Diver Medical: Participant](https://www.scouting.org/wp-content/uploads/2020/11/Diver_Medical_Participant_Questionnaire_New-RSTC.pdf)
+
+[![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20640%20491%22%3E%3C/svg%3E)](http://www.ntier.org/)
+
+**Northern Tier.** Includes wilderness canoe treks, OKPIK winter adventures, and staff.
+
+[Download Form & Risk Advisory](https://filestore.scouting.org/filestore/HealthSafety/pdf/680-001_ntier.pdf)
+
+[![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20640%20539%22%3E%3C/svg%3E)](http://philmontscoutranch.org/)
+
+**Philmont Scout Ranch.** All camping participants and staff.
+
+[Download Form & Risk Advisory](https://filestore.scouting.org/filestore/HealthSafety/pdf/680-001_philmont.pdf)
+
+[![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20640%20661%22%3E%3C/svg%3E)](http://philmontscoutranch.org/PTC)
+
+**Philmont Training Center.** Mountain trek, Trailblazers, Mustangs, NAYLE, NAYLE staff, PLC, and PLC staff.
+
+* PTC conferences and all other family program groups can use the limited backcountry download.
+
+[Download Form & Risk Advisory](https://filestore.scouting.org/filestore/HealthSafety/pdf/680-001_philmont.pdf)
+
+[Download Form for Limited Backcountry](https://filestore.scouting.org/filestore/HealthSafety/pdf/680-001_AB.pdf)
+
+[![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20300%20284%22%3E%3C/svg%3E)](https://www.summitbsa.org/)
+
+**Summit Bechtel Reserve.** All participants and staff.
+
+[Download Form & Risk Advisory](https://filestore.scouting.org/filestore/HealthSafety/pdf/680-001_summit.pdf)
