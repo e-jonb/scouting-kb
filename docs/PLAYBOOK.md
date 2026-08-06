@@ -186,3 +186,29 @@ pkill -x "Google Chrome"
 Launching the binary directly (not via `open -a`) plus a scratch `--user-data-dir` reliably brings up the CDP endpoint within a few seconds. This profile has no Cloudflare clearance cookies, so warm up by navigating to `https://www.scouting.org/` first (`wait_until="load"`, then a few seconds' pause) before hitting Cloudflare-protected pages — `wait_until="networkidle"` straight to a policy/PDF page on a cold profile can time out entirely.
 
 This mirrors a previously-known gotcha for the counselor scraper's Scoutbook CDP session (same `--user-data-dir` requirement) — it's a general Chrome-on-this-machine behavior, not specific to one script.
+
+## reporting-youth-protection wired to the wrong URL — a copy-paste error, not a scraper bug (found 2026-08-05)
+
+**How this was found:** a live spot-check on beta.scoutsync.org (after the merit-badge/nav-script/council fixes from 2026-08-02 were finally deployed) showed `/help → BSA Reference → Reporting Youth Protection Concerns` displaying Aquatics Safety content. Not a corruption pattern — the file was internally consistent (real, cleanly-extracted Aquatics Safety content, correct frontmatter for that content) — it was just filed under the wrong slug.
+
+**Root cause:** in `fetch_policies.py`'s `POLICIES` list, the "Aquatics Safety" entry (`name`, `url`, `description` all correctly about aquatics, source `gss02`) had `"slug": "reporting-youth-protection"` instead of its own slug — an apparent copy-paste error from when that entry was added, never caught because the scraper ran successfully and produced a well-formed file; nothing about the pipeline flags a slug/content mismatch.
+
+**Where the real content lives:** BSA doesn't publish a standalone "how to report a YP concern" page. The actual "Reporting Requirements" section (mandatory abuse reporting, Scouts First Helpline, Youth Protection Policy Violations reporting) is a subsection of the same `gss01` page (*Youth Protection and Adult Leadership*) that `two-deep-leadership.md` already correctly fetches in full. `fetch_policy_page()` extracts the whole matched content container, not a topic-scoped slice — so `two-deep-leadership.md` and `reporting-youth-protection.md` now legitimately share the same full-page body content under different frontmatter/H1/description, matching how BSA itself bundles these topics on one page. This is intentional overlap, not a duplication bug.
+
+**Fix:** split into two correct `POLICIES` entries — `aquatics-safety` (the content that was there) and `reporting-youth-protection` (now pointed at `gss01`).
+
+**Re-fetch note:** headless Chromium is Cloudflare-blocked on scouting.org (see the CDP section below) — since this was a same-session fix with no CDP Chrome running, the two affected files were reconstructed directly from the already-correct `two-deep-leadership.md` body (same URL, deterministic extraction) rather than re-scraped. Safe here because the source URL and extraction path were unchanged; wouldn't be a safe shortcut for a fix that changed *what* gets extracted.
+
+## markdownify glues adjacent bold/italic spans with no space (found 2026-08-05)
+
+**Symptom:** `two-deep-leadership.md` had text like `adult program participant.****Adult volunteers must register` (a bare 4-asterisk run) and `**must**be no more than two years` (bold text butted directly against the next word, no space) — reads as run-together text once rendered, even though `react-markdown` + `remark-gfm` (a real CommonMark parser) actually parses the 4-asterisk case into two valid, back-to-back `<strong>` elements with no error.
+
+**Root cause:** the source HTML has two `<strong>` elements (or a `<strong>` immediately followed by a plain-text node) that are visually adjacent on the page but have no whitespace text node between them in the DOM. `markdownify` converts each element faithfully, which is correct per-element but produces glued output across the boundary — same root shape as other markdownify boundary-loss bugs in this scraper (see the nav/script-leak and lazy-load-image entries above), just manifesting as missing whitespace instead of leaked markup.
+
+**Fix:** `_space_glued_emphasis()` in `utils.py`, called from `clean_markdown()` (so it applies to every content type, not just policies). Two passes:
+1. A bare run of exactly 4 asterisks between two non-space characters is unambiguous — always "close one bold span, open the next" — split into `** **`.
+2. A paired-delimiter regex (`(\*{2,3})([^*\n]+?)\1`, content class excludes `*` so open/close is unambiguous from the match itself, not a raw-delimiter guess) pads any complete emphasis span that's directly touching a letter/digit on either side.
+
+**Verified against the full existing corpus before trusting it** (159 files: 133 merit badges, ranks, policies) — only 4 files changed, all confirmed genuine instances of the same bug (e.g. `**Note:**When` → `**Note:** When` in `archery.md`).
+
+**Known gap, not handled:** chained/nested emphasis from source markup like `<strong><em>A</em> <em>B</em></strong>` markdownifies to alternating single- and triple-asterisk runs (e.g. `***Cub Scout* *Programs – Overnight* *Exception:***`). The content-class-excludes-`*` regex can't match across those internal boundaries, so this pattern is left untouched rather than risk a wrong edit — a real parser would be needed to handle it safely, which is disproportionate for how rarely it occurs.

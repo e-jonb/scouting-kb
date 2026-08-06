@@ -141,6 +141,10 @@ Reference files at `packages/scouting-kb/data/`. Read `manifest.json` for build 
 
 **Before trusting a "re-fetched, byte-identical" result as proof a file is clean:** it only proves the file didn't need whatever specific fix was being tested at that moment — not that the file has no other problems. `youth-protection-training.md` sat with an embedded "find your council" widget's raw JS/empty form labels for a full audit cycle because it happened to be byte-identical during the *nav/script* fix's re-test, which was a different bug. If a file hasn't been actually read since a fix, "identical to before" isn't the same as "verified." See `docs/PLAYBOOK.md`.
 
+**A policy file's content doesn't match its own title/slug (e.g. shows a different topic than expected):** check the `POLICIES` list in `fetch_policies.py` for a copy-paste error — an entry's `slug` not matching its own `name`/`url`/`description`. Confirmed 2026-08-05: `reporting-youth-protection` was wired to `aquatics-safety`'s URL. The scraper ran successfully and produced a well-formed file, so nothing in the pipeline itself catches this — only a slug-vs-content spot check does. See `docs/PLAYBOOK.md`.
+
+**Adjacent bold/italic text reads run-together with no space (or literal asterisks bleed through in a weaker renderer):** `_space_glued_emphasis()` in `utils.py` (called from `clean_markdown()`) fixes the common case — a markdownify artifact from two adjacent `<strong>`/`<em>` elements with no whitespace text node between them in the source DOM. Doesn't handle chained/nested emphasis (alternating single- and triple-asterisk runs) — see `docs/PLAYBOOK.md` for what's covered and what isn't.
+
 **Playwright browser errors:** Run `playwright install chromium` to reinstall the browser binary.
 
 ## Refresh Cadence
