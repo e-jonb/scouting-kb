@@ -35,7 +35,7 @@ Registration includes:
 
 **Notwithstanding the minimum leader requirements, age and program-appropriate supervision must always be provided.**  
 
-**All adults staying overnight in connection with a Scouting activity must be currently registered as an adult volunteer or an adult program participant.****Adult volunteers must register in the position(s) they are serving in.** Registration as a merit badge counselor position does not meet this requirement. See [**FAQ**](https://www.scouting.org/health-and-safety/yp-faqs/) for list of approved adult registration fee required positions.   *Limited exception below for Cub Scout overnight Programs*.
+**All adults staying overnight in connection with a Scouting activity must be currently registered as an adult volunteer or an adult program participant.** **Adult volunteers must register in the position(s) they are serving in.** Registration as a merit badge counselor position does not meet this requirement. See [**FAQ**](https://www.scouting.org/health-and-safety/yp-faqs/) for list of approved adult registration fee required positions.   *Limited exception below for Cub Scout overnight Programs*.
 
 ***Cub Scout* *Programs – Overnight* *Exception:***   Cub Scout parents or legal guardians taking part in an overnight Cub Scout program with their own child or legal ward are not required to register as leaders. All adults must review the “[How to Protect your Children from Child Abuse: A Parent’s Guide](https://www.scouting.org/training/youth-protection/parents-guides/)” that can be found in the front of each Cub Scout Handbook. In addition, the parent or legal guardian must be accompanied by a registered leader at any time they are with youth members other than their own child/ward.  All other overnight adults must be currently registered in an adult fee required position.
 
@@ -55,7 +55,7 @@ Registration includes:
 
 ### ***Responsibility***
 
-**Leaders must ensure that all participating in Scouting activities abide by the****Scout Oath and Scout Law.**
+**Leaders must ensure that all participating in Scouting activities abide by the** **Scout Oath and Scout Law.**
 
 **Adult leaders and youth members share the responsibility for the safety of all participants in the program, including adherence to Youth Protection and health and safety policies.**
 
@@ -144,7 +144,7 @@ The older youth Scouting America programs (Scouts BSA, Venturing, Sea Scouting, 
 
 Youth siblings of the same gender may share sleeping accommodations regardless of age with permission from their parents or legal guardians.
 
-Campsites **must**be arranged to separate genders adequately.  This separation could be achieved through natural barriers, physical distance, or by the campsite being divided, so long as the separation achieves privacy for both adults and youth, **as well as by gender**.  Adult leaders are responsible for establishing the barriers and reminding Scouts that members of one gender must not enter the tent/housing of another.
+Campsites **must** be arranged to separate genders adequately.  This separation could be achieved through natural barriers, physical distance, or by the campsite being divided, so long as the separation achieves privacy for both adults and youth, **as well as by gender**.  Adult leaders are responsible for establishing the barriers and reminding Scouts that members of one gender must not enter the tent/housing of another.
 
 The Buddy System
 
@@ -156,7 +156,7 @@ The buddy system is used whenever youth members are outside the line of sight of
 * Buddies are two and can also be three to prevent youth members from being alone.
 * A buddy pair cannot be mixed gender, where appropriate a third youth must be added (for a buddy group of 3).
 * Youth siblings of the same gender may serve as buddies regardless of age with permission from their parents or legal guardians.
-* Except for siblings***,***it is recommended that the age gap between buddies be at most three years for all non-sleeping activities but **must**be no more than two years for all tenting.
+* Except for siblings ***,*** it is recommended that the age gap between buddies be at most three years for all non-sleeping activities but **must** be no more than two years for all tenting.
 * When exceptional circumstances warrant, a parent or legal guardian may serve as a buddy for their child’s Scouting activities, but youth buddies meeting the above criteria, if available, are always preferred.
 
 Participation by Parents and Legal Guardians

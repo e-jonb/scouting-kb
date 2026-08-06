@@ -78,7 +78,52 @@ def clean_markdown(md: str) -> str:
     # strips SVGs with no content between the tags, so a real inline SVG icon
     # elsewhere wouldn't be affected.
     md = re.sub(r"(?m)^!\[\]\(data:image/svg\+xml,%3Csvg[^)]*%3E%3C/svg%3E\)\s*$\n?", "", md)
+    md = _space_glued_emphasis(md)
     return md.strip()
+
+
+_EMPHASIS_SPAN_RE = re.compile(r"(\*{2,3})([^*\n]+?)\1")
+
+
+def _space_glued_emphasis(md: str) -> str:
+    """
+    markdownify sometimes converts two adjacent <strong>/<em> elements (or a
+    <strong> tag butted directly against a following plain-text node) from
+    the source HTML with no separating whitespace, since the two nodes were
+    only visually adjacent in the rendered page, not textually joined in the
+    DOM. Left alone this reads as run-together text -- e.g.
+    "adult program participant.****Adult volunteers" (two bold spans glued
+    into one 4-asterisk run) or "**must**be no more" (bold text glued to the
+    next word). Confirmed 2026-08-05 in two-deep-leadership.md, see
+    docs/PLAYBOOK.md.
+
+    A bare run of exactly 4 asterisks between two non-space characters is
+    unambiguous -- it's always "close one bold span, open the next" -- so
+    it's split into two delimiter pairs with a space between first. The
+    general case then pads any complete `**text**`/`***text***` span that's
+    directly touching a letter or digit on either side, using a
+    paired-delimiter match (not raw delimiter runs) so open vs. close is
+    unambiguous from the match itself.
+
+    Doesn't handle deeper nested/chained emphasis (e.g. alternating single-
+    and triple-asterisk runs from a source `<strong><em>A</em> <em>B</em>
+    </strong>`) -- content class excludes `*` so those simply don't match
+    and are left as-is rather than risk a wrong edit.
+    """
+    md = re.sub(r"(?<=\S)\*{4}(?=\S)", "** **", md)
+
+    def _pad(m: re.Match) -> str:
+        start, end = m.span()
+        pre = md[start - 1] if start > 0 else ""
+        post = md[end] if end < len(md) else ""
+        text = m.group(0)
+        if pre.isalnum():
+            text = " " + text
+        if post.isalnum():
+            text = text + " "
+        return text
+
+    return _EMPHASIS_SPAN_RE.sub(_pad, md)
 
 
 def absolutize_relative_links(md: str, base_url: str = "https://www.scouting.org") -> str:

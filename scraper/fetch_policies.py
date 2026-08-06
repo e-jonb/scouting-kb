@@ -121,11 +121,29 @@ POLICIES = [
     },
     {
         "name": "Aquatics Safety",
-        "slug": "reporting-youth-protection",
+        "slug": "aquatics-safety",
         "url": "https://www.scouting.org/health-and-safety/gss/gss02/",
         "description": (
             "BSA aquatics safety requirements — Safe Swim Defense, Safety Afloat, "
             "supervision ratios, and swimmer classification requirements."
+        ),
+    },
+    {
+        # Same source page as "two-deep-leadership" above (gss01) -- BSA
+        # doesn't publish a standalone page for this, the "Reporting
+        # Requirements" section (mandatory abuse reporting, Scouts First
+        # Helpline) lives inside the general Youth Protection and Adult
+        # Leadership page alongside two-deep leadership itself. Previously
+        # this slug was wired to the *wrong* URL entirely (gss02, Aquatics
+        # Safety) -- an apparent copy-paste error when the Aquatics Safety
+        # entry above was added, confirmed 2026-08-05. See docs/PLAYBOOK.md.
+        "name": "Reporting Youth Protection Concerns",
+        "slug": "reporting-youth-protection",
+        "url": "https://www.scouting.org/health-and-safety/gss/gss01/",
+        "description": (
+            "How to recognize and report Youth Protection policy violations and "
+            "suspected child abuse -- the Scouts First Helpline, mandatory "
+            "reporting requirements, and online incident reporting."
         ),
     },
 ]
