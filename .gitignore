@@ -11,3 +11,9 @@ scraper/node_modules/
 # Counselor scraper output — contains PII; do not commit
 scraper/counselors*.csv
 scraper/counselor_report_*.txt
+
+# Claude Code - commit repo-level config, ignore machine-local overrides.
+# Kept here rather than in a global gitignore on purpose: global config does not
+# travel to another machine or to anyone who clones this repo, so relying on it
+# means the file is protected only where someone happened to set it up.
+.claude/settings.local.json
