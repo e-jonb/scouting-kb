@@ -10,7 +10,11 @@ Consumer repos add `scouting-kb` as a git submodule and reference `data/` direct
 
 ## Multi-Machine Sync
 
-Run `git pull` before starting any work. This repo is used across multiple machines — starting without a pull risks working from a stale state. At the end of every session, ensure all work is committed and pushed (`git push origin main`) so the other machine can pick up cleanly.
+Run `./scripts/sync.sh` before starting any work – not a bare `git pull`. This repo is used across multiple machines, and a plain `git pull` can report "Already up to date" while a submodule sits months behind its own upstream, or fail silently on a branch with no upstream configured. The script pulls recursively, reports any submodule whose pinned commit is behind its origin, and fails loudly when the pull itself does not work.
+
+At the end of every session, ensure all work is committed and pushed (`git push origin main`) so the other machine can pick up cleanly. If you changed anything inside a submodule, push there first, then bump and commit the pointer here – pushing the parent alone leaves the other machine pointing at a commit it cannot fetch.
+
+This repo has no submodules today, so the script currently just pulls. It stays correct if that changes, which is why the instruction points at the script rather than at `git pull`.
 
 ## Memory Graduation
 
