@@ -22,18 +22,21 @@ Usage:
 
 import asyncio
 import argparse
+import io
 import re
+from urllib.parse import urlparse
 from pathlib import Path
 from datetime import date
 
 from playwright.async_api import async_playwright, Page
 import markdownify
+import pdfplumber
 from rich.console import Console
 
 from utils import (
     bsa_version_from_date, make_frontmatter,
     write_md, rate_limit, clean_markdown, absolutize_relative_links,
-    extract_content, make_browser_context
+    extract_content, make_browser_context, download_pdf
 )
 
 console = Console()
@@ -102,12 +105,23 @@ POLICIES = [
         "note": "Full PDF available at scouting.org. This file captures the web summary pages.",
     },
     {
-        "name": "Chartered Organization Relationship",
-        "slug": "chartered-organization",
+        # Renamed from slug "chartered-organization" on 2026-09-05. The entry
+        # was originally pointed at
+        # /programs/scouts-bsa/resources-for-volunteers/chartered-organizations/,
+        # which 404s; commit 5bfc84e substituted the Scouter Code of Conduct
+        # URL but left name/slug unchanged and only half-edited the
+        # description, so the file shipped a chartered-organization label over
+        # Scouter Code of Conduct content. The Code of Conduct is itself a
+        # named RESOURCES item in the Annual Unit Charter Agreement, so the
+        # fix is to label it correctly rather than re-point the URL.
+        # See docs/PLAYBOOK.md.
+        "name": "Scouting America Scouter Code of Conduct",
+        "slug": "scouter-code-of-conduct",
         "url": "https://www.scouting.org/health-and-safety/gss/bsa-scouter-code-of-conduct/",
         "description": (
-            "The Scouter Code of Conduct and chartered organization responsibilities. "
-            "COs own their units — they select leaders and are responsible for the program."
+            "The Scouter Code of Conduct — the conduct commitments every registered "
+            "adult leader affirms, covering youth protection, transportation, "
+            "fundraising, social media, and disclosure obligations."
         ),
     },
     {
@@ -146,7 +160,257 @@ POLICIES = [
             "reporting requirements, and online incident reporting."
         ),
     },
+
+    # ---------------------------------------------------------------------
+    # Added 2026-09-05 to close the gaps against the RESOURCES list in the
+    # Annual Unit Charter Agreement (form 524-956, 2026 edition), which is
+    # now this tier's coverage target. See docs/PLAYBOOK.md.
+    # ---------------------------------------------------------------------
+    {
+        # The charter's own intro line points here for "the Bylaws, Rules and
+        # Regulations, guidelines, policies, and other publications". Note the
+        # PDF breaks this URL across a line as "membership- standards" — the
+        # real path has no space (the spaced form 404/403s, verified).
+        "name": "Membership Standards",
+        "slug": "membership-standards",
+        "url": "https://www.scouting.org/about/membership-standards/",
+        "description": (
+            "Scouting America's membership standards, and the hub the Annual Unit "
+            "Charter Agreement points units to for the governing publications — "
+            "it carries the live links to the Charter and Bylaws and the Rules "
+            "and Regulations."
+        ),
+    },
+    {
+        # The mission statement is published in the "Foundation of Scouting"
+        # section of the About page; there is no standalone /about/mission/
+        # page (verified 2026-09-05).
+        "name": "The Mission of Scouting America",
+        "slug": "mission-of-scouting-america",
+        "url": "https://www.scouting.org/about/",
+        "description": (
+            "The mission of Scouting America — to prepare young people to make "
+            "ethical and moral choices over their lifetimes by instilling in them "
+            "the values of the Scout Oath and Scout Law."
+        ),
+    },
+    {
+        "name": "The Scout Oath and Scout Law",
+        "slug": "scout-oath-and-law",
+        "url": "https://www.scouting.org/about/faq/question10/",
+        "description": (
+            "The Scout Oath and the twelve points of the Scout Law, with the "
+            "meaning of each point. Covers Duty to God via the Oath's "
+            "'duty to God and my country' and the Law's 'reverent' point."
+        ),
+    },
+    {
+        "name": "Scouting Safely",
+        "slug": "scouting-safely",
+        "url": "https://www.scouting.org/health-and-safety/",
+        "description": (
+            "The Scouting Safely section landing page — the index of BSA's health "
+            "and safety guidance, linking the Guide to Safe Scouting, SAFE "
+            "Checklist, incident reporting, youth protection, and the AHMR."
+        ),
+    },
+    {
+        "name": "SAFE Scouting Checklist",
+        "slug": "safe-checklist",
+        "url": "https://www.scouting.org/health-and-safety/safe/",
+        "description": (
+            "The SAFE Checklist — Supervision, Assessment, Fitness and skill, "
+            "Equipment and environment. The four-point check leaders apply when "
+            "planning and running any Scouting activity."
+        ),
+    },
+    {
+        "name": "Incident Reporting",
+        "slug": "incident-reporting",
+        "url": "https://www.scouting.org/health-and-safety/incident-report/",
+        "description": (
+            "How and when to report incidents, near misses, and injuries, and "
+            "which reporting form or channel applies to each."
+        ),
+    },
+    {
+        "name": "Charter and Bylaws of Scouting America",
+        "slug": "charter-and-bylaws",
+        "kind": "pdf",
+        "url": "https://filestore.scouting.org/filestore/about/2025_Charter_Bylaws.pdf",
+        "description": (
+            "The congressional charter and the corporate bylaws of Scouting "
+            "America — the governing instruments the Annual Unit Charter "
+            "Agreement binds a chartered organization to."
+        ),
+        "note": (
+            "Captured as extracted PDF text, not a rendered web page. This is a "
+            "governance document in legal prose — it is the authoritative source "
+            "text for citation, not unit-facing guidance."
+        ),
+    },
+    {
+        "name": "Rules and Regulations of Scouting America",
+        "slug": "rules-and-regulations",
+        "kind": "pdf",
+        "url": (
+            "https://www.scouting.org/wp-content/uploads/2025/11/"
+            "2025-Rules_Regulations_NEB-Approved-10.28.2025.pdf"
+        ),
+        "description": (
+            "The Rules and Regulations of Scouting America, as amended "
+            "October 28, 2025 — including the policies on unit fundraising, "
+            "branding, membership, and unit operation."
+        ),
+        "note": (
+            "Captured as extracted PDF text, not a rendered web page. This is a "
+            "governance document in legal prose — it is the authoritative source "
+            "text for citation, not unit-facing guidance."
+        ),
+    },
 ]
+
+
+_GOVERNANCE_FURNITURE = [
+    # Repeating page furniture in the national governance PDFs. Each of these
+    # is printed on nearly every page and carries no informational value in a
+    # text-only knowledge base. Confirmed 2026-09-05 against the October 2025
+    # revisions of both documents.
+    re.compile(r"(?m)^\s*©\s*\d{4}\s+Boy Scouts of America\s*$\n?"),
+    re.compile(r"(?m)^\s*(?:BIN\s+)?100-49\d\s*$\n?"),
+    re.compile(r"(?m)^\s*(?:Oct(?:ober)?)\s+\d{4}\s+Revision\s*$\n?"),
+    # Bare page-number lines — arabic (body) and lower-case roman (front
+    # matter). Anchored to a whole line so a numbered clause like "2." or a
+    # section reference inside a sentence is never touched.
+    re.compile(r"(?m)^\s*\d{1,3}\s*$\n?"),
+    re.compile(r"(?m)^\s*[ivxl]{1,6}\s*$\n?"),
+]
+
+
+def _clean_governance_pdf_text(text: str) -> str:
+    """
+    Strip repeating page furniture from an extracted governance PDF.
+
+    The copyright/BIN/revision footer sometimes extracts glued onto the line
+    above or below it (e.g. "©2025 Boy Scouts of AmericaBIN 100-491"), because
+    the footer sits in a separate text object that pdfplumber merges into the
+    nearest line. Those glued forms are split apart first so the line-anchored
+    patterns above can match them.
+    """
+    text = re.sub(r"(?<=[a-z])(?=©\d{4}\s+Boy Scouts)", "\n", text)
+    text = re.sub(r"(?<=America)(?=BIN\s+100-49\d)", "\n", text)
+    text = re.sub(r"(?<=America)(?=(?:Oct(?:ober)?)\s+\d{4}\s+Revision)", "\n", text)
+    text = re.sub(r"(?<=Revision)(?=[A-Z]{2,})", "\n", text)
+
+    for pattern in _GOVERNANCE_FURNITURE:
+        text = pattern.sub("", text)
+
+    return re.sub(r"\n{3,}", "\n\n", text).strip()
+
+
+def extract_governance_pdf_text(pdf_bytes: bytes) -> str:
+    """
+    Extract text from a national governance PDF (Charter and Bylaws, Rules and
+    Regulations) as paragraphs.
+
+    Deliberately simpler than fetch_ranks.extract_pdf_text(): these documents
+    are single-column running legal prose with no fill-in tables, no two-column
+    option lists, and no fake-bold double-printing, so none of the rank
+    handbook's reconstruction machinery applies. Verified 2026-09-05 —
+    dedupe_chars() changed nothing on either document.
+    """
+    with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
+        pages = [p.extract_text(x_tolerance=2, y_tolerance=2) or "" for p in pdf.pages]
+    return _clean_governance_pdf_text("\n".join(pages))
+
+
+async def fetch_policy_pdf(page: Page, policy: dict, built_date: str, bsa_version: str) -> str | None:
+    """
+    Fetch a policy published as a PDF and return formatted markdown.
+
+    The download runs through the browser (utils.download_pdf) rather than a
+    plain HTTP client — scouting.org's CDN sits behind Cloudflare and a bare
+    request gets a 403. Returns None if the download or extraction yields
+    nothing usable.
+    """
+    # download_pdf() runs fetch() inside the current page, so a PDF on a
+    # different host than the page is a cross-origin request and the browser
+    # blocks reading the response body. The Charter and Bylaws lives on
+    # filestore.scouting.org while the page is usually on www.scouting.org —
+    # confirmed 2026-09-05 to come back empty for exactly this reason, with no
+    # HTTP error to point at it. Park the page on the PDF's own origin first so
+    # the fetch is same-origin. See docs/PLAYBOOK.md.
+    pdf_host = urlparse(policy["url"]).netloc
+    if urlparse(page.url).netloc != pdf_host:
+        try:
+            await page.goto(f"https://{pdf_host}/", wait_until="domcontentloaded", timeout=30000)
+        except Exception:
+            # A bare 403/404 on the host root is fine — the document that
+            # loads is still on the right origin, which is all fetch() needs.
+            pass
+
+    pdf_bytes = await download_pdf(page, policy["url"])
+    if not pdf_bytes:
+        return None
+
+    body = extract_governance_pdf_text(pdf_bytes)
+    if len(body) < 500:
+        return None
+
+    extras = {}
+    if policy.get("note"):
+        extras["note"] = f'"{policy["note"]}"'
+    fm = make_frontmatter(policy["url"], built_date, bsa_version, **extras)
+
+    lines = [fm, "", f"# {policy['name']}", "", f"_{policy['description']}_", ""]
+    if policy.get("note"):
+        lines += [f"> **Note:** {policy['note']}", ""]
+    lines += [body, ""]
+    return "\n".join(lines)
+
+
+# Escalating backoff between 403 retries, in seconds. The edge throttle can
+# hold for well over a minute on the /about/* paths, so the tail of this
+# schedule is deliberately long — a short schedule (4/8/12/16s) was measured
+# on 2026-09-05 to give up while the URL was still only throttled, not gone.
+_RETRY_BACKOFF_S = [5, 15, 30, 60, 90]
+
+
+async def _goto_with_retry(page: Page, url: str, attempts: int = None) -> None:
+    """
+    Navigate to `url`, retrying on an HTTP 403 with escalating backoff.
+
+    scouting.org's edge intermittently serves a bare nginx 403 to an automated
+    browser — the same URL that 403s on one request returns 200 on the next,
+    and the /about/* paths trip it far more readily than /health-and-safety/*.
+    Confirmed 2026-09-05: /about/governance/charter/ 403'd four times in a row
+    headless while loading normally in a real browser, so a 403 here means
+    "throttled", NOT "page is gone". Do not respond to it by dropping a URL
+    from POLICIES, and do not switch the fetch to a plain HTTP client — that
+    removes the browser session the site is gating on and guarantees a 403.
+    See docs/PLAYBOOK.md.
+    """
+    attempts = attempts or len(_RETRY_BACKOFF_S) + 1
+    last_status = None
+    for attempt in range(attempts):
+        try:
+            response = await page.goto(url, wait_until="networkidle", timeout=60000)
+        except Exception:
+            # Some pages never settle to networkidle — e.g. the youth-protection
+            # page's "find your council" widget keeps polling. Confirmed
+            # 2026-08-02, see docs/PLAYBOOK.md.
+            response = await page.goto(url, wait_until="load", timeout=30000)
+            await page.wait_for_timeout(2000)
+
+        last_status = response.status if response else None
+        if last_status != 403:
+            return
+
+        if attempt < attempts - 1:
+            backoff = _RETRY_BACKOFF_S[min(attempt, len(_RETRY_BACKOFF_S) - 1)]
+            await page.wait_for_timeout(backoff * 1000)
+
+    console.print(f"    [yellow]still HTTP {last_status} after {attempts} attempts[/yellow]")
 
 
 async def fetch_policy_page(page: Page, policy: dict, built_date: str, bsa_version: str) -> str | None:
@@ -154,14 +418,7 @@ async def fetch_policy_page(page: Page, policy: dict, built_date: str, bsa_versi
     Fetch a single policy web page and return formatted markdown content.
     Returns None if no content is found.
     """
-    try:
-        await page.goto(policy["url"], wait_until="networkidle", timeout=60000)
-    except Exception:
-        # Some pages never settle to networkidle — e.g. the youth-protection
-        # page's "find your council" widget keeps polling. Confirmed
-        # 2026-08-02, see docs/PLAYBOOK.md.
-        await page.goto(policy["url"], wait_until="load", timeout=30000)
-        await page.wait_for_timeout(2000)
+    await _goto_with_retry(page, policy["url"])
     await page.wait_for_timeout(1000)
     content_html = await extract_content(page)
 
@@ -227,7 +484,10 @@ async def fetch_policies(
                 continue
 
             try:
-                content = await fetch_policy_page(page, policy, built_date, bsa_version)
+                if policy.get("kind") == "pdf":
+                    content = await fetch_policy_pdf(page, policy, built_date, bsa_version)
+                else:
+                    content = await fetch_policy_page(page, policy, built_date, bsa_version)
                 if content:
                     write_md(out_file, content)
                     fetched += 1
@@ -248,10 +508,19 @@ async def fetch_policies(
     if errors:
         console.print(f"  [yellow]Failed ({len(errors)}): {', '.join(errors)}[/yellow]")
 
+    # Report what was fetched this run, but return what the tier actually
+    # *contains*. build_all.py feeds this into manifest.json's "counts", which
+    # describes the data package, not one run of the scraper — a partial or
+    # incremental build (where most entries are skipped as already-present, or
+    # a few 403 out) would otherwise write a count far below the real file
+    # count. Confirmed 2026-09-05: a run that fetched 5 of 16 wrote
+    # "policies": 5 over a directory holding 12 files.
+    present = len(list(output_path.glob("*.md")))
     console.print(
-        f"  [green]Done:[/green] {fetched}/{len(POLICIES)} policies fetched → {output_dir}"
+        f"  [green]Done:[/green] {fetched}/{len(POLICIES)} policies fetched "
+        f"({present} files present) → {output_dir}"
     )
-    return fetched
+    return present
 
 
 if __name__ == "__main__":

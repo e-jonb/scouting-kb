@@ -36,6 +36,7 @@ import pdfplumber
 from rich.console import Console
 
 from utils import (
+    download_pdf,
     slug, bsa_version_from_date, make_frontmatter,
     write_md, rate_limit, make_browser_context
 )
@@ -102,32 +103,6 @@ RANKS = [
 ]
 
 RANKS_INDEX_URL = "https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/"
-
-
-async def download_pdf(page, url: str) -> bytes | None:
-    """
-    Download a PDF by running fetch() inside the browser page.
-
-    context.request.get() does not reliably pass Cloudflare clearance to the
-    scouting.org CDN. Running fetch() from inside the page uses the full browser
-    session (cookies, TLS fingerprint, etc.) and bypasses this limitation.
-    Returns raw bytes on success, None on failure.
-    """
-    try:
-        data = await page.evaluate(
-            """async (url) => {
-                const resp = await fetch(url, {credentials: 'include'});
-                if (!resp.ok) return null;
-                const buf = await resp.arrayBuffer();
-                return Array.from(new Uint8Array(buf));
-            }""",
-            url,
-        )
-        if data:
-            return bytes(data)
-    except Exception as e:
-        console.print(f"    [yellow]fetch error: {e}[/yellow]")
-    return None
 
 
 _LETTER_MARKER_RE = re.compile(r"^([a-n])\.(.*)$")

@@ -1,12 +1,12 @@
 ---
 source: https://www.scouting.org/health-and-safety/gss/bsa-scouter-code-of-conduct/
-fetched: 2026-08-01
+fetched: 2026-09-05
 bsa_version: 2026.Q3
 ---
 
-# Chartered Organization Relationship
+# Scouting America Scouter Code of Conduct
 
-_The Scouter Code of Conduct and chartered organization responsibilities. COs own their units — they select leaders and are responsible for the program._
+_The Scouter Code of Conduct — the conduct commitments every registered adult leader affirms, covering youth protection, transportation, fundraising, social media, and disclosure obligations._
 
 [Home](https://www.scouting.org/) > [Scouting Safely](https://www.scouting.org/health-and-safety/) > [Guide to Safe Scouting](https://www.scouting.org/health-and-safety/gss/) > Scouting America Scouter Code of Conduct
 

@@ -337,3 +337,32 @@ async def extract_merit_badge_content(page) -> str:
         }"""
     )
     return html or ""
+
+
+async def download_pdf(page, url: str) -> bytes | None:
+    """
+    Download a PDF by running fetch() inside the browser page.
+
+    context.request.get() does not reliably pass Cloudflare clearance to the
+    scouting.org CDN. Running fetch() from inside the page uses the full browser
+    session (cookies, TLS fingerprint, etc.) and bypasses this limitation.
+    Returns raw bytes on success, None on failure.
+
+    Shared by fetch_ranks.py (rank requirement PDFs) and fetch_policies.py
+    (the governance PDFs named in the Annual Unit Charter Agreement).
+    """
+    try:
+        data = await page.evaluate(
+            """async (url) => {
+                const resp = await fetch(url, {credentials: 'include'});
+                if (!resp.ok) return null;
+                const buf = await resp.arrayBuffer();
+                return Array.from(new Uint8Array(buf));
+            }""",
+            url,
+        )
+        if data:
+            return bytes(data)
+    except Exception:
+        return None
+    return None

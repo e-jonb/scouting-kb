@@ -80,10 +80,12 @@ async def build(tier: int = 0, force: bool = False, cdp_url: str = None) -> None
     # Update manifest — merge with existing counts so partial builds don't zero out other tiers
     manifest_file = DATA_DIR / "manifest.json"
     existing_counts = {}
+    existing_notes = None
     if manifest_file.exists():
         try:
             existing = json.loads(manifest_file.read_text())
             existing_counts = existing.get("counts", {})
+            existing_notes = existing.get("notes")
         except Exception:
             pass
 
@@ -96,6 +98,13 @@ async def build(tier: int = 0, force: bool = False, cdp_url: str = None) -> None
         "forced": force,
         "counts": existing_counts,
     }
+    # Carry the existing note forward. "notes" is hand-maintained provenance —
+    # what changed in the data and why — and rebuilding the manifest from
+    # scratch used to silently drop it. It survived this long only because
+    # nobody re-ran a build after it was written. Update it deliberately after
+    # a build that changes what the data covers.
+    if existing_notes:
+        manifest["notes"] = existing_notes
     write_json(manifest_file, manifest)
 
     # Summary

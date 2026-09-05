@@ -33,7 +33,7 @@ At the end of a significant work session (or whenever you're asked to wrap up), 
 
 **Where it goes:**
 - Short, stable operating rules → straight into this CLAUDE.md, near the related existing section
-- Longer-form patterns, multi-step playbooks, or detailed rationale — a scraper selector broke and how it was fixed, a scouting.org quirk to route around — → `docs/PLAYBOOK.md` (create it, this repo doesn't have one yet), with a one-line pointer added here
+- Longer-form patterns, multi-step playbooks, or detailed rationale — a scraper selector broke and how it was fixed, a scouting.org quirk to route around — → `docs/PLAYBOOK.md`, with a one-line pointer added here
 
 **When you graduate something, mark the memory file too.** Append a line to the relevant memory entry noting where it landed — "Graduated to CLAUDE.md on [date]; that file is now authoritative" (or the PLAYBOOK.md equivalent). CLAUDE.md and PLAYBOOK.md will keep evolving after graduation; without this note, a stale copy of the original guidance sits in memory with no signal that it's been superseded.
 
@@ -62,8 +62,16 @@ git add data/ && git commit -m "chore(data): 2026.Q2 refresh"
 | Tier | Content | Est. Time |
 |------|---------|-----------|
 | 1 | Councils (JSON), Ranks (7 files), Merit Badges (130+ files) | ~40 min first run, ~5 min incremental |
-| 2 | Key policies: two-deep, SYT, health forms, Guide to Safe Scouting | ~5 min |
+| 2 | Policies – scope defined by the charter agreement's RESOURCES list (see below) | ~10 min |
 | 3 | Roles, program manuals | Not yet implemented |
+
+### Tier 2 scope comes from the Annual Unit Charter Agreement
+
+Tier 2's coverage target is the **RESOURCES list on the last page of the Annual Unit Charter Agreement** (form **524-956**, 2026 edition) – the document a chartered organization actually signs, which enumerates exactly which publications govern a unit. This replaced an ad-hoc policy set that had no authority behind it and no signal for when it was complete.
+
+Source: `https://www.scouting.org/wp-content/uploads/2026/04/524-95626-Annual-Charter-Agreement.pdf` (fetches with plain `curl`). The form's effective-date line is a blank fill-in completed per-unit – the PDF states no printed date range, so don't cite one.
+
+**Re-check annually**, at the start of each charter year: re-pull the form and diff its RESOURCES list against `POLICIES` in `fetch_policies.py`. The list is a **floor, not a ceiling** – the GSS operational chapters (aquatics, camping, AHMR) aren't named in it and are deliberately kept. Full mapping table in `docs/PLAYBOOK.md`.
 
 ## Data Structure
 
@@ -79,14 +87,26 @@ data/
   ranks/
     index.md             # All ranks in advancement order
     {slug}.md            # One per rank (scout.md through eagle-scout.md)
-  policies/
+  policies/                # Scope = charter agreement RESOURCES list (see Tier System)
+    # Youth protection
     two-deep-leadership.md
     youth-protection-training.md    # SYT
-    annual-health-medical-record.md
-    guide-to-safe-scouting.md
-    chartered-organization.md
-    camping-permissions.md
     reporting-youth-protection.md
+    # Safety
+    guide-to-safe-scouting.md
+    scouting-safely.md
+    safe-checklist.md
+    incident-reporting.md
+    annual-health-medical-record.md
+    aquatics-safety.md
+    camping-permissions.md
+    # Governance / foundational (PDF-sourced where noted)
+    charter-and-bylaws.md           # PDF
+    rules-and-regulations.md        # PDF
+    membership-standards.md
+    mission-of-scouting-america.md
+    scout-oath-and-law.md
+    scouter-code-of-conduct.md
   roles/                 # Tier 3 — not yet implemented
 ```
 
@@ -148,6 +168,12 @@ Reference files at `packages/scouting-kb/data/`. Read `manifest.json` for build 
 **A policy file's content doesn't match its own title/slug (e.g. shows a different topic than expected):** check the `POLICIES` list in `fetch_policies.py` for a copy-paste error — an entry's `slug` not matching its own `name`/`url`/`description`. Confirmed 2026-08-05: `reporting-youth-protection` was wired to `aquatics-safety`'s URL. The scraper ran successfully and produced a well-formed file, so nothing in the pipeline itself catches this — only a slug-vs-content spot check does. See `docs/PLAYBOOK.md`.
 
 **Adjacent bold/italic text reads run-together with no space (or literal asterisks bleed through in a weaker renderer):** `_space_glued_emphasis()` in `utils.py` (called from `clean_markdown()`) fixes the common case — a markdownify artifact from two adjacent `<strong>`/`<em>` elements with no whitespace text node between them in the source DOM. Doesn't handle chained/nested emphasis (alternating single- and triple-asterisk runs) — see `docs/PLAYBOOK.md` for what's covered and what isn't.
+
+**A policy fetch returns HTTP 403, or a URL you can see in a browser 403s from the scraper:** scouting.org's edge throttles an automated browser intermittently – the *same* URL returns 200 and 403 on different attempts, and `/about/*` paths trip it far more readily than `/health-and-safety/*`. **A 403 here means "throttled", not "the page is gone."** Do not drop the URL from `POLICIES`, and do not "fix" it by switching the fetch to `requests`/`curl` – that removes the browser session the site is gating on and guarantees a 403. `_goto_with_retry()` in `fetch_policies.py` retries with escalating backoff (`_RETRY_BACKOFF_S`); if a URL still fails, re-run the build (non-`--force` only retries the missing files), or use CDP mode against a real Chrome for a full refresh. Verify a suspicious 403 in a real browser before concluding a page is gone. See `docs/PLAYBOOK.md`.
+
+**A PDF policy fetches as empty with no HTTP error:** `download_pdf()` runs `fetch()` inside the current page, so a PDF hosted on a *different* host than the page is cross-origin and the browser blocks reading the body – silently. `fetch_policy_pdf()` parks the page on the PDF's own origin first. This bit the Charter and Bylaws (on `filestore.scouting.org`, fetched from a `www.scouting.org` page). See `docs/PLAYBOOK.md`.
+
+**A policy file's title/description doesn't match its own body:** the pipeline cannot detect a slug/label that disagrees with its URL – the fetch succeeds, extraction finds real content, and `source:` is accurate, so every automated signal is green. Two confirmed instances: `reporting-youth-protection` (wrong URL pasted in) and `chartered-organization` (a URL swapped to replace a dead link, with the label never reconciled – it shipped Scouter Code of Conduct content, now `scouter-code-of-conduct`). **When adding or re-pointing any policy entry, read the produced file's first ~20 lines and confirm the body matches the slug.** See `docs/PLAYBOOK.md`.
 
 **Playwright browser errors:** Run `playwright install chromium` to reinstall the browser binary.
 

@@ -212,3 +212,99 @@ This mirrors a previously-known gotcha for the counselor scraper's Scoutbook CDP
 **Verified against the full existing corpus before trusting it** (159 files: 133 merit badges, ranks, policies) — only 4 files changed, all confirmed genuine instances of the same bug (e.g. `**Note:**When` → `**Note:** When` in `archery.md`).
 
 **Known gap, not handled:** chained/nested emphasis from source markup like `<strong><em>A</em> <em>B</em></strong>` markdownifies to alternating single- and triple-asterisk runs (e.g. `***Cub Scout* *Programs – Overnight* *Exception:***`). The content-class-excludes-`*` regex can't match across those internal boundaries, so this pattern is left untouched rather than risk a wrong edit — a real parser would be needed to handle it safely, which is disproportionate for how rarely it occurs.
+
+## Tier 2 scope now comes from the Annual Unit Charter Agreement's RESOURCES list (set 2026-09-05)
+
+**The problem with the old scope:** Tier 2's policy set was assembled ad hoc – a reasonable guess at "what a unit leader needs," but with no external authority behind it. Nothing said when the set was complete, and nothing said when to re-check it.
+
+**The new definition:** the **RESOURCES section on the last page of the Annual Unit Charter Agreement** (form **524-956**, 2026 edition, PDF uploaded under `/wp-content/uploads/2026/04/`) is now the coverage target. This is the document a chartered organization actually signs, and it enumerates exactly which publications govern a unit. That makes it a defensible scope boundary rather than an editorial judgment call.
+
+Source PDF: `https://www.scouting.org/wp-content/uploads/2026/04/524-95626-Annual-Charter-Agreement.pdf` – fetches fine with plain `curl` (it's on the WordPress CDN path, which is not gated the way the site's HTML pages are).
+
+**On the effective date:** the form's own effective-date line is a *blank fill-in* (`Effective ______–______ 524-956`) completed per-unit at charter time, so the PDF does not state a printed date range. The edition is identified by the `26` suffix in the filename (`524-956` + `26`) and the `2026/04` upload path. Don't cite a printed effective range from this document – it doesn't have one.
+
+**When to re-check:** BSA re-issues this form annually. Re-pull it at the start of each charter year and diff the RESOURCES list against `POLICIES` in `fetch_policies.py`.
+
+**The list, and how each item maps to `data/policies/`:**
+
+| RESOURCES item | Slug | Notes |
+|---|---|---|
+| (intro) membership standards URL | `membership-standards` | See URL artifact below |
+| The Charter and Bylaws | `charter-and-bylaws` | PDF |
+| The Mission of Scouting America | `mission-of-scouting-america` | Published in the About page's "Foundation of Scouting" block; no standalone `/about/mission/` page exists |
+| The Rules and Regulations | `rules-and-regulations` | PDF |
+| The Scout Oath and Scout Law, incl. Duty to God | `scout-oath-and-law` | `/about/faq/question10/` |
+| Youth protection policies, incl. mandatory reporting | `two-deep-leadership`, `reporting-youth-protection`, `youth-protection-training` | Already covered by three files |
+| Scouting Safely section | `scouting-safely` | The section landing page – the sub-pages were already covered, the index itself was not |
+| The Guide to Safe Scouting | `guide-to-safe-scouting` | Already covered |
+| The SAFE Scouting Checklist | `safe-checklist` | `/health-and-safety/safe/` |
+| Scouter Code of Conduct | `scouter-code-of-conduct` | Already scraped, but shipped under the wrong label – see the next entry |
+| Incident Reporting | `incident-reporting` | `/health-and-safety/incident-report/` |
+| Scouting America Brand Center | *(not scraped)* | See "Brand Center" below |
+
+`aquatics-safety`, `camping-permissions`, and `annual-health-medical-record` are **not** named individually in RESOURCES – they're GSS chapters that fall under "the Guide to Safe Scouting" / "Scouting Safely." They're kept. Tier 2 is therefore *RESOURCES ∪ the existing operational GSS chapters*, not RESOURCES alone; the charter list is a **floor, not a ceiling**.
+
+**Two URL artifacts in the source document, both verified:**
+
+1. **`membership- standards` is a line-break artifact, not the real URL.** The PDF wraps the URL mid-path, and naive extraction yields `https://www.scouting.org/about/membership- standards/`. The real URL has no space. Verified: the de-hyphenated form returns 200, the spaced form returns 403.
+
+2. **The Brand Center URL in the charter is imprecise.** The document says the Brand Center "can be located at `https://www.scoutingwire.org`". That host resolves (200) but is **Scouting Wire – the movement's news blog**, not the Brand Center. The actual Brand Center is a link *from* that site, at `https://scouting.webdamdb.com/bp/#/` (page title: "BSA Brand Center"). Verified 2026-09-05 in a real browser.
+
+## Brand Center is out of scope for the scraped tier (decided 2026-09-05)
+
+`https://scouting.webdamdb.com/bp/#/` is a **WebDAM digital-asset-management portal** sitting behind a cookie-consent gate. It serves logos, images, and brand templates – binary assets – not policy prose. There is no markdown-able document here: scraping it would produce a consent banner and an empty SPA shell.
+
+**Decision: not scraped.** It's recorded as a pointer only. Anything a unit leader needs from it (brand usage rules in plain language) is a curated synthesis and belongs in **scouting-reference**, not here. This is the "genuinely cannot be scraped" case the tier boundary exists for.
+
+## `chartered-organization.md` shipped Scouter Code of Conduct content under the wrong label (found 2026-09-05)
+
+**Symptom:** `data/policies/chartered-organization.md` was titled "Chartered Organization Relationship" and described as covering CO responsibilities, but its body was 100% the **Scouter Code of Conduct** – the numbered personal-conduct commitments an adult leader affirms. Nothing in the file was about the chartered organization relationship.
+
+**Root cause – a URL substitution that never got relabeled.** Traced with `git log -S`. The entry originally pointed at `https://www.scouting.org/programs/scouts-bsa/resources-for-volunteers/chartered-organizations/`. That page 404'd. Commit `5bfc84e` ("fix all Tier 1+2 selectors for 2026.Q1") swapped in `gss/bsa-scouter-code-of-conduct/` – a real, working page, but **a different document** – and left `name` and `slug` untouched while only half-editing `description` (it prepended "The Scouter Code of Conduct and" but kept the trailing "COs own their units…" clause). The scraper then did exactly what it was told and produced a well-formed file with a truthful `source:` URL and a false title.
+
+**Why nothing caught it:** same blind spot as the `reporting-youth-protection` bug (see above), and worth stating as a general rule – **the pipeline cannot detect a slug/label that disagrees with its own URL.** Every automated signal was green: the fetch succeeded, content extraction found real content, the frontmatter `source:` was accurate. Only reading the file against its own slug catches this class of bug.
+
+Note the two bugs are *different* root causes despite the identical symptom:
+- `reporting-youth-protection` – a **copy-paste error**: the wrong URL pasted into an otherwise-correct entry.
+- `chartered-organization` – a **deliberate substitution for a dead link**, where the replacement document was never reconciled with the label.
+
+**Fix:** relabeled the entry to `scouter-code-of-conduct` with a matching name and description, and regenerated the file. The URL was already correct – it was the label that was wrong. This also fills a real RESOURCES slot, since the Scouter Code of Conduct is a named item in the charter agreement.
+
+**No file now claims to cover the chartered organization relationship.** That's deliberate: BSA has no standalone page for it, and the authoritative statement of the CO relationship *is* the Annual Unit Charter Agreement itself. A unit-facing explanation of it is a curated synthesis for **scouting-reference**.
+
+**Check to run when adding or re-pointing any policy entry:** read the produced file's first ~20 lines and confirm the body actually matches the slug. A green build proves nothing here.
+
+## Governance PDFs: scraped into Tier 2 rather than curated (decided 2026-09-05)
+
+Two RESOURCES items are PDFs, not web pages: the **Charter and Bylaws** and the **Rules and Regulations**. The question was whether `fetch_policies.py` should grow PDF extraction, or whether these belong in **scouting-reference** as curated syntheses.
+
+**Decision: scrape them into `data/policies/`.** Reasoning:
+
+1. **They extract cleanly.** Verified before deciding, rather than assumed – Charter and Bylaws is 28 pages / ~80k chars, Rules and Regulations 24 pages / ~78k chars, both single-column running prose that `pdfplumber` handles without incident.
+2. **The repo already does PDF extraction** (`fetch_ranks.py`), so this is not new capability, just a second caller.
+3. **Tier 2 is the scraped tier and hand-authoring is destroyed on rebuild.** If these aren't scraped, the charter-derived checklist has permanent holes with no source of truth behind them.
+4. **"Cannot be scraped" genuinely doesn't apply** – that exemption is for things like the Brand Center, and stretching it to cover "inconvenient" would hollow out the tier boundary.
+
+**What this decision does NOT claim:** these are dense legal documents. A Scoutmaster asking "can our troop run a raffle?" wants a paragraph, not 24 pages of numbered sections. The right complement is a curated synthesis in **scouting-reference that cites these files** – a complement, not a substitute. Capturing authoritative source text here and writing readable guidance there are different jobs, and this decision only covers the first.
+
+**Implementation notes:**
+- `extract_governance_pdf_text()` in `fetch_policies.py` is deliberately much simpler than `fetch_ranks.extract_pdf_text()`. None of the rank handbook's machinery applies: no fill-in tables, no two-column option lists, no fake-bold double-printing. Confirmed `dedupe_chars()` changes nothing on either document, so it isn't called.
+- `_clean_governance_pdf_text()` strips the repeating footer (`©20XX Boy Scouts of America`, `BIN 100-491` / `100-492`, `October 2025 Revision`) and bare page-number lines in both arabic and lower-case roman. **Gotcha:** the footer often extracts *glued* to the adjacent line (`©2025 Boy Scouts of AmericaBIN 100-491`, `Oct 2025 RevisionOCTOBER 2025 CHANGES`) because it lives in a separate text object that pdfplumber merges into the nearest line – so the glued forms are split with targeted lookahead substitutions *first*, before the line-anchored patterns can match them.
+- The page-number patterns are anchored to a whole line (`^\s*\d{1,3}\s*$`), so a numbered clause like `2. The corporation…` is never touched.
+- `download_pdf()` moved from `fetch_ranks.py` to `utils.py` and is now shared by both callers. It runs `fetch()` **inside the browser page** – `context.request.get()` does not reliably carry Cloudflare clearance to the scouting.org CDN.
+
+## scouting.org serves intermittent 403s to an automated browser – a 403 means "throttled", not "gone" (found 2026-09-05)
+
+**Symptom:** while verifying candidate URLs headless, the same URL returned 200 and 403 on different attempts with no pattern. `/about/membership-standards/` returned 200 on a fresh session and 403 four times in a row later; `/about/faq/question10/` did the exact opposite. `/about/*` paths trip it far more readily than `/health-and-safety/*`.
+
+**The trap:** this looks exactly like "the page doesn't exist" or "BSA moved it," and the tempting responses are both wrong – dropping the URL from `POLICIES`, or "fixing" it by switching the fetch to `requests`/`curl`. **Switching to a plain HTTP client removes the browser session the site is gating on and guarantees a 403.** The 403 is the symptom of bypassing the browser, not the cure.
+
+**How it was actually settled:** loaded `/about/governance/charter/` – which had 403'd four consecutive times headless – in a real Chrome window. It returned the page normally, title "Boy Scouts of America Charter | Scouting America." That confirmed the pages exist and the 403 is throttling. **Verify a suspicious 403 in a real browser before concluding a page is gone.**
+
+**Fix:** `_goto_with_retry()` in `fetch_policies.py` retries a 403 up to 5 times with escalating backoff (4s, 8s, 12s, 16s). For a full `--force` rebuild, prefer CDP mode against a real Chrome (`--cdp-url http://localhost:9222`), which carries genuine Cloudflare clearance – see the CDP setup entry above.
+
+## `build_all.py` used to wipe `manifest.json`'s `notes` field on every run (found 2026-09-05)
+
+`data/manifest.json` carries a hand-maintained `notes` field – the running provenance record of what changed in the data and why. `build_all.py` rebuilt the manifest dict from scratch (`built`, `version`, `tier_built`, `forced`, `counts`) with no `notes` key, so **any build would have silently erased it.** It survived as long as it did only because nobody re-ran a build between the note being written and this session.
+
+**Fix:** `build_all.py` now reads the existing `notes` and carries it forward, the same way it already merged `counts` so partial builds don't zero out other tiers. It is still meant to be updated deliberately after a build that changes what the data covers – carrying it forward preserves it, it doesn't keep it accurate.
