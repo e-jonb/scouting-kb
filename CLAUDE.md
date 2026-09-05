@@ -112,7 +112,7 @@ data/
 
 ## Frontmatter Standard
 
-Every markdown file includes:
+Every markdown file includes these three keys:
 ```yaml
 ---
 source: https://www.scouting.org/...
@@ -121,7 +121,27 @@ bsa_version: YYYY.QN
 ---
 ```
 
+### Optional: `note:`
+
+Some files carry a fourth key, `note:`, a quoted single-line string:
+```yaml
+---
+source: https://filestore.scouting.org/filestore/about/2025_Charter_Bylaws.pdf
+fetched: 2026-09-05
+bsa_version: 2026.Q3
+note: "Captured as extracted PDF text, not a rendered web page. ..."
+---
+```
+
+It records a **caveat about the file itself** that a reader needs in order to use it correctly – something true of this file that is not true of the corpus generally. Current uses cover the four recurring cases: the source is a PDF rather than a web page (`charter-and-bylaws`, `rules-and-regulations`); the file captures only part of what the source publishes (`guide-to-safe-scouting`); BSA has renamed the thing the file describes (`youth-protection-training`, YPT to SYT); and a field is absent because the upstream endpoint does not return it (`councils.md`).
+
+It comes from the optional `note` field on the source entry in `fetch_policies.py`, and where present it is also rendered into the body as a `> **Note:**` blockquote, so the caveat survives for a reader who sees only the rendered markdown.
+
+**Consumers must not assume `note:` is present.** Most files do not have it, it is added per-entry rather than generated, and an entry can gain or lose one on any refresh. Treat it as display-only prose: read it if it is there, and never branch program logic on its presence, absence, or contents.
+
 Consumer apps should read `bsa_version` from `manifest.json` to surface "as of Q1 2026" notices in the UI.
+
+`manifest.json`'s own `notes` field (plural) is unrelated to this key: it is a fixed, generated pointer to `docs/PLAYBOOK.md` and carries no per-build meaning. Do not parse it.
 
 ## Consumer Repos
 

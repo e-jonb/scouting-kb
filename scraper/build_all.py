@@ -39,6 +39,9 @@ from fetch_policies import fetch_policies
 console = Console()
 DATA_DIR = Path(__file__).parent.parent / "data"
 
+# Written verbatim into every manifest. See the comment in build() below.
+MANIFEST_NOTES = "See docs/PLAYBOOK.md for what changed in this corpus and why."
+
 
 async def build(tier: int = 0, force: bool = False, cdp_url: str = None) -> None:
     today = date.today()
@@ -80,12 +83,10 @@ async def build(tier: int = 0, force: bool = False, cdp_url: str = None) -> None
     # Update manifest — merge with existing counts so partial builds don't zero out other tiers
     manifest_file = DATA_DIR / "manifest.json"
     existing_counts = {}
-    existing_notes = None
     if manifest_file.exists():
         try:
             existing = json.loads(manifest_file.read_text())
             existing_counts = existing.get("counts", {})
-            existing_notes = existing.get("notes")
         except Exception:
             pass
 
@@ -97,14 +98,20 @@ async def build(tier: int = 0, force: bool = False, cdp_url: str = None) -> None
         "tier_built": "all" if tier == 0 else tier,
         "forced": force,
         "counts": existing_counts,
+        # Fixed, generated, deterministic. "notes" used to hold a
+        # hand-maintained account of what changed in the corpus and why, which
+        # this function rebuilt from scratch and silently erased on every run.
+        # Carrying it forward instead stopped the deletion but not the drift:
+        # preserving a narrative is not the same as keeping it true.
+        #
+        # Studio decision 2026-09-05 — hand-maintained narrative does not belong
+        # in a machine-regenerated artifact at all, because it will either be
+        # destroyed or go stale and you do not get to choose which. The
+        # provenance now lives in docs/PLAYBOOK.md, which is append-only and
+        # which nothing regenerates. This line is generated, not maintained, so
+        # there is nothing left to erase.
+        "notes": MANIFEST_NOTES,
     }
-    # Carry the existing note forward. "notes" is hand-maintained provenance —
-    # what changed in the data and why — and rebuilding the manifest from
-    # scratch used to silently drop it. It survived this long only because
-    # nobody re-ran a build after it was written. Update it deliberately after
-    # a build that changes what the data covers.
-    if existing_notes:
-        manifest["notes"] = existing_notes
     write_json(manifest_file, manifest)
 
     # Summary
