@@ -366,3 +366,59 @@ async def download_pdf(page, url: str) -> bytes | None:
     except Exception:
         return None
     return None
+
+
+# Stopwords for label comparison. Deliberately tiny — these are the words that
+# appear in BSA policy titles as connective tissue and carry no identifying
+# signal ("Youth Protection *and* Adult Leadership").
+_LABEL_STOPWORDS = {"of", "and", "the", "a", "to", "for", "in"}
+
+
+def _stem_label_token(word: str) -> str:
+    """
+    Light stemming, enough to make "permissions" match "permission" and
+    "policies" match "policy". Deliberately not a real stemmer — this only
+    has to normalize plurals in document titles.
+
+    Words ending in "ss" (class, address, process) are left alone, since
+    stripping their final "s" would produce a non-word that matches nothing.
+    """
+    if len(word) > 4 and word.endswith("ies"):
+        return word[:-3] + "y"
+    if word.endswith("ss"):
+        return word
+    if len(word) > 3 and word.endswith("s"):
+        return word[:-1]
+    return word
+
+
+def label_tokens(text: str) -> set[str]:
+    """
+    Normalize a label (a slug, a document name, a page heading) into a set of
+    significant tokens for comparison.
+
+    Lowercases, replaces every non-alphanumeric run with a space — which both
+    strips punctuation and splits hyphenated slugs — drops stopwords, and
+    lightly stems what remains.
+    """
+    words = re.sub(r"[^a-z0-9]+", " ", (text or "").lower()).split()
+    return {
+        _stem_label_token(w)
+        for w in words
+        if w not in _LABEL_STOPWORDS
+    }
+
+
+def label_overlap_ratio(claimed: str, actual: str) -> float | None:
+    """
+    Fraction of `claimed`'s significant tokens that also appear in `actual`.
+    Returns None when `claimed` has no significant tokens to compare.
+
+    Proportional rather than all-or-nothing: a document's own heading is
+    routinely a longer or shorter phrasing of the same subject, so requiring
+    every token would fire constantly on correct entries.
+    """
+    want = label_tokens(claimed)
+    if not want:
+        return None
+    return len(want & label_tokens(actual)) / len(want)

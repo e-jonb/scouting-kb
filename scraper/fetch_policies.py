@@ -32,11 +32,13 @@ from playwright.async_api import async_playwright, Page
 import markdownify
 import pdfplumber
 from rich.console import Console
+from rich.markup import escape
 
 from utils import (
     bsa_version_from_date, make_frontmatter,
     write_md, rate_limit, clean_markdown, absolutize_relative_links,
-    extract_content, make_browser_context, download_pdf
+    extract_content, make_browser_context, download_pdf,
+    label_tokens, label_overlap_ratio
 )
 
 console = Console()
@@ -271,6 +273,194 @@ POLICIES = [
 ]
 
 
+# ---------------------------------------------------------------------------
+# Label checks: does a policy file's body match what the entry says it is?
+#
+# Two bugs have shipped this defect through two different mechanisms, and both
+# passed every automated signal we had — the fetch succeeded, extraction found
+# real content, and the frontmatter `source:` was accurate. Nothing compared
+# what a file *claimed to be* against what it *was*.
+#
+#   reporting-youth-protection (2026-08-05) — a copy-paste error. name,
+#     description and url all said "Aquatics Safety"; the slug was the odd one
+#     out. Detectable statically, with no network: the slug disagreed with its
+#     own entry.
+#
+#   chartered-organization (2026-09-05) — a dead-link substitution. Commit
+#     5bfc84e swapped a 404ing URL for a working page describing a *different*
+#     document and left name and slug untouched. Here the URL was the odd one
+#     out, so every field in the entry still agreed with every other field.
+#     Nothing static could catch it; only the fetched document disagrees.
+#
+# Hence two checks. Check A is static and catches the first shape. Check B is
+# post-fetch and catches the second.
+# ---------------------------------------------------------------------------
+
+# (slug, check) -> why this entry is exempt. Keep the reason specific enough
+# that a future maintainer can tell whether it still applies.
+#
+# A check that cries wolf gets switched off, which is worse than no check — so
+# genuinely-legitimate mismatches belong here. A *failing* Check A, though, is
+# a signal the token rule needs work, not a candidate for this table.
+LABEL_CHECK_ALLOWLIST = {
+    ("reporting-youth-protection", "B"): (
+        "Shares one source page with two-deep-leadership by design. BSA bundles "
+        "youth protection and mandatory reporting onto gss01 and publishes no "
+        "standalone reporting page, so both entries point at the same URL and "
+        "fetch_policy_page() extracts the same container. This file's body is "
+        "therefore headed 'Youth Protection and Adult Leadership' rather than "
+        "anything about reporting. Intentional, documented in docs/PLAYBOOK.md."
+    ),
+}
+
+
+def _allowlist_reason(slug: str, check: str) -> str | None:
+    return LABEL_CHECK_ALLOWLIST.get((slug, check))
+
+
+def check_slug_matches_entry(policies: list[dict] = None) -> list[tuple[str, set[str]]]:
+    """
+    CHECK A (static, no network). Every significant token in an entry's `slug`
+    must appear somewhere in that entry's own name + description + note.
+
+    The slug is compared against the *whole entry*, not against `name` alone,
+    and that is the detail the check lives or dies on. `two-deep-leadership` is
+    a legitimate entry whose name is "Youth Protection and Adult Leadership" —
+    zero token overlap with its slug. A name-only rule flags it exactly as
+    loudly as a real bug. Its description says "two-deep leadership (two
+    registered adults required)", which is what rescues it, so the description
+    is what makes this check usable rather than noise.
+
+    Returns [(slug, missing_tokens)] for each failing entry; empty list = pass.
+    """
+    failures = []
+    for policy in policies if policies is not None else POLICIES:
+        slug = policy["slug"]
+        if _allowlist_reason(slug, "A"):
+            continue
+        haystack = " ".join(
+            filter(None, (policy.get("name"), policy.get("description"), policy.get("note")))
+        )
+        missing = label_tokens(slug) - label_tokens(haystack)
+        if missing:
+            failures.append((slug, missing))
+    return failures
+
+
+# Fraction of an entry's `name` tokens that must appear in the fetched
+# document's own heading. Proportional, because a page heading is routinely a
+# longer or shorter phrasing of the same subject ("Incident Reporting" vs.
+# "Welcome to Scouting America Incident Landing Page!"). Calibrated against the
+# current 16-entry table: the lowest-scoring correct entry sits at 0.5, and the
+# chartered-organization bug scores 0.0.
+_HEADING_MATCH_THRESHOLD = 0.5
+
+# h1 and h2 get separate patterns rather than one pattern with a `</h\1>`
+# backreference. Deliberate: the backreference version was mangled into
+# `</h\x01>` when this file was edited programmatically (a non-raw string ate
+# the \1), producing a pattern that silently never matched. Check B then
+# looked like it was passing on all 16 entries when it was in fact dead --
+# caught only by testing it against real fetched HTML. Nothing to get wrong
+# in the two-pattern form.
+_H1_RE = re.compile(r"<h1[^>]*>(.*?)</h1\s*>", re.IGNORECASE | re.DOTALL)
+_H2_RE = re.compile(r"<h2[^>]*>(.*?)</h2\s*>", re.IGNORECASE | re.DOTALL)
+_TAG_RE = re.compile(r"<[^>]+>")
+
+
+def heading_from_html(content_html: str) -> str | None:
+    """
+    The fetched document's own top heading: the first <h1> in the extracted
+    content, falling back to the first <h2>.
+
+    Read from the extracted content container rather than the whole page, so a
+    site-wide banner <h1> can't stand in for the document's real title.
+    """
+    def _first(pattern) -> str | None:
+        for inner in pattern.findall(content_html or ""):
+            text = re.sub(r"\s+", " ", _TAG_RE.sub(" ", inner)).strip()
+            if text:
+                return text
+        return None
+
+    return _first(_H1_RE) or _first(_H2_RE)
+
+
+def check_name_matches_document(policy: dict, *candidates: str | None) -> tuple[float, str] | None:
+    """
+    CHECK B (post-fetch). Compare the entry's `name` against the document's own
+    heading.
+
+    Compares NAME, not slug: `name` is the field that claims to describe the
+    document, so on a correct entry the two should agree strongly. On the
+    chartered-organization bug, name "Chartered Organization Relationship"
+    against heading "Scouting America Scouter Code of Conduct" scores 0.0.
+
+    Returns (ratio, heading) when the entry looks mislabeled, else None. This
+    is advisory — page headings drift, and a rename upstream should not fail a
+    build — so callers warn rather than abort.
+    """
+    if _allowlist_reason(policy["slug"], "B"):
+        return None
+
+    # Every candidate the document offers to identify itself -- its <h1>, and
+    # its <title> -- is scored, and the best wins. Either one naming the
+    # document correctly is sufficient evidence that the entry is not
+    # mislabeled. This matters on real pages: /about/ carries the mission
+    # statement this entry is for, but its <h1> is the marketing tagline
+    # "Scouting invites every youth to a safe, fun place..." while its <title>
+    # is "About Scouting America". Scoring only the h1 fires on a correct
+    # entry; scoring both does not, and a genuine mislabel still scores zero
+    # against every candidate.
+    #
+    # Each candidate is compared in BOTH directions, taking the better score,
+    # because a heading is often a shorter phrasing of the entry name -- gss03
+    # is titled just "Camping" where the entry is "Camping and Activity
+    # Permissions". Containment either way means they describe the same
+    # document. The chartered-organization bug scores 0.0 in both directions
+    # against both candidates.
+    best_ratio, best_text = None, None
+    for candidate in candidates:
+        if not candidate:
+            continue
+        scores = [
+            r for r in (
+                label_overlap_ratio(policy["name"], candidate),
+                label_overlap_ratio(candidate, policy["name"]),
+            ) if r is not None
+        ]
+        if not scores:
+            continue
+        ratio = max(scores)
+        if best_ratio is None or ratio > best_ratio:
+            best_ratio, best_text = ratio, candidate
+
+    if best_ratio is None or best_ratio >= _HEADING_MATCH_THRESHOLD:
+        return None
+    return best_ratio, best_text
+
+
+def report_slug_check(policies: list[dict] = None) -> int:
+    """Run Check A and print the result. Returns the number of failures."""
+    failures = check_slug_matches_entry(policies)
+    if not failures:
+        return 0
+    console.print(
+        f"\n[bold red]LABEL CHECK A FAILED[/bold red] — "
+        f"{len(failures)} entr{'y' if len(failures) == 1 else 'ies'} whose slug "
+        f"disagrees with its own name/description/note:"
+    )
+    for slug, missing in failures:
+        console.print(
+            f"    [red]{escape(slug)}[/red] — nothing in the entry mentions: "
+            f"{escape(', '.join(sorted(missing)))}"
+        )
+    console.print(
+        "    [yellow]Either the slug or the rest of the entry is wrong. "
+        "Check the URL actually serves the document the slug names.[/yellow]"
+    )
+    return len(failures)
+
+
 _GOVERNANCE_FURNITURE = [
     # Repeating page furniture in the national governance PDFs. Each of these
     # is printed on nearly every page and carries no informational value in a
@@ -434,6 +624,25 @@ async def fetch_policy_page(page: Page, policy: dict, built_date: str, bsa_versi
     md_content = _strip_council_locator_widget(md_content)
     md_content = absolutize_relative_links(md_content)
 
+    # CHECK B — does the document call itself what this entry claims it is?
+    mismatch = check_name_matches_document(
+        policy, heading_from_html(content_html), await page.title()
+    )
+    if mismatch:
+        ratio, heading = mismatch
+        # Every interpolated value here is escaped: rich reads square brackets
+        # as markup, and an unescaped "[two-deep-leadership]" is parsed as a
+        # style tag and rendered as nothing -- silently deleting the slug,
+        # which is the one field the reader most needs. Confirmed 2026-09-05.
+        console.print(
+            f"\n    [bold yellow]LABEL CHECK B WARNING[/bold yellow] "
+            f"{escape(policy['slug'])}: entry name and document self-description "
+            f"disagree ({ratio:.0%} token overlap):"
+        )
+        console.print(f"      entry name      : {escape(policy['name'])}")
+        console.print(f"      document says   : {escape(heading)}")
+        console.print(f"      source          : {escape(policy['url'])}")
+
     # Build frontmatter extras
     extras = {}
     if policy.get("note"):
@@ -467,6 +676,12 @@ async def fetch_policies(
     output_path.mkdir(parents=True, exist_ok=True)
 
     console.print(f"\n[bold blue]Policies[/bold blue] → {output_dir}")
+
+    # CHECK A runs before any network work — it needs nothing but the table,
+    # and a mislabeled entry is worth knowing about before spending ten
+    # minutes fetching. Reported loudly but not fatal here, so a label typo
+    # can't block a data refresh; `--check-labels` exits non-zero for CI.
+    report_slug_check()
 
     fetched = 0
     errors = []
@@ -527,5 +742,20 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Fetch BSA policy documents from scouting.org")
     parser.add_argument("--output", default="data/policies", help="Output directory")
     parser.add_argument("--force", action="store_true", help="Overwrite existing files")
+    parser.add_argument(
+        "--check-labels",
+        action="store_true",
+        help="Run the static slug/label check (Check A) and exit non-zero on failure. No network.",
+    )
     args = parser.parse_args()
+
+    if args.check_labels:
+        failures = report_slug_check()
+        if not failures:
+            console.print(
+                f"[green]Label check A passed[/green] — "
+                f"{len(POLICIES)} entries, no slug/label disagreements."
+            )
+        raise SystemExit(1 if failures else 0)
+
     asyncio.run(fetch_policies(output_dir=args.output, force=args.force))

@@ -315,3 +315,66 @@ That work confirmed the decision was right on the merits: the unit-relevant prov
 `data/manifest.json` carries a hand-maintained `notes` field – the running provenance record of what changed in the data and why. `build_all.py` rebuilt the manifest dict from scratch (`built`, `version`, `tier_built`, `forced`, `counts`) with no `notes` key, so **any build would have silently erased it.** It survived as long as it did only because nobody re-ran a build between the note being written and this session.
 
 **Fix:** `build_all.py` now reads the existing `notes` and carries it forward, the same way it already merged `counts` so partial builds don't zero out other tiers. It is still meant to be updated deliberately after a build that changes what the data covers – carrying it forward preserves it, it doesn't keep it accurate.
+
+## Two checks for a policy file whose body disagrees with its label (added 2026-09-05)
+
+Two bugs have now shipped this same defect – a file whose content is not what its name says – through two *different* mechanisms. Both passed every automated signal the scraper had: the fetch succeeded, extraction found real content, and the frontmatter `source:` was accurate. Nothing compared what a file **claimed to be** against what it **was**.
+
+- `reporting-youth-protection` (2026-08-05) – a copy-paste error. `name`, `description` and `url` all said "Aquatics Safety"; the slug was the odd one out. Three fields agreed with each other.
+- `chartered-organization` (2026-09-05) – a dead-link substitution. Commit `5bfc84e` replaced a 404ing URL with a working page for a *different* document and left `name` and `slug` untouched. Here the **URL** was the odd one out, so every field in the entry still agreed with every other field.
+
+Because the two mechanisms fail at different points, they need two checks. Both live in `fetch_policies.py`.
+
+**Check A – static, no network.** Every significant token in an entry's `slug` must appear somewhere in that entry's own `name` + `description` + `note` (lowercased, punctuation stripped, hyphens split, stopwords dropped, light plural stemming; `label_tokens()` in `utils.py`). Run it standalone with `python3 fetch_policies.py --check-labels`, which exits non-zero; it also runs at the start of every Tier 2 build, before any network work.
+
+**The critical design detail: the slug is compared against the whole entry, not against `name` alone.** `two-deep-leadership` is a completely legitimate entry whose name is "Youth Protection and Adult Leadership" – **zero** token overlap with its slug. Measured: a name-only rule flags 1 of 16 entries, and that one entry is the false positive. Its description contains "two-deep leadership", which supplies all three missing tokens. Including the description is the difference between a usable check and one that gets switched off.
+
+**Check B – post-fetch.** Compares the entry's `name` against the document's own self-description. Compares NAME, not slug, because `name` is the field that claims to describe the document. Reported as a **warning with both strings printed**, never a build failure, since page titles drift upstream.
+
+Two refinements were needed to make Check B usable, both driven by measurement against real pages rather than guessed:
+
+1. **Score the `<h1>` and the `<title>`, take the best.** Either one naming the document correctly is sufficient evidence. This matters: `/about/` genuinely carries the mission statement, but its `<h1>` is the marketing tagline "Scouting invites every youth to a safe, fun place..." while its `<title>` is "About Scouting America". H1-only fires on a correct entry at 33%.
+2. **Compare each candidate in both directions and take the better score.** A page heading is routinely a *shorter* phrasing of the entry name – gss03 is titled just "Camping" where the entry is "Camping and Activity Permissions", which scores 33% one way and 100% the other. Containment in either direction means the two strings describe the same document. A genuine mislabel scores 0.0 in both directions against both candidates.
+
+### Proof that each check can actually fail
+
+A check whose passing result is a negative ("no mismatches") is worthless until it has been shown capable of firing. Both historical entries were recovered verbatim via `git log -S` and replayed:
+
+| Bug | Check A | Check B |
+|---|---|---|
+| `reporting-youth-protection` (slug is odd one out) | **fires** – nothing in the entry mentions `reporting`, `youth`, `protection` | silent – `name` agreed with the page it actually fetched |
+| `chartered-organization` (URL is odd one out) | silent – every field agreed with every other field | **fires** – 0% overlap vs "Scouting America Scouter Code of Conduct" |
+
+Each bug is caught by exactly one check, and neither check catches both. That is the whole argument for having two.
+
+**This exercise earned its keep immediately.** Check B's heading parser used a `</h\1>` backreference, and writing the file programmatically turned the `\1` into a literal `\x01` – a pattern that can never match. Check B reported "ok" on all 16 entries while being structurally incapable of firing. Nothing caught this except running it against real fetched HTML, because the fixture tests passed heading strings in directly and never exercised the parser. The patterns are now written as two backreference-free regexes with a comment saying why. **A green check is not evidence until you have watched it go red.**
+
+A second latent bug surfaced the same way: rich reads `[...]` as markup, so an unescaped `[{slug}]` in the warning was parsed as a style tag and rendered as **nothing**, silently deleting the one field the reader most needs. All interpolated values in both checks' output now go through `rich.markup.escape()`.
+
+### The allowlist
+
+`LABEL_CHECK_ALLOWLIST` in `fetch_policies.py` is keyed by `(slug, check)` with a written reason per entry. A check that cries wolf gets disabled, which is worse than no check.
+
+It has exactly one entry: `("reporting-youth-protection", "B")`. That entry and `two-deep-leadership` deliberately share one source page, because BSA bundles youth protection and mandatory reporting onto gss01 and publishes no standalone reporting page, so this file's body is legitimately headed "Youth Protection and Adult Leadership".
+
+Worth knowing: with the two refinements above it scores **exactly 50%**, passing on the threshold by the narrowest possible margin. The allowlist entry is therefore belt-and-braces rather than load-bearing – it exists so that a small upstream heading change or any future threshold increase does not start producing recurring noise on a known-good entry.
+
+**A failing Check A is never an allowlist candidate.** If Check A fires on a legitimate entry, the token rule needs work.
+
+### What these checks do NOT cover
+
+More useful than what they do:
+
+- **PDF-sourced entries get no Check B at all.** `fetch_policy_pdf()` has no heading to compare, and a PDF's first line of extracted text is not a reliable title. `charter-and-bylaws`, `rules-and-regulations`, and any future PDF entry are Check-A-only.
+- **Neither check verifies that the content is correct** – only that the label and the document agree about what the document *is*. A page whose body is rewritten while keeping its title passes both checks unchanged.
+- **Check A cannot see a wrong URL** when every field in the entry agrees with every other field. That is precisely the `chartered-organization` shape, and it is why Check B exists.
+- **Check B cannot see a wrong slug** when `name` matches the page actually fetched. That is precisely the `reporting-youth-protection` shape, and it is why Check A exists.
+- **The allowlisted entry is invisible to Check B.** A genuine future mislabel of `reporting-youth-protection` onto some other gss01-adjacent page would be masked. This is the accepted cost of not crying wolf.
+- **Check A is vacuous for a slug with no significant tokens.** A slug that is entirely stopwords or digits has nothing to check.
+- **Check A reports disagreement, not which side is wrong.** It cannot tell you whether the slug or the rest of the entry is the error – only that they do not match.
+
+### Why `fetch_ranks.py` is not covered
+
+Checked, and Check A does not apply. `fetch_ranks.py` derives its output filename from `slug(rank["name"])`, so the slug cannot drift from the name – the failure mode is structurally impossible.
+
+The `RANKS` table does have a `section_pattern` field that *looks* like a comparable hand-maintained mapping, but **it is dead config: nothing reads it.** `split_combined_pdf()` carries its own hardcoded `patterns` dict, keyed by rank name, and that is what actually drives section splitting. Note the two disagree – the table says `EAGLE SCOUT RANK` while the live dict uses `EAGLE RANK` – which is exactly the sort of trap a maintainer could edit in good faith and have no effect. Left alone here rather than fixed, to keep a detector change from carrying an unrelated correction, but worth cleaning up.
