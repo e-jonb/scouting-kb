@@ -10,7 +10,7 @@
 
 ## Current State
 
-**As of:** 2026-09-05 \
+**As of:** 2026-09-07 \
 **Corpus version:** 2026.Q3, `built: 2026-09-05`, `tier_built: 2` \
 **Tier 1:** built – councils 228, ranks 7, merit badges 142 \
 **Tier 2:** built – policies 16 \
@@ -29,7 +29,7 @@ This is a data package, not an app. The scraper in `scraper/` produces versioned
 | Item | State | Blocks |
 |---|---|---|
 | Four policy files still at `fetched: 2026-03-03` | `two-deep-leadership`, `reporting-youth-protection`, `aquatics-safety`, `camping-permissions`. Content verified clean in August; only the dates are stale, because a non-`--force` build skips existing files | Nothing hard. Resolves on the next full `--force` refresh |
-| Consumer pointers behind | `scoutsync` pinned at `21ed902` (5 commits back); `troop-452-scouting-tool` at `7593f8e` (2 back) | Consumers not seeing the 16-file Tier 2 or the label checks. **Studio decides when to bump** |
+| ~~Consumer pointers behind~~ | **Resolved 2026-09-07**, in the consumer repos rather than here. `scoutsync` bumped in `0a43411`, `troop-452-scouting-tool` in `fbb05b9`; both now pin `e5fe343`, and troop-452 pins `scouting-reference` at `1a10d2f` | Nothing |
 | Tier 3 not implemented | Roles and program manuals. No `fetch_roles.py` | Any consumer needing role/manual content |
 | Council audit is not automatable | `fetch_councils_authenticated.py` needs a human logged into my.scouting.org; deliberately not wired into `build_all.py` | A true council refresh. The quarterly automated pass cannot catch renames or dissolutions |
 | PDF policy entries get no Check B | `charter-and-bylaws`, `rules-and-regulations` are Check-A-only – no heading to compare against | Nothing. Known and accepted gap |
@@ -45,6 +45,14 @@ This is a data package, not an app. The scraper in `scraper/` produces versioned
 ---
 
 ## Session Log
+
+### 2026-09-07 – Session closed; consumer drift resolved elsewhere
+
+**Done:** Session wrap-up. Re-verified Current State against the repo rather than trusting the previous write: counts unchanged (228 / 7 / 142 / 16), manifest still `2026.Q3` / `tier_built: 2`, Check A green on all 16 entries, four policy files still at `fetched: 2026-03-03`.
+
+**Discovered:** the consumer pointer drift flagged on 2026-09-05 has been **resolved in the consumer repos by other sessions**, not here – `scoutsync` in `0a43411` and `troop-452-scouting-tool` in `fbb05b9`, both committed and pushed. The open-items row said "5 commits back" and "2 back"; it was already wrong by one commit when written, because the count was taken before the commit that carried it landed. Worth noting as a live example of why this file's own rule is to re-verify Current State rather than trust either copy.
+
+**Needs Studio review:** nothing. The 2026-09-05 entry's outstanding item – consumer pointer bumps – is discharged.
 
 ### 2026-09-05 – Session lifecycle retrofitted; provenance moved out of the manifest
 
