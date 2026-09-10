@@ -519,9 +519,11 @@ async def fetch_policy_pdf(page: Page, policy: dict, built_date: str, bsa_versio
     Fetch a policy published as a PDF and return formatted markdown.
 
     The download runs through the browser (utils.download_pdf) rather than a
-    plain HTTP client — scouting.org's CDN sits behind Cloudflare and a bare
-    request gets a 403. Returns None if the download or extraction yields
-    nothing usable.
+    plain HTTP client, for consistency with the rest of the bulk path — not
+    because a bare request is blocked. A bare curl gets a valid PDF from this
+    CDN (confirmed 2026-09-10); the reason to stay on the browser path is
+    throttling under bulk load. Returns None if the download or extraction
+    yields nothing usable.
     """
     # download_pdf() runs fetch() inside the current page, so a PDF on a
     # different host than the page is a cross-origin request and the browser

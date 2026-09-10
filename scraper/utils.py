@@ -213,13 +213,16 @@ async def make_browser_context(playwright, cdp_url: str = None):
 
     Two modes:
       CDP mode (cdp_url set): connects to a user-launched Chrome via Chrome DevTools
-        Protocol. The browser already has Cloudflare clearance from normal use.
-        browser.close() is patched to browser.disconnect() so the user's Chrome
-        stays open after the scraper finishes.
+        Protocol. browser.close() is patched to browser.disconnect() so the user's
+        Chrome stays open after the scraper finishes. Preferred for a full --force
+        rebuild: it has completed bulk runs where headless runs did not. Why it
+        holds up better under load is NOT established — see docs/PLAYBOOK.md.
 
-      Headless mode (default): launches Playwright's own Chromium. Works for sites
-        without aggressive bot detection. scouting.org Cloudflare Enterprise will
-        block this — use CDP mode for that site.
+      Headless mode (default): launches Playwright's own Chromium. Fine for
+        single/low-volume fetches against scouting.org — confirmed 2026-09-10,
+        headless returns 200 with full content, 3/3, on pages this file used to
+        claim were "blocked by Cloudflare Enterprise." That claim was false.
+        The real risk is throttling under sustained load, not a block.
 
     CDP setup (one-time):
       pkill -x "Google Chrome"
@@ -229,7 +232,7 @@ async def make_browser_context(playwright, cdp_url: str = None):
     """
     if cdp_url:
         browser = await playwright.chromium.connect_over_cdp(cdp_url)
-        # Use the first existing browser context (has Cloudflare clearance cookies)
+        # Use the first existing browser context (the user's live session)
         context = browser.contexts[0] if browser.contexts else await browser.new_context()
         # Replace close() with a no-op so we don't shut down the user's Chrome.
         # Playwright drops the CDP websocket when the async_playwright context exits.
@@ -238,7 +241,8 @@ async def make_browser_context(playwright, cdp_url: str = None):
         browser.close = _noop
         return browser, context
 
-    # Headless fallback — blocked by Cloudflare Enterprise on scouting.org
+    # Headless fallback — works on scouting.org for single fetches; prefer CDP
+    # for bulk runs, which is where the intermittent 403s show up.
     browser = await playwright.chromium.launch(
         headless=True,
         args=[
@@ -343,9 +347,12 @@ async def download_pdf(page, url: str) -> bytes | None:
     """
     Download a PDF by running fetch() inside the browser page.
 
-    context.request.get() does not reliably pass Cloudflare clearance to the
-    scouting.org CDN. Running fetch() from inside the page uses the full browser
-    session (cookies, TLS fingerprint, etc.) and bypasses this limitation.
+    context.request.get() did not reliably work here and the in-page fetch() did.
+    That was measured; this approach is kept on that observation alone. The reason
+    is NOT established. Do not restate the old "Cloudflare clearance doesn't reach
+    the CDN" explanation — it is contradicted: bare curl (no browser, no session,
+    no clearance) downloads valid PDFs from both www.scouting.org and
+    filestore.scouting.org, 3/3, confirmed 2026-09-10.
     Returns raw bytes on success, None on failure.
 
     Shared by fetch_ranks.py (rank requirement PDFs) and fetch_policies.py

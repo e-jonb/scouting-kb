@@ -6,9 +6,12 @@ Downloads and parses Scouts BSA rank requirement PDFs from scouting.org.
 BSA publishes rank requirements as PDF files on their WordPress CDN:
   https://www.scouting.org/wp-content/uploads/2025/12/{Rank}.pdf
 
-These are protected by Cloudflare Enterprise and cannot be downloaded with
-a plain HTTP client. A CDP-connected Chrome browser (which has Cloudflare
-clearance from normal use) is required.
+This script requires a CDP-connected Chrome browser (--cdp-url). That is a
+bulk-run choice, not an access requirement: a plain HTTP client CAN download
+these PDFs (confirmed 2026-09-10 — bare curl returns the valid 15-page
+combined PDF, 3/3). The earlier "protected by Cloudflare Enterprise and
+cannot be downloaded with a plain HTTP client" claim was false.
+See docs/PLAYBOOK.md for what is actually established here.
 
 Usage:
   # From build_all.py (recommended):
@@ -569,7 +572,7 @@ async def fetch_ranks(
     if not cdp_url:
         console.print(
             "\n[bold red]Ranks[/bold red]: [red]--cdp-url required.[/red]\n"
-            "  scouting.org Cloudflare Enterprise blocks all automated downloads.\n"
+            "  This build path uses a real Chrome; scouting.org throttles bulk runs.\n"
             "  Setup:\n"
             "    pkill -x 'Google Chrome'\n"
             "    open -a 'Google Chrome' --args --remote-debugging-port=9222 --no-first-run\n"
@@ -583,9 +586,10 @@ async def fetch_ranks(
     async with async_playwright() as p:
         browser, context = await make_browser_context(p, cdp_url=cdp_url)
         # Use a page (not context.request) so fetch() runs inside the real browser
-        # session, inheriting Cloudflare clearance from the connected Chrome.
+        # session — context.request.get() did not reliably work; see utils.download_pdf.
         page = await context.new_page()
-        # Warm up the session on scouting.org to ensure Cloudflare clearance is active.
+        # Warm up on scouting.org first: going straight to a PDF on a cold profile
+        # has been observed to time out. Reason not established.
         await page.goto(RANKS_INDEX_URL, wait_until="networkidle", timeout=60000)
         await page.wait_for_timeout(1000)
 

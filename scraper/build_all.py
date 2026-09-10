@@ -155,8 +155,8 @@ if __name__ == "__main__":
         "--cdp-url", default=None,
         help=(
             "Connect to a running Chrome via Chrome DevTools Protocol instead of "
-            "launching a new headless browser. Required for sites with Cloudflare "
-            "Enterprise bot protection (e.g. scouting.org). "
+            "launching a new headless browser. Preferred for full --force rebuilds "
+            "of scouting.org, which throttles under sustained load. "
             "Setup: pkill -x 'Google Chrome' && "
             "open -a 'Google Chrome' --args --remote-debugging-port=9222 --no-first-run "
             "then navigate to scouting.org once before running this script. "
