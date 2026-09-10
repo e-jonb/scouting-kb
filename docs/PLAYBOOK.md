@@ -38,7 +38,9 @@ Also found via name comparison on the 135 matched IDs: at least 2 **renames** th
 
 **Root cause:** `markdownify` preserves an `<a href>`/`<img src>` exactly as written in the source HTML. A root-relative href resolves fine in a live browser (against the page's own origin) but has no base URL to resolve against once it's sitting in a standalone markdown file — it's not actually a broken/moved page, just missing the domain.
 
-**Verified, not assumed:** fetched all 10 distinct paths via the CDP-connected browser (plain `curl` gets a 403 from Cloudflare, per this repo's usual pattern) — every one resolved to a real `200` page once `https://www.scouting.org` was prepended, confirming this was purely an extraction gap, not actual dead links.
+**Verified, not assumed:** fetched all 10 distinct paths via the CDP-connected browser — every one resolved to a real `200` page once `https://www.scouting.org` was prepended, confirming this was purely an extraction gap, not actual dead links.
+
+> **Amended 2026-09-10.** This entry used to add "(plain `curl` gets a 403 from Cloudflare, per this repo's usual pattern)". That was an undated claim about the *source*, and it is false as written. Re-tested 2026-09-10 from this machine: bare `curl`, no headers, returned `200` with real page bodies on `/health-and-safety/gss/gss01/`, `/about/faq/question10/` and `/about/governance/charter/`, 3/3 attempts each, and `/health-and-safety/gss/toc` `301`s to its trailing-slash form and then `200`s. The CDP browser was used on 2026-08-02 because it was already running, not because curl was proven blocked. See “An access failure is dated, client-specific, and here load-specific” below.
 
 **Fix:** `absolutize_relative_links()` in `utils.py` — a small regex prepending the site's base URL to any `](/single-slash-path)` match — wired into both `fetch_policies.py` and `fetch_merit_badges.py` right after their markdownify + cleanup steps (merit badges had zero instances of this currently, but the same `markdownify`-preserves-hrefs-verbatim mechanism applies there too, so it's wired in defensively for whenever a future page does have one). Applied directly as a text post-process to the 3 already-fetched files rather than re-scraping, since it's pure string manipulation.
 
@@ -197,7 +199,9 @@ This mirrors a previously-known gotcha for the counselor scraper's Scoutbook CDP
 
 **Fix:** split into two correct `POLICIES` entries — `aquatics-safety` (the content that was there) and `reporting-youth-protection` (now pointed at `gss01`).
 
-**Re-fetch note:** headless Chromium is Cloudflare-blocked on scouting.org (see the CDP section below) — since this was a same-session fix with no CDP Chrome running, the two affected files were reconstructed directly from the already-correct `two-deep-leadership.md` body (same URL, deterministic extraction) rather than re-scraped. Safe here because the source URL and extraction path were unchanged; wouldn't be a safe shortcut for a fix that changed *what* gets extracted.
+**Re-fetch note:** this was a same-session fix with no CDP Chrome running and headless fetches were failing at the time, so the two affected files were reconstructed directly from the already-correct `two-deep-leadership.md` body (same URL, deterministic extraction) rather than re-scraped. Safe here because the source URL and extraction path were unchanged; wouldn't be a safe shortcut for a fix that changed *what* gets extracted.
+
+> **Amended 2026-09-10.** This entry used to state that "headless Chromium is Cloudflare-blocked on scouting.org" as a standing fact. That is false as written, and it needed testing separately from the curl claim above because it is a different client. Re-tested 2026-09-10: headless Chromium (Playwright, default context, no CDP) returned `200` with full rendered body text on `/about/governance/charter/`, `/health-and-safety/gss/gss01/` and `/about/faq/question10/`, 3/3 attempts each — including `/about/governance/charter/`, the URL that 403'd four consecutive times headless on 2026-09-05. What survives from that day is the intermittency finding, not a permanent block.
 
 ## markdownify glues adjacent bold/italic spans with no space (found 2026-08-05)
 
@@ -309,6 +313,29 @@ That work confirmed the decision was right on the merits: the unit-relevant prov
 **How it was actually settled:** loaded `/about/governance/charter/` – which had 403'd four consecutive times headless – in a real Chrome window. It returned the page normally, title "Boy Scouts of America Charter | Scouting America." That confirmed the pages exist and the 403 is throttling. **Verify a suspicious 403 in a real browser before concluding a page is gone.**
 
 **Fix:** `_goto_with_retry()` in `fetch_policies.py` retries a 403 up to 5 times with escalating backoff (4s, 8s, 12s, 16s). For a full `--force` rebuild, prefer CDP mode against a real Chrome (`--cdp-url http://localhost:9222`), which carries genuine Cloudflare clearance – see the CDP setup entry above.
+
+## An access failure is dated, client-specific, and here load-specific (rule, established 2026-09-10)
+
+**The rule.** Never record an access result as a property of the source. Record it as an observation about **a client**, **a URL**, **a date** — and, for this repo uniquely, **a load condition**. "scouting.org blocks curl" is folklore: undated, unfalsifiable, and it stops anyone from ever retrying, so nothing contradicts it and it propagates. "Bare curl returned 200 on 3 URLs, single fetches, 2026-09-10; the scraper's bulk path still sees intermittent 403s under load and retries with backoff" is a claim someone can re-run.
+
+Two entries above had drifted into folklore and are amended in place: "plain curl gets a 403 from Cloudflare" (the root-relative-links entry) and "headless Chromium is Cloudflare-blocked on scouting.org" (the `reporting-youth-protection` entry). Both were re-tested on 2026-09-10 and both are false as they were written. They were tested **separately**, because curl and headless Chromium are different clients and a result for one is not evidence about the other.
+
+**What was measured, 2026-09-10, from this machine:**
+
+| Client | URLs | Result |
+|---|---|---|
+| Bare `curl`, no headers | `/health-and-safety/gss/gss01/`, `/about/faq/question10/`, `/about/governance/charter/` | `200`, 3/3 each, real page titles and bodies |
+| Bare `curl`, no headers | `/health-and-safety/gss/toc` | `301` → trailing-slash form → `200` |
+| Headless Chromium (Playwright, no CDP) | the same three pages, plus `troopleader.scouting.org`, `troopresources.scouting.org` | `200`, 3/3 each, full rendered body text |
+| `scripts/fetch-page.sh <url> --check` | `/about/governance/charter/` | bare and browser-header requests identical; User-Agent makes no difference |
+
+Bodies were checked for real content, not just status codes — `/about/governance/charter/` contains the charter prose and zero Cloudflare-challenge markers, `gss01` renders ~14k characters of the actual Barriers to Abuse text. A bot challenge is served as a `200`, so a status code alone proves nothing.
+
+**The trap, and why this repo is the one most likely to fall into it.** The correct response to the above is to narrow the false claims — *not* to conclude the scraper should drop CDP and fetch with `curl`. That evidence is a handful of **single fetches of a few URLs**. A build issues hundreds of requests: 228 councils, 142 merit badges, the policy set. The observed failure mode of this host is **throttling under sustained load** (see the intermittent-403 entry above), and nothing measured on 2026-09-10 touches that. *"Curl works for one page"* and *"curl works for request 200 of a bulk run"* are different claims and only the first has been tested. Simplifying the client would remove the mechanism the system depends on and convert an intermittent failure into a deterministic one, while looking like a simplification. **`_goto_with_retry()` and the real-Chrome CDP path stay.**
+
+This also narrows one sentence in the intermittent-403 entry above, which is otherwise correct and deliberately left as written: "switching to a plain HTTP client … **guarantees** a 403" is too strong — as of 2026-09-10 a plain client gets `200` on a single page. The operative reason not to switch the scraper is the load argument, not a guaranteed 403.
+
+**Tooling.** `./scripts/fetch-page.sh <url> --check` runs bare and browser-header requests three times each and reports whether headers matter, whether the failure is intermittent, and whether the host soft-404s. Use it for one-off URL verification, before recording any source as unavailable. It is **not** a substitute for the scraper's browser path — it makes single requests, which is exactly the case that does not generalise here. Its caveat: it compares payload sizes and titles rather than status alone (because a challenge page is a `200`), and that is still a heuristic. For anything a decision rests on, grep the body for a phrase only the real page would contain.
 
 ## `build_all.py` used to wipe `manifest.json`'s `notes` field on every run (found 2026-09-05)
 

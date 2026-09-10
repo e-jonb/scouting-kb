@@ -40,7 +40,7 @@ This is a data package, not an app. The scraper in `scraper/` produces versioned
 
 - **The Brand Center is deliberately not scraped.** It is on the charter's RESOURCES list, but it is a WebDAM asset portal of logos and images behind a consent gate, with no policy prose to capture. Unit-facing brand guidance belongs in `scouting-reference`, the curated tier.
 - **The governance PDFs are deliberately scraped into this tier** rather than curated downstream, after verifying they extract cleanly. Tier 2 is the scraped tier; hand-authored markdown in `data/` is destroyed on the next rebuild. The curated complement exists separately in `scouting-reference`.
-- **A 403 from scouting.org means throttled, not gone.** Do not drop a URL from `POLICIES` on a 403, and do not "fix" one by switching the fetch to `requests` – that removes the browser session the site gates on and guarantees a 403. Verify in a real browser first.
+- **A 403 from scouting.org means throttled, not gone.** Do not drop a URL from `POLICIES` on a 403 — verify it in a real browser, or with `./scripts/fetch-page.sh <url> --check`, first. And do not "fix" a 403 by switching the scraper's fetch to `requests`/`curl`. The reason is *not* that a plain client is blocked: re-tested 2026-09-10, bare curl and headless Chromium both return `200` with real content on scouting.org pages. The reason is load. Those are **single fetches**; a build issues hundreds of requests, and this host's observed failure mode is throttling under sustained load, which nothing has measured. `_goto_with_retry()` and the CDP path stay. Full data in `docs/PLAYBOOK.md`, "An access failure is dated, client-specific, and here load-specific."
 
 ---
 
@@ -74,6 +74,6 @@ This is a data package, not an app. The scraper in `scraper/` produces versioned
 
 **Done:** Adopted the Annual Unit Charter Agreement's RESOURCES list as Tier 2's coverage target. Policies went from 8 files to 16. Renamed `chartered-organization.md` to `scouter-code-of-conduct.md` and fixed the entry that produced it. Added PDF extraction, 403 retry with backoff, and a cross-origin fix for PDFs hosted off `www.scouting.org`. Wrote three curated syntheses of the governance documents in the sibling `scouting-reference` repo.
 
-**Discovered:** scouting.org serves intermittent 403s to an automated browser, and `/about/*` paths trip it hardest – a 403 there means throttled, not missing. `build_all.py` was silently erasing the manifest's `notes` field on every run, and `fetch_policies` was reporting files fetched rather than files present, understating the manifest count.
+**Discovered:** scouting.org serves intermittent 403s to an automated browser, and `/about/*` paths trip it hardest – a 403 there means throttled, not missing. (Still holds. Amended 2026-09-10: the corollary this was written alongside — that plain curl and headless Chromium are permanently blocked — is false; both return `200` on single fetches. The intermittency-under-load finding is the part that survives.) `build_all.py` was silently erasing the manifest's `notes` field on every run, and `fetch_policies` was reporting files fetched rather than files present, understating the manifest count.
 
 **Needs Studio review:** nothing outstanding; the scope decision came from the Studio.
