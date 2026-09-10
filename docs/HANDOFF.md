@@ -10,7 +10,7 @@
 
 ## Current State
 
-**As of:** 2026-09-07 \
+**As of:** 2026-09-10 \
 **Corpus version:** 2026.Q3, `built: 2026-09-05`, `tier_built: 2` \
 **Tier 1:** built – councils 228, ranks 7, merit badges 142 \
 **Tier 2:** built – policies 16 \
@@ -21,6 +21,8 @@ This is a data package, not an app. The scraper in `scraper/` produces versioned
 **Tier 2's scope is now externally defined.** Its coverage target is the RESOURCES list on the last page of the Annual Unit Charter Agreement (form 524-956, 2026 edition) – the document a chartered organization signs, which enumerates the publications governing a unit. This replaced an ad-hoc set that had no authority behind it and no signal for when it was complete. **Re-pull the form and diff its list against `POLICIES` at the start of each charter year.** The list is a floor, not a ceiling: the GSS operational chapters (aquatics, camping, AHMR) are not named in it and are deliberately kept.
 
 **Two label checks guard the hand-maintained URL table** in `fetch_policies.py`, after two separate bugs shipped files whose bodies did not match their names. Check A is static (`python3 fetch_policies.py --check-labels`, exits non-zero) and runs at the start of every Tier 2 build; Check B is a post-fetch warning. Both currently pass. See `docs/PLAYBOOK.md` for what they do and, more usefully, what they do not cover.
+
+**Access claims in this repo are dated, client-specific and load-specific — never properties of the source.** Corrected 2026-09-10 after the Studio found the "scouting.org is permanently Cloudflare-blocked" lesson false. Bare curl and headless Chromium both return 200 with real content on scouting.org pages, and bare curl downloads valid PDFs from `www.scouting.org` and `filestore.scouting.org` alike. **The scraper keeps `_goto_with_retry()` and the CDP path anyway** — that evidence is single fetches, a build issues hundreds of requests, and this host throttles under sustained load. Do not read the corrected claims as an argument for simplifying the client. See `docs/PLAYBOOK.md`, "An access failure is dated, client-specific, and here load-specific."
 
 **Provenance lives in `docs/PLAYBOOK.md`, not in `manifest.json`.** As of 2026-09-05 the manifest's `notes` field is a fixed generated pointer. Every other manifest field is machine-generated and consumers read `bsa_version` from it.
 
@@ -34,7 +36,8 @@ This is a data package, not an app. The scraper in `scraper/` produces versioned
 | Council audit is not automatable | `fetch_councils_authenticated.py` needs a human logged into my.scouting.org; deliberately not wired into `build_all.py` | A true council refresh. The quarterly automated pass cannot catch renames or dissolutions |
 | PDF policy entries get no Check B | `charter-and-bylaws`, `rules-and-regulations` are Check-A-only – no heading to compare against | Nothing. Known and accepted gap |
 | `section_pattern` in `fetch_ranks.py` is dead config | Nothing reads it; `split_combined_pdf()` has its own dict, and the two disagree (`EAGLE SCOUT RANK` vs `EAGLE RANK`) | Nothing today. A trap for a maintainer who edits it in good faith |
-| Next quarterly refresh | Due October 2026 | – |
+| Sustained-load behaviour untested | Deliberately, not accidentally: settling it means trying to trip a third-party edge from this IP. The October `--force` run is the natural experiment — record the actual 403 rate | Nothing. Closing it upgrades a documented unknown to a measurement |
+| Next quarterly refresh | Due October 2026. Last build was **Tier 2 only, not forced** – Tier 1 has not been rebuilt since the August fixes | – |
 
 ### Do not re-litigate without escalating
 
@@ -45,6 +48,16 @@ This is a data package, not an app. The scraper in `scraper/` produces versioned
 ---
 
 ## Session Log
+
+### 2026-09-10 – Access-failure claims narrowed, not reversed; folklore swept from the code
+
+**Done:** Corrected four documented claims that had drifted into folklore, after the Studio found its own "permanently Cloudflare-blocked" lesson false. Re-tested each client separately: bare curl and headless Chromium both return 200 with real page bodies on scouting.org (3/3 each, including `/about/governance/charter/`, which 403'd four times headless on 2026-09-05), and bare curl downloads valid PDFs from both `www.scouting.org` (1,190,527 bytes / 15 pages) and `filestore.scouting.org` (431,902 bytes / 28 pages). Fixed `PLAYBOOK.md:41` and `:200`, `HANDOFF.md:43`, and `CLAUDE.md`'s 403 entry; added the standing rule to `CLAUDE.md` and `PLAYBOOK.md`. Then swept the surrounding sections and `scraper/`: nine strings corrected across `utils.py`, `fetch_ranks.py`, `fetch_policies.py` and `build_all.py`. **No behaviour changed** – `--cdp-url` is still required by `fetch_ranks` and still the right default for bulk runs, now justified by throttling rather than by a block. Commits `381dba7`, `30cbf79`, `ac264a7`.
+
+**Discovered:** two distinct error classes, not one. A **stale observation** was true once and is false now (curl, headless). An **invented mechanism** was never true – the 403s explained as the site "gating on a browser session," and `download_pdf()` explained as "clearance doesn't reach the CDN," which bare curl actively contradicts. The second kind survives because a real premise sits beside it keeping the conclusion true, so nothing ever presses on the invented half. **A correct conclusion does not validate its premises.** One flagged line led to three more in the paragraphs around it and eight in `scraper/`, including a user-facing error message asserting Cloudflare "blocks all automated downloads" – **sweep executable artifacts first**, since folklore in an error string fires exactly when someone is deciding whether a source is reachable. Also: take a verification phrase from the page, not from memory – grepping `gss01` for "two-deep leadership", this repo's own wording, returned zero hits on a perfectly good fetch, a false negative indistinguishable from a block. `SESSION_LOG.md` was left uncorrected on purpose: correct live guidance, never the historical record, or the audit destroys the evidence for judging the decision later.
+
+**Verified against the repo, not the previous write:** counts unchanged (228 / 7 / 142 / 16), manifest still `2026.Q3` / `built: 2026-09-05` / `tier_built: 2`, four policy files still at `fetched: 2026-03-03`.
+
+**Needs Studio review:** nothing outstanding. The Studio drove this session and has amended its own entries (`40f105c`, `b82345b`, `b53ec79`).
 
 ### 2026-09-07 – Session closed; consumer drift resolved elsewhere
 
