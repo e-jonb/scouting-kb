@@ -43,6 +43,35 @@ DATA_DIR = Path(__file__).parent.parent / "data"
 MANIFEST_NOTES = "See docs/PLAYBOOK.md for what changed in this corpus and why."
 
 
+def _corpus_counts() -> dict:
+    """
+    Count what is in `data/` right now, per content type.
+
+    The manifest's `counts` describes the corpus, not the run: a consumer reads
+    it to know how many merit badges it has. Deriving it from each fetcher's
+    return value conflated the two and broke on any incremental build.
+    A type whose directory is missing or empty counts 0 and is then skipped by
+    the caller, so a partial build never zeroes a tier it did not touch.
+    """
+    def _md_files(d: Path) -> int:
+        return len([f for f in d.glob("*.md") if f.name != "index.md"]) if d.is_dir() else 0
+
+    councils_json = DATA_DIR / "councils" / "councils.json"
+    councils = 0
+    if councils_json.exists():
+        try:
+            councils = len(json.loads(councils_json.read_text()))
+        except Exception:
+            councils = 0
+
+    return {
+        "councils": councils,
+        "ranks": _md_files(DATA_DIR / "ranks"),
+        "merit_badges": _md_files(DATA_DIR / "merit-badges"),
+        "policies": _md_files(DATA_DIR / "policies"),
+    }
+
+
 async def build(tier: int = 0, force: bool = False, cdp_url: str = None) -> None:
     today = date.today()
     built_date = today.isoformat()
@@ -90,7 +119,16 @@ async def build(tier: int = 0, force: bool = False, cdp_url: str = None) -> None
         except Exception:
             pass
 
-    existing_counts.update({k: v for k, v in results.items() if v > 0})
+    # `results` holds what each fetcher *fetched this run*, which on an
+    # incremental (non-`--force`) build is only the missing files — 2, not 144.
+    # `counts` is meant to describe the corpus, and consumers read it that way,
+    # so count what is actually on disk instead. Found 2026-09-13, when an
+    # incremental run to add two merit badges would have written
+    # `"merit_badges": 2` over the corpus total.
+    on_disk = _corpus_counts()
+    existing_counts.update(
+        {k: on_disk[k] for k in results if on_disk.get(k, 0) > 0}
+    )
 
     manifest = {
         "built": built_date,

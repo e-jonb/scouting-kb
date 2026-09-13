@@ -52,6 +52,8 @@ python3 build_all.py --tier 2     # Policies only (~5 min)
 python3 build_all.py --force      # Force-refresh everything
 ```
 
+**A non-`--force` build is a different code path, not a smaller one.** It skips every file that already exists, so it exercises branches a forced rebuild never reaches — and three separate bugs lived there undetected until 2026-09-13 (a manifest count written from the run's fetch count, an index page that never reaches `networkidle`, and `index.md` display names taken from that day's anchor text for every skipped badge). **After any incremental run, `git diff data/` and read the diff** – do not trust the build summary table, which reported OK for the run that relabeled `genealogy.md` as "Geology". See `docs/PLAYBOOK.md`.
+
 After running, commit the updated `data/` directory:
 ```bash
 git add data/ && git commit -m "chore(data): 2026.Q2 refresh"
@@ -61,7 +63,7 @@ git add data/ && git commit -m "chore(data): 2026.Q2 refresh"
 
 | Tier | Content | Est. Time |
 |------|---------|-----------|
-| 1 | Councils (JSON), Ranks (7 files), Merit Badges (130+ files) | ~40 min first run, ~5 min incremental |
+| 1 | Councils (JSON), Ranks (7 files), Merit Badges (144 files) | ~40 min first run, ~5 min incremental |
 | 2 | Policies – scope defined by the charter agreement's RESOURCES list (see below) | ~10 min |
 | 3 | Roles, program manuals | Not yet implemented |
 
@@ -83,7 +85,7 @@ data/
     councils.md          # Human-readable table (auto-generated)
   merit-badges/
     index.md             # All badges — eagle-required flag, links to files
-    {slug}.md            # One per badge (camping.md, first-aid.md, etc.)
+    {slug}.md            # One per badge (camping.md, first-aid.md, etc.) — 144 as of 2026-09-13
   ranks/
     index.md             # All ranks in advancement order
     {slug}.md            # One per rank (scout.md through eagle-scout.md)
@@ -165,7 +167,7 @@ Reference files at `packages/scouting-kb/data/`. Read `manifest.json` for build 
 
 When you record that a fetch failed, record **the client, the URL, the date** – and for this repo, **the load condition**. "scouting.org blocks curl" is folklore: undated and unfalsifiable, it stops anyone retrying, so nothing ever contradicts it. "Bare curl returned 200 on 3 URLs, single fetches, 2026-09-10; the scraper's bulk path still sees intermittent 403s under load and retries with backoff" is a claim someone can re-run. Test each client separately – a curl result is not evidence about headless Chromium.
 
-**Do not use single-URL evidence to argue the scraper should drop its browser path.** A build issues hundreds of requests (228 councils, 142 merit badges, the policy set) against a host whose known failure mode is throttling under sustained load. "Curl works for one page" and "curl works for request 200 of a bulk run" are different claims and only the first has ever been tested. `_goto_with_retry()` and the real-Chrome CDP path stay.
+**Do not use single-URL evidence to argue the scraper should drop its browser path.** A build issues hundreds of requests (228 councils, 144 merit badges, the policy set) against a host whose known failure mode is throttling under sustained load. "Curl works for one page" and "curl works for request 200 of a bulk run" are different claims and only the first has ever been tested. `_goto_with_retry()` and the real-Chrome CDP path stay.
 
 Verify one-off URLs with `./scripts/fetch-page.sh <url> --check` – bare and browser-header requests, three times each, reporting whether headers matter, whether the failure is intermittent, and whether the host soft-404s. It is not a substitute for the scraper's browser path; it makes single requests, exactly the case that does not generalise here. It compares payload sizes and titles because a bot challenge is served as a 200, and that is still a heuristic – for anything a decision rests on, grep the body for a phrase only the real page would contain. **Take that phrase from the page, not from memory:** a remembered phrase the real page happens not to use returns zero hits on a perfectly good fetch, which is a false negative indistinguishable from a block (confirmed 2026-09-10 – grepping `gss01` for "two-deep leadership", this repo's own wording, found nothing on a page that had fetched fine).
 

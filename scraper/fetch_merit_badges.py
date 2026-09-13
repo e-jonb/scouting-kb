@@ -61,7 +61,14 @@ def _clean_badge_name(name: str) -> str:
     the annotated one, producing slugs like chess-1-2-3-4-5-6-7.md instead of
     chess.md. Confirmed 2026-08-01, see docs/PLAYBOOK.md.
     """
-    return re.sub(r"(\s*\(\d+\))+\s*$", "", name).strip()
+    name = re.sub(r"(\s*\(\d+\))+\s*$", "", name).strip()
+    # Same class of annotation, in words rather than digits: the index has also
+    # carried "Emergency Preparedness (numbers changed)", "Cybersecurity (new)"
+    # and "American Indian Culture (formally Indian Lore)" (BSA's spelling).
+    # No real badge name ends in a parenthetical, so strip any trailing group.
+    # Found 2026-09-13 — these had been leaking into index.md as part of the
+    # displayed badge name.
+    return re.sub(r"(\s*\([^()]*\))+\s*$", "", name).strip()
 
 
 def _slug_from_url(url: str) -> str:
@@ -98,8 +105,17 @@ _BADGE_LINK_JS = """
         for (const a of links) {
             const href = a.href;
             const name = a.textContent.trim();
+            // No lower bound on name length. There was one (> 5), and it
+            // silently cost the corpus the Art and Golf badges for the life of
+            // the project — every short-named badge it excluded is real (Art,
+            // Law, Pets, Golf, Chess, Music, Radio), and the ones present were
+            // present only because a second anchor on the page happened to
+            // carry longer text. The nav pseudo-links it was presumably
+            // guarding against are already excluded by the /skills/ rule
+            // above: with the bound removed this page yields exactly 144
+            // unique badge URLs and no junk (measured 2026-09-13).
             if (
-                name && name.length > 5 && name.length < 80 &&
+                name && name.length < 80 &&
                 href.includes('/merit-badges/') &&
                 !href.includes('/skills/merit-badges/')
             ) {
@@ -130,18 +146,33 @@ async def get_all_badges(page: Page) -> list[dict]:
         try:
             return await pg.evaluate(js)
         except Exception:
-            await pg.wait_for_load_state("networkidle", timeout=30000)
+            # A page that never goes idle must not turn a retryable evaluate
+            # into a hard failure — give it a moment and try again regardless.
+            try:
+                await pg.wait_for_load_state("networkidle", timeout=30000)
+            except Exception:
+                pass
             await pg.wait_for_timeout(1000)
             return await pg.evaluate(js)
 
+    async def _goto_index(url):
+        # Same networkidle-then-load fallback the per-badge loop below has always
+        # had. The two index pages needed it too: confirmed 2026-09-13 that
+        # /skills/merit-badges/all/ never reaches networkidle in headless
+        # Chromium and timed out the whole build here, one line above the
+        # fallback that would have handled it.
+        try:
+            await page.goto(url, wait_until="networkidle", timeout=60000)
+        except Exception:
+            await page.goto(url, wait_until="load", timeout=30000)
+        await page.wait_for_timeout(2000)
+
     # Step 1: all badges from the main index
-    await page.goto(BADGES_INDEX_URL, wait_until="networkidle", timeout=60000)
-    await page.wait_for_timeout(2000)
+    await _goto_index(BADGES_INDEX_URL)
     all_badges = _extract_badge_links(await _safe_evaluate(page, _BADGE_LINK_JS))
 
     # Step 2: eagle-required badge URLs from the dedicated page
-    await page.goto(EAGLE_REQUIRED_URL, wait_until="networkidle", timeout=60000)
-    await page.wait_for_timeout(2000)
+    await _goto_index(EAGLE_REQUIRED_URL)
     eagle_badges = _extract_badge_links(await _safe_evaluate(page, _BADGE_LINK_JS))
     eagle_urls = {b["url"] for b in eagle_badges}
 
@@ -210,6 +241,19 @@ async def fetch_merit_badges(
                 progress.update(task, description=f"  {badge['name'][:45]}")
 
                 if out_file.exists() and not force:
+                    # Take the name from the file we already have. Its H1 was
+                    # set from the badge page's own <title> when it was
+                    # fetched, which is authoritative; the index page's anchor
+                    # text is not (it mislabels Genealogy as "Geology", and its
+                    # wording drifts between crawls). Without this, an
+                    # incremental build rewrites index.md with whatever the
+                    # anchors happened to say this time — confirmed 2026-09-13,
+                    # when a 2-badge build relabeled genealogy.md "Geology".
+                    existing_h1 = re.search(
+                        r"^# (.+?) Merit Badge\s*$", out_file.read_text(encoding="utf-8"), re.M
+                    )
+                    if existing_h1:
+                        badge["name"] = existing_h1.group(1).strip()
                     skipped += 1
                     progress.advance(task)
                     continue

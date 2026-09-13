@@ -1,12 +1,12 @@
 ---
 source: https://www.scouting.org/skills/merit-badges/all/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 ---
 
 # Merit Badges Index
 
-_As of 2026.Q3. Total: 142 badges (17 Eagle-required)._
+_As of 2026.Q3. Total: 144 badges (17 Eagle-required)._
 
 ## Eagle-Required Badges
 
@@ -45,6 +45,7 @@ _As of 2026.Q3. Total: 142 badges (17 Eagle-required)._
 | Archaeology | [archaeology.md](archaeology.md) |
 | Archery | [archery.md](archery.md) |
 | Architecture | [architecture.md](architecture.md) |
+| Art | [art.md](art.md) |
 | Artificial Intelligence | [artificial-intelligence.md](artificial-intelligence.md) |
 | Astronomy | [astronomy.md](astronomy.md) |
 | Athletics | [athletics.md](athletics.md) |
@@ -88,6 +89,7 @@ _As of 2026.Q3. Total: 142 badges (17 Eagle-required)._
 | Genealogy | [genealogy.md](genealogy.md) |
 | Geocaching | [geocaching.md](geocaching.md) |
 | Geology | [geology.md](geology.md) |
+| Golf | [golf.md](golf.md) |
 | Graphic Arts | [graphic-arts.md](graphic-arts.md) |
 | Health Care Professions | [health-care-professions.md](health-care-professions.md) |
 | Home Repairs | [home-repairs.md](home-repairs.md) |

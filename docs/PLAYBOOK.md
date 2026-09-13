@@ -2,6 +2,26 @@
 
 Longer-form scraper patterns and incident writeups. See CLAUDE.md for short, stable operating rules; this file is for the detailed "here's what broke and why" record.
 
+## Art and Golf were never in the corpus: a name-length filter, and three bugs behind it (found 2026-09-13)
+
+**The gap:** `data/merit-badges/` held 142 files; the live A-Z index resolves to 144 real badges. Missing: **Art** and **Golf**. Not a fetch failure — the crawl had never *seen* them.
+
+**Root cause, one line:** `_BADGE_LINK_JS` in `fetch_merit_badges.py` required `name.length > 5`. "Art" is 3, "Golf" is 4. The filter was presumably guarding against nav junk, but the nav pseudo-links (`all`, `eagle-required`, `counselor-information`, …) live under `/skills/merit-badges/` and were already excluded by the rule beside it. Measured with the bound removed: the page yields exactly **144 unique badge URLs and no junk**. Every short-named badge it excluded is real — Art, Law, Pets, Golf, Chess, Music, Radio — and the five of those already in the corpus were there only by luck, because a *second* anchor for them on the same page happened to carry longer text.
+
+**Lesson:** a heuristic that filters junk by *shape* (length, casing, position) rather than by *identity* (the URL pattern) silently deletes real data at the edges, and the deletion is invisible — nothing errors, the build reports success, and the count looks plausible. The gap was only ever visible by counting the corpus against the source, which is why "142 badges" sat in `CLAUDE.md`, `HANDOFF.md` and `manifest.json` for months as a confirmed-looking number.
+
+**Three more bugs fell out of running the incremental build.** All three were pre-existing; a full `--force` run masks every one of them.
+
+1. **`manifest.json` counts would have been overwritten with the run's fetch count.** `build_all.py` set `counts` from each fetcher's return value, which is *files fetched this run* — on a non-`--force` build that is the number of missing files. A 2-badge incremental build would have written `"merit_badges": 2` over the corpus total, and consumers read `counts` as the corpus. Fixed with `_corpus_counts()`, which counts what is on disk. Sanity check before the change: it returned exactly the manifest's existing numbers (228 / 7 / 142 / 16); after the fetch, 144.
+
+2. **The badge index page never reaches `networkidle` headless.** `get_all_badges()` timed out the whole build at `page.goto(..., wait_until="networkidle")` — one line above the per-badge loop that has carried a `load` fallback for this exact failure since the 2026.Q1 build. Same fallback now wraps both index navigations, and `_safe_evaluate()`'s retry no longer hard-fails when its own `wait_for_load_state("networkidle")` times out on such a page.
+
+3. **`index.md` took badge display names from whatever the anchors said that day.** The first successful incremental run rewrote the index with "Emergency Preparedness (numbers changed)", "Cybersecurity (new)", "American Indian Culture (formally Indian Lore)" (BSA's spelling), and — worst — relabeled `genealogy.md` as **"Geology"**, the known bad anchor text this repo already documents. A *fetched* badge gets its name corrected from the page's own `<title>`; a *skipped* badge never did, so an incremental build inherited the index page's drift for 142 of 144 rows. Fixed in two places: `_clean_badge_name()` now strips trailing word-parentheticals as well as digit ones, and the skip branch reads the existing file's `# … Merit Badge` H1 — a name already validated against that badge's own `<title>` — instead of trusting the anchor. Re-run after the fix: the index diff is exactly two added rows, Art and Golf, every other row byte-identical.
+
+**The transferable part:** *the incremental path is a different program from the forced path, and this repo had only ever exercised the forced one.* Quarterly `--force` rebuilds hid a manifest bug, a naming bug and a navigation bug that all fire only when files already exist. If a build has two modes, run the one you don't normally run before trusting it — and diff `data/` afterwards rather than reading the summary table, which said "OK" for the run that relabeled Genealogy.
+
+**Run record (2026-09-13):** headless Chromium, no CDP. Deliberate: this was 2 badge fetches plus 2 index pages, not a bulk run, so the throttling argument for the CDP path did not apply. Councils skipped (file exists — the authoritative 228 from `fetch_councils_authenticated.py` is never touched by a non-forced build). Ranks correctly refused to run without `--cdp-url` and returned 0, which `_corpus_counts()` ignores. No 403s observed on any of the four requests.
+
 ## A program change can outrun BSA's own published source (found 2026-09-13)
 
 **How this started:** the user asked to verify that Citizenship in the Community is "no longer required" and to update the KB. **The premise was wrong, and the badge next to it was right** — Citizenship in the Community is still Eagle-required. The badge Scouting America discontinued is **Citizenship in Society**.

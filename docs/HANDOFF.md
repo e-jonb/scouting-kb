@@ -11,8 +11,8 @@
 ## Current State
 
 **As of:** 2026-09-13 \
-**Corpus version:** 2026.Q3, `built: 2026-09-05`, `tier_built: 2` \
-**Tier 1:** built – councils 228, ranks 7, merit badges 142 \
+**Corpus version:** 2026.Q3, `built: 2026-09-13`, `tier_built: 1` \
+**Tier 1:** built – councils 228, ranks 7, merit badges **144** \
 **Tier 2:** built – policies 16 \
 **Tier 3:** not implemented (roles, program manuals)
 
@@ -39,9 +39,9 @@ This is a data package, not an app. The scraper in `scraper/` produces versioned
 | PDF policy entries get no Check B | `charter-and-bylaws`, `rules-and-regulations` are Check-A-only – no heading to compare against | Nothing. Known and accepted gap |
 | `section_pattern` in `fetch_ranks.py` is dead config | Nothing reads it; `split_combined_pdf()` has its own dict, and the two disagree (`EAGLE SCOUT RANK` vs `EAGLE RANK`) | Nothing today. A trap for a maintainer who edits it in good faith |
 | Sustained-load behaviour untested | Deliberately, not accidentally: settling it means trying to trip a third-party edge from this IP. The October `--force` run is the natural experiment — record the actual 403 rate | Nothing. Closing it upgrades a documented unknown to a measurement |
-| Art and Golf merit badges missing from the corpus | `data/merit-badges/` has 142 files; the live A-Z index resolves to 144 real badges. Both `/merit-badges/art/` and `/merit-badges/golf/` return `200` (checked 2026-09-13). Cause not diagnosed – a Tier 1 index-crawl gap | A complete badge corpus. Fixing it needs a scrape run; a non-`--force` Tier 1 build fetches only the missing files |
+| ~~Art and Golf missing from the corpus~~ | **Resolved 2026-09-13.** Cause: `_BADGE_LINK_JS` required an anchor name longer than 5 characters, so "Art" and "Golf" were never crawled. Bound removed (the `/skills/` rule already excluded the nav links it guarded against); incremental Tier 1 build fetched both. Corpus now 144 | Nothing |
 | Two `note:` annotations are keyed to upstream staleness | The Eagle Scout `RANKS` note and `BADGE_NOTES["citizenship-in-society"]` both describe a lag in BSA's own documents. Drop each once upstream catches up – the rank PDF reissued with 13 badges, the badge pulled from the A-Z index | Nothing. Re-check at each refresh |
-| Next quarterly refresh | Due October 2026. Last build was **Tier 2 only, not forced** – Tier 1 has not been rebuilt since the August fixes | – |
+| Next quarterly refresh | Due October 2026. Tier 1 has still not been **force**-rebuilt since the August fixes – the 2026-09-13 run was incremental and fetched only the two missing badges. The four policy files at `fetched: 2026-03-03` and the stale rank PDF both resolve on that run | – |
 
 ### Do not re-litigate without escalating
 
@@ -52,6 +52,14 @@ This is a data package, not an app. The scraper in `scraper/` produces versioned
 ---
 
 ## Session Log
+
+### 2026-09-13 – Incremental Tier 1 build: Art and Golf added, three latent build bugs fixed
+
+**Done:** Ran `build_all.py --tier 1` (incremental, headless, no CDP) to close the Art/Golf gap found earlier the same day. Corpus is now **144 merit badges**; `manifest.json` reads `built: 2026-09-13`, `tier_built: 1`. Councils and ranks were skipped as intended – the authoritative 228-council file was not touched, and ranks correctly refused to run without `--cdp-url`.
+
+**Discovered:** the gap was a one-line filter – `_BADGE_LINK_JS` required an anchor name longer than 5 characters, so "Art" (3) and "Golf" (4) were never crawled. Removing the bound yields exactly 144 unique badge URLs and no junk; the short-named badges already present (Chess, Law, Music, Pets, Radio) were there only because a second anchor carried longer text. Getting the build to run also exposed **three latent bugs that only fire on the incremental path**, which this repo had never exercised: `manifest.json`'s `counts` were written from each fetcher's per-run fetch count and would have recorded `merit_badges: 2`; the badge index page never reaches `networkidle` headless and timed out the build one line above the `load` fallback the per-badge loop has always had; and `index.md` took display names from the day's anchor text for every skipped badge, which relabeled `genealogy.md` as "Geology" and appended "(numbers changed)" / "(new)" / "(formally Indian Lore)" to three others. All three fixed, with the index re-run diffing to exactly two added rows. **The forced path and the incremental path are different programs – run the one you don't normally run before trusting it, and diff `data/` rather than reading the summary table, which reported OK for the run that relabeled Genealogy.**
+
+**Needs Studio review:** nothing.
 
 ### 2026-09-13 – Citizenship badge verification; `note:` extended to ranks and merit badges
 

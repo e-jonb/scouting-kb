@@ -1,12 +1,12 @@
 {
-  "built": "2026-09-05",
+  "built": "2026-09-13",
   "version": "2026.Q3",
-  "tier_built": 2,
+  "tier_built": 1,
   "forced": false,
   "counts": {
     "councils": 228,
     "ranks": 7,
-    "merit_badges": 142,
+    "merit_badges": 144,
     "policies": 16
   },
   "notes": "See docs/PLAYBOOK.md for what changed in this corpus and why."

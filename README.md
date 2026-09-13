@@ -10,7 +10,7 @@ Not intended for external contributions or general use.
 
 | Content | Files | Source |
 |---------|-------|--------|
-| Merit Badges | 130+ `.md` files + index | scouting.org/skills/merit-badges/ |
+| Merit Badges | 144 `.md` files + index | scouting.org/skills/merit-badges/ |
 | Ranks | 7 `.md` files + index (Scout → Eagle) | scouting.org/programs/scouts-bsa/ |
 | Councils | `councils.json` + `councils.md` | BSA council finder |
 | Policies | Key unit-leader policies (two-deep, SYT, health forms, GSS) | scouting.org/health-and-safety/ |
