@@ -70,7 +70,7 @@ git add data/ && git commit -m "chore(data): 2026.Q2 refresh"
 |------|---------|-----------|
 | 1 | Councils (JSON), Ranks (7 files), Merit Badges (144 files) | ~40 min first run, ~5 min incremental |
 | 2 | Policies – scope defined by the charter agreement's RESOURCES list (see below) | ~10 min |
-| 3 | Roles, program manuals | Not yet implemented |
+| 3 | Roles, program manuals | Not implemented – scope disputed, see `docs/TIER-3-SCOPE-BRIEF.md` |
 
 ### Tier 2 scope comes from the Annual Unit Charter Agreement
 

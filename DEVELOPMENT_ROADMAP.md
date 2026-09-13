@@ -93,6 +93,12 @@ git commit -m "chore(deps): update scouting-kb to 2026.Q2"
 
 ## Adding Tier 3 Content (Roles + Program Manuals)
 
+> **Read `docs/TIER-3-SCOPE-BRIEF.md` before acting on this section.** As of 2026-09-13 the steps
+> below are **not** an agreed plan: step 1 (roles) collides with `scouting-reference`'s ADR-001,
+> which the Studio accepted in April and which claims position descriptions for the curated repo,
+> and step 2 (manuals) is materially larger than the one line it gets here. The brief asks the
+> Studio to settle both. Until it does, treat what follows as the original sketch, not a task list.
+
 Tier 3 is not yet implemented. When ready:
 
 1. Create `scraper/fetch_roles.py` — follow the pattern in `fetch_ranks.py`
