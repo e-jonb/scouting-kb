@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/health-and-safety/gss/
-fetched: 2026-08-01
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 note: "Full PDF available at scouting.org. This file captures the web summary pages."
 ---

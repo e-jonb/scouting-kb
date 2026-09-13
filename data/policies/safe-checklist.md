@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/health-and-safety/safe/
-fetched: 2026-09-05
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 ---
 
@@ -9,6 +9,8 @@ bsa_version: 2026.Q3
 _The SAFE Checklist — Supervision, Assessment, Fitness and skill, Equipment and environment. The four-point check leaders apply when planning and running any Scouting activity._
 
 [Home](https://www.scouting.org/) > [Scouting Safely](https://www.scouting.org/health-and-safety/) > SAFE Checklist
+
+![](https://www.scouting.org/wp-content/uploads/2026/09/SAFE_Banner-2.jpg)
 
 ![](https://www.scouting.org/wp-content/uploads/2021/05/SAFE-BADGE.jpg)
 

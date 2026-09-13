@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/training/youth-protection/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 note: "BSA renamed Youth Protection Training to Safety Youth Training (SYT). All UI should display 'SYT'. DB columns retain legacy names."
 ---

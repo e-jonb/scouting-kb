@@ -328,6 +328,33 @@ async def make_browser_context(playwright, cdp_url: str = None):
     return browser, context
 
 
+_RESTORE_LAZY_IMAGES_JS = """
+    // Restore real image URLs before extraction. scouting.org lazy-loads images:
+    // the markup ships src="data:image/svg+xml,<svg viewBox=...></svg>" — an empty
+    // spacer with no shapes — and swaps in the real file from data-src once the
+    // page settles, which is after the scraper has taken the DOM. The real URL is
+    // sitting right there in data-src the whole time (confirmed 2026-09-13 on
+    // /health-and-safety/ and /health-and-safety/ahmr/: 23 placeholders, every one
+    // carrying data-src plus data-srcset).
+    //
+    // clean_markdown() still strips a *bare* leftover placeholder, which is the
+    // right fallback when there is no data-src to restore. But stripping was a
+    // lossy answer for the two shapes it could not touch: a placeholder inside a
+    // real outer link (removing it would take the link's URL with it, e.g. the
+    // Sea Base and Northern Tier links in annual-health-medical-record.md) and a
+    // placeholder carrying alt text (scouting-safely.md). Restoring the source
+    // fixes all three cases at once and loses nothing.
+    document.querySelectorAll('img[data-src], img[data-lazy-src]').forEach((img) => {
+        const src = img.getAttribute('src') || '';
+        if (!src.startsWith('data:image/svg+xml')) return;
+        const real = img.getAttribute('data-src') || img.getAttribute('data-lazy-src');
+        if (real) img.setAttribute('src', real);
+        img.removeAttribute('srcset');
+        img.removeAttribute('data-srcset');
+    });
+"""
+
+
 async def extract_content(page, selectors: list[str] = None) -> str:
     """
     For each selector, find the element with the most visible text and return
@@ -340,6 +367,7 @@ async def extract_content(page, selectors: list[str] = None) -> str:
     selectors = selectors or CONTENT_SELECTORS
     html = await page.evaluate(
         """(selectors) => {
+            """ + _RESTORE_LAZY_IMAGES_JS + """
             // Remove nav/header/footer/script chrome from the whole document first.
             // markdownify's strip=[...] only unwraps these tags (keeps their text/JS
             // as plain text) rather than removing them, so any nav or inline <script>
@@ -387,6 +415,7 @@ async def extract_merit_badge_content(page) -> str:
     """
     html = await page.evaluate(
         """() => {
+            """ + _RESTORE_LAZY_IMAGES_JS + """
             document.querySelectorAll('script, style, noscript, nav, header, footer, form, button, iframe')
                 .forEach((el) => el.remove());
 

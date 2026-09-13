@@ -1,7 +1,7 @@
 ---
 source: https://www.scouting.org/health-and-safety/gss/gss03/
-fetched: 2026-03-03
-bsa_version: 2026.Q1
+fetched: 2026-09-13
+bsa_version: 2026.Q3
 ---
 
 # Camping and Activity Permissions

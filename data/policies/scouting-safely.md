@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/health-and-safety/
-fetched: 2026-09-05
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 ---
 
@@ -45,17 +45,19 @@ When incidents do occur, we expect a timely, clear, and complete incident report
 
 [First Aid Kits](https://www.scouting.org/health-and-safety/safety-moments/first-aid-kits/)
 
-![Scouting on a mountain](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20300%20198%22%3E%3C/svg%3E)
+![Scouting on a mountain](https://www.scouting.org/wp-content/uploads/2021/05/Depression-300x198.jpg)
 
 ## [Annual Health and Medical Record](https://www.scouting.org/health-and-safety/ahmr/)
 
 Revised in November 2019, the Annual Health and Medical Record is required to be completed at least once a year by all participants in any Scouting activity. Kindly cease the use of all previous editions.
 
+![](https://www.scouting.org/wp-content/uploads/2023/02/Safe-Centered-Full-1024x640.png)
+
 ## [SAFE Checklist](https://www.scouting.org/health-and-safety/safe/)
 
 Scouts and their parents anticipate that all Scouting America activities will prioritize safety. To ensure participant well-being, Scouting America holds leaders accountable for adhering to the four points of SAFE when executing the Scouting program.
 
-![Scout Hiking](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20300%20200%22%3E%3C/svg%3E)
+![Scout Hiking](https://www.scouting.org/wp-content/uploads/2021/05/Picture2-300x200.jpg)
 
 ## [Incident Reporting](https://www.scouting.org/health-and-safety/incident-report/)
 

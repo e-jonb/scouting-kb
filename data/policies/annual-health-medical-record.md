@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/health-and-safety/ahmr/
-fetched: 2026-08-01
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 ---
 
@@ -47,6 +47,8 @@ All Jamboree participants and staff must review and complete the Jamboree health
 
 [Download Form & Risk Advisory](https://filestore.scouting.org/filestore/HealthSafety/pdf/680-001_jamboree.pdf)
 
+![](https://www.scouting.org/wp-content/uploads/2023/06/images.png)
+
 All Exploring participants (adult and youth)– for any event or activity less than 72 hours in duration.
 
 * A pre-participation physical is needed for everyone (adult and youth) for any Exploring event or activity 72 hours or more in length.
@@ -57,7 +59,7 @@ All Exploring participants (adult and youth)– for any event or activity less t
 
 ## Are You Planning a High-Adventure Trip?
 
-[![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20640%20640%22%3E%3C/svg%3E)](http://www.bsaseabase.org/)
+[![](https://www.scouting.org/wp-content/uploads/2023/06/SeaBaseLogo-1024x1024.png)](http://www.bsaseabase.org/)
 
 **Florida Sea Base.** All participants and staff.
 
@@ -67,19 +69,19 @@ All Exploring participants (adult and youth)– for any event or activity less t
 
 [Download Diver Medical: Participant](https://www.scouting.org/wp-content/uploads/2020/11/Diver_Medical_Participant_Questionnaire_New-RSTC.pdf)
 
-[![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20640%20491%22%3E%3C/svg%3E)](http://www.ntier.org/)
+[![](https://www.scouting.org/wp-content/uploads/2019/12/Northern-Tier-Logo-1024x786.png)](http://www.ntier.org/)
 
 **Northern Tier.** Includes wilderness canoe treks, OKPIK winter adventures, and staff.
 
 [Download Form & Risk Advisory](https://filestore.scouting.org/filestore/HealthSafety/pdf/680-001_ntier.pdf)
 
-[![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20640%20539%22%3E%3C/svg%3E)](http://philmontscoutranch.org/)
+[![](https://www.scouting.org/wp-content/uploads/2019/11/Philmont-1024x862.png)](http://philmontscoutranch.org/)
 
 **Philmont Scout Ranch.** All camping participants and staff.
 
 [Download Form & Risk Advisory](https://filestore.scouting.org/filestore/HealthSafety/pdf/680-001_philmont.pdf)
 
-[![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20640%20661%22%3E%3C/svg%3E)](http://philmontscoutranch.org/PTC)
+[![](https://www.scouting.org/wp-content/uploads/2019/11/PTCLOGO-992x1024.png)](http://philmontscoutranch.org/PTC)
 
 **Philmont Training Center.** Mountain trek, Trailblazers, Mustangs, NAYLE, NAYLE staff, PLC, and PLC staff.
 
@@ -89,7 +91,7 @@ All Exploring participants (adult and youth)– for any event or activity less t
 
 [Download Form for Limited Backcountry](https://filestore.scouting.org/filestore/HealthSafety/pdf/680-001_AB.pdf)
 
-[![](data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20300%20284%22%3E%3C/svg%3E)](https://www.summitbsa.org/)
+[![](https://www.scouting.org/wp-content/uploads/2020/03/Summit_Button-300x284.png)](https://www.summitbsa.org/)
 
 **Summit Bechtel Reserve.** All participants and staff.
 

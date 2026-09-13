@@ -1,6 +1,6 @@
 ---
 source: https://filestore.scouting.org/filestore/about/2025_Charter_Bylaws.pdf
-fetched: 2026-09-05
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 note: "Captured as extracted PDF text, not a rendered web page. This is a governance document in legal prose — it is the authoritative source text for citation, not unit-facing guidance."
 ---
