@@ -63,6 +63,8 @@ This is a data package, not an app. The scraper in `scraper/` produces versioned
 - **The four policy files stranded since March came back byte-identical** apart from `fetched:` and `bsa_version:` (they were still stamped `2026.Q1`). That is a second, independent confirmation of August's manual verdict on them.
 - **The build log shows no label-check output, and the checks did run.** `fetch_policies()` calls `report_slug_check()` before any network work; both checks are silent on pass. Verified at the call site rather than inferred from the log — the absence of output from a guard is indistinguishable from a guard that stopped running until you read the code.
 
+**Consumers bumped, same session:** `scoutsync` `e5fe343` → `c244e0d` (`7fdc431`) and `troop-452-scouting-tool` `e6e6e9c` → `c244e0d` (`cc7aa33`), both pushed. scoutsync's was five commits of drift that included the Eagle-required correction, so until the bump its `BsaPanel` served the old 14-badge picture to real users — the failure its own CLAUDE.md documents from 2026-08-05. Content verified in both rather than the pointer; `pnpm build:web` green, so every `contentPath` still resolves.
+
 **Needs Studio review:** nothing.
 
 ### 2026-09-13 – Forced Tier 1 rebuild: 7 ranks, 144 badges, zero 403s
