@@ -11,9 +11,9 @@
 ## Current State
 
 **As of:** 2026-09-13 \
-**Corpus version:** 2026.Q3, `built: 2026-09-13`, `tier_built: 1`, `forced: true` \
+**Corpus version:** 2026.Q3, `built: 2026-09-13`, `tier_built: 2`, `forced: true` – Tiers 1 and 2 both force-rebuilt today \
 **Tier 1:** built – councils 228, ranks 7, merit badges **144** \
-**Tier 2:** built – policies 16 \
+**Tier 2:** built – policies 16, all at `fetched: 2026-09-13` \
 **Tier 3:** not implemented (roles, program manuals)
 
 This is a data package, not an app. The scraper in `scraper/` produces versioned markdown and JSON in `data/`; consumers add the repo as a git submodule and read `data/` directly.
@@ -32,8 +32,8 @@ This is a data package, not an app. The scraper in `scraper/` produces versioned
 
 | Item | State | Blocks |
 |---|---|---|
-| Four policy files still at `fetched: 2026-03-03` | `two-deep-leadership`, `reporting-youth-protection`, `aquatics-safety`, `camping-permissions`. Content verified clean in August; only the dates are stale, because a non-`--force` build skips existing files | Nothing hard. Resolves on a forced **Tier 2** pass – the 2026-09-13 forced run was Tier 1 only |
-| Lazy-load placeholders survive in two policy files | `annual-health-medical-record.md`, `scouting-safely.md`. `clean_markdown()` strips only *bare standalone* `![](data:...)` placeholders; these carry alt text or sit inside a real outer link, which is the documented deliberate exemption. Pre-existing, untouched by the Tier 1 rebuild | Nothing. Revisit if a consumer renders them visibly |
+| ~~Four policy files at `fetched: 2026-03-03`~~ | **Resolved 2026-09-13** by the forced Tier 2 pass. All four came back byte-identical apart from `fetched:` and `bsa_version:`, which independently confirms August's manual verdict that their content was clean | Nothing |
+| ~~Lazy-load placeholders in two policy files~~ | **Resolved 2026-09-13**, and the exemption is gone rather than widened: the real URL was in each element's `data-src` all along, so extraction now restores `src` instead of deleting the image. Merit badge files still have placeholders *dropped* and will gain real image URLs at the next Tier 1 rebuild | Nothing |
 | ~~Consumer pointers behind~~ | **Resolved 2026-09-07**, in the consumer repos rather than here. `scoutsync` bumped in `0a43411`, `troop-452-scouting-tool` in `fbb05b9`; both now pin `e5fe343`, and troop-452 pins `scouting-reference` at `1a10d2f` | Nothing |
 | Tier 3 not implemented | Roles and program manuals. No `fetch_roles.py` | Any consumer needing role/manual content |
 | Council audit is not automatable | `fetch_councils_authenticated.py` needs a human logged into my.scouting.org; deliberately not wired into `build_all.py` | A true council refresh. The quarterly automated pass cannot catch renames or dissolutions |
@@ -42,7 +42,7 @@ This is a data package, not an app. The scraper in `scraper/` produces versioned
 | Sustained-load behaviour — **measured for CDP, still open for headless** | Forced Tier 1 rebuild 2026-09-13 over CDP/real Chrome: ~150 sequential requests (2 index pages, 1 combined rank PDF, 144 badge pages), **zero 403s, zero retries**. That is the path the scraper already uses, so it validates the status quo rather than the alternative — nobody has run a bulk pass with bare `curl` or headless Chromium, and this result says nothing about those | Nothing. The `_goto_with_retry()`/CDP defence is now backed by a measurement instead of an assumption |
 | ~~Art and Golf missing from the corpus~~ | **Resolved 2026-09-13.** Cause: `_BADGE_LINK_JS` required an anchor name longer than 5 characters, so "Art" and "Golf" were never crawled. Bound removed (the `/skills/` rule already excluded the nav links it guarded against); incremental Tier 1 build fetched both. Corpus now 144 | Nothing |
 | Two `note:` annotations are keyed to upstream staleness | The Eagle Scout `RANKS` note and `BADGE_NOTES["citizenship-in-society"]` both describe a lag in BSA's own documents. Drop each once upstream catches up – the rank PDF reissued with 13 badges, the badge pulled from the A-Z index | Nothing. Re-check at each refresh |
-| Next quarterly refresh | Due October 2026. **Tier 1 is now force-rebuilt** (2026-09-13). Tier 2 is not – the four policy files at `fetched: 2026-03-03` still need a forced Tier 2 pass | – |
+| Next quarterly refresh | Due October 2026. Both tiers were force-rebuilt 2026-09-13, so October is a routine pass. Expect a merit badge diff then from the lazy-image change alone | – |
 
 ### Do not re-litigate without escalating
 
@@ -53,6 +53,17 @@ This is a data package, not an app. The scraper in `scraper/` produces versioned
 ---
 
 ## Session Log
+
+### 2026-09-13 – Forced Tier 2 refresh; lazy-load placeholders resolved, not stripped
+
+**Done:** `build_all.py --tier 2 --force --cdp-url`. 16/16 policies, no 403s, no retries. Both remaining open items closed. Added `_RESTORE_LAZY_IMAGES_JS` to `utils.py`, wired into `extract_content()` and `extract_merit_badge_content()`.
+
+**Discovered:**
+- **The exemption was a limit of the tool, not a property of the content.** `clean_markdown()` deleted bare placeholders and deliberately spared two shapes — one with alt text, one wrapped in a real link whose URL deletion would have taken with it. That reasoning was sound and it was also a signal nobody followed: the real image URL sits in `data-src` on every one of them (23/23 across two pages). Restoring the source fixes all three shapes and loses nothing. **Re-read a deliberate exemption when the area around it changes — the reason it was written is not the reason it persists.**
+- **The four policy files stranded since March came back byte-identical** apart from `fetched:` and `bsa_version:` (they were still stamped `2026.Q1`). That is a second, independent confirmation of August's manual verdict on them.
+- **The build log shows no label-check output, and the checks did run.** `fetch_policies()` calls `report_slug_check()` before any network work; both checks are silent on pass. Verified at the call site rather than inferred from the log — the absence of output from a guard is indistinguishable from a guard that stopped running until you read the code.
+
+**Needs Studio review:** nothing.
 
 ### 2026-09-13 – Forced Tier 1 rebuild: 7 ranks, 144 badges, zero 403s
 
