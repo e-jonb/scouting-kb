@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/fly-fishing/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -95,7 +95,7 @@ Fly-fishing is a specialized form of fishing that combines skill and artistry. B
  [Fly Fishing Guidelines with Leave No Trace (video)](https://youtu.be/HGJc_mb9InY)
 
 10. Catch one fish on a fly and identify it.
-*Resources:* [Fish Identification Apps (website)](https://freeappsforme.com/fish-identification-apps/)
+*Resources:* [Fish Identification Apps (app)](https://freeappsforme.com/fish-identification-apps/)
  [How To Identify Common Freshwater Fish (video)](https://youtu.be/mZ4M-AP6-iQ)
 
 11. If regulations and health concerns permit, clean and cook a fish you have caught. If you are unable to catch a fish for eating, acquire a fish, clean the fish you acquired, and cook the fish you acquired.

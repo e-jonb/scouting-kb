@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/soil-and-water-conservation/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -148,3 +148,5 @@ Conservation isn’t just the responsibility of soil and plant scientists, hydro
   Make a list of places in your neighborhood, camps, school ground, or park that have erosion, sedimentation, or pollution problems. Describe how these could be corrected through individual or group action.
 * (f)
   Carry out any other soil and water conservation project approved by your counselor.
+
+![](https://www.scouting.org/wp-content/uploads/2022/10/fondo-blanco-liso-1024x600.jpg)

@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/fire-safety/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -153,7 +153,7 @@ The ability to use fire safely is essential to human survival. By earning this m
   *Resources:* [How To Light Paper Matches Safely (video)](https://youtube.com/shorts/OinO3OPTWto)
    [Fire 101 How To Strike Matches (video)](https://youtube.com/shorts/3X_t7bSs_qQ)
 * (c)
-  Explain and demonstrate making sparks with flint and steel or with a ferro rod and catching a spark to create a flame. Extinguish the flame safely using one of principles of the fire tetrahedron.
+  Explain and demonstrate making sparks with flint and steel or with a ferro rod and catching a spark to create a flame. Extinguish the flame safely using one of the principles of the fire tetrahedron.
   *Resource:* [Making Fire With Flint and Steel (video)](https://youtube.com/shorts/EeR8qutMlWc)
    [How To Start a Fire With Flint and Steel (video)](https://youtube.com/shorts/Xl7VPPFQayE)
    [How To Start a Campfire in the Rain? (video)](https://youtube.com/shorts/CXsmV34DqXg)

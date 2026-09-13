@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/snow-sports/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -48,7 +48,7 @@ Skiing and snowboarding are the fastest and most thrilling ways to travel on foo
 6. Do ALL of the following:
 
 * (a)
-  Explain the elements of the *Your Responsibility Code* that is in effect at the location whehre you will ski, snowboard, or snowshoe. Explain why each person must follow this code.
+  Explain the elements of the *Your Responsibility Code* that is in effect at the location where you will ski, snowboard, or snowshoe. Explain why each person must follow this code.
   *Resource:* [Your Responsibility Code (video)](https://youtu.be/euGO92z4MnM)
 * (b)
   Explain the *SMART Style* safety program. Tell why it is important and how it applies to participants at snow sport venues like terrain parks and pipes.
@@ -100,7 +100,7 @@ Skiing and snowboarding are the fastest and most thrilling ways to travel on foo
   *Resources:* [Professional Ski Instructors of America (PSIA) (video)](https://youtu.be/Z_Jh5pfseU8)
    [U.S. Ski & Snowboard (video)](https://youtu.be/MHJlZBwiUx4)
    [National Ski Patrol (video)](https://youtu.be/bmqLYSj4u0Q?si=6X5-kAiIuDy3Tgdg)
-* **Option B—Cross-Country (Nordic) Skiing.** DO ALL of the following:
+* **Option B—Cross-Country (Nordic) Skiing.** Do ALL of the following:
 * (1)
   Show your ability to select, use, and maintain equipment for cross-country skiing in safety and comfort.
   *Resource:* [How to Choose Cross-Country Skis (video)](https://youtu.be/vqKaNOw6Feg?si=wVLxSaHGNEfQXGAq)
@@ -128,8 +128,8 @@ Skiing and snowboarding are the fastest and most thrilling ways to travel on foo
   On a gentle, packed slope, show some basic ways to control speed and direction. Include the straight run, traverse, side slip, step turn, wedge stop, and wedge turn maneuvers.
   *Resource:* [How to Control Speed and Direction (video)](https://youtu.be/kmw9LxutG_8)
 * (9)
-  On a cross-country trail, demonstrate effective propulsion by showing proper weight transfer form ski to ski, pole timing, rhythm, flow, and glide.
-  *Resource:* [Basic Moves on Cross-Country Skis (video)](https://youtu.be/ctrIUq9kCJI?si=QoPaYBG0365ZvZF1)
+  On a cross-country trail, demonstrate effective propulsion by showing proper weight transfer from ski to ski, pole timing, rhythm, flow, and glide.
+  *Resource:* [Basic Moves on Cross-Country Skis (video)](https://youtu.be/ctrIUq9kCJI)
 * (10)
   Demonstrate your ability, on a 4-mile tour, to cope with an average variety of snow conditions.
   **Note:** Adaptive skiers may complete a 1-mile tour with prior approval from their counselor.
@@ -204,13 +204,15 @@ Skiing and snowboarding are the fastest and most thrilling ways to travel on foo
   Discuss the benefits of snowshoeing.
   *Resource:* [Benefits of Snowshoeing (video)](https://youtu.be/Iej5x5vk304?si=-olKS2XTAsH5n3p8)
 * (8)
-  Demonstrate the most efficient ways to break trail, climb uphill, travel downhill and traverse a slope.
-  *Resources:* [How to Break Trail (video)](https://youtu.be/9gLm2viPkT4?si=GIe05Kq-w67IMEe_)
-   [How to Snowshoe on Hills (video)](https://youtu.be/Mr1uR6ENxBY?si=3Y1zY3mtDaQJfdlb)
-   [How to Sidestep (video)](https://youtu.be/zWabuDZBcVQ)
+  Demonstrate the most efficient ways to break trail, climb uphill, travel downhill, and traverse a slope.
+  *Resources:* [How To Break Trail (video)](https://youtu.be/9gLm2viPkT4)
+   [How To Snowshoe on Hills (video)](https://youtu.be/Mr1uR6ENxBY)
+   [How To Sidestep (video)](https://youtu.be/zWabuDZBcVQ)
 * (9)
   Demonstrate your ability, on a 2-mile snowshoe hike, to cope with an average variety of snow conditions.
-  *Resource:* [How to Travel Cross-Country on Snowshoes (video)](https://youtu.be/3U37kHrGlvo?si=FozGoulaHs_9Ssqi)
+
+  **Note:** Adaptive snowshoers may complete a 1-mile hike with prior approval from their counselor.
+  *Resource:* [How To Travel Cross-Country on Snowshoes (video)](https://youtu.be/3U37kHrGlvo)
 * (10)
   Demonstrate the proper use of a topographic map and compass.
   *Resources:* [How to Read a Topographic Map (video)](https://youtu.be/CoVcRxza8nI)

@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/sustainability/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: true
 ---
@@ -15,7 +15,8 @@ Learn to reduce waste and teach sustainable practices to others so you can help 
 
 ## The previous version of the Merit Badge requirements can be found in Scoutbook
 
-**NOTE:**  The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Sustainability.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
+**NOTE:** Check out the Digital Resource Guide for the Sustainability merit badge [HERE](https://www.scouting.org/skills/merit-badges/digital-resource-guides/sustainability/) for detailed information and helpful resources to engage your learning and assist you along on your merit badge journey!
+ The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Sustainability.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
 
 1. Describe the meaning of sustainability in your own words. Explain the importance of sustainability to society and how you can contribute to fulfilling the needs of current generations without compromising the needs of future generations.
 *Resources:*[What is Sustainability (video)](https://www.youtube.com/watch?v=zx04Kl8y4dE)

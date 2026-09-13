@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/mammal-study/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -18,7 +18,8 @@ A mammal may weigh as little as 1/12 ounce, as do some shrews, or as much as 150
 **NOTE: If collecting is permitted, do so ethically and sustainably. Collect sparingly, only taking what you need, and ensure that your collection practices do not harm the surrounding environment. Be aware of and adhere to local laws regarding collection. Pictures or sketches may suffice for a collection and limit impacted disturbances.
 NOTE:**  The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Mammal%20Study.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
 
-1. Explain the following terms: animal, invertebrate, vertebrate, and mammal. Name three characteristics that distinguish mammals from all other animals. Resources: [Characteristics and Categories of Mammals (video)](https://youtu.be/jscSDZG1nFo)
+1. Explain the following terms: animal, invertebrate, vertebrate, and mammal. Name three characteristics that distinguish mammals from all other animals.
+*Resources:* [Characteristics and Categories of Mammals (video)](https://youtu.be/jscSDZG1nFo)
  [10 Traits of Mammals (video)](https://youtu.be/JOqVQ3m-bDQ)
  [Mammals—Traits and Groups of Warm-Blooded Animals (video)](https://youtu.be/n9ud5ZPu2Po)
  [Vertebrate Diversity in Mammals (General Characteristics) (video)](https://youtu.be/mXs71vqrvqI)

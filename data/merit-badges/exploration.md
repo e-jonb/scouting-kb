@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/exploration/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -41,8 +41,8 @@ Discover the history and importance of various kinds of exploration by earning t
   How explorers have aided in our understanding of our world
   *Resource:* [Why We Explore (video)](https://www.youtube.com/watch?v=6_SRZiU9EuI)
 * (c)
-  What you think it takes to be an explorer
-  *Resource:* [Why Great Scientists Ask Great Questions? w/ Neil deGrasse Tyson (video)](https://youtu.be/1B9q2eS78Tw?si=BM2e4T2u7pBcTTXq)
+  What you think it takes to be an explorer Resources: [Why Is It Important To Explore? (video)](https://youtu.be/IpXlxS1r5NY)
+   [Greatest Explorers in History (video)](https://youtu.be/zKjbCC7rpk4)
 
 4. **Real-Life Exploration.** Do ONE of the following:
 
@@ -91,8 +91,8 @@ Discover the history and importance of various kinds of exploration by earning t
 * (e)
   Determine communication and transportation needs. Plan how to keep in contact with your base or the outside world, and determine how you will communicate with each other on-site.
 * (f)
-  Establish safety and first aid procedures (including planning for medical evacuation). Identify the hazards that explorers could encounter on the expedition, and establish procedures to prevent or avoid those hazards.
-  *Resource:* [Wilderness Primary Care Kit Walkthrough | Essential Expedition Essentials Medical Kit Guide (video)](https://www.youtube.com/watch?v=A-pbC5aDBY0)
+  Establish safety and first-aid procedures (including planning for medical evacuation). Identify the hazards that explorers could encounter on the expedition and establish procedures to prevent or avoid those hazards.
+  *Resource:* [Essential Expedition Essentials Medical Kit Guide (video)](https://youtu.be/A-pbC5aDBY0?si=mOFgZoJs9w26Iix6)
 * (g)
   Determine team selection. Identify who is essential for the expedition to be successful and what skills are required by the expedition leader.
   *Resource:* [Flight of the Osprey Media Team Selection (video)](https://youtu.be/pDJHtE3BB_c?si=W6oyFePTcGnXQSM1)
@@ -115,13 +115,13 @@ Discover the history and importance of various kinds of exploration by earning t
 * (a)
   With your parent or guardian's permission and under the supervision of your counselor or a counselor-approved qualified person, use the planning steps you learned in requirement 6 and the preparations you completed in requirement 7 to personally undertake an actual expedition to an area you have not previously explored.
 * (b)
-  Discuss with your counselor about the vital role of outdoor ethics in exploration, explaining how they promote responsible and mindful adventuring. Explain how you applied the outdoor code, Leave No Trace and Tread Lightly! principles during your expedition.
+  Discuss with your counselor about the vital role of outdoor ethics in exploration, explaining how they promote responsible and mindful adventuring. Explain how you applied the Outdoor Code, Leave No Trace and Tread Lightly! principles during your expedition.
   *Resources:* [Leave No Trace Basics (video)](https://vimeo.com/1115216743/63b20c0b33?share=copy)
    [Leave No Trace Outdoor Ethics (video)](https://youtu.be/jXO1uY0MvmQ?si=_UhIOYBkw69c87ug)
 * (c)
   After you return, compile a report on the results of your expedition and how you accomplished your objective(s). Include a statement of the objectives, note your findings and observations, include photos, note any discoveries, report any problems or adverse events, and have a conclusion (whether you reached your objective or not). The post-expedition report must be at least one page and no more than three; one page can be photos, graphs, or figures.
 
-9. **Career Opportunities:** Do ONE of the following:
+9. **Career Opportunities.** Do ONE of the following:
 
 * (a)
   Explore careers related to this merit badge. Research one career to learn about the training and education needed, costs, job prospects, salary, job duties, and career advancement. Your research methods may include—with your parent or guardian's permission—an internet or library search, an interview with a professional in the field, or a visit to a location where people in this career work. Discuss with your counselor both your findings and what about this profession might make it an interesting career.

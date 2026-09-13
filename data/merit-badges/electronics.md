@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/electronics/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -88,5 +88,3 @@ The Electronics Merit Badge is a fun, STEM-based merit badge that will inspire S
 
 6. Identify three career opportunities that would use skills and knowledge in electronics. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career.
 *Resource:* [Careers in Electronics Engineering (video)](https://youtu.be/paEw8Y8WlNA)
-
-![](https://www.scouting.org/wp-content/uploads/2022/10/fondo-blanco-liso-1024x600.jpg)

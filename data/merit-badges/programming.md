@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/programming/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -58,7 +58,7 @@ Programming merit badge will take you “behind the screen” for a look at the 
   *Resources:* [Open Source VS Commercial Software (video)](https://www.youtube.com/watch?v=SdW5pnha9kg)
    [Free VS Open Source Software (website)](https://www.geeksforgeeks.org/software-engineering/difference-between-free-software-and-open-source-software/)
 
-5. **Project.** With your counselor's guidance, select three different programming languages and development environments. For each sub-requirement below, do the following: Write or modify a program using the indicated programming language and development environment. The program must take input and produce output based on computations and decisions made on the input. Debug and demonstrate the program to your counselor. Explain how each program processes inputs, makes decisions based on those inputs, and provides outputs based on computations and decision making.
+5. **Project.** With your counselor's guidance, select three different programming languages and development environments. For each subrequirement below, do the following: Write or modify a program using the indicated programming language and development environment. The program must take input and produce output based on computations and decisions made on the input. Debug and demonstrate the program to your counselor. Explain how each program processes inputs, makes decisions based on those inputs, and provides outputs based on computations and decision making.
 *Resource:* [Project Handout (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Programming/Req5-Project.pdf)
 
 * (a)

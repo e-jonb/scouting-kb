@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/canoeing/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -133,7 +133,7 @@ For several centuries, the canoe was a primary method of travel for explorers an
   *Resources:* [How To Do a J-Stroke—Canoe Technique (video)](https://youtu.be/kSOu0jyuqN8&t=23)
    [Canoe tips with Chris Brain—The J stroke (video)](https://youtu.be/YpAB5p0ot5g)
 * (e)
-  Move the canoe in a straight line 15-20 boat lengths with the bow paddler using as necessary the forward stroke, draw stroke or forward sweep and the stern paddler using an appropriate steering stroke, e.g., the J-stroke or thumbdown rudder stroke with or without a stern pry.
+  Move the canoe in a straight line 15-20 boat lengths with the bow paddler using as necessary the forward stroke, draw stroke or forward sweep and the stern paddler using an appropriate steering stroke, e.g., the J-stroke or thumb-down rudder stroke with or without a stern pry.
   *Resources:* [Tandem Canoe Basics (video)](https://youtu.be/rjdlF7Cnr3E)
    [How To Paddle a Tandem Canoe (video)](https://youtu.be/aDaqvoIJD-A)
 * (f)

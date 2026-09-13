@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/architecture/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -57,12 +57,12 @@ Architecture is not just the special buildings like cathedrals, museums, or spor
 * (b)
   With your parent or guardian's and counselor's permission and approval, arrange to meet with an architect at a construction site. Ask the architect to bring drawings that the builder uses to construct the building. While at the site, discuss why the different building materials being used were selected. Discuss how the different building materials and components are attached to each other during construction.
 
-  **Note:** To visit a construction site will require advance planning. You will need permission from your parents, counselor, the architect, and the construction site manager. A construction site is a very dangerous place. While there, you will need to closely follow the site manager's directions and comply with all the safety procedures, including wearing a hard hat, protective eyewear, and proper footwear. Be aware of the changing conditions at the site, and stay with the architect or site manager.
+  **Note:** To visit a construction site will require advance planning. You will need permission from a parent or guardian, counselor, the architect, and the construction site manager. A construction site is a very dangerous place. While there, you will need to closely follow the site manager's directions and comply with all the safety procedures, including wearing a hard hat, protective eyewear, and proper footwear. Be aware of the changing conditions at the site, and stay with the architect or site manager.
 * (c)
   Interview someone who might be your client (such as a prospective homeowner or business owner) if you were an architect. Find out what your client's requirements would be for designing a new home or business building. Write a short program including a list of requirements for the project, the functions of the building and site, how the functions relate to one another, and the goals of the project.
   *Resource:* [Architects Talk to Clients—First Meeting (video)](https://youtu.be/KjHGOvllSSE)
 
-4. Measure a room such as one where you live or where your troop meets. Make an accurately scaled drawing of the room's floor plan showing walls, doors, closets, windows, and any built-in furniture or cabinets. Neatly label your drawing with the following: your name, the date, what room you drew, and the scale of the drawing. (Drawing scale: 1/4 inch = 1 foot)
+4. Measure a room such as one where you live or where your troop meets. Make an accurately scaled drawing of the room's floor plan showing walls, doors, closets, windows, and any built-in furniture or cabinets. Neatly label your drawing with the following: your name, the date, what room you drew, and the scale of the drawing. (Drawing scale: ¼ inch = 1 foot)
 *Resources:* [How To Measure a Room Like an Architect (video)](https://youtu.be/YAxbBpiPchM)
  [How To Create a Scaled Drawing on Graph Paper | Hand Draw Your Room Like an Interior Designer (video)](https://youtu.be/V6GAKom_ZvI)
 

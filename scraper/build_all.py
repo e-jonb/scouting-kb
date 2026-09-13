@@ -72,7 +72,8 @@ def _corpus_counts() -> dict:
     }
 
 
-async def build(tier: int = 0, force: bool = False, cdp_url: str = None) -> None:
+async def build(tier: int = 0, force: bool = False, cdp_url: str = None,
+                skip: set = None) -> None:
     today = date.today()
     built_date = today.isoformat()
     bsa_version = bsa_version_from_date(today)
@@ -89,21 +90,29 @@ async def build(tier: int = 0, force: bool = False, cdp_url: str = None) -> None
     kwargs = dict(built_date=built_date, bsa_version=bsa_version, force=force, cdp_url=cdp_url)
     results = {}
 
+    skip = set(skip or ())
+    if skip:
+        console.print(f"  [yellow]Skipping:[/yellow] {', '.join(sorted(skip))}")
+
     if tier in (0, 1):
-        results["councils"] = await fetch_councils(
-            output_dir=str(DATA_DIR / "councils"), **kwargs
-        )
-        results["ranks"] = await fetch_ranks(
-            output_dir=str(DATA_DIR / "ranks"), **kwargs
-        )
-        results["merit_badges"] = await fetch_merit_badges(
-            output_dir=str(DATA_DIR / "merit-badges"), **kwargs
-        )
+        if "councils" not in skip:
+            results["councils"] = await fetch_councils(
+                output_dir=str(DATA_DIR / "councils"), **kwargs
+            )
+        if "ranks" not in skip:
+            results["ranks"] = await fetch_ranks(
+                output_dir=str(DATA_DIR / "ranks"), **kwargs
+            )
+        if "merit_badges" not in skip:
+            results["merit_badges"] = await fetch_merit_badges(
+                output_dir=str(DATA_DIR / "merit-badges"), **kwargs
+            )
 
     if tier in (0, 2):
-        results["policies"] = await fetch_policies(
-            output_dir=str(DATA_DIR / "policies"), **kwargs
-        )
+        if "policies" not in skip:
+            results["policies"] = await fetch_policies(
+                output_dir=str(DATA_DIR / "policies"), **kwargs
+            )
 
     if tier == 3:
         console.print("\n[yellow]Tier 3 (roles, program manuals) not yet implemented.[/yellow]")
@@ -201,5 +210,23 @@ if __name__ == "__main__":
             "Default CDP URL: http://localhost:9222"
         ),
     )
+    parser.add_argument(
+        "--skip", default="",
+        help=(
+            "Comma-separated content types to leave untouched: "
+            "councils, ranks, merit_badges, policies. "
+            "Exists mainly for councils: `--tier 1 --force` would otherwise run the "
+            "zip-sampling fetcher over data/councils/councils.json, which holds the "
+            "authoritative 228-council list produced by fetch_councils_authenticated.py "
+            "(a human-driven my.scouting.org run). Zip sampling found 137 of 228 in "
+            "August 2026 and cannot see renames or dissolutions at all, so a forced "
+            "rebuild is a 40%% data loss that no error would report. "
+            "Use `--skip councils` for any forced Tier 1 rebuild."
+        ),
+    )
     args = parser.parse_args()
-    asyncio.run(build(tier=args.tier, force=args.force, cdp_url=args.cdp_url))
+    skip = {s.strip() for s in args.skip.split(",") if s.strip()}
+    unknown = skip - {"councils", "ranks", "merit_badges", "policies"}
+    if unknown:
+        parser.error(f"unknown --skip value(s): {', '.join(sorted(unknown))}")
+    asyncio.run(build(tier=args.tier, force=args.force, cdp_url=args.cdp_url, skip=skip))

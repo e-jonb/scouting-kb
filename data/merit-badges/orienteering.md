@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/orienteering/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -74,7 +74,7 @@ Orienteering, the use of map and compass to find locations and plan a journey, h
 
     **Note:** While orienteering is primarily an individual sport, Scouting America Youth Protection procedures call for using the buddy system. Requirement 7(a) can be completed by pairs or groups of Scouts.
 * (b)
-  After each event, write a report with (1) a copy of the master map and control description sheet, (2) a copy of the route you took on the course, (3) a discussion of how you could improve your time between control points, and (4) a list of your major weaknesses on this course . Describe what you could do to improve.
+  After each event, write a report with (1) a copy of the master map and control description sheet, (2) a copy of the route you took on the course, (3) a discussion of how you could improve your time between control points, and (4) a list of your major weaknesses on this course. Describe what you could do to improve.
 
 8. Do ONE of the following:
 
@@ -86,4 +86,4 @@ Orienteering, the use of map and compass to find locations and plan a journey, h
 
 9. Act as an official during an orienteering event. This may be during the running of the course you set up for requirement 8.
 
-10. Teach orienteering techniques to your patrol, troop or crew.
+10. Teach orienteering techniques to your patrol, troop, or crew.

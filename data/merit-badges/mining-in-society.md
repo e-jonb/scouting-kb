@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/mining-in-society/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -64,7 +64,7 @@ The Mining in Society merit badge covers the history of mining, explores the sta
 * (d)
   With your parent or guardian's permission and counselor's approval, visit a mining equipment manufacturer or supplier. Discuss the types of equipment produced or supplied there, and in what part of the mining process this equipment is used. Take photographs if allowed, and request brochures from your visit. Share photos, brochures, and what you have learned with your counselor.
 * (e)
-  Discuss with your counselor two methods used to reduce rock in size, one of which uses a chemical process to extract a mineral. Explain the difference between smelting and refining. Discuss with your counselor two methods used to reduce rock in size, one of which uses a chemical process to extract a mineral. Explain the difference between smelting and refining.
+  Discuss with your counselor two methods used to reduce rock in size, one of which uses a chemical process to extract a mineral. Explain the difference between smelting and refining.
   *Resources:* [What Is Mineral Processing? (video)](https://youtu.be/IgFo8Yi9k74)
    [How Gold Is Extracted From Ore | Heap Leaching Explained Step-by-Step (video)](https://youtu.be/X7mIXsr3LGc)
    [Materials (Part 1: Smelting and Refining Iron and Steel) (video)](https://youtu.be/US2BB4MrS00)
@@ -81,9 +81,10 @@ The Mining in Society merit badge covers the history of mining, explores the sta
   Explain reclamation as it is used in mining and how mine reclamation pertains to the Leave No Trace Seven Principles and the Outdoor Code.
   *Resource:* [What Happens to a Mine After It Is Closed? (video)](https://youtu.be/uYw06osVLMI)
 * (c)
-  Discuss with your counselor what values society has about returning the land to the benefit of wildlife and people after mining has ended. Discuss the transformation of the Scouting America's Summit Bechtel Family National Scout Reserve from a mine site to its current role. *Resources:* [From Mine Lands to Forests (video)](https://youtu.be/J7DIJA9Me_M)
+  Discuss with your counselor what values society has about returning the land to the benefit of wildlife and people after mining has ended. Discuss the transformation of the Summit Bechtel Reserve from a mine site to its current role.
+  *Resources:* [From Mine Lands to Forests (video)](https://youtu.be/J7DIJA9Me_M)
    [Mine Rehabilitation: An Ecological Rehabilitation Case Study at Mount Owen Mine, Hunter Valley, NSW (video)](https://youtu.be/tp_hIh6nHFE)
-   [From Coal to Conservation: The Remarkable Transformation of Summit Bechtel Reserve, Site of BSA's 2023 National Jamboree (website)](https://www.einpresswire.com/article/641336423/from-coal-to-conservation-the-remarkable-transformation-of-summit-bechtel-reserve-site-of-bsa-s-2023-national-jamboree)
+   [From Coal to Conservation: The Remarkable Transformation of the Summit Bechtel Reserve (website)](https://www.einpresswire.com/article/641336423/from-coal-to-conservation-the-remarkable-transformation-of-summit-bechtel-reserve-site-of-bsa-s-2023-national-jamboree)
 
 7. Do ONE of the following:
 
@@ -94,7 +95,7 @@ The Mining in Society merit badge covers the history of mining, explores the sta
   Identify three minerals found dissolved in seawater or found on the ocean floor, and list three places where the ocean is mined today. Share this information with your counselor, and discuss the chief incentives for mining the oceans for minerals, the reclamation necessary after mining is over, and any special concerns when mining minerals from the ocean. Find out what sustainability problems arise from mining the oceans. Discuss what you learned with your counselor.
   *Resource:* [Deep Sea Mining for Beginners—How Does Deep Sea Mining Work? (video)](https://youtu.be/rRiLzmWkeu8)
 * (c)
-  Learn what metals and minerals are recycled after their original use has ended. List four metals and two nonmetals, and find out how each can be recycled. Find out how recycling affects the sustainability of natural resources and how this idea is related to mining. Discuss what you learn with your counselor.
+  Learn what metals and minerals are recycled after their original use has ended. List four metals and two nonmetals, and find out how each can be recycled. Find out how recycling affects the sustainability of natural resources and how this idea is related to mining. Discuss what you learned with your counselor.
   *Resource:* [Deep Sea Mining for Beginners—How Does Deep Sea Mining Work? (video)](https://youtu.be/rRiLzmWkeu8)
    [Types of Metals That Can Be Recycled (website)](https://taylorsjunkyard.com/blog/what-metals-can-be-recycled/)
    [How Mining Contributes to UN SDG Part 1 (video)](https://youtu.be/Zq6LEeylTGg)

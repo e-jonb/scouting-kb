@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/genealogy/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -32,8 +32,8 @@ Exploring your roots—where your family name came from, why your family lives w
 2. Do ONE of the following:
 
 * (a)
-  Create a timeline for yourself or for a relative. Then write a short biography based on that time line.
-  *Resource:* [All About Timelines (video)](https://www.youtube.com/watch?v=_hKMBqEUE1w&t=95s)
+  Create a timeline for yourself or for a relative. Then write a short biography based on that timeline.
+  *Resource:* [All About Timelines (video)](https://youtu.be/_hKMBqEUE1w&t=95)
 * (b)
   Keep a journal for six weeks. You must write in it at least once a week.
   *Resource:* [How to Journal (video)](https://www.youtube.com/watch?v=TKOrVpuvvMA&t=52s)
@@ -78,8 +78,8 @@ Exploring your roots—where your family name came from, why your family lives w
 6. Begin your family tree by listing yourself and include at least two additional generations. You may complete this requirement by using the chart provided in the *Genealogy* merit badge pamphlet or the genealogy software program of your choice.
 *Resource:* [How to Make a Family Tree (on Paper, Not Online To Avoid Putting Private Information Online) (video)](https://www.youtube.com/watch?v=Ci55EXJtlDM)
 
-7. Complete a family group record form, listing yourself and your brothers and sisters as the children. On another family group record form, show one of your parents and his or her brothers and sisters as the children. This requirement may be completed using the chart provided or the genealogy software program of your choice.
-*Resource:* [How to Use Family Group Sheets (video)](https://www.youtube.com/watch?v=nb2C3z7C_R8)
+7. Complete a family group record form, listing yourself and your brothers and sisters as the children. On another family group record form, show your parent or guardian and his or her brothers and sisters as the children. This requirement may be completed using the chart provided or the genealogy software program of your choice.
+*Resource:* [How To Use Family Group Sheets (video)](https://youtu.be/nb2C3z7C_R8)
 
 8. Do the following:
 

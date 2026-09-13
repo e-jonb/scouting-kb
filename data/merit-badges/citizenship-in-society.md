@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/citizenship-in-society/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 note: "Scouting America discontinued this merit badge effective 2026-02-27 - Scouts may no longer begin it, and the Eagle-required set dropped from 14 badges to 13 (https://www.scouting.org/program-updates/citizenship-in-society-merit-badge-discontinuance/). A Scout who had already started requirements before that date has until 2026-12-31 to finish and still count it toward Eagle. Its file in data/merit-badges/ is kept as a record of the discontinued badge; confirmed 2026-09-13 that scouting.org still serves this page and still lists the badge in its A-Z index, so a rebuild will keep picking it up."
@@ -66,7 +66,7 @@ Realize the benefits of diversity, equity, inclusion, and ethical leadership wit
 * (b)
   Share with each other ONE of the following options:
 * (1)
-  **Option 1—**A time you felt excluded from a group:
+  **Option 1—** A time you felt excluded from a group:
   + What was the situation?
   + How did it make you feel?
   + What did you do?
@@ -74,7 +74,7 @@ Realize the benefits of diversity, equity, inclusion, and ethical leadership wit
   + What did you learn?
   + Would you do anything differently today?
 * (2)
-  **Option 2—**This imaginary situation: You're attending a new school and don't know anyone there yet. You notice they dress very differently than you do. At lunchtime, you decide you'll try to sit with a group to get to know other students. People at two tables tell you there is someone sitting at the currently empty seat at their table, so you end up eating by yourself. Discuss:
+  **Option 2—** This imaginary situation: You're attending a new school and don't know anyone there yet. You notice they dress very differently than you do. At lunchtime, you decide you'll try to sit with a group to get to know other students. People at two tables tell you there is someone sitting at the currently empty seat at their table, so you end up eating by yourself. Discuss:
   + How would that make you feel?
   + What could the students have done?
   + If that happened at your school, what would you do?

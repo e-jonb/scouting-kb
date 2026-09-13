@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/personal-fitness/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: true
 ---
@@ -15,7 +15,8 @@ Personal fitness is an individual effort and desire to be the best one can be. R
 
 ## The previous version of the Merit Badge requirements can be found in Scoutbook
 
-**NOTE:**  The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Personal%20Fitness.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
+**NOTE:**  Check out the Digital Resource Guide for the Personal Fitness merit badge [HERE](https://www.scouting.org/skills/merit-badges/digital-resource-guides/personal-fitness/) for detailed information and helpful resources to engage your learning and assist you along on your merit badge journey!
+The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Personal%20Fitness.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
 
 1. **Defining Personal Fitness.** Explain to your counselor what personal fitness means to you, including:
 
@@ -114,12 +115,12 @@ Personal fitness is an individual effort and desire to be the best one can be. R
 * (b)
   Cardiorespiratory (aerobic) element: an activity that raises your heart and respiratory rate for 15 to 30 minutes at least three times per week
 * (c)
-  Muscular strength and endurance element: repetitive exercises that target different muscles - upper body, core, and/or legs - based on your improvement goals and potential
+  Muscular strength and endurance element: repetitive exercises that target different muscles—upper body, core, and/or legs—based on your improvement goals and potential
   *Resources:* [Deadlift (video)](https://youtu.be/K6Gc6GKCmNo)
    [Lunge (video)](https://youtu.be/C20B47rZRIY)
    [Row (video)](https://youtu.be/9CGOO9ueQ8g)
    [Squat (video)](https://youtu.be/Pfov7H8vyi0)
-   [Muscular Strength ( video)](https://youtu.be/ounpwfpOTSM?si=9Bav1jhDR00-VQ9W)
+   [Muscular Strength ( video)](https://youtu.be/ounpwfpOTSM)
    [Farmer's Carry (video)](https://youtu.be/BeNv9nkhTg4)
 * (d)
   Flexibility element: movements that arch/lower/stretch/relax your back, rotate your trunk, or stretch your hamstrings
@@ -133,8 +134,8 @@ Personal fitness is an individual effort and desire to be the best one can be. R
 7. **Complete the Program.** Do the following:
 
 * (a)
-  Complete and keep a log, over 12 consecutive weeks, of the physical fitness and nutrition program you have outlined. (If your program is interrupted by illness or unavoidable conflicts for less than two weeks, you may resume where you left off, adding the missed days or weeks at the end).
-  *Resources:* [Home Exercise Hacks (playlist)](https://youtube.com/playlist?list=PLhh_lxc4bmz8TPeX-dOu-I2K3O2x3_weX&si=4issEYVe10iMDjtZ)
+  Complete and keep a log, over 12 consecutive weeks, of the physical fitness and nutrition program you have outlined. (If your program is interrupted by illness or unavoidable conflicts for less than two weeks, you may resume where you left off, adding the missed days or weeks at the end.)
+  *Resources:* [Home Exercise Hacks (playlist)](https://youtube.com/playlist?list=PLhh_lxc4bmz8TPeX-dOu-I2K3O2x3_weX)
    [How to Make Your Own Exercise Equipment (video)](https://youtu.be/IAmnLlwNloU)
 * (b)
   During week 4 and week 8 of your program, repeat the assessments you did in requirement 5(a) before you began. Repeat the same tests for a final assessment within two weeks after completing the 12-week program. Show improvement over your pre-assessment results.

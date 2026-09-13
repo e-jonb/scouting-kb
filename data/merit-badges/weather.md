@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/weather/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -59,7 +59,7 @@ Meteorology is the study of Earth’s atmosphere and its weather and the ways in
 10. Do ONE of the following:
 
 * (a)
-  Make one of the following instruments: wind vane, anemometer, rain gauge, hygrometer. Keep a daily weather log for one week using information from this instrument as well as from other sources such as local radio and television stations, NOAA Weather Radio All Hazards, and internet sources (with your parent or guardian's permission). Record the following information at the same time every day: wind direction and speed, temperature, precipitation, and types of clouds. Be sure to make a note of any morning dew or frost. In the log, also list the weather forecasts from radio or television at the same time each day and show how the weather really turned out.
+  Make one of the following instruments: wind vane, anemometer, rain gauge, or hygrometer. Keep a daily weather log for one week using information from this instrument as well as from other sources such as local radio and television stations, NOAA Weather Radio All Hazards, and internet sources (with your parent or guardian's permission). Record the following information at the same time every day: wind direction and speed, temperature, precipitation, and types of clouds. Be sure to make a note of any morning dew or frost. In the log, also list the weather forecasts from radio or television at the same time each day and show how the weather really turned out.
   *Resources:* [Weather 101: Build Your Own Wind Vane! (video)](https://youtu.be/kSHRBUTMq0o?si=6XqGX8yB-svIK85z)
    [DIY Anemometer (Measure Wind Speed) (video)](https://youtu.be/Gab07UaoeZI)
    [How To Make a Rain Gauge (video)](https://youtu.be/MLmVaiSEF9w)

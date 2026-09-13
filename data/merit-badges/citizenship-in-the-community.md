@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/citizenship-in-the-community/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: true
 ---
@@ -27,9 +27,9 @@ A nation is a patchwork of communities that differ from each other and may be go
 
 * (a)
   Using an electronic mapping tool or paper map, locate and pinpoint the following services and landmarks in your community. Determine and record the distances from your home including driving time AND either walking or biking time.
-  *Resources:* [National Map (website)](https://apps.nationalmap.gov/viewer/)
-   [Google Maps (website)](https://www.google.com/maps)
-   [Apple Map (website)](https://maps.apple.com/search)
+  *Resources:* [National Map (app)](https://apps.nationalmap.gov/viewer/)
+   [Google Maps (app)](https://www.google.com/maps)
+   [Apple Map (app)](https://maps.apple.com/search)
    [How To Create a Table in a Word Document Online (video)](https://youtu.be/LBcZg9gRmbI)
 * (1)
   Chief government buildings such as your city hall, county courthouse, and public works/services facilities
@@ -87,7 +87,7 @@ A nation is a patchwork of communities that differ from each other and may be go
    [Habitat for Humanity (website)](https://www.habitat.org/volunteer/near-you/youth-programs)
    [The YMCA (website)](https://www.ymca.org/get-involved/volunteer)
 * (b)
-  Pick ONE of the organizations you chose for requirement 7(a). Using a variety of resources (including newspapers, fliers and other literature, the internet, volunteers, and employees of the organization), find out more about this organization.
+  Pick ONE of the organizations you chose for requirement 7(a). Using a variety of resources (including newspapers, flyers and other literature, the internet, volunteers, and employees of the organization), find out more about this organization.
   *Resources:* [Finding a Good Charity (video)](https://youtu.be/ELT85QKsGDo)
    [Volunteer Opportunities (website)](https://www.idealist.org/en/volunteer)
    [Charity Navigator (website)](https://www.charitynavigator.org/)

@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/public-health/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -59,7 +59,7 @@ The field of public health deals with maintaining and monitoring the health of c
   *Resources:* [What You Need To Know About Childhood Immunizations (podcast)](https://youtu.be/zaXVO4hHld8)
    [Vaccines for Children Program: 30 Years of Protecting Children (video)](https://youtu.be/1yf7uEnEU6o)
 * (c)
-  Using the list of diseases and conditions in requirement 1, discuss with your counselor those which currently have no immunization available.
+  Using the list of diseases and conditions in requirement 1(b), discuss with your counselor those which currently have no immunization available.
 
 3. Discuss the importance of safe drinking water in terms of the spread of disease. Then, demonstrate two ways for making water safe to drink that can be used while at camp. In your demonstration, explain how dishes and utensils should be washed, dried, and kept sanitary at home and in camp.
 *Resources:* [Waterborne Diseases | Waterborne Pathogens | Public Health and Water Safety | Prevention & Control (video)](https://youtu.be/GlTdIRxpxAQ)
@@ -110,14 +110,14 @@ The field of public health deals with maintaining and monitoring the health of c
 7. With your parent or guardian's and counselor's approval, do the following:
 
 * (a)
-  Do ONE of the following
+  Do ONE of the following:
 * (1)
-  Visit your city, county, state or federal public health agency.
+  Visit your city, county, state, or federal public health agency.
   *Resource:* [Find Your Health Department (website)](https://www.cdc.gov/public-health-gateway/php/communications-resources/health-department-directories.html)
 * (2)
   Familiarize yourself with your city, county, state, or a federal health agency's website.
 * (b)
-  After completing either 7(a) do the following:
+  After completing either 7(a)(1) or 7(a)(2), do ALL of the following:
 * (1)
   Compare the four leading causes of mortality (death) in your community for any of the past five years with the four leading causes of disease in your community. Explain how the public health agency you visited is trying to reduce the mortality and morbidity rates of these leading causes of illness and death.
   *Resource:* [National Vital Statistics System (website)](https://www.cdc.gov/nchs/products/nvsr.htm)

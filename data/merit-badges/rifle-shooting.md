@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/rifle-shooting/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -83,7 +83,7 @@ The Rifle Shooting merit badge shows you how a rifle works, how to handle it saf
 * (11)
   Adjust sights to center the group on the target and fire five groups (five shots per group). In the event that your instructor determines it is not practical to adjust the sights—for instance, on a borrowed rifle—you may explain (rather than doing) how to adjust the sights, and then fire five groups (five shots per group) in which all shots can be touched by a quarter. According to the target used, each shot in the group must meet the following minimum score: A-32 targets: 9; A-17 or TQ-1 targets: 7; A-36 targets: 5.
 
-  **Note:** Other suitable NRA targets may be used based on availability.
+  **Note:** Other suitable NRA targets may be used if the specified targets are unavailable.
 * **Option B—Air Rifle Shooting (BB or Pellet).** Do ALL of the following:
 * (1)
   Identify the three main parts of an air rifle, and explain how they function.
@@ -108,7 +108,7 @@ The Rifle Shooting merit badge shows you how a rifle works, how to handle it saf
 * (10)
   Adjust sights to center the group on the target and fire five groups (five shots per group). In the event that your instructor determines it is not practical to adjust the sights—for instance, on a borrowed air rifle—you may explain (rather than doing) how to adjust the sights, and then fire five groups (five shots per group) in which all shots can be touched by a quarter. According to the target used, each shot in the group must meet the following minimum score: BB rifle at 15 feet (or 5 meters) using TQ-5 targets: 8; Pellet rifle at 25 feet using TQ-5 targets: 8; Pellet rifle at 33 feet (or 10 meters) using AR-1 targets: 6.
 
-  **Note:** Other suitable NRA targets may be used based on availability.
+  **Note:** Other suitable NRA targets may be used if the specified targets are unavailable.
 * **Option C—Muzzleloading Rifle Shooting.** Do ALL of the following:
 * (1)
   Discuss with your counselor a brief history of the development of muzzleloading rifles.
@@ -145,6 +145,6 @@ The Rifle Shooting merit badge shows you how a rifle works, how to handle it saf
 * (14)
   Adjust the sights to center the group on the target and fire three groups (five shots per group). In the event that your instructor determines it is not practical to adjust the sights—for instance, on a borrowed muzzleloading rifle—you may explain (rather than doing) how to adjust the sights, and then fire three groups (five shots per group) in which all shots can be covered by the base of a standard-size soft drink can. According to the target used, each shot in the group must meet the following minimum score: at 25 yards using NRA A-23 or NMLRA 50-yard targets: 7; at 50 yards using NRA A-25 or NMLRA 100-yard targets: 7.
 
-  **Note:** Other suitable NRA targets may be used based on availability.
+  **Note:** Other suitable NRA targets may be used if the specified targets are unavailable.
 
 3. Identify how you could apply the skills and knowledge of safe and responsible use of firearms you learned in this merit badge to pursue a career or personal hobby. Research the additional training and experience you would need, expenses you may incur, and the affiliation with organizations that could help you maximize the positive impact and enjoyment you gain from it. Discuss what you learned with your counselor, and share what short-term and long-term goals you might have if you pursued this.

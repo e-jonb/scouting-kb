@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/wilderness-survival/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -81,9 +81,9 @@ In their outdoor activities, Scouts learn to bring the clothing and gear they ne
 2. **Priorities for Survival.** Explain the importance of each of the seven priorities of survival in a wilderness location.
 *Resource:* [Seven Priorities of Survival (video)](https://youtu.be/eckfD4gfgj0)
 
-3. **Avoiding Panic:** Describe ways to avoid panic and to maintain a high level of morale when lost, and explain why this is important.
-*Resources:* [Lost? Stop Panic & Think Clearly. (video)](https://youtu.be/_mt0BtDDImU?si=8AyENe2MLMfV8jiD)
- [Box Breathing | The Breathing Exercise Used By Navy SEALs (video)](https://youtu.be/UC6HUrneIWI?si=fr6RwZnn6RIBp8rA)
+3. **Avoiding Panic.** Describe ways to avoid panic and to maintain a high level of morale when lost, and explain why this is important.
+*Resources:* [Lost? Stop Panic & Think Clearly. (video)](https://youtu.be/_mt0BtDDImU)
+ [Box Breathing | The Breathing Exercise Used By Navy SEALs (video)](https://youtu.be/UC6HUrneIWI)
 
 4
 **First Aid Kits.** Put together a personal first aid kit and a personal survival kit. Show how items in the kits are used.
@@ -138,12 +138,13 @@ In their outdoor activities, Scouts learn to bring the clothing and gear they ne
 * (a)
   Explain and show how lost or stranded Scouts could send signals to attract the attention of ground, airborne, or water search teams.
   *Resources:* [How To Signal for Ground Rescue (video)](https://youtu.be/X8j5NC7Bqq4)
+   [Master the Art of Wilderness Rescue Signals (video)](https://youtu.be/KTl1mdJ59sc)
    [Distress Signals for Water Emergencies (video)](https://youtu.be/0Y4pG_mN7Ek)
 * (b)
   Demonstrate how to use a signal mirror.
   *Resource:* [How to Use a Signal Mirror (video)](https://www.youtube.com/shorts/kYN46GuZmpE)
 * (c)
-  Describe from memory five ground-to- air signals and tell what they mean.
+  Describe from memory five ground-to-air signals and tell what they mean.
 
 8. **Water.** Demonstrate three ways to treat water found in the outdoors to prepare it for drinking.
 *Resources:* [Purifying Water (video)](https://youtu.be/tD-Ya2SQk3k)

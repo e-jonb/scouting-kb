@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/dog-care/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -52,11 +52,10 @@ The love and interdependence between humans and dogs has endured for thousands o
 4. For two months, keep and care for your dog. Maintain a log of your activities during this period that includes these items: feeding schedule, types of food used, amount fed, exercise periods, training schedule, a weekly body weight record, grooming and bathing schedules, veterinary care, if necessary, and costs. Also include a brief description of the type of housing/shelter arrangements you have for your dog.
 *Resource:* [How to Keep Track of Pet Care (video)](https://youtu.be/rS4dprT0rg0?si=wZQbDaOU29oFYKDa)
 
-5. Explain the correct way to obedience train a dog and what equipment you would need. Show with your dog any three of these commands: "come," "sit," "down," "heel," "stay," "fetch," "get it," "drop it."
-*Resources:* [10 Most Basic Commands Every Dog Owner Should Know (video)](https://www.youtube.com/watch?v=eHbcb2EQC88)
- [How to Teach Your Dog the Basics (video)](https://www.youtube.com/watch?v=lUzcA9qa_P8)
+5. Explain the correct way to obedience train a dog and what equipment you would need. Show with your dog any three of these commands: "come," "sit," "down," "heel," "stay," "fetch," "get it," and "drop it." Resources: [10 Most Basic Commands Every Dog Owner Should Know (video)](https://youtu.be/eHbcb2EQC88)
+ [How To Teach Your Dog the Basics (video)](https://youtu.be/lUzcA9qa_P8)
 
-6. Do the following.
+6. Do the following:
 
 * (a)
   Discuss the proper vaccination schedule for a dog in your area from puppyhood through adulthood.
@@ -130,5 +129,3 @@ The love and interdependence between humans and dogs has endured for thousands o
   *Resources:* [9 Dog-Friendly Hobbies To Strengthen Your Connection With Your Pup (website)](https://thenatureofhome.com/dog-friendly-hobbies/)
    [Dog Carving (video)](https://www.youtube.com/shorts/bRJr3fVXGnU)
    [Puppy Raising for the Blind (website)](https://www.guidingeyes.org/puppy-raising/)
-
-![](https://www.scouting.org/wp-content/uploads/2022/10/fondo-blanco-liso-1024x600.jpg)

@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/fishing/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -67,22 +67,22 @@ Fishing is one of Scouting’s essential skills and teaches Scouts to feed thems
 6. Do the following:
 
 * (a)
-  Explain the importance of practicing Leave No Trace Seven Principles and the Outdoor Code. Discuss the positive effects of Leave No Trace Seven Principle and the Outdoor Code on fishing resources.
-  *Resources:* [7 Principles of LNT (website)](https://lnt.org/why/7-principles/)
+  Explain the importance of practicing Leave No Trace Seven Principles and the Outdoor Code. Discuss the positive effects of Leave No Trace Seven Principles and the Outdoor Code on fishing resources.
+  *Resources:* [Seven Principles of LNT (website)](https://lnt.org/why/7-principles/)
    [LNT Basics (video)](https://vimeo.com/1115216743/63b20c0b33?share=copy)
 * (b)
   Discuss the meaning and importance of catch and release. Describe how to properly release a fish safely to the water.
   *Resources:* [How to Safely Handle Fish for Catch & Release Fishing (video)](https://youtu.be/TzNjYoRpvb0?si=aHLXxtxmVecGaQ-D)
    [Ethical Catch and Release Fishing (video)](https://youtu.be/SMGO50R_lrA)
 
-7. Obtain and review the regulations affecting gamefishing where you live. Explain why they were adopted and what is accomplished by following them.
+7. Obtain and review the regulations affecting game fishing where you live. Explain why they were adopted and what is accomplished by following them.
 *Resource:* [Fishing Licenses, Rules, Regulations (website)](https://fishpiers.com/fishing-license-requirements-by-state-all-50-states/)
 
 8. Explain what good outdoor sportsmanlike behavior is and how it relates to anglers. Tell how the Leave No Trace Seven Principles and the Outdoor Code relate to a fishing sports enthusiast, including the aspects of littering, trespassing, courteous behavior, and obeying fishing regulations.
 *Resource:* [Understanding Basic Fishing Rules and Etiquette (video)](https://youtu.be/54ImytCqbzI?si=hueVbET92MOl-dIg)
 
 9. Catch one fish and identify it.
-*Resources:* [Fish Identification Apps (website)](https://freeappsforme.com/fish-identification-apps/)
+*Resources:* [Fish Identification Apps (app)](https://freeappsforme.com/fish-identification-apps/)
  [FishBase Identification (website)](https://www.fishbase.us/)
  [How to Identify Common Freshwater Fish (video)](https://youtu.be/mZ4M-AP6-iQ)
 

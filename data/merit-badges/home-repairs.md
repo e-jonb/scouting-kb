@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/home-repairs/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -35,8 +35,7 @@ Successfully completing this badge’s requirements can lead to a lifetime of pe
   Maintain or recondition a yard tool and show that you know how to clean up and properly store this equipment.
   *Resource:* [How to Clean & Sharpen Your Garden Tools (video)](https://www.youtube.com/watch?v=YzpKDkIOkJM)
 * (b)
-  Weather strip a window or door.
-  *Resource:* [How to Install Weatherstripping (video)](https://www.youtube.com/watch?v=E3JK2zMR53c)
+  Weatherstrip a window or door. Resource: [How To Install Weatherstripping (video)](https://youtu.be/E3JK2zMR53c)
 * (c)
   Caulk cracks or joints open to the weather.
   *Resource:* [The Secrets to Great Exterior Caulking (Windows, Doors, Trims)! (video)](https://www.youtube.com/watch?v=lS0wiWLFzMw)

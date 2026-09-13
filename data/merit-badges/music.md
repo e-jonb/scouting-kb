@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/music/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -52,8 +52,8 @@ The history of music is rich and exciting. Through the ages, new music has been 
 6. Do ONE of the following:
 
 * (a)
-  Explore careers related to this merit badge. Research one career to learn about the training and education needed, costs, job prospects, salary, job duties, and career advancement. Your research methods may include—with your parent or guardian's permission— an internet or library search, an interview with a professional in the field, or a visit to a location where people in this career work. Discuss with your counselor both your findings and what about this profession might make it an interesting career.
-  *Resource:* [Careers in the Music Industry (video)](https://youtu.be/X9baGNtXjv4?si=thzzvSy24o1fR6gn)
+  Explore careers related to this merit badge. Research one career to learn about the training and education needed, costs, job prospects, salary, job duties, and career advancement. Your research methods may include—with your parent or guardian's permission—an internet or library search, an interview with a professional in the field, or a visit to a location where people in this career work. Discuss with your counselor both your findings and what about this profession might make it an interesting career.
+  *Resource:* [Careers in the Music Industry (video)](https://youtu.be/X9baGNtXjv4)
 * (b)
   Explore how you could use knowledge and skills from this merit badge to pursue a hobby. Research any training needed, expenses, and organizations that promote or support it. Discuss with your counselor what short-term and long-term goals you might have if you pursued this.
   *Resource:* [Music Hobbies (video)](https://youtu.be/2XdqwW4zDtE?si=DBqxq3JLiPrE1mG9)

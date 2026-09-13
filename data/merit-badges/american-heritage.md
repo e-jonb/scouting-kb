@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/american-heritage/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -87,5 +87,3 @@ Every Scout swears to an oath that includes duty to his country. A better unders
 6. Discuss with your counselor the career opportunities in American heritage. Pick one that interests you and explain how to prepare for this career. Discuss what education and training are required for this career.
 *Resources:* [Top 10 Highest Paying Jobs for History Major (video)](https://youtu.be/rHjavLMAj38)
  [What Can You Do With That History Degree? (website)](https://www.historians.org/resource/what-can-you-do-with-that-history-degree/)
-
-![](https://www.scouting.org/wp-content/uploads/2022/10/fondo-blanco-liso-1024x600.jpg)

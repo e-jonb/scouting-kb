@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/small-boat-sailing/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -77,7 +77,7 @@ Sailing is one of the most enjoyable pastimes on the open water. The quiet and p
   Get underway from a dock, mooring, or beach.
   *Resource:* [Beach Launching a Single Handed Boat (video)](https://youtu.be/JBdvAG6Ham0)
 * (c)
-  Properly set sails for a round-trip course approved by your counselor that will include running, beating, and reaching-the basic points of sail. While sailing, demonstrate good helmsmanship skills.
+  Properly set sails for a round-trip course approved by your counselor that will include running, beating, and reaching—the basic points of sail. While sailing, demonstrate good helmsmanship skills.
   *Resources:* [Points of Sail (video)](https://youtu.be/Ow-P45DpHj8)
    [Close-Hauled (Sailing Towards the Wind) (video)](https://youtu.be/mTtKGr_4vYg)
    [Reaching (Sailing Across the Wind) (video)](https://youtu.be/DsmH7XuMJbw)

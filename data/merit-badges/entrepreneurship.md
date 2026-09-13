@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/entrepreneurship/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -105,3 +105,5 @@ By earning the Entrepreneurship merit badge, Scouts will learn about identifying
 *Resources:* [15 Challenges Startups Face (and How To Overcome Them) (website)](https://startup.info/challenges-startups-face/)
  [Understanding Business Ethics (video)](https://youtu.be/HbrpYeobu-Q)
  [Failures Are Lessons for Future Success (video)](https://youtu.be/QNB9hnRfgdk)
+
+![](https://www.scouting.org/wp-content/uploads/2022/10/fondo-blanco-liso-1024x600.jpg)

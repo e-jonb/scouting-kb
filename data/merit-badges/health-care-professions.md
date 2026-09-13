@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/health-care-professions/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -151,7 +151,7 @@ Explore the different types of the healthcare fields and professions with the He
    [Choose a Career in Cytology (website/video)](https://cytopathology.org/page/cytologycareer)
    [What It Takes to Be a Histotechnician (website)](https://www.nsh.org/about/about-histotechnology/how-histotechnology)
 
-5. Select one career from any of the lists in Requirements 1, 2, 3, or 4 and arrange to visit that professional at their workplace. Discuss with your counselor the following:
+5. Select one career from any of the lists in requirements 1, 2, 3, or 4 and arrange to visit that professional at their workplace. Discuss with your counselor the following:
 *Resource:* [The Informational Interview: Researching a Career (video)](https://youtu.be/Mqo0IsStelk)
 
 * (a)

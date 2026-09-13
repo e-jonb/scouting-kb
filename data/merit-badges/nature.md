@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/nature/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -35,14 +35,14 @@ In most cases all specimens should be returned to the wild at the location of or
 *Resources:* [Food Chains and Food Webs (video)](https://youtu.be/JCl_yDf0Qok?si=E9r3jI_7n8iYE1Rb)
  [Food Chains in the Everglades (video)](https://youtu.be/5Z8rKhXUYAg?si=CG1gOoYQ6n9s86LY)
 
-4. Do all the requirements in FIVE of the following fields:
+4. Do ALL the requirements in FIVE of the following fields:
 
 * (a)
   **Birds.** Do ALL of the following:
 * (1)
   In the field, identify eight species of birds.
   *Resources:* [How to Identify Birds [TOP 10 BACKYARD BIRDS] (video)](https://www.youtube.com/watch?v=HtBcOk8ICpA)
-   [Merlin Bird ID (website)](https://merlin.allaboutbirds.org/)
+   [Merlin Bird ID (app)](https://merlin.allaboutbirds.org/)
 * (2)
   Make and set out a birdhouse OR a feeding station OR a birdbath. List what birds used it during a period of one month.
   *Resources:* [DIY Birdhouse (video)](https://www.youtube.com/watch?v=u4iAhnbWpz8)

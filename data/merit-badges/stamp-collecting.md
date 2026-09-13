@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/stamp-collecting/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -30,7 +30,8 @@ The world’s most popular hobby, stamp collecting is enjoyed by millions throug
    [History of US Mail - From the Beginning (video)](https://youtu.be/U8ioOqupzmo?si=UlX_1ztm7NDn3yyL)
 
 2. Define topical stamp collecting. Name and describe three other types of stamp collections.
-*Resource:* [What To Collect? (website)](https://stamps.org/learn/getting-started/what-to-collect)
+*Resources:* [What To Collect? (website)](https://stamps.org/learn/getting-started/what-to-collect)
+ [Topical Stamp Collecting (video)](https://youtu.be/1i4Y9pT0px8)
 
 3. Show at least ONE example of each of the following:
 *Resource:* [Beginner's Guide to Stamp Collecting - Key Terms (video)](https://youtu.be/Z4iqhT2yfN8?si=FuJGCx8crtaeEDeW)
@@ -142,7 +143,7 @@ The world’s most popular hobby, stamp collecting is enjoyed by millions throug
   Describe the steps taken to produce a stamp. Include the methods of printing, types of paper, perforation styles, and how they are gummed.
   *Resource:* [Stamp Production (video)](https://youtu.be/G7iAscgzEp4?si=98JeDgk8avgA00Ih)
 * (f)
-  Prepare a two- to three-page display involving stamps. Using ingenuity, as well as clippings, drawings, etc., tell a story about the stamps , and how they relate to history, geography, or a favorite topic of yours.
+  Prepare a two- to three-page display involving stamps. Using ingenuity, as well as clippings, drawings, etc., tell a story about the stamps and how they relate to history, geography, or a favorite topic of yours.
   *Resource:* [Have Lasting Fun: How to Create an Exhibit and Enter It Into a Show (website)](https://www.linns.com/insights/have-lasting-fun--how-to-create-an-exhibit-and-enter-it-into-a-s.html)
 
 8. Mount and show, in a purchased or homemade album, ONE of the following:
@@ -155,6 +156,6 @@ The world’s most popular hobby, stamp collecting is enjoyed by millions throug
 * (c)
   A collection of 100 or more different stamps from either one country or a group of closely related countries
 * (d)
-  A collection of 75 or more different stamps on a single topic. (Some interesting topics are Scouting, birds, insects, the Olympics, sports, flowers, animals, ships, holidays, trains, famous people, space, and medicine). Stamps may be from different countries.
+  A collection of 75 or more different stamps on a single topic. (Some interesting topics include Scouting, birds, insects, the Olympics, sports, flowers, animals, ships, holidays, trains, famous people, space, and medicine.) Stamps may be from different countries.
 * (e)
   A collection of postal items discovered in your mail by monitoring it over a period of 30 days. Include at least five different types listed in requirement 3.

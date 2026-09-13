@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/communication/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: true
 ---
@@ -48,7 +48,7 @@ The official merit badge pamphlets are now free and downloadable [HERE](https://
    [Writing With Your Audience in Mind (video)](https://youtu.be/xyH79KQET5E)
    [How To Use Visual Aids for Public Speaking (video)](https://youtu.be/KVbRQ0cE0Ok)
 * (b)
-  Choose a concept, product, or service in which you have great confidence. Build a sales plan based on its good points. Try to persuade the counselor to agree with, use, or buy your concept, product or service. After your sales talk, discuss with your counselor how persuasive you were.
+  Choose a concept, product, or service in which you have great confidence. Build a sales plan based on its good points. Try to persuade the counselor to agree with, use, or buy your concept, product, or service. After your sales talk, discuss with your counselor how persuasive you were.
   *Resource:* [Making a Speech Powerful & Persuasive (video)](https://youtu.be/FhWBABCpT9w)
 
 3. Write a five-minute speech. Give it at a meeting of a group.

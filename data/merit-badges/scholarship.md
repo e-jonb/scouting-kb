@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/scholarship/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -15,7 +15,8 @@ Working on the Scholarship merit badge provides Scouts with a great opportunity 
 
 ## The previous version of the Merit Badge requirements can be found in Scoutbook
 
-**NOTE:**  The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Scholarship.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
+Check out the Digital Resource Guide for the Scholarship merit badge [HERE](https://www.scouting.org/skills/merit-badges/digital-resource-guides/scholarship/) for detailed information and helpful resources to engage your learning and assist you along on your merit badge journey!
+The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Scholarship.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
 
 1. Do ONE of the following:
 
@@ -39,7 +40,8 @@ Working on the Scholarship merit badge provides Scouts with a great opportunity 
   *Resources:* [How to Use Your Planner: Time-Management Tricks for Better Grades (video)](https://youtu.be/9z35XeolxMU?si=haH_-yZvpcaTXy05)
    [My Daily Planner (video)](https://www.youtube.com/shorts/ybb3h4re8kU)
 * (d)
-  Discuss the advantages and disadvantages of the different methods of research available to you for school assignments, such as the library, books and periodicals, and the internet. Resources: [The Internet vs the Library (video)](https://youtu.be/RH3Z9BZryd8)
+  Discuss the advantages and disadvantages of the different methods of research available to you for school assignments, such as the library, books and periodicals, and the internet.
+  *Resources:* [The Internet vs the Library (video)](https://youtu.be/RH3Z9BZryd8)
    [How To Use AI in School Without Cheating (video)](https://youtu.be/1iVcFKAFu2E)
 
 3. Get a note from the principal of your school (or another school official named by the principal) that states that during the past year your behavior, leadership, and service have been satisfactory.
@@ -64,5 +66,3 @@ Working on the Scholarship merit badge provides Scouts with a great opportunity 
 * (b)
   Write a report of 250 to 300 words about two careers that interest you and how specific classes and good scholarship in general will help you achieve your career goals.
   *Resource:* [Informative Writing (video)](https://www.youtube.com/watch?v=o22BiMAMKPA)
-
-![](https://www.scouting.org/wp-content/uploads/2022/10/fondo-blanco-liso-1024x600.jpg)

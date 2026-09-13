@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/space-exploration/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -15,7 +15,8 @@ Discover the why and how we explore space. Learn about current and historic spac
 
 ## The previous version of the Merit Badge requirements can be found in Scoutbook
 
-**NOTE:**  The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Space%20Exploration.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
+**NOTE:** Check out the Digital Resource Guide for the Space Exploration merit badge [HERE](https://www.scouting.org/skills/merit-badges/digital-resource-guides/space-exploration/) for detailed information and helpful resources to engage your learning and assist you along on your merit badge journey!
+ The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Space%20Exploration.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
 
 1. Tell the purpose of space exploration and include the following:
 
@@ -44,8 +45,6 @@ Discover the why and how we explore space. Learn about current and historic spac
 **Safety Note:** Rocket must be built to meet the safety code of the National Association of Rocketry. See the "Model Rocketry" section of the Space Exploration merit badge.
 
  **Alternative Requirement:** If local laws prohibit launching model rockets, do the following activity: Make a model of a NASA rocket. Explain the functions of the parts. Give the history of the rocket.
-
-Identify and explain the following rocket parts:
 *Resources:* [NASA "Rocket Parts" - Beginner's Guide (website)](https://www.grc.nasa.gov/www/k-12/VirtualAero/BottleRocket/airplane/bgmr.html)
  [National Association of Rocketry Educational Video Series on Model Rocketry (website)](https://www.nar.org/content.aspx?page_id=22&club_id=114127&module_id=669619)
 
@@ -134,6 +133,6 @@ Identify and explain the following rocket parts:
 
 8. Explore careers related to this merit badge. Research one career to learn about the training and education needed, costs, job prospects, salary, job duties, and career advancement. Your research methods may include—with your parent or guardian's permission—an internet or library search, an interview with a professional in the field, or a visit to a location where people in this career work. Discuss with your counselor both your findings and what about this profession might make it an interesting career.
 *Resources:* [Astronaut Requirements (website)](https://www.nasa.gov/humans-in-space/astronauts/astronaut-requirements/)
- [So You Want to Be an Aerospace Engineer (video)](https://www.youtube.com/watch?v=uTreDAUe7w4)
- [Should I become an Aerospace Engineer? (video)](https://www.youtube.com/watch?app=desktop&v=2Y2fNtYnsFQ)
+ [So You Want to Be an Aerospace Engineer (video)](https://youtu.be/uTreDAUe7w4)
+ [Should I Become an Aerospace Engineer? (video)](https://youtu.be/2Y2fNtYnsFQ)
  [Becoming an Astrobiologist (website)](https://astrobiology.nasa.gov/resources/graphic-histories/)

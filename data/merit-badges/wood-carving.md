@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/wood-carving/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -73,6 +73,7 @@ As with any art, wood carving involves learning the basics of design, along with
  [How To Carve a Arrowhead Neckerchief Slide Part 1 Carving Basics (video)](https://youtu.be/HimTJN3A3lw)
  [What Should You Whittle? Whittling Tips for Beginners (video)](https://youtu.be/CaP4V7CyYD8)
 
-7. Complete a simple low-relief OR a chip carving project. *Resources:* [Beginning Woodcarving—How To Carve a Basic Flower With Mary May (video)](https://youtu.be/43dLqrKV9OI)
+7. Complete a simple low-relief OR a chip carving project.
+*Resources:* [Beginning Woodcarving—How To Carve a Basic Flower With Mary May (video)](https://youtu.be/43dLqrKV9OI)
  [Chip Carving w/ Wayne Barton —Introduction (video)](https://youtu.be/spg4f_ge6Is)
  [Chip Carving: Tips for Beginners (video)](https://youtu.be/bOE99r5N0Ds)

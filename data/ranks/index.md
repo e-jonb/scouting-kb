@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 ---
 

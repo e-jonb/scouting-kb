@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/athletics/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -117,7 +117,7 @@ Being involved in an athletic endeavor is not only a way to have fun, but it als
   Baseball throw for accuracy, 10 throws at a target (distance to be determined by age): ages 11 to 12, 20 feet; ages 13 to 15, 30 feet; ages 16 to 17, 40 feet
 * (2)
   Baseball throw for distance, five throws (total distance)
-* **Option G—Basketball Shooting.** Do ALL the following:
+* **Option G—Basketball Shooting.** Do ALL of the following:
   *Resources:* [How To Shoot a Free Throw (video)](https://youtu.be/iW2VFzBiaQo)
    [How To Shoot a Layup (video)](https://youtu.be/q4IqeXob_qg)
    [How To Shoot a Basketball (video)](https://youtu.be/UcnB9e5O5NY)

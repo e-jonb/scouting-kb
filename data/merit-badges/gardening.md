@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/gardening/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -56,8 +56,8 @@ Humans have been growing plants for thousands of years. Farmers and horticulturi
 4. Test 100 seeds for germination. Determine the percentage of seeds that germinate. Explain why you think some did not germinate.
 *Resource:* [Seed Germination Test (video)](https://youtu.be/E0jzPVGiKHs?si=6sRjzeuX1P0CgsSA)
 
-5. Visit your county extension agent's office, local university, agricultural college, nursery, farm, or a botanical garden or arboretum. Report on what you learned.
-*Resource:* [Eyes on Agriculture (video)](https://youtu.be/zMB6lTyXdnE?si=LtY7M54LNZpkafpn)
+5. Visit your county extension office, local university, agricultural college, nursery, farm, botanical garden, or arboretum. Report on what you learned.
+*Resource:* [Eyes on Agriculture (video)](https://youtu.be/zMB6lTyXdnE)
 
 6. Explain to your counselor how and why honeybees are used in pollinating food crops and the problems that face the bee population today. Discuss what the impact to humanity would be if there were no pollinators.
 *Resources:* [All About Bees (video)](https://youtu.be/Kdm9daKTRsc?si=I5GPFtrnBBb3RwPu)

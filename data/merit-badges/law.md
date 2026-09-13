@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/law/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -50,7 +50,7 @@ Earning this merit badge enables a Scout to learn about the history and kinds of
 * (a)
   Attend a session of a civil or criminal court. Write 250 words or more on what you saw.
 * (b)
-  Plan and conduct a mock trial with your troop or school class or other group. After the trial is over, discuss it with the group.
+  Plan and conduct a mock trial with your troop, school class or other group. After the trial is over, discuss it with the group.
   *Resources:* [Law Merit Badge Mock Trial (video)](https://youtu.be/jzGBkWpAEQ8)
    [How Does a Mock Trial Work? (video)](https://youtu.be/qwS1suoSimc)
 
@@ -101,7 +101,7 @@ Earning this merit badge enables a Scout to learn about the history and kinds of
   *Resources:* [Information Technology Law (website)](https://www.ebsco.com/research-starters/computer-science/information-technology-law-cyberlaw)
    [Cyber Law Explained (video)](https://youtu.be/asByYA3rSCo)
 * (i)
-  Intellectual Property, (Copyright, Patents and Trademarks)
+  Intellectual Property (Copyright, Patents and Trademarks)
   *Resources:* [Intellectual Property Law (website)](https://www.law.georgetown.edu/your-life-career/career-exploration-professional-development/for-jd-students/explore-legal-careers/practice-areas/intellectual-property-law/)
    [Intellectual Property Law Explained (video)](https://youtu.be/JyafmkfQDiY)
 * (j)

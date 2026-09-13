@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/salesmanship/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -51,7 +51,7 @@ By studying salesmanship, Scouts can learn self-confidence, motivation, friendli
 * (a)
   Help your unit raise funds through sales of merchandise or of tickets to a Scout event.
 * (b)
-  Sell your services such as lawn raking or mowing, pet watching, dog walking, show shoveling, and car washing to your neighbors. Follow up after the service has been completed and determine the customer's satisfaction.
+  Sell your services, such as lawn raking or mowing, pet sitting, dog walking, snow shoveling, or car washing, to your neighbors. Follow up after completing the service to determine the customer satisfaction.
 * (c)
   Earn money through retail selling.
 

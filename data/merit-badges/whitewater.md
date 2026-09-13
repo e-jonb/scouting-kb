@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/whitewater/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -20,12 +20,12 @@ Canoeing or kayaking through whitewater rapids can be a thrilling experience. Sa
 1. Do the following:
 
 * (a)
-  Explain to your counselor the most likely hazards you may encounter while participating in whitewater activities, including branches and trees in water along a shore and stretching across the stream, rocks, hydraulics over ledges or lowhead dams, strong wind, low water or air temperature, and thunder and lightning storms. Explain what you should do to anticipate, help prevent, mitigate, and respond to these hazards.
+  Explain to your counselor the most likely hazards you may encounter while participating in whitewater activities, including branches and trees in water along a shore and stretching across the stream, rocks, hydraulics over ledges or low-head dams, strong wind, low water or air temperature, and thunder and lightning storms. Explain what you should do to anticipate, help prevent, mitigate, and respond to these hazards.
   *Resources:* [River Features (video)](https://youtu.be/EwUVNgeO0E8)
    [Low-Head Dams: Get Out and Scout (video)](https://youtu.be/VuO9ZSCtZN4)
    [What To Do When Kayaking in a Thunderstorm (website)](https://www.kayakscout.com/kayaking-in-a-thunderstorm/)
 * (b)
-  Review with your counselor the prevention, symptoms, and first aid treatment for the following injuries or illnesses that could occur while participating in whitewater activities including cold-water shock; hypothermia; head, neck, and back injuries; heat-related illnesses; sunburn; dehydration; blisters; bruises; cuts; sprains and strains; shoulder dislocation; and submersion injuries.
+  Review with your counselor the prevention, symptoms, and first-aid treatment for the following injuries or illnesses that could occur while participating in whitewater activities: cold-water shock; hypothermia; head, neck, and back injuries; heat-related illnesses; sunburn; dehydration; blisters; bruises; cuts; sprains and strains; shoulder dislocation; and submersion injuries.
   *Resource:* [Cold Water Immersion and Drowning (playlist)](https://youtube.com/playlist?list=PLxKdp8_KfCQnMeVV5WjCGLQtOk0IdR_4S)
 * (c)
   Discuss with your counselor the Scouting America Safety Afloat policy and the American Whitewater safety guidelines, including the use of helmet and life jackets.
@@ -64,7 +64,7 @@ Canoeing or kayaking through whitewater rapids can be a thrilling experience. Sa
 
 4. Do ONE of the following:
 
-* **Option A—Tandem Canoest.** Do ALL of the following strokes and techniques on calm water:
+* **Option A—Tandem Canoeist.** Do ALL of the following strokes and techniques on calm water:
   *Resource:* [Essential Strokes for Tandem Maneuvers (video)](https://youtu.be/HYvucbWN4co)
 * (1)
   Demonstrate the following strokes in the bow: cross forward, bow draw, cross bow draw, bow pry, and sculling draw.
@@ -72,7 +72,7 @@ Canoeing or kayaking through whitewater rapids can be a thrilling experience. Sa
   Demonstrate the following strokes in the stern: stern draw, stern pry, sculling draw, and forward with stern pry.
 * (3)
   Demonstrate a high brace, low brace, and righting pry.
-* **Option B—Solo Canoest.** Do ALL of the following strokes and techniques on calm water:
+* **Option B—Solo Canoeist.** Do ALL of the following strokes and techniques on calm water:
 * (1)
   Demonstrate the following strokes: cross forward, bow draw, cross bow draw, stern draw, pry, stern pry, sculling draw, and forward with stern pry.
   *Resources:* [Cross Forward Stroke (video)](https://youtu.be/TGE6i_aIvuE)
@@ -172,7 +172,7 @@ Canoeing or kayaking through whitewater rapids can be a thrilling experience. Sa
   *Resources:* [Throw Bag Techniques (video)](https://youtu.be/B6dxD-ttYAw)
    [White Water Swims and Throw Bag Rescues (video)](https://youtu.be/DbWkLJ2gKTE)
 * (d)
-  Portaging-where portaging would be appropriate, and when and how to do it
+  Portaging—where portaging would be appropriate, and when and how to do it
   *Resources:* [How To Portage a Canoe (video)](https://youtu.be/wQKTRO-R9Uk)
    [How To Portage for Beginners—Footwear, Gear, Tips and Techniques (video)](https://youtu.be/hp60rDcov48)
 * (e)

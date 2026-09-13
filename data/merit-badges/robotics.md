@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/robotics/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -84,7 +84,7 @@ Build your own working robot with the Robotics Merit Badge. Learn about the robo
 7. Do ONE of the following:
 
 * (a)
-  Identify three career opportunities that would use skills and knowledge in Robotics. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career.
+  Identify three career opportunities that would use skills and knowledge in robotics. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career.
   *Resources:* [Learn About the Careers of Robotics Technicians (video)](https://youtu.be/0dwkGhRPQW4)
    [Careers in Robotics (video)](https://youtu.be/5YTYFrrSdV4?list=PLHGEvyG5wuthXQZzTc-mLwFrP5F6_1Lce)
 * (b)

@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/energy/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -58,7 +58,7 @@ Saving, producing, and using energy wisely will be critical to America’s futur
 * (d)
   Identify the energy losses of the system.
 
-4. Conduct an energy audit of your home. Keep a 14 day log that records what you and your family did to reduce energy use. Include the following in your report and, after the 14-day period, discuss what you have learned with your counselor.
+4. Conduct an energy audit of your home. Keep a 14-day log that records what you and your family did to reduce energy use. Include the following in your report and, after the 14-day period, discuss what you have learned with your counselor.
 *Resources:* [Energy 101: Home Energy Assessment (video)](https://youtu.be/YolBP0-vkBU)
  [Do-It-Yourself Home Energy Assessments (website)](https://www.energy.gov/energysaver/do-it-yourself-home-energy-assessments)
  [Do It Yourself Home Energy Audit Form (PDF)](https://www.seattle.gov/Documents/Departments/OSE/GreenHomeGuide-FYIenergyaudit.pdf)

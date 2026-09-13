@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/hiking/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: true
 ---
@@ -22,8 +22,8 @@ Hiking is a terrific way to keep your body and mind in top shape, both now and f
 1. Do the following:
 
 * (a)
-  Explain to your counselor the most likely hazards you may encounter while hiking, and what you should do to anticipate, help prevent, mitigate and respond to these hazards.
-  *Resource:* [Surviving the Wild - Essential Hiking Safety Tips (video)](https://youtu.be/YGQG0C0HBGw?si=aOL6J4mdZXt51LDC)
+  Explain to your counselor the most likely hazards you may encounter while hiking, and what you should do to anticipate, help prevent, mitigate, and respond to these hazards.
+  *Resource:* [Surviving the Wild - Essential Hiking Safety Tips (video)](https://youtu.be/YGQG0C0HBGw)
 * (b)
   Show that you know first aid for injuries or illnesses that could occur while hiking, including hypothermia, frostbite, dehydration, heat exhaustion, heatstroke, sunburn, hyperventilation, altitude sickness, sprained ankle, blisters, insect stings, tick bites, and snakebite.
   *Resources:* [Backpacking First Aid (What To Carry + Foot Care, Snakes, Poison Plants, Hypothermia, etc) (video)](https://youtu.be/nxExCQiWa_U?si=E-FC1vbHZYI0vxhb)
@@ -48,7 +48,7 @@ Hiking is a terrific way to keep your body and mind in top shape, both now and f
 
 4. Take four 10-mile hikes and one 20-mile hike, each on a different day, and each of continuous miles. Prepare a written hike plan before each hike and share it with your counselor or a designee for approval before starting the hike. Include map routes, a clothing and equipment list, and a list of items for a trail lunch. You may stop for as many short rest periods as needed, as well as one meal, during each hike, but not for an extended period such as overnight.
 *Resources:* [Maps and Ideas for Hikes (website)](https://www.hikingproject.com/)
- [Find Your Next Adventure (website)](https://www.alltrails.com/)
+ [Find Your Next Adventure (app)](https://www.alltrails.com/)
  [Pre-Hike Plan Template (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Hiking/Pre%20Hike%20Plan%20Template.pdf)
 
 * (a)

@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/skating/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -26,7 +26,7 @@ This merit badge introduces Scouts to the exciting world of ice skating, roller 
   Show that you know first aid for injuries or illnesses that could occur while skating, including hypothermia, frostbite, lacerations, abrasions, fractures, sprains and strains, concussions, blisters, heat-related reactions, and shock.
   *Resource:* [Skating Injuries - Types and Prevention (website)](https://www.icliniq.com/articles/first-aid-and-emergencies/skating-injuries)
 
-2. Working under the supervision of an experienced adult, do ONE of the following options.
+2. Working under the supervision of an experienced adult, do ONE of the following options:
 
 * **Option A—Ice Skating.** Do ALL of the following:
   *Resources:* [How To Figure Skate (video)](https://youtu.be/-53axkfHUHk)
@@ -82,7 +82,7 @@ This merit badge introduces Scouts to the exciting world of ice skating, roller 
   Explain the general safety rules and etiquette guidelines for roller skating.
   *Resource:* [Getting Started with Roller Skating (video)](https://youtu.be/eXzKkXQCY_Q)
 * (2)
-  Discuss the parts and functions of a roller skate and their functions.
+  Discuss the parts of a roller skate and their functions.
 * (3)
   Describe five essential steps to good roller skate care.
 * (4)
@@ -169,7 +169,7 @@ This merit badge introduces Scouts to the exciting world of ice skating, roller 
    [The Wild History of Skateboarding (video)](https://youtu.be/f9JWlMZa0GE)
    [The Evolution of Skateboard Tricks! (video)](https://youtu.be/w1mm3zDNyNI)
 * (2)
-  Describe the benefits of skateboarding (physical fitness, balance, coordination, perseverance, and creativity)
+  Describe the benefits of skateboarding (physical fitness, balance, coordination, perseverance, and creativity).
   *Resources:* [Benefits of Skateboarding (video)](https://youtu.be/VAh62ff8rys)
    [Physics of Skateboarding (video)](https://youtu.be/6bu_9sI7QTI)
 * (3)
@@ -230,5 +230,5 @@ This merit badge introduces Scouts to the exciting world of ice skating, roller 
   *Resources:* [Frontside Air (video)](https://youtu.be/4tz-HFSoEZY)
    [Grab Tricks (video)](https://youtu.be/UEYsZH49H_o)
 * (e)
-  Footplant tricks.
+  Footplant tricks
   *Resource:* [How To Boneless (video)](https://youtu.be/wUZpFX0CS1g)

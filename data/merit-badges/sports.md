@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/sports/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -22,7 +22,7 @@ Millions of people participate in sports every year. For some the appeal is the 
 1. Do the following:
 
 * (a)
-  Explain to your counselor the most likely risks you may encounter while participating in sports and what you should do to anticipate, help prevent, mitigate, and respond to these risks.
+  Explain to your counselor the most likely risks you may encounter while participating in sports and what you should do to anticipate, prevent, mitigate, and respond to those risks.
   *Resources:* [Sports Injuries and Prevention (video)](https://youtu.be/rBntW8FmLvo)
    [Preventing Sports Injuries in Children (video)](https://youtu.be/WAne1NJJSCY)
    [Safety Tips - Popular Sports (video)](https://youtu.be/NAcMyn5Vsfc)

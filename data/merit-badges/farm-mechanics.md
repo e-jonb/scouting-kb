@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/farm-mechanics/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -91,13 +91,13 @@ From the mattock and hoe to the horse and mule, the cotton gin and reaper, the t
 6. Explain each step in ONE of the following maintenance procedures:
 
 * (a)
-  Tightening hydraulic fittings.
+  Tightening hydraulic fittings
   *Resource:* [Avoid Leaks! How To Tighten Hydraulic Fittings the Right Way (website)](https://cntopa.com/avoid-leaks-how-to-tighten-hydraulic-fittings-the-right-way.html)
 * (b)
-  Checking the air filter.
+  Checking the air filter
   *Resource:* [Maintaining Your Tractor—Changing the Air Filter (video)](https://youtu.be/571Oz9LrBwk)
 * (c)
-  Cleaning a work piece with a wire-brush wheel.
+  Cleaning a work piece with a wire-brush wheel
   *Resource:* [Cleaning Up Rusted Metal Finds (video)](https://youtu.be/wPR2Lbmn7wM)
 
 7. Find out about three career opportunities in farm mechanics. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you.

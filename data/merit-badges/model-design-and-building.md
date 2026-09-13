@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/model-design-and-building/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -79,11 +79,11 @@ Do the following:
    [Adam Savage's One Day Builds: Wood Architectural Model! (video)](https://youtu.be/qjNphb6mroM)
 * (b)
   **Structural Model.**
-   Construct a scale model showing corner construction of a wood-frame building to a scale of 1 1⁄2"=1'0" (1:8 scale). Begin with a structural layout showing the parts of the floor and wall frames, such as intermediate girder, joist, bridging, subfloor, sill, sole plate, stud, and rafter. Use your plans to assist in building a physical model with cardboard, foam board, or wood. Review with your counselor the parts of the structure and discuss challenges in both your design and build process, gathering the materials and supporting the structure.
+   Construct a scale model showing corner construction of a wood-frame building to a scale of 1 1⁄2" = 1'0" (1:8 scale). Begin with a structural layout showing the parts of the floor and wall frames, such as intermediate girder, joist, bridging, subfloor, sill, sole plate, stud, and rafter. Use your plans to assist in building a physical model with cardboard, foam board, or wood. Review with your counselor the parts of the structure and discuss challenges in both your design and build process, gathering the materials and supporting the structure.
   *Resource:* [How To Read an Architectural Scale Where 1-1/2"=1' (video)](https://youtu.be/ewKbfYNaVHg)
 * (c)
   **Process Model.**
-   Design and build a model showing the plumbing system of your house to a scale of 3 ⁄4" =1'0" (1:16 scale) or an agreed upon scale. Show hot and cold-water supply, all waste returns, and venting. After creating your plan, talk to your counselor about how to begin this model, and present the scale and the materials you will use. Build the model using appropriate materials such as tubing, straws, or printed parts. After completion, present your model to your counselor, and be prepared to discuss any problems you had building this model.
+   Design and build a model showing the plumbing system of your house to a scale of 3⁄4" = 1'0" (1:16 scale) or an agreed upon scale. Show hot and cold-water supply, all waste returns, and venting. After creating your plan, talk to your counselor about how to begin this model, and present the scale and the materials you will use. Build the model using appropriate materials such as tubing, straws, or printed parts. After completion, present your model to your counselor, and be prepared to discuss any problems you had building this model.
   *Resource:* [How To Read and Use an Architect's Scale for Beginners (video)](https://youtu.be/CyvA0UyOjsA)
 * (d)
   **Mechanical Model.** Build a model of a mechanical device that incorporates at least two of the six simple machines. You can use digital tools to design and simulate the device before constructing it. Once your design is approved by your counselor, build a working physical model using materials such as wood, plastic, or 3D printed parts. Present your models to your counselor and be prepared to discuss materials used, the machine's function, and challenges you encountered during the construction process.
@@ -91,7 +91,7 @@ Do the following:
    [Examples of Simple Machines Used in Everyday Life (video)](https://youtu.be/_fOA4nCWYms)
 * (e)
   **Industrial Model.**
-   Build a model of an actual passenger-carrying vehicle to a scale of 1" = 1'0" or 1 ⁄2" = 1'0" (1:12 or 1:24 scale). Begin by measuring a real vehicle and modeling it from multiple views (top, front, rear, sides). You can draw it or use computer design software. From your plans, build a physical model or use digital rendering or 3D printing to produce the final version. Discuss with your counselor which parts were most challenging.
+   Build a model of an actual passenger-carrying vehicle to a scale of 1" = 1'0" or 1⁄2" = 1'0" (1:12 or 1:24 scale). Begin by measuring a real vehicle and modeling it from multiple views (top, front, rear, sides). You can draw it or use computer design software. From your plans, build a physical model or use digital rendering or 3D printing to produce the final version. Discuss with your counselor which parts were most challenging.
   *Resources:* [How To Read an Architectural Scale Where 1"=1' (video)](https://youtu.be/01ZFKZoPkjg)
    [Orthographic Drawing—Simplified (video)](https://youtu.be/SdLegfoMXNA)
    [5 Ways To Sketch a Car With Accurate Proportions (website)](https://luukminkman.com/en/blog/how-to-sketch-a-car-with-accurate-proportions/)

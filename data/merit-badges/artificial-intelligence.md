@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/artificial-intelligence/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -22,13 +22,13 @@ The Artificial Intelligence (AI) Merit Badge introduces Scouts to the fundamenta
 2. **Artificial Intelligence (AI) Basics.** Do the following and share what you learned with your counselor:
 
 * (a)
-  Identify ten examples of how AI is currently used in everyday life.
+  Identify 10 examples of how AI is currently used in everyday life.
 * (b)
   Identify five examples of how AI is currently used in the workplace.
 * (c)
   Identify five examples of how AI can be used at school or in support of your education.
 * (d)
-  Meet with your counselor and play ten rounds of the "AI or Not?" game to determine if the presented scenario utilizes AI. Discuss your answers.
+  Meet with your counselor and play 10 rounds of the "AI or Not?" game to determine if the presented scenario utilizes AI. Discuss your answers.
 * (e)
   Create a timeline with five key milestones in the development of artificial intelligence.
 

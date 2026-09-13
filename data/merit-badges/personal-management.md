@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/personal-management/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: true
 ---
@@ -37,7 +37,7 @@ Personal management is about mapping a plan for your life that will involve sett
    [Can You Really Trust Online Reviews? (video)](https://youtu.be/MfriPbc8hxM)
    [Inside the Consumer Reports Test Lab (video)](https://youtu.be/nRMp8tVrWk4)
 * (1)
-  Determine the quality of the item or service (using consumer publications or rating systems.)
+  Determine the quality of the item or service (using consumer publications or rating systems).
   *Resources:* [How To Determine Product Quality (website)](https://awiseconsumer.com/how-to-determine-product-quality-before-buying/)
    [Can You Really Trust Online Reviews? (video)](https://youtu.be/MfriPbc8hxM)
    [Inside the Consumer Reports Test Lab (video)](https://youtu.be/nRMp8tVrWk4)
@@ -58,7 +58,7 @@ Personal management is about mapping a plan for your life that will involve sett
 * (2)
   If income exceeds budget expenses, state how you would use the excess money (new goal, savings).
 * (c)
-  Track and record your actual income, expenses, and savings for 13 consecutive weeks (the same 13-week period for which you budgeted). (You may use the forms provided in the *Personal Management* merit badge pamphlet, devise your own, or use a computer-generated version). When complete, present the records showing the results to your counselor.
+  Track and record your actual income, expenses, and savings for 13 consecutive weeks (the same 13-week period for which you budgeted.) (You may use the forms provided in the *Personal Management* merit badge pamphlet, devise your own, or use a computer-generated version.) When complete, present the records showing the results to your counselor.
 * (d)
   Compare your budget with your actual income and expenses to understand when your budget worked and when it did not work. With your counselor, discuss what you might do differently the next time.
 

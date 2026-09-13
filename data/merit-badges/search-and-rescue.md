@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/search-and-rescue/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -125,7 +125,8 @@ The Scouting America's *Guide to Safe Scouting* states under "Prohibited Activit
 
 * (a)
   Explain how a local ICS is organized and how it compares with Scouting's patrol method.
-  *Resource:* [Introduction to ICS (video)](https://youtu.be/P-dPBso2xPM)
+  *Resources:* [Introduction to ICS (video)](https://youtu.be/P-dPBso2xPM)
+   [Incident Command System (website w/ video)](https://www.upstate.edu/emergencymgt/about/incident_command.php)
 * (b)
   Explain how local community agencies work to train for and manage search and rescue situations.
   *Resources:* [Search & Rescue Training (video)](https://youtu.be/h1B9mwnmEaQ)
@@ -151,7 +152,7 @@ The Scouting America's *Guide to Safe Scouting* states under "Prohibited Activit
   *Resources:* [Search or Rescue (video)](https://youtu.be/zanbVmtx4dw)
    [Search Methods (PDF)](https://www.kyem.ky.gov/home/showpublisheddocument/1370/638864015872401722)
 * (b)
-  Explain the difference between PLS (place last seen) and LKP (last known point)
+  Explain the difference between PLS (place last seen) and LKP (last known point).
   *Resource:* [PLS and LKP (website)](http://www.sarmath.com/terms/initial-planning-point)
 * (c)
   Explain the importance of effective communication in SAR operations.

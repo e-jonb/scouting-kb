@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/textile/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -39,10 +39,10 @@ People use countless fibers and fabrics in their everyday lives: clothes, carpet
 3. Do TWO of the following:
 
 * (a)
-  Visit a textile plant, textile products manufacturer or textile school or college. Report on what you saw and learned.
+  Visit a textile plant, textile products manufacturer, or textile school or college. Report on what you saw and learned.
 * (b)
-  Weave a belt, headband, place mat or wall hanging. Use a simple loom that you have made yourself.
-  *Resource:* [How to Make a Cardboard Loom (website)](https://www.theweavingloom.com/how-to-make-a-cardboard-loom/)
+  Weave a belt, headband, placemat, or wall hanging using a simple loom that you have made yourself.
+  *Resource:* [How To Make a Cardboard Loom (website)](https://www.theweavingloom.com/how-to-make-a-cardboard-loom/)
 * (c)
   With a magnifying glass, examine a woven fabric, a nonwoven fabric, and a knitted fabric. Sketch what you see. Explain how the three constructions are different.
   *Resource:* [Woven vs. Knit vs. Non-Woven Fabrics | Textile Talk w/ A Thrifty Notion (video)](https://youtu.be/2Q_04oCLZVs)
@@ -68,7 +68,7 @@ People use countless fibers and fabrics in their everyday lives: clothes, carpet
 5. List the advantages and disadvantages of natural plant fibers, natural animal fibers, cellulosic manufactured fibers, and synthetic manufactured fibers. Identify and discuss at least four ecological concerns regarding the production and care of textiles.
 *Resource:* [The Ultimate Fabric Guide - The Differences Between Natural vs Synthetic vs Semi-Synthetic Fibers (video)](https://youtu.be/lcq9tPI-W-c?si=7pT187LPR6ZCW2c0)
 
-6. Explain to your counselor, either verbally or in a written report, five career possibilities in the textile industry. Tell about two positions that interest you the most and the education, cost of training and specific duties those positions require.
+6. Explain to your counselor, either verbally or in a written report, five career possibilities in the textile industry. Tell your counselor about two positions that interest you the most and the education, cost of training, and specific duties those positions require.
 *Resources:* [Day in the Life of a Textile Engineer (video)](https://youtu.be/Ify9Fo2IhB4)
  [Careers in the Fashion & Textiles Industry (video)](https://youtu.be/uumtJp43Kfg)
  [Textile Engineering Careers (video)](https://www.youtube.com/shorts/rClr3NSF-CM)

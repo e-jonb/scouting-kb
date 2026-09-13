@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/bird-study/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -49,7 +49,7 @@ Birds are among the most fascinating creatures on Earth. Many are beautifully co
 
 4. Demonstrate that you know how to use a bird field guide. Show your counselor that you are able to understand a range map by locating in the book and pointing out the wintering range, the breeding range, and/or the year-round range of one species of each of the following types of birds:
 *Resources:* [How to Use a Field Guide (video)](https://youtu.be/dAkcHqfkWfg)
- [Merlin Bird ID (video)](https://merlin.allaboutbirds.org/)
+ [Merlin Bird ID (app)](https://merlin.allaboutbirds.org/)
 
 * (a)
   Seabird

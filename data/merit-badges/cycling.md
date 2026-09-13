@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/cycling/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: true
 ---
@@ -19,9 +19,8 @@ Since 1911, hundreds of thousands of Scouts have made the most of their two-whee
 Check out the Digital Resource Guide for the Cycling merit badge [HERE](https://www.scouting.org/skills/merit-badges/digital-resource-guides/cycling/) for information and helpful resources to engage your learning and assist you along on your merit badge journey!
  The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Cycling.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
 
-[1.
-Do the following:
-*Resource:*](https://www.scoutshop.org/) [Hazards, Prevention, and First Aid | Produced by Scouting America (video)](https://vimeo.com/1125028263)
+1. Do the following:
+*Resource:* [Hazards, Prevention, and First Aid | Produced by Scouting America (video)](https://vimeo.com/1125028263)
 
 * (a)
   Explain to your counselor the most likely hazards you may encounter while participating in cycling activities and what you should do to anticipate, help prevent, mitigate, and respond to these hazards. Explain to your counselor how to ride predictably, be conspicuous, think ahead, and ride ready.
@@ -102,7 +101,7 @@ Resource: [The Buddy System in Scouting: Why No Scout Should Go It Alone (websit
 * (b)
   Participate in an organized bike tour of at least 50 miles. Make this ride in eight hours or less. Afterward, use the tour's cue sheet to make a map of the ride.
   *Resource:* [Cue Sheets (website)](https://lifeisabeautifuldetail.com/blog/cue-sheets)
-* **Option B—Trail or Mixed Surface Biking** Do ALL of the following:
+* **Option B—Trail or Mixed Surface Biking.** Do ALL of the following:
 
   **Note:**  These requirements may be completed using a mountain bike or other properly equipped, manually-powered cycle such as a gravel bike, tandem bike, hand-powered bike, recumbent bike, adult tricycle, or adaptive cycle. If a tandem bike is used, the Scout must actively power the cycle in concert with the other rider.
 * (1)
@@ -126,7 +125,7 @@ Resource: [The Buddy System in Scouting: Why No Scout Should Go It Alone (websit
   Show proper trail etiquette to hikers and other cyclists, including when to yield the right-of-way.
   Resource: [Bike Trail Etiquette (video)](https://youtu.be/gwYBL2zPYXQ)
 * (b)
-  Demonstrate how to correctly cross an obstacle by either going over the obstacle on your bike or dismounting your bike and crossing over or around the obstacle
+  Demonstrate how to correctly cross an obstacle by either going over the obstacle on your bike or dismounting your bike and crossing over or around the obstacle.
   *Resource:* [How to Jump a Log on a Mountain Bike (video)](https://www.youtube.com/watch?v=Hp_jDNN6XfQ)
 * (c)
   Cross rocks, gravel, and roots properly
@@ -139,7 +138,7 @@ Resource: [The Buddy System in Scouting: Why No Scout Should Go It Alone (websit
    [Trail Manners (website)](https://www.tfnu.org/trail-etiquette/)
 * (4)
   On mountain biking or multi-use trails approved by your counselor, take two rides of 2 miles each, two rides of 5 miles each, and two rides of 8 miles each. You must make a report of the rides taken. List dates for the routes traveled, and interesting things seen.
-  *Resource:* [MapMyRide (website)](https://www.mapmyride.com/)
+  *Resource:* [MapMyRide (app)](https://www.mapmyride.com/)
 * (5)
   After fulfilling the previous requirement, lay out on a trail map a 22-mile trip. You may include multiple trail systems, if needed. Stay away from main highways. Using your map, complete this ride in one day.
-  *Resource:* [MapMyRide (website)](https://www.mapmyride.com/)
+  *Resource:* [MapMyRide (app)](https://www.mapmyride.com/)

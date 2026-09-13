@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/competitive-gaming/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -10,6 +10,7 @@ eagle_required: false
 ## Merit Badge Overview
 
 Where passion for gaming meets leadership, learning, and the future of technology.
+
 
 The Competitive Gaming merit badge introduces Scouts to one of the fastest-growing industries in the world—esports and modern gaming—while reinforcing the values of the Scout Oath and Scout Law in digital spaces. This badge blends fun, education, personal growth, and real-world career exploration, empowering Scouts to become responsible digital citizens and informed participants in today’s gaming culture.
 
@@ -90,7 +91,7 @@ The Competitive Gaming merit badge introduces Scouts to one of the fastest-growi
 * (a)
   Explain the benefits and risks of gaming online.
   *Resources:* [The Real Benefits of Video Games (website)](https://builtin.com/articles/online-gaming-social-benefits)
-   [Negative Effects of Video Games (website)](https://www.smartsocial.com/post/negative-effects-video-games)
+   [Are Video Games, Screens Another Addiction? (website)](https://www.mayoclinichealthsystem.org/hometown-health/speaking-of-health/are-video-games-and-screens-another-addiction)
 * (b)
   Research and list ten ways to stay safe when playing video games online.
   *Resources:* [Online Safety Issues (website)](https://www.internetmatters.org/issues/)

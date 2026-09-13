@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/electricity/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -92,17 +92,17 @@ Learn why electricity plays a significant role in the economy and how energy con
 9. Explain the following:
 
 * (a)
-  Electrical terms - Current, energy, power, resistance, and voltage
+  Electrical terms: current, energy, power, resistance, and voltage
   *Resource:* [Electrical Terms Explained (website)](https://electricityforum.com/electrical-terms)
 * (b)
-  Units of measure - Ampere (amps), ohms, volts, watts, and watt-hours
+  Units of measure: ampere (amps), ohms, volts, watts, and watt-hours
   *Resource:* [The Difference Between Volts, Watts, and Amps - Explained Like You're Five (video)](https://youtu.be/lsef_Vlx83M)
 * (c)
-  Electrical conditions - Generating source with example, ground, open circuit, overvoltage, potential difference, and short circuit
+  Electrical conditions: generating source with example, ground, open circuit, overvoltage, potential difference, and short circuit
   *Resources:* [Open Circuits, Closed Circuits & Short Circuits - Basic Introduction (video)](https://youtu.be/v5RJf_V0LYA)
    [What Is Electric Potential Difference? (video)](https://youtu.be/0Ckmt2QyeqQ)
 * (d)
-  Equipment and their use - circuit, conductor, Ground Fault Circuit Interrupter (GFCI), insulator, inverter, rectifier, rheostat, substation, surge protection, solar panel, transformer, transmission and distribution systems, and wind turbine.
+  Equipment and their use: circuit, conductor, Ground Fault Circuit Interrupter (GFCI), insulator, inverter, rectifier, rheostat, substation, surge protection, solar panel, transformer, transmission and distribution systems, and wind turbine.
 
 10. Do TWO of the following:
 

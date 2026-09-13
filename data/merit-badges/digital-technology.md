@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/digital-technology/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -17,7 +17,7 @@ Comprehend how electronic devices work and how to use them effectively with the 
 
 **NOTE:**  The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Digital%20Technology.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
 
-1. ..View the Personal Safety Awareness "Digital Safety" video (with your parent or guardian's permission).
+1. View the Personal Safety Awareness "Digital Safety" video (with your parent or guardian's permission).
 *Resource:* [Personal Safety Awareness (video)](https://filestore.scouting.org/filestore/YPSAT/YT%20Mod1%20Final%20Master%20Small.mp4)
 
 2. Do the following:
@@ -86,8 +86,7 @@ Comprehend how electronic devices work and how to use them effectively with the 
   Using a spreadsheet or database program, develop a food budget for a patrol weekend campout OR create a troop roster that includes the name, rank, patrol, and telephone number of each Scout. Show your counselor that you can sort the roster by each of the following categories: rank, patrol, and alphabetically by name.
   *Resource:* [Introduction to Spreadsheets (video)](https://www.youtube.com/watch?v=VFp6Yufsg-Q)
 * (b)
-  Using a word processor, write a draft letter to the parents of your troop's Scouts, inviting them to a troop event.
-  *Resource:* [Word Processing Tutorial (video)](https://www.youtube.com/watch?v=lrw5t7-Tzb8)
+  Using a word processor, write a draft letter inviting the parents or guardians of your troop's Scouts to a troop event. Resource: [Word Processing Tutorial (video)](https://youtu.be/lrw5t7-Tzb8)
 * (c)
   Using a graphics program, design and draw a campsite plan for your troop OR create a flyer for an upcoming troop event, incorporating text and some type of visual such as a photograph or an illustration.
   *Resource:* [Google Drawing Basics (video)](https://youtu.be/eSU0JbxWpoc?si=Ry7E0T6yO3djUivs)

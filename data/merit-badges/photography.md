@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/photography/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -15,7 +15,8 @@ Beyond capturing family memories, photography offers a chance to be creative. Ma
 
 ## The previous version of the Merit Badge requirements can be found in Scoutbook
 
-**NOTE:**  The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Photography.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
+**NOTE:** Check out the Digital Resource Guide for the Photography merit badge [HERE](https://www.scouting.org/skills/merit-badges/digital-resource-guides/photography/) for detailed information and helpful resources to engage your learning and assist you along on your merit badge journey!
+ The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Photography.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
 
 1. Safety. Do the following:
 
@@ -71,7 +72,7 @@ Beyond capturing family memories, photography offers a chance to be creative. Ma
   Photograph one subject from two different angles or perspectives.
   *Resource:* [Pro Photo Secrets: Avoid Shadows & Master Poses (video)](https://youtube.com/shorts/o5yjHn56VtE?si=XC3OvPIABX276ZtY)
 * (b)
-  Photograph one subject from two different light sources - artificial and natural.
+  Photograph one subject from two different light sources—artificial and natural.
 * (c)
   Photograph one subject with two different depth of fields.
 * (d)
@@ -90,7 +91,7 @@ Beyond capturing family memories, photography offers a chance to be creative. Ma
 * (e)
   Nature shot
 * (f)
-  Picture of a person - candid, posed, or camera aware
+  Picture of a person—candid, posed, or camera-aware
 
 6. Describe how software allows you to enhance your photograph after it is taken. Select a photo you have taken, then do ONE of the following, and share what you have done with your counselor:
 *Resource:* [PHOTO EDITING FOR BEGINNERS - 9 Simple Steps to Improve Your Photos (video)](https://youtu.be/KR7L2oSRlwY)

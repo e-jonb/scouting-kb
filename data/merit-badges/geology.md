@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/geology/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -41,7 +41,7 @@ NOTE:**  The official merit badge pamphlets are now free and downloadable [HERE]
   Using topographical maps provided by your counselor, plot the stream gradients (different elevations divided by distance) for four different stream types (straight, meandering, dendritic, trellis). Explain which ones flow fastest and why, and which ones will carry larger grains of sediment and why.
   *Resource:* [How to Calculate the Gradient of a Slope (video)](https://youtu.be/3QFJ_uv2mGw)
 * (3)
-  On a stream diagram, show areas where you will find the following features: cut bank, fill bank, point bar, medial channel bars, lake delta. Describe the relative sediment grain size found in each feature.
+  On a stream diagram, show areas where you will find the following features: cut bank, fill bank, point bar, medial channel bars, and lake delta. Describe the relative sediment grain size found in each feature.
   *Resource:* [Point Bars and Cut Banks (video)](https://youtu.be/gjIrApP2tt8)
 * (4)
   Conduct an experiment approved by your counselor that shows how some sedimentary material carried by water may be too small for you to see without a magnifier.
@@ -83,7 +83,7 @@ NOTE:**  The official merit badge pamphlets are now free and downloadable [HERE]
 * (b)
   With your counselor's assistance, identify 15 different rocks and minerals. List the name of each specimen, tell whether it is a rock or mineral, and give the name of its class (if it is a rock) or list its identifying physical properties (if it is a mineral).
 * (4)
-  List three of the most common road building materials used in your area. Explain how each material is produced and how each is used in road building.
+  List three of the most common road-building materials used in your area. Explain how each material is produced and how each is used in road building.
   *Resource:* [Top Rock Types Used in Road Construction (website)](https://roblarquarryllc.com/top-rock-types-used-in-road-construction/)
 * (5)
   Do ONE of the following:

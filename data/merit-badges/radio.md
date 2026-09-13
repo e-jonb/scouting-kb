@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/radio/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -127,7 +127,7 @@ Radio is a way to send information, or communications, from one place to another
   How the phonetic alphabet is used to communicate clearly.
   *Resource:* [Learn the Phonetic Alphabet (video)](https://youtu.be/cFhZLaLDILQ)
 
-7. **Cell Phones** Do the following:
+7. **Cell Phones.** Do the following:
 
 * (a)
   Explain how cellular systems differ from broadcast and hobby radio.
@@ -260,7 +260,7 @@ Radio is a way to send information, or communications, from one place to another
 * (3)
   Use the FRS radios or GMRS walkie talkies with family, friends, or Scouts on a hike, at an event, or in a team game. Discuss what you learned with your counselor.
 
-9. **Careers.** Do ONE of the following.
+9. **Careers.** Do ONE of the following:
 
 * (a)
   Explore careers related to radio. Research one career to learn about the training and education needed, costs, job prospects, salary, job duties, and advancement. With permission of your parent or guardian, your research methods may include an internet or library search, an interview with a professional in the field, or a visit to a location where people in this career work or train. Discuss your findings and career interest with your counselor.

@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/geocaching/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -65,7 +65,7 @@ The word geocache is a combination of “geo,” which means “earth,” and �
 
 7. With your parent or guardian's permission, go to www.geocaching.com. Type in your city and state to locate public geocaches in your area. Share with your counselor the posted information about three of those geocaches. Then, pick one of the three and find the cache.
 
-**Note:** To fulfill this requirement, you will need to set up a free user account with www.Geocaching.com. Before doing so, ask your parent for permission and help.
+**Note:** To fulfill this requirement, you will need to set up a free user account with www.Geocaching.com. Before doing so, ask your parent or guardian for permission and help.
 *Resources:* [Geocaching.com (website)](https://www.geocaching.com/play)
  [How To Find Your First Geocache! (video)](https://youtu.be/-ddhwGsGDjs)
 

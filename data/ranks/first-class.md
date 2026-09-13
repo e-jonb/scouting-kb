@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/wp-content/uploads/2025/12/Scouts-BSA-Rank-Requirements.pdf
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 rank_order: 3
 content_type: pdf

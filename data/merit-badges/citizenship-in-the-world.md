@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/citizenship-in-the-world/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: true
 ---
@@ -25,7 +25,6 @@ Scouts who earn the Citizenship in the World merit badge will discover that they
 2. Explain how one becomes a citizen in the United States, and explain the rights, duties, and obligations of U.S. citizenship. Discuss the similarities and differences between the rights, duties, and obligations of U.S. citizens and the citizens of two other countries.
 *Resources:* [What Is Citizenship? (video)](https://youtu.be/JVXQvJvfuGw)
  [A Guide to the Bill of Rights (video)](https://youtu.be/yYEfLm5dLMQ)
-[What Are the Rights and Responsibilities of Citizens](https://youtu.be/AyY01lTZZMk?si=zznVuQnQry5uJirc)
  [Duties and Obligations of Being a Filipino Citizen (video)](https://youtu.be/TYtsc07PiLQ)
  [Fundamental Duties as a Citizen of India (video)](https://youtu.be/fxnVVftKrhI)
 
@@ -123,7 +122,7 @@ Scouts who earn the Citizenship in the World merit badge will discover that they
   Explain the purpose of a passport and visa for international travel.
   *Resources:* [Becoming a U.S. Citizen: An Overview of the Naturalization Process (video)](https://youtu.be/gDOXgWtCQxY)
    [What Is the Process for Obtaining a Permanent Residency in the US? (video)](https://youtube.com/shorts/Pmu0NXzj-Fo)
-   [Visa vs Passport—Know The Important Differences! (video)](https://youtu.be/R_OhIkzkF2Y)
+   [Research Your Destination (video)](https://youtu.be/YYRkAcJrDXI)
 
 7. Do TWO of the following (with your parent or guardian's permission) and share with your counselor what you have learned:
 
@@ -138,6 +137,8 @@ Scouts who earn the Citizenship in the World merit badge will discover that they
    [The New York Times World News (website)](https://www.nytimes.com/section/world)
 * (c)
   Visit with a student or Scout from another country and discuss the typical values, holidays, ethnic foods, and traditions practiced or enjoyed there.
+  *Resources:* [Japanese Health & Culture | Japan Food (video)](https://youtu.be/NGp3lgraFT8)
+   [Important Australian Celebrations and Commemorations (video)](https://youtu.be/BJkrNuv1OWw)
 * (d)
   Attend or participate in a World Organization of the Scouting Movement (WOSM) event such as the World Scout Jamboree, World Scout Moot, World Scout Congress, Jamboree Over The Air, or Jamboree Over The Internet. Attendance at a national or regional Jamboree sponsored by a WOSM-National Scout Organization is also allowed.
   *Resources:* [A Recap on the 25th World Scout Jamboree (video)](https://youtu.be/reg45_nepRo)

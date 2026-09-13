@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/chess/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -52,8 +52,8 @@ Chess is among the oldest board games in the world, and it ranks among the most 
   How to set up a chessboard
   *Resource:* [How to Set Up the Chess Board (video)](https://youtu.be/NPyuNpYfrDc)
 * (c)
-  How each chess piece moves and captures, including: four rules of castling, en passant captures, pawn promotion, check, ways to get out of check, and checkmate.
-  *Resources:* [How to Move the Chess Pieces? (video)](https://youtu.be/RpbQjiJ5ops)
+  How each chess piece moves and captures, including: four rules of castling, en passant captures, pawn promotion, check, ways to get out of check, and checkmate
+  *Resources:* [How To Move the Chess Pieces? (video)](https://youtu.be/RpbQjiJ5ops)
    [Chess: Castling and En Passant (video)](https://youtu.be/1Ut3Zw61v9M)
    [Check! | Chess Term (video)](https://youtu.be/C6bqDvAZVTk)
    [Checkmate | Chess Terms (video)](https://youtu.be/Svswkqslr9I)
@@ -103,15 +103,15 @@ Chess is among the oldest board games in the world, and it ranks among the most 
 * (c)
   Set up a chessboard as follows and with White to move first, demonstrate how to force checkmate on the Black king:
 * (1)
-  White on *e1*, the White rooks on *a1* and *h1*, and the Black king on *e5*.
+  White on *e1*, the White rooks on *a1* and *h1*, and the Black king on *e5*
 * (2)
-  White King on *e1*, White queen on *d1*, Black king on *e5*.
+  White king on *e1*, White queen on *d1*, Black king on *e5*
 * (3)
-  White king on *e1*, White rook on *a1*, Black king on *e5*.
+  White king on *e1*, White rook on *a1*, Black king on *e5*
 * (d)
   With White king on *d4*, White pawn on *e3*, and Black king on *e6*:
 * (1)
-  With White to move, demonstrate how White can force Black to allow his pawn to reach the last rank and be promoted to a queen.
+  With White to move, demonstrate how White can force Black to allow their pawn to reach the last rank and be promoted to a queen.
 * (2)
   With Black to move, demonstrate how Black can force a draw.
 * (e)

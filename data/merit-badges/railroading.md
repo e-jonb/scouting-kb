@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/railroading/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -156,7 +156,7 @@ By earning this badge, Scouts can learn about the history of railroading, its pl
   Name the scale of four popular model railroad gauges. Identify the scale of four model cars or locomotives.
   *Resource:* [Comparing Model Train Scales: T, Z, N, Tt, Ho, S, O, G Scales (video)](https://youtu.be/b5lk_2ROlD0)
 * (4)
-  Locate the website of four model railroad - related manufacturers or magazine publishers. Print information on their products and services and discuss the information with your counselor.
+  Locate the websites of four model railroad-related manufacturers or magazine publishers. Print information about their products and services, and discuss the information with your counselor.
 * (5)
   Build one railroad structure (from scratch or using a kit), paint and weather the structure, mount it on your layout or diorama, and make the surrounding area on the diorama scenic.
   *Resources:* [Weather Plastic Kit Buildings Easy—Detailed Guide DIY (video)](https://youtu.be/h0xQB2J2HKg)
@@ -179,7 +179,7 @@ By earning this badge, Scouts can learn about the history of railroading, its pl
 * (b)
   **Option B—Railfanning.** With your parent or guardian's and counselor's approval, do TWO of the following:
 * (1)
-  Visit a railroad museum, historical display, or a prototype railroad sponsored public event. With permission, photograph, digitally record, or sketch items of interest. Explain what you saw and describe your photos, sketches, or video.
+  Visit a railroad museum, historical display, or a prototype railroad-sponsored public event. With permission, photograph, digitally record, or sketch items of interest. Explain what you saw and describe your photos, sketches, or video.
   *Resources:* [Railroading Museums in the US (website)](https://whichmuseum.com/place/united-states-2682?q=railroad)
    [Railroad Museum Etiquette (video)](https://youtu.be/jaU7xtVQBPM)
 * (2)

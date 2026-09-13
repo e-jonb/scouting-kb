@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/dentistry/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -32,7 +32,7 @@ Teeth do a lot more than just peek out from under that winning smile. They have 
 2. Do the following:
 
 * (a)
-  Tell or write about what causes dental decay and gum disease.Tell how each of the following contributes to dental decay and gum disease: bacterial plaque, sugars, and acid.
+  Tell or write about what causes dental decay and gum disease. Tell how each of the following contributes to dental decay and gum disease: bacterial plaque, sugars, and acid.
   *Resources:* [What Causes Cavities? (video)](https://youtu.be/zGoBFU1q4g0)
    [What Causes Tooth Decay? (video)](https://youtu.be/BE_h4bTdcdQ)
 * (b)
@@ -77,7 +77,7 @@ Teeth do a lot more than just peek out from under that winning smile. They have 
 6. Do TWO of the following:
 
 * (a)
-  Make a model tooth out of soap, clay, paper-mache, or wax. Using a string and a large hand brush, show your troop or a school class proper tooth-brushing and flossing procedures.
+  Make a model tooth out of soap, clay, paper-mâché, or wax. Using a string and a large hand brush, show your troop or a school class proper tooth-brushing and flossing procedures.
   *Resources:* [Very Easy Teeth Model Making Using Clay(Play-Doh™) (video)](https://youtu.be/dh2El0Ehy0w)
    [How To Brush Your Teeth (video)](https://youtu.be/xm9c5HAUBpY)
    [How To Floss Your Teeth (video)](https://youtu.be/HhdoPXNKNm4)

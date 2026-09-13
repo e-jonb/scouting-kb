@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/scouting-heritage/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -44,6 +44,7 @@ Explore the origins of the Scouting movement by earning the Scouting Heritage Me
   *Resource:* [Green Bar Bill Hillcourt Biography (video)](https://www.youtube.com/watch?v=ZJofraVDGuA)
 * (7)
   Frederick Russell Burnham
+  *Resource:* [Frederick Russell Burnham and B–P's Campaign Hat (video)](https://youtu.be/YeCxTplW-Fc)
 * (8)
   Dr. Charles Eastman
   *Resource:* [Dr. Charles Eastman (video)](https://www.youtube.com/watch?v=xzW4DLLuLoc)
@@ -60,7 +61,8 @@ Explore the origins of the Scouting movement by earning the Scouting Heritage Me
   *Resources:* [Artifact of the Week - World Scout Jamborees Part 01 (video)](https://www.youtube.com/watch?v=8p-SalnhA4Q)
    [Artifact of the Week - World Scout Jamborees Part 02 (video)](https://www.youtube.com/watch?v=JjdgmAKqUS4)
 * (3)
-  *Scouts BSA Handbook* Resources: [NSM History of the *Scout Handbook* (video)](https://youtu.be/X2njF0Sv5q8)
+  *Scouts BSA Handbook*
+  *Resources:* [NSM History of the *Scout Handbook* (video)](https://youtu.be/X2njF0Sv5q8)
    [Artifact of the Week - First *Scout Handbook* (video)](https://youtu.be/JaGjYXkcyLU)
 * (4)
   *Scout Life* magazine (formerly *Boys' Life*) Resources: [Artifact of the Week—*Boys' Life* to *Scout Life* (video)](https://youtu.be/R55NMMY21TM)

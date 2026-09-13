@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/multisport/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -68,7 +68,7 @@ Complete ALL of the following for the multisport format option you selected in r
   Before doing requirements 5 through 8, earn the Swimming merit badge.
   *Resource:* [Swimming Merit Badge (website)](https://www.scouting.org/merit-badges/swimming/)
 * (b)
-  Explain the components of the Scouting America Safe Swim Defense program and how you will ensure they are in place when you swim.
+  ..Explain the components of the Scouting America Safe Swim Defense guidelines and how you will ensure they are in place when you swim.
   *Resource:* [Safe Swim Defense (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Multisport/safe_swim_defense.pdf)
 * (c)
   Explain to your counselor the difference between a pool swim and an open water swim, including at what water temperature it is appropriate to wear a wet suit.

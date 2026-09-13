@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/surveying/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -17,12 +17,12 @@ While earning this merit badge, Scouts will discover how land is measured and ho
 
 **NOTE:**  The official merit badge pamphlets are now free and downloadable [HERE](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Surveying.pdf) or can be purchased at the [Scout Shop.](https://www.scoutshop.org/)
 
-1. Show that you know first aid for the types of injuries that could occur while surveying, including cuts, scratches, snakebite, insect stings, tick bites, heat and cold reactions, dehydration. Explain to your counselor why a surveyor should be able to identify the poisonous plants and poisonous animals that are found in your area. Show that you know first aid for the types of injuries that could occur while surveying, including cuts, scratches, snakebite, insect stings, tick bites, heat and cold reactions, dehydration. Explain to your counselor why a surveyor should be able to identify the poisonous plants and poisonous animals that are found in your area.
-*Resources:* [How To Treat Cuts & Scrapes | First Aid Training (video)](https://youtu.be/L77rERL64zc)
+1. Show that you know first aid for the types of injuries that could occur while surveying, including cuts, scratches, snake bite, insect stings, tick bites, heat- and cold-related reactions, and dehydration. Explain to your counselor why a surveyor should be able to identify the poisonous plants and animals found in your area.
+*Resources:* [How To Treat Cuts & Scrapes (video)](https://youtu.be/L77rERL64zc)
  [Snake Bites (website)](https://www.scouting.org/health-and-safety/safety-moments/snake-bites/)
  [Bites or Stings of Insects and Arachnids (video)](https://youtu.be/qP2ETKAOPWo)
- [Heat and Cold Emergencies—How To Treat Dehydration (video)](https://youtu.be/3q0s8uKfE8I?si=vq4wMb0A7B56U_NR)
- [First Aid Training—St John Ambulance (video)](https://youtu.be/DXo5hmiFQmQ)
+ [Heat and Cold Emergencies—How To Treat Dehydration (video)](https://youtu.be/3q0s8uKfE8I)
+ [First Aid Training (video)](https://youtu.be/DXo5hmiFQmQ)
 
 2. Do the following:
 

@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/cybersecurity/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -102,7 +102,7 @@ The Cybersecurity Merit Badge equips Scouts with essential knowledge and skills 
   *Resources:* [How Not To Get Hacked: Install Updates (Code.org) (video)](https://youtu.be/goMnkhKBOHY?si=Kw59euFrK7E6ZGhk)
    [How Important Are Software Updates (website)](https://www.safesearchkids.com/how-important-are-software-updates-for-device-safety-and-your-protection/)
 * (2)
-  Demonstrate to your counselor how to check for, download, and install the latest updates for your computer or mobile device, or another computer you have permission to use (if you are unable to do this on your computer, you may use an online guide with screenshots to demonstrate this). Show your counselor how to verify that your computer or mobile device is up-to-date.
+  Demonstrate to your counselor how to check for, download, and install the latest updates for your computer or mobile device, or another computer you have permission to use. (If you are unable to do this on your computer, you may use an online guide with screenshots to demonstrate this.) Show your counselor how to verify that your computer or mobile device is up-to-date.
   *Resource:* [Keep Your Device's Operating System and Applications Up to Date | CISA (website)](https://www.cisa.gov/resources-tools/training/keep-your-devices-operating-system-and-applications-date)
 * (c)
   **System security.** With your parent or guardian's permission, do THREE of the following using a computer or mobile device, and discuss with your counselor:
@@ -201,7 +201,8 @@ The Cybersecurity Merit Badge equips Scouts with essential knowledge and skills 
 8. **Cybersecurity Activities.** Do ONE of the following:
 
 * (a)
-  Learn about a cybersecurity competition, camp, or other activity you could participate in (either now or in the future). Share what you learned with your counselor, including the type of activity, time commitment, and age of participants.*Resources:* [CyberPatriot: National Youth Cyber Defense Competition (website)](https://www.uscyberpatriot.org/)
+  Learn about a cybersecurity competition, camp, or other activity you could participate in (either now or in the future). Share what you learned with your counselor, including the type of activity, time commitment, and age of participants.
+  *Resources:* [CyberPatriot: National Youth Cyber Defense Competition (website)](https://www.uscyberpatriot.org/)
    [AFA CyberCamps (website)](https://www.uscyberpatriot.org/afa-cybercamp-overview/)
    [U.S. Cyber Camp (website)](https://www.rocketcenter.com/SpaceCamp)
    [National Cyber League (website)](https://nationalcyberleague.org/)

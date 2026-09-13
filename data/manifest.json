@@ -2,7 +2,7 @@
   "built": "2026-09-13",
   "version": "2026.Q3",
   "tier_built": 1,
-  "forced": false,
+  "forced": true,
   "counts": {
     "councils": 228,
     "ranks": 7,

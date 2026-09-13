@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/first-aid/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: true
 ---
@@ -58,10 +58,10 @@ First aid—caring for injured or ill persons until they can receive professiona
   *Resource:* [Scout Health Forms (website)](https://www.scouting.org/health-and-safety/safety-moments/annual-health-and-medical-record/)
 * (b)
   Using checklists provided in the *First Aid* merit badge pamphlet or ones approved by your counselor, do the following:
+  *Resources:* [Personal, Family, and Troop First Aid Kit Checklist (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/First%20Aid/Personal%20Family%20Troop%20First%20Aid%20Kit%20Checklist.pdf)
+   [First Aid Kit Checklists (website)](https://scoutlife.org/video-audio/4937/first-aid-kit-buying-guide/)
 * (1)
   Assemble a personal first-aid kit for hiking and backpacking. Demonstrate the proper use of each item in your first-aid kit to your counselor.
-  *Resources:* [Personal, Family, and Troop First Aid Kit Checklist (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/First%20Aid/Personal%20Family%20Troop%20First%20Aid%20Kit%20Checklist.pdf)
-   [First Aid KIt Checklists (website)](https://scoutlife.org/video-audio/4937/first-aid-kit-buying-guide/)
 * (2)
   With your counselor, inspect a unit, home, vehicle, or camp first-aid kit and discuss your findings.
 
@@ -256,7 +256,7 @@ First aid—caring for injured or ill persons until they can receive professiona
   Elastic wrap and cravat bandages for ankle sprain
   *Resource:* [Elastic Wrap for Ankle Sprain (video)](https://youtu.be/KRyaemlcJAM?si=_A2ie3PNfdiH1n-0)
 * (3)
-  Elastic wrap and cravat bandages for wrist sprain or hand injury.
+  Elastic wrap and cravat bandages for wrist sprain or hand injury
   *Resource:* [Wrist Wrap (video)](https://youtu.be/tdRMJIu2E08)
 * (e)
   Demonstrate the proper procedures for handling and splinting of suspected closed or open fractures or dislocations of the:
@@ -337,21 +337,21 @@ First aid—caring for injured or ill persons until they can receive professiona
 12. **Mental Health Conditions.** Describe the following:
 
 * (a)
-  Reactions associated with at least three stressful situations, such as mountain backpacking, rappelling, a ropes course, speaking before an audience, making a phone call to an adult, taking a swim test, missing home, lighting a match, trying out for a sports team, meeting someone for the first time, or other stressful circumstances.
+  Reactions associated with at least three stressful situations, such as mountain backpacking, rappelling, a ropes course, speaking before an audience, making a phone call to an adult, taking a swim test, missing home, lighting a match, trying out for a sports team, meeting someone for the first time, or other stressful circumstances
   *Resources:* [3 Tools for Situational Anxiety (video)](https://youtu.be/_H5QFfiU0s0)
    [Overcoming Social Anxiety (video)](https://youtu.be/BmX6GXDvlLM)
-   [Power of Self-Confidence (video)](https://www.youtube.com/watch?v=gTd6Lq1M9Tc)
-   [Getting Ready for Tryouts (video)](https://youtu.be/a_dVK2EEWKE)
+   [Power of Self-Confidence (video)](https://youtu.be/gTd6Lq1M9Tc)
+   [Getting Ready for Tryouts (video)](https://youtu.be/gTd6Lq1M9Tc)
 * (b)
-  The actions that you and others should take to prepare for and manage these situations.
+  The actions that you and others should take to prepare for and manage these situations
   *Resources:* [Techniques to Manage Stress (video)](https://youtu.be/h2zWopNUUJE)
    [Box Breathing | The Breathing Exercise Used By Navy SEALs (video)](https://youtu.be/UC6HUrneIWI)
    [Tips for Overcoming Phone Anxiety (video)](https://youtu.be/QcKbxaGpwf4)
    [How To STOP Letting Social Anxiety Control You (video)](https://youtu.be/wbroM1Di-bI)
 * (c)
-  The indications that someone might be a danger to themselves or others.
+  The indications that someone might be a danger to themselves or others
 * (d)
-  The actions that you should take if you suspect that someone might be a danger to themselves or others.
+  The actions that you should take if you suspect that someone might be a danger to themselves or others
 
 13. **Miscellaneous Conditions.** Describe the symptoms and signs of, show first aid for, and explain prevention of the following conditions:
 

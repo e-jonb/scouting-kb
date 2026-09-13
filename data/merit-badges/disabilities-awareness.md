@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/disabilities-awareness/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -66,7 +66,7 @@ Understand various disabilities and how they affect your friends, family, and co
 
 4. Do ONE of the following options:
 
-* **Option A—Access.**. Visit TWO of the following locations and take notes about the accessibility to people with disabilities. In your notes, give examples of five things that could be done to improve upon the site and five things about the site that make it friendly to people with disabilities. Discuss your observations with your counselor.
+* **Option A—Access.** Visit TWO of the following locations and take notes about the accessibility to people with disabilities. In your notes, give examples of five things that could be done to improve upon the site and five things about the site that make it friendly to people with disabilities. Discuss your observations with your counselor.
   *Resources:* [NYC Students With Disabilities Speaking About Accessible Schools (video)](https://youtu.be/Cok1f-_3ydE)
    [Special Needs Prepared Camps (website)](https://www.scouting.org/resources/disabilities-awareness/)
 * (1)

@@ -1,6 +1,6 @@
 ---
 source: https://www.scouting.org/merit-badges/woodwork/
-fetched: 2026-08-02
+fetched: 2026-09-13
 bsa_version: 2026.Q3
 eagle_required: false
 ---
@@ -68,8 +68,8 @@ Wood is an amazingly versatile, practical, yet beautiful material. A skilled cra
   *Resources:* [The Special Wooden Box / Invisible Wooden Hinge - Using Basic Tools / Dovetail Joints (video)](https://youtu.be/Syv3JzRXld8?si=LG_MXwk4-tBuDBgK)
    [An Absurd Number of Wood Box Making Tips & Tricks (video)](https://youtu.be/TazBJ5MSMgc?si=ulffNFnBiQ-I22fi)
 * (e)
-  Help make wooden toys for underprivileged children; OR help carry out a woodworking service project approved by your counselor for a charitable organization.
-  *Resource:* [How to Make Wooden Toys for Kids | DIY | Great Home Ideas (video)](https://youtu.be/IwLwNGAxSfg?si=upaHucGcY9scLFYB)
+  Help make wooden toys for underprivileged children OR help carry out a woodworking service project approved by your counselor for a charitable organization.
+  *Resource:* [How To Make Wooden Toys for Kids | DIY | Great Home Ideas (video)](https://youtu.be/IwLwNGAxSfg)
 
 7. Talk with a cabinetmaker or finish carpenter. Learn about training, apprenticeships, career opportunities, work conditions, work hours, pay rates, and union organization that woodworking experts have in your area.
 *Resources:* [A Day @ AWC : Careers in the Wood Industry (video)](https://youtu.be/lPTR2xdIz9M?si=pyFe8tLbhOh0zqT3)
