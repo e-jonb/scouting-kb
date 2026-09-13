@@ -1,3 +1,34 @@
+> # ⚠️ SUPERSEDED – decision made 2026-09-13
+>
+> **The Studio decided both halves on 2026-09-13, the same day this brief was written.** Roles are
+> ceded to `scouting-reference` (its ADR-006, Accepted); manuals are unscheduled behind a three-part
+> trigger. The recommendations below were accepted – **but the reasoning on file is different, and
+> deliberately so.** Do not cite this brief's rationale.
+>
+> | For | Go to |
+> |---|---|
+> | The decision, and the reason of record | `docs/PLAYBOOK.md` – "A scraped tier needs an external enumerating authority" |
+> | Roles ownership | `scouting-reference/docs/decisions/ADR-006-position-descriptions-ownership.md` |
+> | What would restart the manuals work | `DEVELOPMENT_ROADMAP.md` – "Program manuals – unscheduled" |
+>
+> **Still accurate:** the three-document conflict; the source probes as dated observations; the
+> 27,267,426-byte Guide to Advancement; the PDF failure-class list; the two open design questions
+> (what is a file, and how to cite a page that moves between editions).
+>
+> **Superseded:** the *rationale*. This brief argued from ADR-001's filing order and from role pages
+> probably not being scrapeable. The Studio rejected both as load-bearing – the first is an argument
+> from filing order, the second dies the moment someone finds an index. The reason of record is that
+> a scraped tier needs an external authority enumerating its contents, and roles have none.
+>
+> **Superseded on the evidence, too:** this brief's "Known unknowns" worried that the roles probe was
+> three guessed URLs rather than an enumeration. It has since been enumerated – 1,504 pages from the
+> site's own sitemaps, 2026-09-13 – confirming no canonical set of unit position descriptions exists,
+> and turning up one thing the brief did not know about: `/resources/los/positions/`, a real
+> Language of Scouting position glossary. See the PLAYBOOK entry.
+>
+> Kept, not rewritten: this is the record of what was known and argued at the time, and correcting it
+> would destroy the evidence for judging the decision later. Same treatment `SESSION_LOG.md` got.
+
 # Decision Brief – Tier 3 (Roles + Program Manuals)
 
 **Status:** Decision requested \

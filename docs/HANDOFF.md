@@ -26,6 +26,8 @@ This is a data package, not an app. The scraper in `scraper/` produces versioned
 
 **A `data/` file can be a faithful scrape of a stale source.** Added 2026-09-13: Citizenship in Society was discontinued effective 2026-02-27 (Eagle-required set 14 → 13), but the rank requirements PDF this repo scrapes, the 2026 Scouts BSA Requirements book, and the badge's own page all still show the old program. `data/ranks/eagle-scout.md` and `data/merit-badges/citizenship-in-society.md` now carry a `note:` saying so. **Citizenship in the Community was not affected and is still Eagle-required** – it was the subject of the query that found this. The `eagle_required` flags were already correct; they are read from the live eagle-required index on every build. See `docs/PLAYBOOK.md`, "A program change can outrun BSA's own published source."
 
+**Tier 3 is closed, not pending.** Decided 2026-09-13: roles are `scouting-reference`'s work, manuals are unscheduled behind a stated trigger. The durable reason on file is that **a scraped tier needs an external authority that enumerates its contents, and roles have none** – the same thing that rescued Tier 2 in September when it took its scope from the charter agreement's RESOURCES list. Worth knowing before anyone re-opens it: the site *does* enumerate (robots.txt and `sitemap_index.xml` both return 200 here, 1,504 pages across the page sitemaps), and the enumeration was run – there is no canonical set of unit position-description pages, only a Language of Scouting glossary at `/resources/los/positions/`.
+
 **Provenance lives in `docs/PLAYBOOK.md`, not in `manifest.json`.** As of 2026-09-05 the manifest's `notes` field is a fixed generated pointer. Every other manifest field is machine-generated and consumers read `bsa_version` from it.
 
 ### Open items
@@ -35,7 +37,7 @@ This is a data package, not an app. The scraper in `scraper/` produces versioned
 | ~~Four policy files at `fetched: 2026-03-03`~~ | **Resolved 2026-09-13** by the forced Tier 2 pass. All four came back byte-identical apart from `fetched:` and `bsa_version:`, which independently confirms August's manual verdict that their content was clean | Nothing |
 | ~~Lazy-load placeholders in two policy files~~ | **Resolved 2026-09-13**, and the exemption is gone rather than widened: the real URL was in each element's `data-src` all along, so extraction now restores `src` instead of deleting the image. Merit badge files still have placeholders *dropped* and will gain real image URLs at the next Tier 1 rebuild | Nothing |
 | ~~Consumer pointers behind~~ | **Resolved 2026-09-07**, in the consumer repos rather than here. `scoutsync` bumped in `0a43411`, `troop-452-scouting-tool` in `fbb05b9`; both now pin `e5fe343`, and troop-452 pins `scouting-reference` at `1a10d2f` | Nothing |
-| Tier 3 not implemented | Roles and program manuals. **Scoped 2026-09-13 – see `docs/TIER-3-SCOPE-BRIEF.md`, awaiting a Studio call.** The roles half collides with `scouting-reference`'s ADR-001, which the Studio accepted later and which already claims position descriptions; the manuals half is a 2–3 session project (Guide to Advancement is a 27 MB PDF) that no consumer has asked for | Any consumer needing role/manual content. Nothing else – the recommendation is cede roles, defer manuals |
+| ~~Tier 3 not implemented~~ | **Resolved 2026-09-13 by Studio decision.** Roles ceded to `scouting-reference` (its ADR-006); manuals unscheduled behind a three-part trigger – a named consumer, a named manual, and the question it must answer. Tier 3 as written no longer exists. Rationale in `docs/PLAYBOOK.md`, "A scraped tier needs an external enumerating authority"; the pre-decision brief is kept, superseded, at `docs/TIER-3-SCOPE-BRIEF.md` | Nothing |
 | Council audit is not automatable | `fetch_councils_authenticated.py` needs a human logged into my.scouting.org; deliberately not wired into `build_all.py` | A true council refresh. The quarterly automated pass cannot catch renames or dissolutions |
 | PDF policy entries get no Check B | `charter-and-bylaws`, `rules-and-regulations` are Check-A-only – no heading to compare against | Nothing. Known and accepted gap |
 | `section_pattern` in `fetch_ranks.py` is dead config | Nothing reads it; `split_combined_pdf()` has its own dict, and the two disagree (`EAGLE SCOUT RANK` vs `EAGLE RANK`) | Nothing today. A trap for a maintainer who edits it in good faith |
@@ -53,6 +55,16 @@ This is a data package, not an app. The scraper in `scraper/` produces versioned
 ---
 
 ## Session Log
+
+### 2026-09-13 – Tier 3 resolved: roles ceded, manuals gated on a trigger
+
+**Done:** Implemented the Studio's decision. Documentation only – no scraper code, no `data/` change, no rebuild. Six files: `CLAUDE.md` tier table, `DEVELOPMENT_ROADMAP.md` (the `fetch_roles.py` instructions deleted outright rather than annotated), `README.md` roles row, a `PLAYBOOK.md` entry, this file, and a supersession header on `docs/TIER-3-SCOPE-BRIEF.md`.
+
+**Discovered, while verifying the direction rather than transcribing it:** the Studio's probe does not reproduce here. It recorded `403` on `robots.txt` and both sitemap paths and concluded the site "cannot be enumerated by the standard method"; from this machine `robots.txt` returns **200 to a bare curl**, names its own sitemap, and `sitemap_index.xml` returns 200 with valid XML. So the enumeration argument was available all along – **and it was run**, because it is the test the brief itself named as the one that would overturn its recommendation. 1,504 URLs across both page sitemaps, no canonical set of unit position descriptions, which leaves the decision standing on better evidence than either document had. The one real find is `/resources/los/positions/` – "Position Definitions", a genuine enumerated BSA position glossary, one-line definitions weighted toward professional staff titles. Not a substitute for role descriptions, but a citable source `scouting-reference` should know about.
+
+**The rationale recorded is the Studio's, not the brief's**, deliberately: a scraped tier needs an external enumerating authority, and roles have none. That reason survives the discovery of a position index; "ADR-001 is the later document" and "role pages aren't scrapeable" do not. Also corrected on the Studio's instruction: the governance-PDF precedent had two legs here, not one – the RESOURCES list named those documents first, and extraction quality only decided where they lived. No manual is on that list.
+
+**Needs Studio review:** the probe discrepancy above. Nothing blocks on it – the decision is unaffected and implemented – but ADR-006 and the Studio's own record may cite a `403` that does not reproduce.
 
 ### 2026-09-13 – Forced Tier 2 refresh; lazy-load placeholders resolved, not stripped
 

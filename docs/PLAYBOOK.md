@@ -2,6 +2,56 @@
 
 Longer-form scraper patterns and incident writeups. See CLAUDE.md for short, stable operating rules; this file is for the detailed "here's what broke and why" record.
 
+## A scraped tier needs an external enumerating authority, and roles have none (decided 2026-09-13)
+
+**Decision, by the Studio:** Tier 3's **roles** half is ceded to `scouting-reference` (its ADR-006, Accepted 2026-09-13). The **manuals** half is unscheduled, gated on a three-part trigger rather than marked "deferred". Tier 3 as originally written ceases to exist. The brief that preceded the decision is `docs/TIER-3-SCOPE-BRIEF.md`, kept as the record of what was known and argued beforehand.
+
+**The rationale is deliberately not the one the brief argued.** The brief rested on ADR-001 being the later Accepted document, and on role pages probably not being scrapeable. The first is an argument from filing order. The second rested on three guessed URLs and dies the moment someone finds an index – which, as it turns out, is exactly what happened (below). The durable reason the Studio put on file instead:
+
+> A scraped tier needs an external authority that enumerates its contents. Roles have none.
+
+On 2026-09-05, Tier 2 stopped being editorial judgment and took its coverage target from the RESOURCES list in the Annual Unit Charter Agreement, which gave it a defensible boundary, a completeness signal, and an annual re-check. Nothing comparable enumerates BSA *unit* positions. A `fetch_roles.py` URL table would be a hand-assembled guess at "what a leader needs", with nothing to say when it is complete and nothing to diff against each year – the exact condition Tier 2 was rescued from four months ago, rebuilt one directory over.
+
+This reason survives the discovery of a position index, and the filing-order and unscrapeability arguments do not. That is the point of preferring it.
+
+### The enumeration evidence, measured here 2026-09-13 – and it corrects the Studio's
+
+The Studio's direction stated that `robots.txt` and both sitemap paths return `403`, concluding "the site cannot be enumerated by the standard method." **That does not reproduce from this machine.** Re-measured immediately before writing this entry:
+
+| Request | Studio, 2026-09-13 | This machine, 2026-09-13 |
+|---|---|---|
+| `curl -A <browser UA> /robots.txt` | `403` | **`200`**, 341 bytes, real content |
+| `curl /robots.txt` (bare, no UA) | not tested | **`200`** |
+| `curl -A <browser UA> /sitemap_index.xml` | `403` | **`200`**, 5,508 bytes, valid XML |
+| `curl -A <browser UA> /wp-sitemap.xml` | `403` (Cloudflare challenge body) | `301` (redirect) |
+| `curl -A <browser UA> /health-and-safety/gss/` (control) | `200` | `200` |
+
+`robots.txt` names its own sitemap (`Sitemap: https://www.scouting.org/sitemap.xml`) and sets `Crawl-delay: 15`. The sitemap index lists `post-sitemap.xml`, `page-sitemap.xml`, `page-sitemap2.xml` and four attachment sitemaps. **The site enumerates fine.** Same standing rule as always: an access failure is a dated, client-specific observation, never a property of the source – which cuts both ways, so record this as "did not reproduce here", not as "the Studio was wrong about the site."
+
+**So the enumeration was run, because that is the test the brief said would overturn its own recommendation.** Pulling both page sitemaps yields **1,504 URLs**. Searching them for position-shaped pages finds scattered, program-specific pages – `/programs/cub-scouts/how-cub-scouting-is-organized/cub-scout-pack-committee/`, `/awards/awards-central/unit-leader/`, `/about/youth-safety/adult-leader-selection-process/`, `/outdoor-programs/outdoor-ethics/outdoor-ethics-guide/scope-of-position/` – and **no canonical set of unit position descriptions**. There is no `/positions/scoutmaster/`. The decision therefore stands on a full enumeration rather than on three guesses, which is a stronger footing than either the brief or the direction had.
+
+### What the enumeration did find, and it matters to the sibling repo
+
+`https://www.scouting.org/resources/los/positions/` – **"Position Definitions"**, part of the Language of Scouting. A single page, `200` to a bare `curl`, body prose in the raw HTML, enumerating BSA position titles with one-line definitions ("*activities director*: Responsible for the planning and development of council and district activities").
+
+It is a **glossary, not a set of position descriptions**, and it is weighted toward professional and council staff titles (area director, assistant director of field service) rather than the unit roles a troop needs. So it does not restore the case for scraping roles here – a one-line definition is not the purpose/duties/qualifications/relationships content `scouting-reference/data/positions/` targets. But it is a real, citable, enumerated BSA source on positions, and the curated repo should know it exists.
+
+### The training pages, and a correction the Studio already made to itself
+
+The only other position-shaped pages are `/training/position-specific-courses/` and `/training/position-trained-requirements/` – training requirements, not role descriptions. Both return `200`. An earlier version of the Studio's direction said both "render their body via JS"; that was never measured and is false, and the Studio corrected it in ADR-006 the same day. Confirmed here: a bare `curl` of `position-trained-requirements` contains the phrase "Trained Leader Requirements" in the raw HTML. **Do not treat these pages as needing a browser.** What was actually observed is that naive plain-text extraction returns navigation chrome, on pages carrying ~1.3 MB of it.
+
+Related, and the reason a size check is not a substitute: `gss09` is a hard `404` whose payload is ~1.4 MB. On this site page size distinguishes nothing and a size heuristic will happily pass a 404. Grep the body for a phrase only the real page would carry – and take that phrase from the page, not from memory.
+
+### The precedent correction that firms up the manuals half
+
+This repo had recorded the governance-PDF inclusion as "PDF-ness alone was not disqualifying; extraction quality decided it." **That was only the second leg.** The first was that Charter and Bylaws and Rules and Regulations are *named items on the charter RESOURCES list* – an external authority put them in scope, and extraction quality only decided where they would live.
+
+Checked against the RESOURCES mapping table in this file: **Guide to Advancement is not on it. No manual is.** So manuals have neither leg – no external warrant, and extraction quality unverified at book scale. That is a firmer floor under "unscheduled" than absence of demand, which is a reason to wait rather than a conclusion.
+
+### Why the manuals line states a trigger, not a status
+
+"Deferred" and "not scheduled" describe a feeling about priority and decay into invisible backlog. The condition is written into `DEVELOPMENT_ROADMAP.md` instead: **a named consumer, a named manual, and the question it must answer.** The third clause is the load-bearing one – the question determines chunking, and chunking is the only real design decision in the project. This repo has already had a backlog item sit five months past a dead precondition; a trigger is what stops that recurring.
+
 ## Lazy-load placeholders: restore the source, don't strip the image (fixed 2026-09-13)
 
 **The old behaviour and why it was incomplete.** scouting.org lazy-loads images: the markup ships `src="data:image/svg+xml,%3Csvg viewBox=...%3E%3C/svg%3E"` — an empty spacer with no shapes — and swaps the real file in via JS after the page settles, which is after the scraper has taken the DOM. Since 2026-08-02 `clean_markdown()` deleted a *bare standalone* placeholder, and deliberately left two shapes alone: one carrying alt text (the regex required empty `![]`), and one wrapped in a real outer link, where deleting the image would have taken the link's URL with it. Those exemptions were correct given a strip-only tool, and they left visible junk in `annual-health-medical-record.md` and `scouting-safely.md` for six weeks.

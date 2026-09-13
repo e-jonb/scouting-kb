@@ -91,27 +91,54 @@ git commit -m "chore(deps): update scouting-kb to 2026.Q2"
 
 ---
 
-## Adding Tier 3 Content (Roles + Program Manuals)
+## Tier 3, resolved (2026-09-13)
 
-> **Read `docs/TIER-3-SCOPE-BRIEF.md` before acting on this section.** As of 2026-09-13 the steps
-> below are **not** an agreed plan: step 1 (roles) collides with `scouting-reference`'s ADR-001,
-> which the Studio accepted in April and which claims position descriptions for the curated repo,
-> and step 2 (manuals) is materially larger than the one line it gets here. The brief asks the
-> Studio to settle both. Until it does, treat what follows as the original sketch, not a task list.
+**Roles are not this repo's work.** Position descriptions belong to `scouting-reference`, per its
+ADR-006, Accepted 2026-09-13. The `fetch_roles.py` instructions that stood here from March 2026
+until that date have been deleted rather than annotated – they described work this repo is not
+doing, and a struck-through task list still reads as a task list.
 
-Tier 3 is not yet implemented. When ready:
+**Manuals are unscheduled** – see below. Tier 3 as originally written (roles + manuals) no longer
+exists. The reasoning is in `docs/PLAYBOOK.md`, "A scraped tier needs an external enumerating
+authority"; what was known and argued beforehand is preserved in `docs/TIER-3-SCOPE-BRIEF.md`.
 
-1. Create `scraper/fetch_roles.py` — follow the pattern in `fetch_ranks.py`
-   - Known BSA role pages: Scoutmaster, Assistant Scoutmaster, Committee Chair, Treasurer, etc.
-   - Output: `data/roles/{slug}.md`
+### Program manuals – unscheduled
 
-2. Create `scraper/fetch_manuals.py` for program manuals (PDFs)
-   - These are large PDFs. Use `pdfplumber` to extract key sections by page range, not the full document.
-   - Output: `data/manuals/{slug}.md` with source URL and page reference in frontmatter
+Not deferred to a date. Deferred to a **condition**, because this repo has already had a backlog
+item sit five months past a dead precondition. Three things must be true before this work starts:
 
-3. Wire into `build_all.py` under `tier == 3`
+1. **A named consumer** – a specific repo that will read the output.
+2. **A named manual** – not "program manuals" as a category.
+3. **The question it must answer** – this one is load-bearing. The question determines how the
+   document is chunked, and chunking is the only real design decision in the project. Without it
+   the first session produces a shape nobody can evaluate.
 
-4. Update `CLAUDE.md` data structure section with new directories
+Until all three exist, this is not ready to pick up, and nothing here should be read as a next task.
+
+**What a future scoping session needs to know.** Guide to Advancement (`33088.pdf`) is
+**27,267,426 bytes** – measured 2026-09-13. It is also not named on the Annual Unit Charter
+Agreement's RESOURCES list, and neither is any other manual, so manuals have no external warrant of
+the kind that put the governance PDFs in Tier 2.
+
+The extraction cost is the part that is easy to underestimate. A **15-page** rank PDF produced six
+distinct failure classes in a single session, every one of which applies again at book scale:
+
+- doubled glyphs from fake-bold printing, which corrupted a section-boundary regex and let one
+  rank silently absorb another's entire content
+- blank fill-in tables that consumed list numbering, rendering requirement 4 as "14."
+- two-column lettered lists that interleave into unreadable merged lines under plain extraction
+- footnote markers glued onto the words preceding them, and footnotes printed mid-document rather
+  than in a trailing block
+- table row counts invisible to text-based counting, because some rows are genuinely empty
+- a missing blank line before a heading, merging a whole section into the preceding requirement
+
+All six are written up in `docs/PLAYBOOK.md`. Two further design questions have no answer yet:
+what constitutes one output *file*, and what a stable citation looks like given that page numbers
+shift between editions – a page reference in frontmatter is wrong the first time BSA reflows the
+document, and wrong silently.
+
+If it is ever built: `scraper/fetch_manuals.py`, output to `data/manuals/{slug}.md`, wired into
+`build_all.py` under `tier == 3`, with `CLAUDE.md`'s data-structure section updated to match.
 
 ---
 

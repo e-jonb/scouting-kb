@@ -14,7 +14,7 @@ Not intended for external contributions or general use.
 | Ranks | 7 `.md` files + index (Scout → Eagle) | scouting.org/programs/scouts-bsa/ |
 | Councils | `councils.json` + `councils.md` | BSA council finder |
 | Policies | Key unit-leader policies (two-deep, SYT, health forms, GSS) | scouting.org/health-and-safety/ |
-| Roles | Scoutmaster, ASM, Committee Chair, etc. | _Tier 3 — coming later_ |
+| Roles | Not here – position descriptions live in the curated sibling repo | [`scouting-reference`](../scouting-reference) (`data/positions/`), per its ADR-006 |
 
 Each file includes frontmatter with source URL, fetch date, and BSA version quarter.
 
