@@ -11,7 +11,7 @@
 ## Current State
 
 **As of:** 2026-09-13 \
-**Corpus version:** 2026.Q3, `built: 2026-09-13`, `tier_built: 1` \
+**Corpus version:** 2026.Q3, `built: 2026-09-13`, `tier_built: 1`, `forced: true` \
 **Tier 1:** built – councils 228, ranks 7, merit badges **144** \
 **Tier 2:** built – policies 16 \
 **Tier 3:** not implemented (roles, program manuals)
@@ -32,16 +32,17 @@ This is a data package, not an app. The scraper in `scraper/` produces versioned
 
 | Item | State | Blocks |
 |---|---|---|
-| Four policy files still at `fetched: 2026-03-03` | `two-deep-leadership`, `reporting-youth-protection`, `aquatics-safety`, `camping-permissions`. Content verified clean in August; only the dates are stale, because a non-`--force` build skips existing files | Nothing hard. Resolves on the next full `--force` refresh |
+| Four policy files still at `fetched: 2026-03-03` | `two-deep-leadership`, `reporting-youth-protection`, `aquatics-safety`, `camping-permissions`. Content verified clean in August; only the dates are stale, because a non-`--force` build skips existing files | Nothing hard. Resolves on a forced **Tier 2** pass – the 2026-09-13 forced run was Tier 1 only |
+| Lazy-load placeholders survive in two policy files | `annual-health-medical-record.md`, `scouting-safely.md`. `clean_markdown()` strips only *bare standalone* `![](data:...)` placeholders; these carry alt text or sit inside a real outer link, which is the documented deliberate exemption. Pre-existing, untouched by the Tier 1 rebuild | Nothing. Revisit if a consumer renders them visibly |
 | ~~Consumer pointers behind~~ | **Resolved 2026-09-07**, in the consumer repos rather than here. `scoutsync` bumped in `0a43411`, `troop-452-scouting-tool` in `fbb05b9`; both now pin `e5fe343`, and troop-452 pins `scouting-reference` at `1a10d2f` | Nothing |
 | Tier 3 not implemented | Roles and program manuals. No `fetch_roles.py` | Any consumer needing role/manual content |
 | Council audit is not automatable | `fetch_councils_authenticated.py` needs a human logged into my.scouting.org; deliberately not wired into `build_all.py` | A true council refresh. The quarterly automated pass cannot catch renames or dissolutions |
 | PDF policy entries get no Check B | `charter-and-bylaws`, `rules-and-regulations` are Check-A-only – no heading to compare against | Nothing. Known and accepted gap |
 | `section_pattern` in `fetch_ranks.py` is dead config | Nothing reads it; `split_combined_pdf()` has its own dict, and the two disagree (`EAGLE SCOUT RANK` vs `EAGLE RANK`) | Nothing today. A trap for a maintainer who edits it in good faith |
-| Sustained-load behaviour untested | Deliberately, not accidentally: settling it means trying to trip a third-party edge from this IP. The October `--force` run is the natural experiment — record the actual 403 rate | Nothing. Closing it upgrades a documented unknown to a measurement |
+| Sustained-load behaviour — **measured for CDP, still open for headless** | Forced Tier 1 rebuild 2026-09-13 over CDP/real Chrome: ~150 sequential requests (2 index pages, 1 combined rank PDF, 144 badge pages), **zero 403s, zero retries**. That is the path the scraper already uses, so it validates the status quo rather than the alternative — nobody has run a bulk pass with bare `curl` or headless Chromium, and this result says nothing about those | Nothing. The `_goto_with_retry()`/CDP defence is now backed by a measurement instead of an assumption |
 | ~~Art and Golf missing from the corpus~~ | **Resolved 2026-09-13.** Cause: `_BADGE_LINK_JS` required an anchor name longer than 5 characters, so "Art" and "Golf" were never crawled. Bound removed (the `/skills/` rule already excluded the nav links it guarded against); incremental Tier 1 build fetched both. Corpus now 144 | Nothing |
 | Two `note:` annotations are keyed to upstream staleness | The Eagle Scout `RANKS` note and `BADGE_NOTES["citizenship-in-society"]` both describe a lag in BSA's own documents. Drop each once upstream catches up – the rank PDF reissued with 13 badges, the badge pulled from the A-Z index | Nothing. Re-check at each refresh |
-| Next quarterly refresh | Due October 2026. Tier 1 has still not been **force**-rebuilt since the August fixes – the 2026-09-13 run was incremental and fetched only the two missing badges. The four policy files at `fetched: 2026-03-03` and the stale rank PDF both resolve on that run | – |
+| Next quarterly refresh | Due October 2026. **Tier 1 is now force-rebuilt** (2026-09-13). Tier 2 is not – the four policy files at `fetched: 2026-03-03` still need a forced Tier 2 pass | – |
 
 ### Do not re-litigate without escalating
 
@@ -52,6 +53,18 @@ This is a data package, not an app. The scraper in `scraper/` produces versioned
 ---
 
 ## Session Log
+
+### 2026-09-13 – Forced Tier 1 rebuild: 7 ranks, 144 badges, zero 403s
+
+**Done:** `build_all.py --tier 1 --force --skip councils --cdp-url http://localhost:9222`, real Chrome over CDP. 7/7 ranks, 144/144 badges, 151 files changed, no errors. Added `--skip` to `build_all.py` so councils can be excluded by flag rather than by hand: a forced Tier 1 run otherwise puts the zip-sampling fetcher over the authoritative 228-council file, a silent 40% loss. Verified by checksum that `councils.json` is byte-identical after the run.
+
+**Discovered / measured:**
+- **Zero 403s and zero retries across ~150 sequential requests** over the CDP path. This closes the sustained-load question *for the path the scraper already uses* and for nothing else – no bulk pass has ever been run with bare `curl` or headless Chromium, so the 2026-09-10 single-fetch results still do not generalise. The defence is now backed by a measurement rather than an assumption; the assumption it replaces was that we would see throttling, and we did not.
+- **All 7 rank files regenerate byte-identically apart from the `fetched:` date.** That is a free determinism check on the whole PDF pipeline – `dedupe_chars`, two-column reconstruction, footnote handling, the rebuilt merit badge table, and the new note injection all reproduce exactly.
+- **The badge diff is entirely upstream copy editing by BSA**, not extraction drift: trailing periods dropped from requirement clauses, title-case fixes in resource link text, `?si=` tracking parameters stripped from YouTube URLs, one stray decorative placeholder image gone from `dog-care`. Read the largest diffs individually to confirm it.
+- **Both `note:` annotations and the index `## Notes` section regenerate from the scraper**, which is the point of having put them there rather than hand-editing `data/`.
+
+**Needs Studio review:** nothing.
 
 ### 2026-09-13 – Incremental Tier 1 build: Art and Golf added, three latent build bugs fixed
 

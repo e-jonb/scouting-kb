@@ -2,6 +2,20 @@
 
 Longer-form scraper patterns and incident writeups. See CLAUDE.md for short, stable operating rules; this file is for the detailed "here's what broke and why" record.
 
+## Forced Tier 1 rebuild: what a clean one looks like, and the council trap in it (2026-09-13)
+
+**Command:** `build_all.py --tier 1 --force --skip councils --cdp-url http://localhost:9222`, against a real Chrome launched on a throwaway profile (`--user-data-dir=/tmp/chrome-cdp`; the port alone is not enough on this machine). 7/7 ranks, 144/144 badges, 151 files changed, no errors.
+
+**The trap: `--tier 1 --force` destroys the council data.** `fetch_councils.py` is the ~200-zip sampling fetcher; `data/councils/councils.json` holds the authoritative 228-council list that only `fetch_councils_authenticated.py` can produce, and that only a human logged into my.scouting.org can run. A forced Tier 1 run silently replaces 228 records with ~137, loses the 2 dissolutions and 2 renames, and reports success. `--skip` was added to `build_all.py` for this, with the reason in its `--help` text so the next person meets the warning where they are typing rather than in a doc they did not open. **Checksum `councils.json` before and after any forced Tier 1 run** — that is how this one was confirmed clean.
+
+**Three things worth knowing about a good rebuild, because they are what "no news" looks like:**
+
+1. **All 7 rank files came back byte-identical apart from the `fetched:` date.** That is a free determinism check on the entire PDF pipeline — `dedupe_chars()`, the two-column reconstruction, footnote reformatting, the rebuilt merit badge table, the new note injection. A rank diff that is *not* date-only after a no-op rebuild means something in that chain is non-deterministic, and that is worth stopping for.
+2. **The badge diff was 475/464 lines and contained no extraction drift at all.** Every change was BSA copy-editing its own pages: trailing periods dropped from requirement clauses, title-case fixes in resource link text (`What is CPTED?` → `What Is CPTED?`), `?si=` tracking parameters stripped from YouTube URLs, one decorative placeholder image removed from `dog-care`. The way to tell this apart from a regression is to sort the diff by size and read the largest files first — `crime-prevention.md` at 104 changed lines was the tell here, and it was entirely upstream.
+3. **Both `note:` annotations regenerated from the scraper**, along with the index `## Notes` section. That is the whole reason the annotation went into `BADGE_NOTES` and the `RANKS` entry instead of into the files: a hand edit in `data/` would have been erased by exactly this run.
+
+**Load measurement — read it narrowly.** ~150 sequential requests (2 index pages, 1 combined rank PDF, 144 badge pages), **zero 403s, zero retries**, no backoff triggered. This settles the open question *for the CDP path*, which is the path the scraper already takes — so it validates the status quo and argues for nothing. Nobody has run a bulk pass with bare `curl` or headless Chromium, and the 2026-09-10 single-fetch results still do not generalise to request 200 of a run. Note also what the absence of 403s does **not** license: concluding the host never throttles. One clean run from one IP on one afternoon is a dated observation like any other.
+
 ## Art and Golf were never in the corpus: a name-length filter, and three bugs behind it (found 2026-09-13)
 
 **The gap:** `data/merit-badges/` held 142 files; the live A-Z index resolves to 144 real badges. Missing: **Art** and **Golf**. Not a fetch failure — the crawl had never *seen* them.
