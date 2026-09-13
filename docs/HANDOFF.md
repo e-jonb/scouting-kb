@@ -10,7 +10,7 @@
 
 ## Current State
 
-**As of:** 2026-09-10 \
+**As of:** 2026-09-13 \
 **Corpus version:** 2026.Q3, `built: 2026-09-05`, `tier_built: 2` \
 **Tier 1:** built – councils 228, ranks 7, merit badges 142 \
 **Tier 2:** built – policies 16 \
@@ -23,6 +23,8 @@ This is a data package, not an app. The scraper in `scraper/` produces versioned
 **Two label checks guard the hand-maintained URL table** in `fetch_policies.py`, after two separate bugs shipped files whose bodies did not match their names. Check A is static (`python3 fetch_policies.py --check-labels`, exits non-zero) and runs at the start of every Tier 2 build; Check B is a post-fetch warning. Both currently pass. See `docs/PLAYBOOK.md` for what they do and, more usefully, what they do not cover.
 
 **Access claims in this repo are dated, client-specific and load-specific — never properties of the source.** Corrected 2026-09-10 after the Studio found the "scouting.org is permanently Cloudflare-blocked" lesson false. Bare curl and headless Chromium both return 200 with real content on scouting.org pages, and bare curl downloads valid PDFs from `www.scouting.org` and `filestore.scouting.org` alike. **The scraper keeps `_goto_with_retry()` and the CDP path anyway** — that evidence is single fetches, a build issues hundreds of requests, and this host throttles under sustained load. Do not read the corrected claims as an argument for simplifying the client. See `docs/PLAYBOOK.md`, "An access failure is dated, client-specific, and here load-specific."
+
+**A `data/` file can be a faithful scrape of a stale source.** Added 2026-09-13: Citizenship in Society was discontinued effective 2026-02-27 (Eagle-required set 14 → 13), but the rank requirements PDF this repo scrapes, the 2026 Scouts BSA Requirements book, and the badge's own page all still show the old program. `data/ranks/eagle-scout.md` and `data/merit-badges/citizenship-in-society.md` now carry a `note:` saying so. **Citizenship in the Community was not affected and is still Eagle-required** – it was the subject of the query that found this. The `eagle_required` flags were already correct; they are read from the live eagle-required index on every build. See `docs/PLAYBOOK.md`, "A program change can outrun BSA's own published source."
 
 **Provenance lives in `docs/PLAYBOOK.md`, not in `manifest.json`.** As of 2026-09-05 the manifest's `notes` field is a fixed generated pointer. Every other manifest field is machine-generated and consumers read `bsa_version` from it.
 
@@ -37,6 +39,8 @@ This is a data package, not an app. The scraper in `scraper/` produces versioned
 | PDF policy entries get no Check B | `charter-and-bylaws`, `rules-and-regulations` are Check-A-only – no heading to compare against | Nothing. Known and accepted gap |
 | `section_pattern` in `fetch_ranks.py` is dead config | Nothing reads it; `split_combined_pdf()` has its own dict, and the two disagree (`EAGLE SCOUT RANK` vs `EAGLE RANK`) | Nothing today. A trap for a maintainer who edits it in good faith |
 | Sustained-load behaviour untested | Deliberately, not accidentally: settling it means trying to trip a third-party edge from this IP. The October `--force` run is the natural experiment — record the actual 403 rate | Nothing. Closing it upgrades a documented unknown to a measurement |
+| Art and Golf merit badges missing from the corpus | `data/merit-badges/` has 142 files; the live A-Z index resolves to 144 real badges. Both `/merit-badges/art/` and `/merit-badges/golf/` return `200` (checked 2026-09-13). Cause not diagnosed – a Tier 1 index-crawl gap | A complete badge corpus. Fixing it needs a scrape run; a non-`--force` Tier 1 build fetches only the missing files |
+| Two `note:` annotations are keyed to upstream staleness | The Eagle Scout `RANKS` note and `BADGE_NOTES["citizenship-in-society"]` both describe a lag in BSA's own documents. Drop each once upstream catches up – the rank PDF reissued with 13 badges, the badge pulled from the A-Z index | Nothing. Re-check at each refresh |
 | Next quarterly refresh | Due October 2026. Last build was **Tier 2 only, not forced** – Tier 1 has not been rebuilt since the August fixes | – |
 
 ### Do not re-litigate without escalating
@@ -48,6 +52,14 @@ This is a data package, not an app. The scraper in `scraper/` produces versioned
 ---
 
 ## Session Log
+
+### 2026-09-13 – Citizenship badge verification; `note:` extended to ranks and merit badges
+
+**Done:** Verified a user claim that "Citizenship in the Community is no longer required." **The claim was wrong about that badge and right about its neighbour** – Citizenship in the Community is still Eagle-required (present on the live eagle-required index and as #2 on the 2026 Eagle Scout Rank Application). **Citizenship in Society** is the badge Scouting America discontinued, effective 2026-02-27: Eagle-required set 14 → 13, electives 7 → 8, total still 21, with a grandfathering window to 2026-12-31 for Scouts who had already started it. Added `inject_note()` to `utils.py` and wired a `note` key into `fetch_ranks.py` (`RANKS` entries) and `BADGE_NOTES` into `fetch_merit_badges.py`, then annotated `data/ranks/eagle-scout.md` and `data/merit-badges/citizenship-in-society.md`; `data/merit-badges/index.md` gained a generated `## Notes` section. No scraped text was edited and no `fetched:` date moved – nothing was re-fetched.
+
+**Discovered:** scouting.org disagrees with itself, per-document. The eagle-required index and the current application form carry the change; the rank PDF (`last-modified: 2025-12-11`), the 2026 requirements book (uploaded 2026-02) and the badge's own live page do not. The repo had faithfully scraped the losing half. **An authoritative source is authoritative per-document and per-date, never site-wide.** Also: the eagle-required page lists 17 badges for 13 slots because three are either/or – not a contradiction. `inject_note()` was validated by round-tripping the three existing policy files that already carry a note (byte-identical), with a negative control proving a wrong note does not match; its idempotency check failed first time (a stacked blank line) and was fixed before use. Incidentally found the corpus is missing the **Art** and **Golf** badges – logged as an open item, not fixed here, since it needs a scrape run.
+
+**Needs Studio review:** nothing. The Art/Golf gap and the two staleness-keyed notes are recorded as open items for the October refresh.
 
 ### 2026-09-10 – Access-failure claims narrowed, not reversed; folklore swept from the code
 

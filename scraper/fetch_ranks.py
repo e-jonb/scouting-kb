@@ -41,7 +41,7 @@ from rich.console import Console
 from utils import (
     download_pdf,
     slug, bsa_version_from_date, make_frontmatter,
-    write_md, rate_limit, make_browser_context
+    write_md, rate_limit, make_browser_context, inject_note
 )
 
 console = Console()
@@ -102,6 +102,14 @@ RANKS = [
         "pdf_url": None,  # No confirmed individual PDF — use combined
         "section_pattern": r"EAGLE SCOUT RANK",
         "description": "Highest rank. Requires 21 merit badges, demonstrated leadership, and an Eagle project.",
+        # A caveat about this file, rendered as `note:` frontmatter plus a body
+        # blockquote (see CLAUDE.md, "Frontmatter Standard"). The extraction is
+        # faithful to the PDF; the PDF is what is out of date, so the fix is to
+        # annotate rather than to edit the scraped text. Re-check at each refresh:
+        # drop this note once BSA reissues the PDF with 13 badges.
+        "note": (
+            "Requirement 3 below is reproduced as printed in the source PDF (last modified 2025-12-11) and lists 14 required merit badges, including Citizenship in Society. That badge was discontinued effective 2026-02-27 and the Eagle-required set is now 13 (https://www.scouting.org/program-updates/citizenship-in-society-merit-badge-discontinuance/); the other 13 are unchanged, Citizenship in the Community among them. Confirmed 2026-09-13 that Scouting America has not reissued this PDF, nor the 2026 Scouts BSA Requirements book - the current Eagle Scout Rank Application, form 512-728 (2026 printing), carries the up-to-date list."
+        ),
     },
 ]
 
@@ -660,6 +668,8 @@ async def fetch_ranks(
                     f"_{rank['description']}_\n\n"
                     f"{md_content}\n"
                 )
+                if rank.get("note"):
+                    full_content = inject_note(full_content, rank["note"])
                 write_md(out_file, full_content)
                 fetched += 1
                 console.print("[green]done[/green]")

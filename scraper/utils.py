@@ -44,6 +44,71 @@ def make_frontmatter(source_url: str, built_date: str, bsa_version: str, **extra
     return "\n".join(lines)
 
 
+NOTE_PREFIX = "> **Note:** "
+
+
+def inject_note(content: str, note: str) -> str:
+    """
+    Add the optional `note:` frontmatter key, and a matching `> **Note:**`
+    blockquote in the body, to an already-rendered markdown file.
+
+    `note` records a caveat about *this file* that a reader needs in order to use
+    it correctly — see CLAUDE.md, "Frontmatter Standard". It is rendered twice on
+    purpose: once as frontmatter for a consumer reading the file, and once in the
+    body so the caveat survives for a reader who only sees rendered markdown.
+
+    Written as a post-pass over finished content rather than as arguments to
+    `make_frontmatter()` so that one implementation serves both callers: a fetch
+    script annotating a file it just built, and a maintainer annotating a file
+    that is already in `data/` without re-fetching it. Two code paths for this
+    would drift, and a rebuild would then silently rewrite the annotation.
+
+    Idempotent: re-running it replaces an existing note rather than stacking a
+    second one. The note must be a single line and must not contain a double
+    quote, since it is emitted as a double-quoted YAML scalar.
+    """
+    if '"' in note or "\n" in note:
+        raise ValueError("note must be a single line with no double quotes")
+
+    lines = content.split("\n")
+    if lines[0].strip() != "---":
+        raise ValueError("content does not start with a frontmatter block")
+    close = next(i for i, ln in enumerate(lines[1:], start=1) if ln.strip() == "---")
+
+    fm = [ln for ln in lines[1:close] if not ln.startswith("note: ")]
+    fm.append(f'note: "{note}"')
+    body = []
+    skip_blank = False
+    for ln in lines[close + 1:]:
+        if ln.startswith(NOTE_PREFIX):
+            # Drop the blank line the old blockquote was followed by too, or a
+            # re-run would stack a blank line on every pass.
+            skip_blank = True
+            continue
+        if skip_blank:
+            skip_blank = False
+            if not ln.strip():
+                continue
+        body.append(ln)
+
+    # Body layout is `# Title`, optionally an italic one-line description, then
+    # content. The blockquote goes after that header block, matching how
+    # fetch_policies.py has always emitted it.
+    at = 0
+    while at < len(body) and not body[at].startswith("# "):
+        at += 1
+    at += 1
+    while at < len(body) and not body[at].strip():
+        at += 1
+    if at < len(body) and body[at].startswith("_") and body[at].rstrip().endswith("_"):
+        at += 1
+        while at < len(body) and not body[at].strip():
+            at += 1
+
+    body[at:at] = [NOTE_PREFIX + note, ""]
+    return "\n".join(["---", *fm, "---", *body])
+
+
 def write_md(path: Path, content: str) -> None:
     """Write markdown content to a file, creating parent directories as needed."""
     path.parent.mkdir(parents=True, exist_ok=True)

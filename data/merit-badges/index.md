@@ -159,3 +159,7 @@ _As of 2026.Q3. Total: 142 badges (17 Eagle-required)._
 | Wildland Fire Management | [wildland-fire-management.md](wildland-fire-management.md) |
 | Wood Carving | [wood-carving.md](wood-carving.md) |
 | Woodwork | [woodwork.md](woodwork.md) |
+
+## Notes
+
+- **Citizenship in Society** — Scouting America discontinued this merit badge effective 2026-02-27 - Scouts may no longer begin it, and the Eagle-required set dropped from 14 badges to 13 (https://www.scouting.org/program-updates/citizenship-in-society-merit-badge-discontinuance/). A Scout who had already started requirements before that date has until 2026-12-31 to finish and still count it toward Eagle. Its file in data/merit-badges/ is kept as a record of the discontinued badge; confirmed 2026-09-13 that scouting.org still serves this page and still lists the badge in its A-Z index, so a rebuild will keep picking it up.

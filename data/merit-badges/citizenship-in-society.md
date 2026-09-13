@@ -3,9 +3,12 @@ source: https://www.scouting.org/merit-badges/citizenship-in-society/
 fetched: 2026-08-02
 bsa_version: 2026.Q3
 eagle_required: false
+note: "Scouting America discontinued this merit badge effective 2026-02-27 - Scouts may no longer begin it, and the Eagle-required set dropped from 14 badges to 13 (https://www.scouting.org/program-updates/citizenship-in-society-merit-badge-discontinuance/). A Scout who had already started requirements before that date has until 2026-12-31 to finish and still count it toward Eagle. Its file in data/merit-badges/ is kept as a record of the discontinued badge; confirmed 2026-09-13 that scouting.org still serves this page and still lists the badge in its A-Z index, so a rebuild will keep picking it up."
 ---
 
 # Citizenship in Society Merit Badge
+
+> **Note:** Scouting America discontinued this merit badge effective 2026-02-27 - Scouts may no longer begin it, and the Eagle-required set dropped from 14 badges to 13 (https://www.scouting.org/program-updates/citizenship-in-society-merit-badge-discontinuance/). A Scout who had already started requirements before that date has until 2026-12-31 to finish and still count it toward Eagle. Its file in data/merit-badges/ is kept as a record of the discontinued badge; confirmed 2026-09-13 that scouting.org still serves this page and still lists the badge in its A-Z index, so a rebuild will keep picking it up.
 
 ## Merit Badge Overview
 

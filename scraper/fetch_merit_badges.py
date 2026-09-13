@@ -27,13 +27,28 @@ from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn, TaskPr
 from utils import (
     bsa_version_from_date, make_frontmatter,
     write_md, rate_limit, clean_markdown, clean_merit_badge_markdown,
-    absolutize_relative_links, extract_content, extract_merit_badge_content, make_browser_context
+    absolutize_relative_links, extract_content, extract_merit_badge_content, make_browser_context,
+    inject_note,
 )
 
 console = Console()
 
 BADGES_INDEX_URL = "https://www.scouting.org/skills/merit-badges/all/"
 EAGLE_REQUIRED_URL = "https://www.scouting.org/skills/merit-badges/eagle-required/"
+
+# Optional per-badge caveats, keyed by slug. Each becomes a `note:` frontmatter
+# key and a `> **Note:**` blockquote in that badge's file (see CLAUDE.md,
+# "Frontmatter Standard"). Hand-maintained: the pages themselves carry no
+# machine-readable signal for any of this.
+#
+# `eagle_required` is NOT maintained here - it is read from the live
+# eagle-required index on every build, so a badge entering or leaving the Eagle
+# set needs no code change. A note is for what the page does not say.
+BADGE_NOTES = {
+    "citizenship-in-society": (
+        "Scouting America discontinued this merit badge effective 2026-02-27 - Scouts may no longer begin it, and the Eagle-required set dropped from 14 badges to 13 (https://www.scouting.org/program-updates/citizenship-in-society-merit-badge-discontinuance/). A Scout who had already started requirements before that date has until 2026-12-31 to finish and still count it toward Eagle. Its file in data/merit-badges/ is kept as a record of the discontinued badge; confirmed 2026-09-13 that scouting.org still serves this page and still lists the badge in its A-Z index, so a rebuild will keep picking it up."
+    ),
+}
 
 
 def _clean_badge_name(name: str) -> str:
@@ -245,6 +260,8 @@ async def fetch_merit_badges(
                         f"# {badge['name']} Merit Badge\n\n"
                         f"{md_content}\n"
                     )
+                    if badge["slug"] in BADGE_NOTES:
+                        full_content = inject_note(full_content, BADGE_NOTES[badge["slug"]])
                     write_md(out_file, full_content)
                     fetched += 1
 
@@ -282,6 +299,15 @@ async def fetch_merit_badges(
         ]
         for b in elective_badges:
             index_lines.append(f"| {b['name']} | [{b['slug']}.md]({b['slug']}.md) |")
+
+        # Surface per-badge caveats on the index too. A consumer reading only the
+        # index would otherwise see a discontinued badge listed as an ordinary
+        # elective, with the caveat visible only inside the badge's own file.
+        noted = [b for b in badges if b["slug"] in BADGE_NOTES]
+        if noted:
+            index_lines += ["", "## Notes", ""]
+            for b in sorted(noted, key=lambda x: x["name"]):
+                index_lines.append(f"- **{b['name']}** — {BADGE_NOTES[b['slug']]}")
 
         write_md(output_path / "index.md", "\n".join(index_lines) + "\n")
 

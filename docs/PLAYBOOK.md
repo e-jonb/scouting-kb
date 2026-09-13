@@ -2,6 +2,37 @@
 
 Longer-form scraper patterns and incident writeups. See CLAUDE.md for short, stable operating rules; this file is for the detailed "here's what broke and why" record.
 
+## A program change can outrun BSA's own published source (found 2026-09-13)
+
+**How this started:** the user asked to verify that Citizenship in the Community is "no longer required" and to update the KB. **The premise was wrong, and the badge next to it was right** — Citizenship in the Community is still Eagle-required. The badge Scouting America discontinued is **Citizenship in Society**.
+
+**What was verified, and with what client — 2026-09-13, single fetches, bare `curl`:**
+
+| Source | Result |
+|---|---|
+| `/skills/merit-badges/eagle-required/` | `200`, 17 badge links, Citizenship in the Community present, Citizenship in Society absent |
+| `/program-updates/citizenship-in-society-merit-badge-discontinuance/` | `200`. Discontinued effective **2026-02-27**; Eagle set goes **14 → 13**; electives 7 → 8; total stays 21. Scouts who had started before that date have until **2026-12-31** to finish and still use it |
+| Eagle Scout Rank Application, form **512-728** (2026 printing, `/wp-content/uploads/2026/02/512-728_26-Eagle-Scout-Application_WEB.pdf`) | `200`. Requirement 3 grid lists **13** required badges. Citizenship in the Community is #2; Citizenship in Society is absent |
+| `2026 Scouts BSA Requirements` book (`/wp-content/uploads/2026/02/3321625-Scouts-BSA-Requirements.pdf`) | `200`. Page 23 still prints "**these 14 merit badges** … (d) Citizenship in Society" |
+| `/wp-content/uploads/2025/12/Scouts-BSA-Rank-Requirements.pdf` (this repo's rank source) | `200`, `last-modified: Thu, 11 Dec 2025`. Same stale 14-badge list |
+| `/merit-badges/citizenship-in-society/` and `/skills/merit-badges/all/` | both `200`; the discontinued badge still has a live page and is still listed in the A-Z index, with no discontinuance notice on either |
+
+Note the 17-vs-13 arithmetic, which looks like a contradiction and is not: the Eagle-required *page* lists 17 badges because three requirement slots are either/or (Emergency Preparedness **or** Lifesaving, Environmental Science **or** Sustainability, Swimming **or** Hiking **or** Cycling). 17 listed badges, 13 slots.
+
+**The actual finding: scouting.org disagrees with itself, and this repo faithfully scraped the losing half.** The eagle-required index and the current application form reflect the change; the requirements book, the rank PDF, and the badge's own page do not. Our `eagle_required` flags were already correct — they are read from the live eagle-required index on every build, so the badge left the set with no code change. What was wrong was everything derived from the PDF: `data/ranks/eagle-scout.md` still told a reader Eagle needs 14 badges including Citizenship in Society, and `citizenship-in-society.md` sat in the corpus as an ordinary elective.
+
+**Why the fix is an annotation, not an edit.** The rank extraction is *faithful* — it reproduces the PDF exactly, and the PDF is what is out of date. Editing the scraped requirement text would make `data/` disagree with its own `source:` URL and would be silently reverted by the next rebuild. So both files get the existing optional `note:` key, which is precisely "a caveat about the file itself that a reader needs in order to use it correctly." This is a **fifth** recurring use of `note:` alongside the four already documented in CLAUDE.md: *the source document is stale relative to a program change BSA announced elsewhere.*
+
+**Mechanism added:** `inject_note()` in `utils.py` — a post-pass over finished markdown that adds the `note:` frontmatter key and the matching `> **Note:**` body blockquote. Deliberately a post-pass rather than extra `make_frontmatter()` arguments, because it serves two callers: a fetch script annotating a file it just built, and a maintainer annotating a file already in `data/` without re-fetching it. One implementation means the hand-applied annotation and the next rebuild produce byte-identical output — otherwise the rebuild silently rewrites the annotation away. Notes now come from three places: the `note` key on a `POLICIES` entry (as before), the `note` key on a `RANKS` entry (new), and `BADGE_NOTES` keyed by slug in `fetch_merit_badges.py` (new). The merit badge index grows a `## Notes` section so a consumer reading only `index.md` still sees that a listed elective is discontinued.
+
+**How `inject_note()` was verified, and the negative control.** Round-tripped against the three existing policy files that already carry a hand-written `note:`: strip the note, re-inject it, compare bytes. All three came back **identical**, which proves the new shared path reproduces the format `fetch_policies.py` has been emitting all along. Then, per the standing rule, proof that the check can fail: injecting a *different* note string into the same file does **not** match. Idempotency was also checked and initially **failed** — the strip pass left the blockquote's trailing blank line behind, so each re-run added one. Fixed before use.
+
+**Left open, deliberately:** the KB is missing two merit badges that exist upstream — **Art** and **Golf** (both `200` at `/merit-badges/art/` and `/merit-badges/golf/`; the corpus has 142 files, the live A-Z index resolves to 144 real badges once the seven nav pseudo-links are filtered out). That is a Tier 1 index-crawl gap, unrelated to this change, and it needs a scrape run to fix. Recorded in `HANDOFF.md` for the October refresh.
+
+**The transferable lesson:** *an authoritative source is authoritative per-document, per-date — never site-wide.* A publisher is a set of documents on different revision clocks, and a program change lands in each one at its own pace. When a claim in `data/` is challenged, do not check "the site"; identify **which document** would carry the change first (here: the application form a council actually processes) and check whether the document this repo scraped has caught up yet. And check the user's premise against the neighbouring items before acting on it — a wrong subject with a right verb is the easiest way to delete correct data.
+
+**Re-check at each refresh:** drop the `note` from the Eagle Scout `RANKS` entry once BSA reissues the rank PDF with 13 badges, and drop `BADGE_NOTES["citizenship-in-society"]` (and the file) if the badge is pulled from the A-Z index. Both are keyed to upstream changes that have not happened yet as of 2026-09-13.
+
 ## Council list was a 200-zip sample, not a canvas — 91 councils missing (found 2026-08-02)
 
 **How this started:** the user asked for a "quick pass" to verify council data was still correct, and mentioned finding a "council/district search" tool at `my.scouting.org/tools/manage-member-id` while logged into their own BSA account. That tool requires personal login — not something to access autonomously — but the user offered to log in themselves in a CDP-connected Chrome window and let the investigation proceed from there.

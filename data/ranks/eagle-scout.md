@@ -4,11 +4,14 @@ fetched: 2026-08-02
 bsa_version: 2026.Q3
 rank_order: 6
 content_type: pdf
+note: "Requirement 3 below is reproduced as printed in the source PDF (last modified 2025-12-11) and lists 14 required merit badges, including Citizenship in Society. That badge was discontinued effective 2026-02-27 and the Eagle-required set is now 13 (https://www.scouting.org/program-updates/citizenship-in-society-merit-badge-discontinuance/); the other 13 are unchanged, Citizenship in the Community among them. Confirmed 2026-09-13 that Scouting America has not reissued this PDF, nor the 2026 Scouts BSA Requirements book - the current Eagle Scout Rank Application, form 512-728 (2026 printing), carries the up-to-date list."
 ---
 
 # Eagle Scout Rank Requirements
 
 _Highest rank. Requires 21 merit badges, demonstrated leadership, and an Eagle project._
+
+> **Note:** Requirement 3 below is reproduced as printed in the source PDF (last modified 2025-12-11) and lists 14 required merit badges, including Citizenship in Society. That badge was discontinued effective 2026-02-27 and the Eagle-required set is now 13 (https://www.scouting.org/program-updates/citizenship-in-society-merit-badge-discontinuance/); the other 13 are unchanged, Citizenship in the Community among them. Confirmed 2026-09-13 that Scouting America has not reissued this PDF, nor the 2026 Scouts BSA Requirements book - the current Eagle Scout Rank Application, form 512-728 (2026 printing), carries the up-to-date list.
 
 EAGLE RANK REQUIREMENTS
 1. Be active in your troop for at least six months as a Life Scout. (See page 24.)
