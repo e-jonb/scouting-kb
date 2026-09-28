@@ -16,6 +16,14 @@ At the end of every session, ensure all work is committed and pushed (`git push 
 
 This repo has no submodules today, so the script currently just pulls. It stays correct if that changes, which is why the instruction points at the script rather than at `git pull`.
 
+## Outside Services – Identify the Tool, Never the Person
+
+Never send the owner's email address, name or any other identifying detail to an outside service – in a header, URL, query string or request body – unless the owner asks for that specific use. The owner's email is in every session's context (git config supplies it), and an API whose usage policy asks for a contact makes filling it in feel helpful. It is not. It is disclosure to a third party, and it may be logged or kept.
+
+When a service asks who is calling – a User-Agent policy like OpenStreetMap Nominatim's, an API sign-up, a form field – identify the tool, not the person: `User-Agent: scouting-kb/1.0`. If a service genuinely will not work without a personal contact, stop and ask before sending one.
+
+Added 2026-09-27, after the Studio sent the owner's email in a User-Agent header to OpenStreetMap's geocoder while testing drive times. The rule existed in the model's instructions and in no repo, so nothing here could have enforced it.
+
 ## Memory Graduation
 
 Claude Code's auto-memory (`~/.claude/projects/<repo>/memory/`) captures useful session-to-session knowledge — confirmed-working patterns, project decisions and their rationale, institutional facts — but it's local application state: invisible to git, doesn't sync across your own machines, and invisible to anyone who clones this repo fresh, including a maintainer of a downstream consumer (ScoutSync, the Troop 452 tool) trying to understand how this scraper actually works.
