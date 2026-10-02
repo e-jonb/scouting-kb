@@ -300,7 +300,7 @@ None of the three widget-content bugs are the markdownify `strip=` bug described
 
 ## Chrome CDP setup needs `--user-data-dir`, not just `--no-first-run`
 
-`open -a "Google Chrome" --args --remote-debugging-port=9222 --no-first-run` frequently does **not** actually open the debug port — `curl http://localhost:9222/json/version` connection-refused even after the process is confirmed running with that flag in `ps aux`. Root cause appears to be that without a dedicated `--user-data-dir`, macOS Chrome sometimes hands the launch off to an existing/default profile process that ignores the CLI flags for that invocation.
+`open -a "Google Chrome" --args --remote-debugging-port=9222 --no-first-run` frequently does **not** actually open the debug port – `curl http://localhost:9222/json/version` connection-refused even after the process is confirmed running with that flag in `ps aux`. **There are two mechanisms here, and only one is macOS-specific.** Corrected 2026-10-02 on the Studio's information – not measured here, and worth re-testing if it ever matters. **Every platform:** since **Chrome 136**, remote debugging is ignored on the *default* profile. `--user-data-dir` is therefore not a workaround but a requirement, and it is the reason the port stays closed even when `ps aux` shows the flag. **macOS only:** the `open -a` trap (launch services hands the invocation to an already-running Chrome that ignores the flags), the binary path, and the process name. The earlier explanation on this line attributed the whole thing to the macOS hand-off, which is a real effect but not the one doing the work – "required" reads as arbitrary without the Chrome 136 reason attached.
 
 **Reliable version:**
 ```bash

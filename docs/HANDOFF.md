@@ -68,6 +68,8 @@ This is a data package, not an app. The scraper in `scraper/` produces versioned
 
 **Also:** `.github/workflows/md-conventions.yml` added – this repo had a remote and no markdown CI. Verified the added lines pass the canonical checker first (one em dash in my own PLAYBOOK annotation, fixed), so the first CI run should be green rather than a red X on arrival.
 
+**Follow-up the same day, after a second Studio pass:** both new sections moved to sit just above Outside Services, matching the placement in the other nine repos – content was identical, placement was not, and an agent landing in any repo should find them in the same place. A pointer stays where the old rule was. Also corrected a mechanism I had stated too narrowly: `--user-data-dir` is **not** a macOS quirk. Since Chrome 136 remote debugging is ignored on the default profile on every platform, which is the reason the port stays shut; the `open -a` hand-off, the binary path and the process name are the macOS-only part. Recorded in `docs/PLAYBOOK.md` and `CLAUDE.md` as the Studio's information rather than a local measurement. **"Required" is a weaker instruction than "required because"** – the bare form reads as arbitrary and invites someone to drop the flag.
+
 **Verified as rendered, not as source:** `fetch_counselors.py`'s `__doc__` prints multi-line with the new path, and its connect-failure branch was actually triggered against a dead port – correct text, exit 1, no stray artifacts. The Studio's own scan flagged `fetch_councils_authenticated.py`'s non-raw docstring and printing `__doc__` showed it renders fine because it escapes the backslash: **a source scan can be wrong in the clean direction too.**
 
 

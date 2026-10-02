@@ -16,6 +16,30 @@ At the end of every session, ensure all work is committed and pushed (`git push 
 
 This repo has no submodules today, so the script currently just pulls. It stays correct if that changes, which is why the instruction points at the script rather than at `git pull`.
 
+## Corrections Reach Every Copy
+
+A fix isn't done until the old text is gone everywhere it was copied. A recipe, command or claim that lives in a doc usually also lives in `--help` text, docstrings, error messages, the README and auto-memory, and fixing the doc fixes none of those.
+
+- **Grep the whole repo**, not the folders you expect it in, for what the old text actually says – the flag, the path, the status code – rather than for the name of its explanation. The terse restatements are the ones a sweep misses.
+- **It runs in both directions.** Doc wrong and code right, or doc right and code stale – the second feels finished the moment the doc is fixed, which is when the code copies get skipped.
+- **Fix `--help` and error branches first.** They are read exactly when someone is stuck and trusting what the program tells them.
+- **Check each copy as rendered, not as source.** Run `--help`, trigger the error branch, print `__doc__`. Shell commands in Python docstrings belong in raw strings (`r"""`) – a backslash continuation in a normal string is eaten, and the source still looks right. Triggering an error path can leave artifacts behind, so check for stray files afterward.
+- **Correct in place; don't file the correction beside the error.** Two live entries that disagree are worse than one stale one. Historical records – session logs, dated briefs, ADR context – are left alone and marked superseded instead.
+
+Both directions have now bitten this repo. **Doc wrong, code right:** one false Cloudflare claim led to three more in the paragraphs around it and eight in `scraper/` (docstrings, comments, `--cdp-url` help, and an error message telling the operator that Cloudflare "blocks all automated downloads"). **Doc right, code stale:** the working Chrome CDP launch recipe sat in `docs/PLAYBOOK.md` from 2026-08-01 while seven copies elsewhere – `build_all.py`'s `--cdp-url` help, `utils.py`, `fetch_ranks.py` and `fetch_counselors.py` (a docstring *and* an error branch each), and `README.md` – still printed the command that does not work, two of them printed at the moment CDP had just failed. The sweep that fixed the first direction in September edited the very same `--cdp-url` help line and left the stale recipe in it, because it was scoped to one claim. Full history in `docs/PLAYBOOK.md`.
+
+## Fetching Pages and Driving a Browser
+
+In this order, stopping at the first that works:
+
+1. `WebFetch`, then `./scripts/fetch-page.sh <url>` – use `--check` before recording any source as unavailable
+2. **Playwright against the installed Chrome** – `p.chromium.launch(headless=True, channel="chrome")`. Renders JavaScript pages without closing anyone's tabs
+3. **CDP** to a real Chrome, for bulk runs or a logged-in session. It means quitting Chrome, which closes the owner's tabs – warn first
+
+For this repo specifically, a full `--force` rebuild uses CDP: scouting.org throttles under sustained load, and the CDP path is the only one with a bulk measurement behind it (see the section above on dated access claims). The launch flags that silently fail, and why `--user-data-dir` is mandatory, are in `docs/PLAYBOOK.md`, "Chrome CDP setup needs `--user-data-dir`". The canonical profile dir is `/tmp/chrome-cdp-scraper`; every script's own `--help` or error text prints the working command.
+
+**The Claude-in-Chrome extension is a separate product from CDP and from Playwright.** It needs an extension and a claude.ai pairing; CDP needs neither. An empty connected-browsers list says nothing about whether CDP works – `curl -s http://localhost:9222/json/version` does. Full recipe and the product comparison: `../solution-architect-studio/knowledge/browser-automation.md`.
+
 ## Outside Services – Identify the Tool, Never the Person
 
 Never send the owner's email address, name or any other identifying detail to an outside service – in a header, URL, query string or request body – unless the owner asks for that specific use. The owner's email is in every session's context (git config supplies it), and an API whose usage policy asks for a contact makes filling it in feel helpful. It is not. It is disclosure to a third party, and it may be logged or kept.
@@ -184,33 +208,9 @@ When you record that a fetch failed, record **the client, the URL, the date** �
 
 Verify one-off URLs with `./scripts/fetch-page.sh <url> --check` – bare and browser-header requests, three times each, reporting whether headers matter, whether the failure is intermittent, and whether the host soft-404s. It is not a substitute for the scraper's browser path; it makes single requests, exactly the case that does not generalise here. It compares payload sizes and titles because a bot challenge is served as a 200, and that is still a heuristic – for anything a decision rests on, grep the body for a phrase only the real page would contain. **Take that phrase from the page, not from memory:** a remembered phrase the real page happens not to use returns zero hits on a perfectly good fetch, which is a false negative indistinguishable from a block (confirmed 2026-09-10 – grepping `gss01` for "two-deep leadership", this repo's own wording, found nothing on a page that had fetched fine).
 
-**A false mechanism in a docstring or an error string is worse than one in a playbook: it is read exactly when someone is deciding whether a source is reachable.** Sweeping every copy of a corrected claim is its own standing rule – see "Corrections Reach Every Copy" below.
+**A false mechanism in a docstring or an error string is worse than one in a playbook: it is read exactly when someone is deciding whether a source is reachable.** Sweeping every copy of a corrected claim is its own standing rule – see "Corrections Reach Every Copy" near the top of this file.
 
 **Check whether a stated mechanism was observed or assumed.** The 2026-09-05 entry explaining these 403s as the site "gating on a browser session" was invented, not measured, and false – while the throttling observation beside it was real and the conclusion drawn from both was right. A correct conclusion does not validate the premises under it. Full data and history in `docs/PLAYBOOK.md`.
-
-## Corrections Reach Every Copy
-
-A fix isn't done until the old text is gone everywhere it was copied. A recipe, command or claim that lives in a doc usually also lives in `--help` text, docstrings, error messages, the README and auto-memory, and fixing the doc fixes none of those.
-
-- **Grep the whole repo**, not the folders you expect it in, for what the old text actually says – the flag, the path, the status code – rather than for the name of its explanation. The terse restatements are the ones a sweep misses.
-- **It runs in both directions.** Doc wrong and code right, or doc right and code stale – the second feels finished the moment the doc is fixed, which is when the code copies get skipped.
-- **Fix `--help` and error branches first.** They are read exactly when someone is stuck and trusting what the program tells them.
-- **Check each copy as rendered, not as source.** Run `--help`, trigger the error branch, print `__doc__`. Shell commands in Python docstrings belong in raw strings (`r"""`) – a backslash continuation in a normal string is eaten, and the source still looks right. Triggering an error path can leave artifacts behind, so check for stray files afterward.
-- **Correct in place; don't file the correction beside the error.** Two live entries that disagree are worse than one stale one. Historical records – session logs, dated briefs, ADR context – are left alone and marked superseded instead.
-
-Both directions have now bitten this repo. **Doc wrong, code right:** one false Cloudflare claim led to three more in the paragraphs around it and eight in `scraper/` (docstrings, comments, `--cdp-url` help, and an error message telling the operator that Cloudflare "blocks all automated downloads"). **Doc right, code stale:** the working Chrome CDP launch recipe sat in `docs/PLAYBOOK.md` from 2026-08-01 while seven copies elsewhere – `build_all.py`'s `--cdp-url` help, `utils.py`, `fetch_ranks.py` and `fetch_counselors.py` (a docstring *and* an error branch each), and `README.md` – still printed the command that does not work, two of them printed at the moment CDP had just failed. The sweep that fixed the first direction in September edited the very same `--cdp-url` help line and left the stale recipe in it, because it was scoped to one claim. Full history in `docs/PLAYBOOK.md`.
-
-## Fetching Pages and Driving a Browser
-
-In this order, stopping at the first that works:
-
-1. `WebFetch`, then `./scripts/fetch-page.sh <url>` – use `--check` before recording any source as unavailable
-2. **Playwright against the installed Chrome** – `p.chromium.launch(headless=True, channel="chrome")`. Renders JavaScript pages without closing anyone's tabs
-3. **CDP** to a real Chrome, for bulk runs or a logged-in session. It means quitting Chrome, which closes the owner's tabs – warn first
-
-For this repo specifically, a full `--force` rebuild uses CDP: scouting.org throttles under sustained load, and the CDP path is the only one with a bulk measurement behind it (see the section above on dated access claims). The launch flags that silently fail, and why `--user-data-dir` is mandatory, are in `docs/PLAYBOOK.md`, "Chrome CDP setup needs `--user-data-dir`". The canonical profile dir is `/tmp/chrome-cdp-scraper`; every script's own `--help` or error text prints the working command.
-
-**The Claude-in-Chrome extension is a separate product from CDP and from Playwright.** It needs an extension and a claude.ai pairing; CDP needs neither. An empty connected-browsers list says nothing about whether CDP works – `curl -s http://localhost:9222/json/version` does. Full recipe and the product comparison: `../solution-architect-studio/knowledge/browser-automation.md`.
 
 ## Troubleshooting
 
@@ -250,7 +250,7 @@ For this repo specifically, a full `--force` rebuild uses CDP: scouting.org thro
 
 **A file in `data/` contradicts a program change you know BSA announced (e.g. a rank file listing a discontinued merit badge):** check *which document* the file was scraped from before assuming a scraper bug. scouting.org routinely disagrees with itself – confirmed 2026-09-13, the Citizenship in Society discontinuance (effective 2026-02-27, Eagle-required set 14 → 13) is reflected in the eagle-required index and in the current Eagle Scout Rank Application (form 512-728), but **not** in the rank requirements PDF this repo scrapes, not in the 2026 Scouts BSA Requirements book, and not on the badge's own still-live page. The extraction is faithful; the source is stale. **Annotate with `note:`, never edit the scraped text** – editing makes `data/` disagree with its own `source:` URL and the next rebuild reverts it anyway. An authoritative source is authoritative per-document and per-date, never site-wide. Also note the Eagle-required page lists 17 badges for 13 slots (three are either/or), so 17 and 13 are not in conflict. See `docs/PLAYBOOK.md`.
 
-**`--cdp-url` can't connect / `curl http://localhost:9222/json/version` is refused:** launch Chrome by running the binary directly, not `open -a`, and always pass `--user-data-dir` alongside `--remote-debugging-port` – without a dedicated profile dir macOS hands the launch to an existing Chrome process that ignores the flags, so the port never opens even though `ps aux` shows the flag. Quit Chrome fully first. The scripts' own `--help` and error messages print the working command; full writeup in `docs/PLAYBOOK.md`, "Chrome CDP setup needs `--user-data-dir`".
+**`--cdp-url` can't connect / `curl http://localhost:9222/json/version` is refused:** launch Chrome by running the binary directly, not `open -a`, and always pass `--user-data-dir` alongside `--remote-debugging-port`. **Since Chrome 136, remote debugging is ignored on the default profile on every platform**, so a scratch profile dir is a requirement, not a workaround – that is why the port stays closed even though `ps aux` shows the flag. The `open -a` hand-off to an already-running Chrome is a second, macOS-only trap on top of it. Quit Chrome fully first. The scripts' own `--help` and error messages print the working command; full writeup in `docs/PLAYBOOK.md`, "Chrome CDP setup needs `--user-data-dir`".
 
 **Playwright browser errors:** Run `playwright install chromium` to reinstall the browser binary.
 
