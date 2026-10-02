@@ -55,7 +55,13 @@ Requires a logged-in Chrome with CDP enabled:
 
 ```bash
 pkill -x "Google Chrome"
-open -a "Google Chrome" --args --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-cdp
+# Launch the binary directly — `open -a` often hands off to an existing Chrome
+# process that ignores the flags, and the debug port never opens.
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
+  --remote-debugging-port=9222 \
+  --user-data-dir=/tmp/chrome-cdp \
+  --no-first-run &
+curl -s http://localhost:9222/json/version   # verify the port is actually up
 # Log in to scoutbook.scouting.org in that browser
 ```
 
