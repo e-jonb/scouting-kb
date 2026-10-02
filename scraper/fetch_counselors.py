@@ -1,10 +1,18 @@
-"""
+r"""
 Scrape MB counselor list from Scoutbook and export to CSV.
 
 Requires an active logged-in Chrome session with remote debugging enabled:
   pkill -x "Google Chrome"
-  open -a "Google Chrome" --args --remote-debugging-port=9222 --no-first-run
-  # Then log in to scoutbook.scouting.org in that browser
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
+    --remote-debugging-port=9222 \
+    --user-data-dir=/tmp/chrome-cdp \
+    --no-first-run &
+  # Launch the binary directly, NOT `open -a`, and keep --user-data-dir — without
+  # a dedicated profile dir the debug port often never opens (docs/PLAYBOOK.md,
+  # "Chrome CDP setup needs --user-data-dir"). Verify:
+  #   curl http://localhost:9222/json/version
+  # This profile dir is separate from the scraper's so the Scoutbook login
+  # persists across runs. Then log in to scoutbook.scouting.org in that browser.
 
 Usage:
   python3 fetch_counselors.py --url "https://scoutbook.scouting.org/mobile/dashboard/admin/counselorresults.asp?UnitID=93571&MeritBadgeID=30&Proximity=25&Availability=Available&zip=45245&formCouncilID=77&formDistrictID=2302&formFName=&formLName=&isformZipNull=False&formWorldwide=&Page=1"
@@ -124,7 +132,11 @@ def main():
             browser = p.chromium.connect_over_cdp(args.cdp_url)
         except Exception as e:
             print(f"ERROR: Could not connect to Chrome at {args.cdp_url}")
-            print("Start Chrome with: open -a 'Google Chrome' --args --remote-debugging-port=9222 --no-first-run")
+            print("Start Chrome with (binary directly, not 'open -a'; "
+                  "--user-data-dir is required or the port may never open):")
+            print("  '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' \\")
+            print("    --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-cdp --no-first-run &")
+            print("Verify with: curl http://localhost:9222/json/version")
             print("Then log in to scoutbook.scouting.org")
             sys.exit(1)
 

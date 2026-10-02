@@ -10,8 +10,8 @@
 
 ## Current State
 
-**As of:** 2026-09-13 \
-**Corpus version:** 2026.Q3, `built: 2026-09-13`, `tier_built: 2`, `forced: true` – Tiers 1 and 2 both force-rebuilt today \
+**As of:** 2026-10-01 \
+**Corpus version:** 2026.Q3, `built: 2026-09-13`, `tier_built: 2`, `forced: true` – Tiers 1 and 2 both force-rebuilt on 2026-09-13 \
 **Tier 1:** built – councils 228, ranks 7, merit badges **144** \
 **Tier 2:** built – policies 16, all at `fetched: 2026-09-13` \
 **Tier 3:** not implemented (roles, program manuals)
@@ -55,6 +55,21 @@ This is a data package, not an app. The scraper in `scraper/` produces versioned
 ---
 
 ## Session Log
+
+### 2026-10-01 – CDP launch recipe: PLAYBOOK was right, six copies in the code were not
+
+**Done:** Documentation and operator-facing strings only. No scraper logic, no `data/` change, no rebuild. Corpus re-verified unchanged: 228 councils, 7 ranks, 144 badges, 16 policies, manifest still `built: 2026-09-13`, `tier_built: 2`.
+
+The session started as a request to unstick another session that could not drive a JS-heavy page. Its actual error was conflating **the Claude-in-Chrome browser extension with CDP** — it spent its turn on `list_connected_browsers`, extension installs and claude.ai account pairing, then told the owner to install an extension. CDP is Chrome's DevTools websocket driven from Python by Playwright: no extension, no claude.ai login, nothing to pair. Worth knowing because the two are easy to confuse by name and the wrong one is a dead end.
+
+**Discovered while writing that answer:** `docs/PLAYBOOK.md` has carried the correct launch recipe since 2026-08-01 — run the binary directly, not `open -a`, and `--user-data-dir` is mandatory or the port silently never opens — while **six copies in the code still printed the version that does not work**: `build_all.py`'s `--cdp-url` help, `utils.py`'s `make_browser_context` docstring, `fetch_ranks.py`'s module docstring *and* its missing-`--cdp-url` error, and `fetch_counselors.py`'s module docstring *and* its connect-failure error. `fetch_councils_authenticated.py` was the only one already right. Two of the six are the text printed **at the moment CDP has just failed** — the operator is told to re-run the command that caused the failure. All six corrected, plus two stale copies inside auto-memory itself.
+
+**This is the second confirmed instance of CLAUDE.md's own rule** that one bad line means reading the code, not just the docs — and this time the docs were the *correct* copy and the code was stale, which is the direction that rule does not state. A fix landing in `PLAYBOOK.md` does not reach `--help` output or an error string, and those are what someone reads while stuck.
+
+**Caught by rendering, not reading:** the corrected docstrings used backslash line continuations inside non-raw strings, so Python ate the newlines and the command collapsed onto one line in the actual `__doc__`. `py_compile` passed and the source looked right; only printing `__doc__` and running `--help` showed it. Fixed by making those three docstrings raw. **A docstring containing a shell command needs to be raw, and needs to be checked as rendered output** — the same "prove the check can fail" discipline, applied to text.
+
+**Also added:** a `--user-data-dir` troubleshooting entry in `CLAUDE.md`, pointing at the existing PLAYBOOK section rather than restating it.
+
 
 ### 2026-09-13 – Tier 3 resolved: roles ceded, manuals gated on a trigger
 

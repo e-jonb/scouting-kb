@@ -204,9 +204,12 @@ if __name__ == "__main__":
             "Connect to a running Chrome via Chrome DevTools Protocol instead of "
             "launching a new headless browser. Preferred for full --force rebuilds "
             "of scouting.org, which throttles under sustained load. "
-            "Setup: pkill -x 'Google Chrome' && "
-            "open -a 'Google Chrome' --args --remote-debugging-port=9222 --no-first-run "
-            "then navigate to scouting.org once before running this script. "
+            "Setup: pkill -x 'Google Chrome', then launch the binary directly "
+            "(not 'open -a', which often fails to open the port) with both "
+            "--remote-debugging-port=9222 and --user-data-dir=/tmp/chrome-cdp-scraper "
+            "-- the port alone is not enough on macOS. See docs/PLAYBOOK.md, "
+            "'Chrome CDP setup needs --user-data-dir'. Navigate to scouting.org "
+            "once before running this script. "
             "Default CDP URL: http://localhost:9222"
         ),
     )

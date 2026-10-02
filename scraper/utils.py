@@ -273,7 +273,7 @@ BROWSER_UA = (
 
 
 async def make_browser_context(playwright, cdp_url: str = None):
-    """
+    r"""
     Return (browser, context) for scraping.
 
     Two modes:
@@ -291,7 +291,14 @@ async def make_browser_context(playwright, cdp_url: str = None):
 
     CDP setup (one-time):
       pkill -x "Google Chrome"
-      open -a "Google Chrome" --args --remote-debugging-port=9222 --no-first-run
+      "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
+        --remote-debugging-port=9222 \
+        --user-data-dir=/tmp/chrome-cdp-scraper \
+        --no-first-run &
+      # Launch the binary directly, NOT `open -a`, and keep --user-data-dir:
+      # without a dedicated profile dir macOS Chrome often hands the launch to
+      # an existing process that ignores the flags, and the port never opens.
+      # Verify with: curl http://localhost:9222/json/version
       # Navigate to scouting.org once in that Chrome window, then run the scraper.
       python build_all.py --cdp-url http://localhost:9222
     """

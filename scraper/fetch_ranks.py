@@ -1,4 +1,4 @@
-"""
+r"""
 fetch_ranks.py
 
 Downloads and parses Scouts BSA rank requirement PDFs from scouting.org.
@@ -23,7 +23,12 @@ Usage:
 
 CDP setup (one-time per scraping session):
   pkill -x "Google Chrome"
-  open -a "Google Chrome" --args --remote-debugging-port=9222 --no-first-run
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
+    --remote-debugging-port=9222 \
+    --user-data-dir=/tmp/chrome-cdp-scraper \
+    --no-first-run &
+  # Launch the binary directly, NOT `open -a`, and keep --user-data-dir — the
+  # port alone is not enough on macOS. Verify: curl http://localhost:9222/json/version
   # Navigate to https://www.scouting.org in the opened Chrome window, then run.
 """
 
@@ -581,9 +586,13 @@ async def fetch_ranks(
         console.print(
             "\n[bold red]Ranks[/bold red]: [red]--cdp-url required.[/red]\n"
             "  This build path uses a real Chrome; scouting.org throttles bulk runs.\n"
-            "  Setup:\n"
+            "  Setup (launch the binary directly, not 'open -a', and keep\n"
+            "  --user-data-dir — the port alone is not enough on macOS):\n"
             "    pkill -x 'Google Chrome'\n"
-            "    open -a 'Google Chrome' --args --remote-debugging-port=9222 --no-first-run\n"
+            "    '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' \\\n"
+            "      --remote-debugging-port=9222 \\\n"
+            "      --user-data-dir=/tmp/chrome-cdp-scraper --no-first-run &\n"
+            "    # Verify: curl http://localhost:9222/json/version\n"
             "    # Navigate to https://www.scouting.org, then re-run:\n"
             "    python build_all.py --tier 1 --cdp-url http://localhost:9222"
         )
