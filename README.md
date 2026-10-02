@@ -59,7 +59,7 @@ pkill -x "Google Chrome"
 # process that ignores the flags, and the debug port never opens.
 "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
   --remote-debugging-port=9222 \
-  --user-data-dir=/tmp/chrome-cdp \
+  --user-data-dir=/tmp/chrome-cdp-scraper \
   --no-first-run &
 curl -s http://localhost:9222/json/version   # verify the port is actually up
 # Log in to scoutbook.scouting.org in that browser

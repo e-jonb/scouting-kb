@@ -64,7 +64,7 @@ Checked against the RESOURCES mapping table in this file: **Guide to Advancement
 
 ## Forced Tier 1 rebuild: what a clean one looks like, and the council trap in it (2026-09-13)
 
-**Command:** `build_all.py --tier 1 --force --skip councils --cdp-url http://localhost:9222`, against a real Chrome launched on a throwaway profile (`--user-data-dir=/tmp/chrome-cdp`; the port alone is not enough on this machine). 7/7 ranks, 144/144 badges, 151 files changed, no errors.
+**Command:** `build_all.py --tier 1 --force --skip councils --cdp-url http://localhost:9222`, against a real Chrome launched on a throwaway profile (`--user-data-dir=/tmp/chrome-cdp`; the port alone is not enough on this machine – that is the path this run actually used, kept as a dated record; the canonical profile dir is now `/tmp/chrome-cdp-scraper` everywhere, see below). 7/7 ranks, 144/144 badges, 151 files changed, no errors.
 
 **The trap: `--tier 1 --force` destroys the council data.** `fetch_councils.py` is the ~200-zip sampling fetcher; `data/councils/councils.json` holds the authoritative 228-council list that only `fetch_councils_authenticated.py` can produce, and that only a human logged into my.scouting.org can run. A forced Tier 1 run silently replaces 228 records with ~137, loses the 2 dissolutions and 2 renames, and reports success. `--skip` was added to `build_all.py` for this, with the reason in its `--help` text so the next person meets the warning where they are typing rather than in a doc they did not open. **Checksum `councils.json` before and after any forced Tier 1 run** — that is how this one was confirmed clean.
 

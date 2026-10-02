@@ -10,7 +10,7 @@
 
 ## Current State
 
-**As of:** 2026-10-01 \
+**As of:** 2026-10-02 \
 **Corpus version:** 2026.Q3, `built: 2026-09-13`, `tier_built: 2`, `forced: true` – Tiers 1 and 2 both force-rebuilt on 2026-09-13 \
 **Tier 1:** built – councils 228, ranks 7, merit badges **144** \
 **Tier 2:** built – policies 16, all at `fetched: 2026-09-13` \
@@ -55,6 +55,21 @@ This is a data package, not an app. The scraper in `scraper/` produces versioned
 ---
 
 ## Session Log
+
+### 2026-10-02 – Studio review: one profile dir, and the correction rule generalised
+
+**Done:** Acted on the Chief Architect's review of the 2026-10-01 work. No scraper logic, no `data/` change.
+
+**Profile directory drift, introduced by my own fix.** `fetch_counselors.py` used `--user-data-dir=/tmp/chrome-cdp` while every other copy used `/tmp/chrome-cdp-scraper`. A different profile folder is a different login, so someone who signed in following one copy is signed out following the other. Unified on `/tmp/chrome-cdp-scraper` – the two sign in to the same BSA SSO, so one profile serves Scoutbook and my.scouting.org. The whole-repo grep found two more the Studio had not flagged: `README.md` and `docs/PLAYBOOK.md`. The PLAYBOOK one is a dated record of what the 2026-09-13 build actually ran, so it is annotated rather than rewritten.
+
+**`CLAUDE.md` gained two sections from the Studio templates.** "Corrections Reach Every Copy" **replaces** the old one-direction rule rather than sitting beside it – that rule only covered doc-wrong/code-right, and this repo has now been bitten in both directions. The repo-specific evidence for both is kept in the new section. "Fetching Pages and Driving a Browser" gives the order to try things and states that the Claude-in-Chrome extension is a separate product from CDP and Playwright.
+
+**Why the existing precedent never fired, per the Studio:** the rule did exist, three times, in `knowledge/lessons-learned.md` – including a 2026-09-10 entry about this very repo that swept error strings and `--help`, edited the same `--cdp-url` help line, and left the stale recipe in it because the sweep was scoped to one claim. It never fired because it lived in a file only Studio sessions read. **Placement, not absence.** The same thing happened with extension-vs-CDP: `college-planning` had worked it out on 2026-09-21, ten days before another session lost a turn to it. Both now live in the templates, so generated repos carry them.
+
+**Also:** `.github/workflows/md-conventions.yml` added – this repo had a remote and no markdown CI. Verified the added lines pass the canonical checker first (one em dash in my own PLAYBOOK annotation, fixed), so the first CI run should be green rather than a red X on arrival.
+
+**Verified as rendered, not as source:** `fetch_counselors.py`'s `__doc__` prints multi-line with the new path, and its connect-failure branch was actually triggered against a dead port – correct text, exit 1, no stray artifacts. The Studio's own scan flagged `fetch_councils_authenticated.py`'s non-raw docstring and printing `__doc__` showed it renders fine because it escapes the backslash: **a source scan can be wrong in the clean direction too.**
+
 
 ### 2026-10-01 – CDP launch recipe: PLAYBOOK was right, six copies in the code were not
 

@@ -1,0 +1,127 @@
+name: Markdown conventions
+
+# Diff-scoped on purpose. These repos carry thousands of pre-existing em dashes,
+# so a whole-repo check would fail on day one and get switched off. This only
+# looks at lines ADDED by the push or PR.
+#
+# The canonical checker lives in solution-architect-studio/scripts/md-conventions.py
+# and is what the local Claude Code hook runs. CI cannot reach across repos, so
+# the detection logic below is a deliberate mirror of it. If the rules change,
+# update both. Detection is intentionally kept small to limit that drift.
+
+on:
+  push:
+    paths: ['**.md']
+  pull_request:
+    paths: ['**.md']
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Resolve base commit
+        id: base
+        env:
+          EVENT: ${{ github.event_name }}
+          PR_BASE: ${{ github.event.pull_request.base.sha }}
+          PUSH_BEFORE: ${{ github.event.before }}
+        run: |
+          # Verify the base commit actually exists rather than comparing against
+          # the all-zeros sentinel. Also covers force-pushes and shallow clones,
+          # where the sentinel check alone would still hand git a dead ref.
+          if [ "$EVENT" = "pull_request" ]; then
+            BASE="$PR_BASE"
+          else
+            BASE="$PUSH_BEFORE"
+          fi
+          if [ -n "$BASE" ] && git cat-file -e "${BASE}^{commit}" 2>/dev/null; then
+            echo "sha=$BASE" >> "$GITHUB_OUTPUT"
+          else
+            echo "sha=" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Check markdown conventions
+        run: |
+          python3 - "${{ steps.base.outputs.sha }}" <<'PY'
+          import re, subprocess, sys
+
+          base = sys.argv[1] if len(sys.argv) > 1 else ''
+          if not base:
+              print('No base commit (initial push); skipping.')
+              sys.exit(0)
+
+          META  = re.compile(r'^\*\*[^*\n]+:\*\*')
+          FENCE = re.compile(r'^\s{0,3}(```|~~~)')
+          INLINE = re.compile(r'`[^`]*`')
+
+          files = subprocess.run(
+              ['git', 'diff', '--name-only', '--diff-filter=ACM', base, 'HEAD'],
+              capture_output=True, text=True).stdout.split()
+          files = [f for f in files if f.endswith('.md')]
+
+          def added(path):
+              d = subprocess.run(['git','diff','-U0',base,'HEAD','--',path],
+                                 capture_output=True, text=True).stdout
+              out, cur = set(), 0
+              for line in d.split('\n'):
+                  m = re.match(r'^@@ -\S+ \+(\d+)', line)
+                  if m: cur = int(m.group(1)); continue
+                  if line.startswith('+') and not line.startswith('+++'):
+                      out.add(cur); cur += 1
+                  elif not line.startswith('-') and not line.startswith('\\'):
+                      cur += 1
+              return out
+
+          breaks, dashes = [], []
+          for f in files:
+              try:
+                  lines = open(f, encoding='utf-8').read().split('\n')
+              except OSError:
+                  continue
+              scope = added(f)
+
+              fenced, inf, mark = [False]*len(lines), False, None
+              for i, l in enumerate(lines):
+                  m = FENCE.match(l)
+                  if m:
+                      fenced[i] = True
+                      if not inf: inf, mark = True, m.group(1)
+                      elif l.strip().startswith(mark): inf, mark = False, None
+                      continue
+                  fenced[i] = inf
+
+              is_meta = [not fenced[i] and bool(META.match(l)) for i, l in enumerate(lines)]
+              i = 0
+              while i < len(lines):
+                  if not is_meta[i]: i += 1; continue
+                  j = i
+                  while j+1 < len(lines) and is_meta[j+1]: j += 1
+                  if j > i:
+                      for k in range(i, j):
+                          if not (lines[k].endswith('\\') or lines[k].endswith('  ')):
+                              if (k+1) in scope:
+                                  breaks.append(f'{f}:{k+1}: {lines[k].strip()[:70]}')
+                  i = j + 1
+
+              for i, l in enumerate(lines):
+                  if fenced[i] or l.lstrip().startswith('>'): continue
+                  if (i+1) in scope and '—' in INLINE.sub('', l):
+                      dashes.append(f'{f}:{i+1}: {l.strip()[:70]}')
+
+          # Em dashes warn but do not fail: they may be quoted source material,
+          # which is a human call. Hard breaks always fail; they are unambiguous.
+          for d in dashes:
+              print(f'::warning file={d.split(":")[0]},line={d.split(":")[1]}::em dash on an added line - house style is en dash (–), unless quoting source')
+
+          if breaks:
+              for b in breaks:
+                  print(f'::error file={b.split(":")[0]},line={b.split(":")[1]}::consecutive **Label:** lines render joined - append " \\" to all but the last')
+              print(f'\n{len(breaks)} hard-break violation(s) on added lines.')
+              sys.exit(1)
+
+          print(f'OK. {len(dashes)} em dash warning(s), 0 hard-break errors.')
+          PY
